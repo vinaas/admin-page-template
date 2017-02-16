@@ -1,0 +1,46 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    - "src/**/*.html"
+  ignore:
+    - !!js/regexp .foundation-mq
+    - !!js/regexp ^\.is-.*
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"  
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "!src/assets/{img,js,scss}/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "bower_components/bourbon/app/assets/stylesheets"
+  # Paths to JavaScript libraries, which are combined into one file
+  javascript:
+    # Libraries required by Foundation
+    - "src/assets/plugins/pace/pace.min.js" 
+    - "src/assets/plugins/jquery/jquery-1.11.1.min.js" 
+    - "src/assets/plugins/modernizr.custom.js" 
+    - "src/assets/plugins/jquery-ui/jquery-ui.min.js" 
+    - "src/assets/plugins/bootstrapv3/js/bootstrap.min.js" 
+    - "src/assets/plugins/jquery/jquery-easy.js" 
+    - "src/assets/plugins/jquery-unveil/jquery.unveil.min.js" 
+    - "src/assets/plugins/jquery-bez/jquery.bez.min.js"
+    - "src/assets/plugins/jquery-ios-list/jquery.ioslist.min.js" 
+    - "src/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"
+    - "src/assets/plugins/jquery-actual/jquery.actual.min.js"
+    - "src/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"
+    # Paths to your own project code are here
+    - "src/assets/js/!(app).js"
+    - "src/assets/js/app.js"
