@@ -29,7 +29,7 @@ PATHS:
   # Paths to JavaScript libraries, which are combined into one file
   javascript:
     # Libraries required by Foundation
-    - "src/assets/plugins/pace/pace.min.js" 
+    # - "src/assets/plugins/pace/pace.min.js" 
     - "src/assets/plugins/jquery/jquery-1.11.1.min.js" 
     - "src/assets/plugins/modernizr.custom.js" 
     - "src/assets/plugins/jquery-ui/jquery-ui.min.js" 
