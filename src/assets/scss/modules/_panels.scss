@@ -29,7 +29,7 @@
             height: calc(100% - 50px);
         }
         .panel-title{
-            font-family: 'Montserrat';
+            font-family: "Roboto", Arial, sans-serif;
             text-transform: uppercase;
             display: inline-block;
             letter-spacing: 0.02em;
@@ -125,7 +125,7 @@
         float: right;
         .panel-title {
             h4 {
-                font-family: 'Montserrat';
+                font-family: "Roboto", Arial, sans-serif;
                 font-size: 16px;
                 text-transform: uppercase;
                 color: $color-master-lighter;

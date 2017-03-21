@@ -56,7 +56,7 @@
         font-size: 12px;
         
         .value.nv-pointer-events-none{
-            font-family: 'Montserrat';  
+            font-family: 'Roboto';
            font-weight: normal;
            font-size: 11px;
             color: lighten($color-master,30%);
@@ -278,7 +278,7 @@
         }
         .rickshaw_graph .y_ticks text, .rickshaw_graph .x_ticks_d3 text{
             opacity: 0.35;
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
             font-size: 11px;
 
         }
@@ -310,7 +310,7 @@
     stroke: none;
   }
   .rickshaw_graph .y_ticks text, .rickshaw_graph .x_ticks_d3 text{
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
             font-size: 11px;
         }
   .rickshaw_range_slider_preview {
@@ -336,7 +336,7 @@
     right: 0;
     width: auto;
     .x_tick.plain .title{
-       font-family: 'Montserrat';
+       font-family: 'Roboto';
             font-size: 11px; 
     }
   }

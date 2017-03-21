@@ -61,7 +61,7 @@ body {
             }
             .menu-items {
                 .icon-thumbnail{
-                    @include translate3d(-14px,0,0);
+                    //@include translate3d(-14px,0,0);
                 }
             }
             .sidebar-header .sidebar-header-controls{
@@ -333,7 +333,7 @@ body {
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;  
-                    width: 65%;             
+                    width: 75%;
                 }
             }
             & > li {
@@ -347,10 +347,10 @@ body {
                 }
 
                 & > a {
-                    font-family: Arial, sans-serif;
+                    font-family: "Roboto", Arial, sans-serif;
                     display: inline-block;
                     padding: 0 3px;
-                    padding-left: 32px;
+                    padding-left: 22px;
                     min-height: $menu-icon-size;
                     line-height: $menu-icon-size;
                     font-size: 14px;
@@ -385,7 +385,7 @@ body {
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
-                        width: 65%;
+                        width: 75%;
                     }
                     & > .details{
                         font-size: 12px;
@@ -395,7 +395,7 @@ body {
                     }
                     &.detailed{
                         & > .title{
-                            line-height: 28px;
+                            line-height: 22px;
                         }
                         & > .details{
                             line-height: 16px;
@@ -489,7 +489,7 @@ body {
                                 display: inline-block;
                                 padding: 5px 0px;
                                 font-size: 13px;
-                                font-family: Arial, sans-serif;
+                                font-family: "Roboto",Arial, sans-serif;
                                 white-space: normal;
                             }
                             .icon-thumbnail {
@@ -540,7 +540,7 @@ body {
     transition: transform 0.4s cubic-bezier($menu-bezier); 
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
-    font-family: "Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing:antialiased;
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
@@ -578,7 +578,7 @@ $secondary-sidebar-width : 250px;
         position: inherit;
     }
     .btn-compose {
-        font-family: 'Montserrat';
+        font-family: 'Roboto';
         font-size: 13px;
         font-weight: normal;
         letter-spacing: 0.02em;
@@ -588,7 +588,7 @@ $secondary-sidebar-width : 250px;
         color: rgba($color-menu-light, .50);
         opacity: .5;
         font-size: 10.8px;
-        font-family: 'Montserrat';
+        font-family: 'Roboto';
         font-weight: normal;
         letter-spacing: 0.03em;
     }
@@ -694,7 +694,7 @@ $secondary-sidebar-width : 250px;
             background: $color-master-lighter;
             height: 30px;
             color: rgba($color-master, .70);
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
             text-transform: uppercase;
             font-size: 10.8px;
             padding-left: 13px;
@@ -1125,7 +1125,7 @@ $secondary-sidebar-width : 250px;
 ------------------------------------
 */
 .breadcrumb {
-        font-family: 'Montserrat';
+        font-family: 'Roboto';
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         border-radius: 0px;
@@ -1139,7 +1139,7 @@ $secondary-sidebar-width : 250px;
         a {
             margin-left: 5px;
             margin-right: 5px;
-            font-family: 'Montserrat';
+            font-family: 'Roboto';
             font-size: 11px !important;
             font-weight: 400;
             color: #7b7d82;
@@ -1483,6 +1483,7 @@ padding-right: 30px;
 
 
     .bar-inner{
+
         display: table-cell;
         width: 100%;
         & > ul {
@@ -1490,11 +1491,11 @@ padding-right: 30px;
             padding: 0;
             padding-left: 16px;
             & > li {
-                font-family: "Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
                 display: inline-block;
                 padding: 10px 15px;
                 vertical-align: middle;
-                
+
                 &.classic{
                     position: relative;
                 }

@@ -95,7 +95,7 @@ form legend {
     background-color: $color-white;
     background-image: none;
     border: 1px solid $form-control-border-color;
-    font-family:Arial, sans-serif;
+    font-family:"Roboto",Arial, sans-serif;
     -webkit-appearance: none;
     color: $color-master-dark;
     outline: 0;
@@ -518,7 +518,7 @@ input[type=checkbox]:checked + label{
 .form-group {
     margin-bottom: 10px;
     label:not(.error){
-        font-family:'Montserrat';
+        font-family:'Roboto';
         font-size: 11px;
         text-transform: uppercase;
         font-weight: 600;
@@ -910,7 +910,7 @@ https://github.com/eternicode/bootstrap-datepicker
                 content:"\f054";
             }
             .dow {
-                font-family: 'Montserrat';
+                font-family: 'Roboto';
                 color: $color-primary;
                 text-transform: uppercase;
                 font-size: 11px;
