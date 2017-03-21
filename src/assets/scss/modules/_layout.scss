@@ -1498,16 +1498,22 @@ padding-right: 30px;
                 &.classic{
                     position: relative;
                 }
-                &.open{
+                &.active{
                     & > a {
                     opacity: 1;
+                    color: $color-primary;
                     }
                 }
-                &.mega, &.horizontal{
-                    &.open{
-                        position: inherit;
-                    }
-                }
+                // &.open{
+                //     & > a {
+                //     opacity: 1;
+                //     }
+                // }
+                // &.mega, &.horizontal{
+                //     &.open{
+                //         position: inherit;
+                //     }
+                // }
                 & > a {
                     font-size: 13px;
                     color: $color-black;
@@ -1545,18 +1551,18 @@ padding-right: 30px;
                         }
                     }                   
                 }
-                &.open{
-                    background: #fff;
-                    & > .classic{
-                        max-height: 999px;
-                        & > li{
-                            opacity: 1;
-                        }
-                    }
-                    & > .mega, & > .horizontal{
-                        display: block;
-                    }
-                }
+                // &.open{
+                //     background: #fff;
+                //     & > .classic{
+                //         max-height: 999px;
+                //         & > li{
+                //             opacity: 1;
+                //         }
+                //     }
+                //     & > .mega, & > .horizontal{
+                //         display: block;
+                //     }
+                // }
                 & > .classic{
                     margin: 0;
                     padding: 0;
