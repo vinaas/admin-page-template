@@ -56,7 +56,7 @@
 
         <div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button"><i class="pg-form"></i> Tạo mới
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#myModal"><i class="pg-form"></i> Tạo mới
                 </button>
 
 
@@ -276,6 +276,98 @@
 </div>
 
 
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Tạo mới <span class="semi-bold">hóa đơn</span></h5>
+                <p>We need payment information inorder to process your order</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class="bold text-uppercase">Thông tin hóa đơn</h6>
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Tên hóa đơn</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="form-group form-group-default">
+                                    <label>Khách hàng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Số HĐ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin khách hàng</h6>
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="inline-block m-r-10 m-b-5">Giới tính</label>
+                                <div class="radio radio-success radio-inline">
+                                    <input type="radio" value="male" name="optionyes" id="male">
+                                    <label for="male">Nam</label>
+                                    <input type="radio" checked="checked" value="female" name="optionyes" id="female">
+                                    <label for="female">Nữ</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="form-group form-group-default">
+                                    <label>Khách hàng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                    <label>Số HĐ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
 
 {{/content}} {{#content "script" mode="append"}}
 
