@@ -81,5 +81,8 @@ Generated From SASS
     width: 20%;
     padding: 0 10px;
     float: left;
+    &.long{
+      width: 30%;
+    }
   }
 }

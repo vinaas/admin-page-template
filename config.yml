@@ -41,7 +41,10 @@ PATHS:
     - "src/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"
     - "src/assets/plugins/jquery-actual/jquery.actual.min.js"
     - "src/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"
+    - "src/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"
+    - "src/assets/plugins/moment/moment.min.js"
     - "src/assets/plugins/select2/js/select2.full.min.js"
+    - "src/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
