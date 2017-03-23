@@ -7,9 +7,15 @@
 */
 .table {
     margin-top: 5px;
+    .radio, .checkbox {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    
     thead {
         tr {
             th {
+                background: $color-master-lightest;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-family:'Roboto';
@@ -18,7 +24,11 @@
                 padding-bottom: 14px;
                 vertical-align: middle;
                 border-bottom: 1px solid fade-out($color-master-light, .3);
-                color:fade-out($color-master-dark, .65);
+                border-top: 1px solid fade-out($color-master-light, .3) !important;
+
+
+                // color:fade-out($color-master-dark, .65);
+                color:$color-menu-dark;
                 &[class*='sorting_'] {
                     color:$color-master-dark;
                 }
@@ -38,7 +48,8 @@
                 background: #fff;
                 border-bottom: 1px solid fade-out($color-master-light, .3);
                 border-top: 0px;
-                padding:20px;
+                padding:5px 10px;
+
                 font-size: 13.5px;
                 .btn-tag {
                     background:fade-out($color-master-dark, .93);

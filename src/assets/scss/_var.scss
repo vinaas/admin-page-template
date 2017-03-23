@@ -12,7 +12,7 @@ $assets-url: "../../assets" !default;
 // --------------------------------------------------
 
 //Base Grey Color
-$color-master: #626262 !default;
+$color-master: #464646 !default;
 
 // Lighter Grey colors
 $color-master-light:mix($color-master, #fff, 16%) !default;
@@ -28,9 +28,9 @@ $color-white: #fff !default;
 $color-black: #000 !default;
 
 $color-success: #10cfbd !default;
-$color-complete : #48b0f7 !default;
+$color-complete : #5bc0de !default;
 $color-primary: #008C45 !default;
-$color-warning: #f8d053 !default;
+$color-warning: #e39717 !default;
 $color-danger: #e90101 !default;
 $color-info: #3b4752 !default;
 
