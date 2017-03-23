@@ -9,7 +9,7 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li>
+            <li class="active">
                 <a href="javascript:;">
  <span class="">Quản lý hóa đơn </span>
 </a>
@@ -25,28 +25,106 @@
     </div>
 </div>
 
-<div class="" data-pages="parallax">
-    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
-        <div class="inner">
-            <!-- START BREADCRUMB -->
-            <ul class="breadcrumb">
-                <li>
-                    <p>Pages</p>
-                </li>
-                <li><a href="#" class="active">Barebone template</a>
-                </li>
-            </ul>
+<!--<div class="" data-pages="parallax">-->
+    <!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
+        <!--<div class="inner">-->
+            <!--&lt;!&ndash; START BREADCRUMB &ndash;&gt;-->
+            <!--<ul class="breadcrumb">-->
+                <!--<li>-->
+                    <!--<p>Pages</p>-->
+                <!--</li>-->
+                <!--<li><a href="#" class="active">Barebone template</a>-->
+                <!--</li>-->
+            <!--</ul>-->
 
 
-            <!-- END BREADCRUMB -->
-        </div>
-    </div>
-</div>
+            <!--&lt;!&ndash; END BREADCRUMB &ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <!-- END JUMBOTRON -->
 <!-- START CONTAINER FLUID -->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title" >Quản lý hóa đơn</h3>
+
+        </div>
+
+        <div class="col-sm-5">
+            <div class="text-right">
+                <button class="btn btn-primary btn-cons m-b-10" type="button"><i class="pg-form"></i> Tạo mới
+                </button>
+
+
+                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <!--<div class="panel-heading">-->
+                    <!--<div class="panel-title">-->
+                        <!--Option #two-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="panel-body">
+                    <h5>
+                       Tìm kiếm
+                    </h5>
+                    <form role="form" lpformnum="2" class="form-filter">
+                        <div class="form-group">
+                            <label>Your name</label>
+                            <span class="help">e.g. </span>
+                            <input type="email" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <span class="help">e.g. "Mona "</span>
+                            <input type="password" class="form-control" required="" >
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <span class="help">e.g. "some"</span>
+                            <input type="email" class="form-control" placeholder="ex: some@example.com" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Placeholder</label>
+                            <span class="help">e.g. </span>
+                            <input type="email" class="form-control" placeholder="ex: some@example.com" required="">
+                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label>Disabled</label>-->
+                            <!--<span class="help">e.g. </span>-->
+                            <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
 </div>
 
 {{/content}} {{/extend}}

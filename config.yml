@@ -30,7 +30,7 @@ PATHS:
   javascript:
     # Libraries required by Foundation
     # - "src/assets/plugins/pace/pace.min.js" 
-    - "src/assets/plugins/jquery/jquery-1.11.1.min.js" 
+    - "src/assets/plugins/jquery/jquery-3.2.0.min.js" 
     - "src/assets/plugins/modernizr.custom.js" 
     - "src/assets/plugins/jquery-ui/jquery-ui.min.js" 
     - "src/assets/plugins/bootstrapv3/js/bootstrap.min.js" 
@@ -41,6 +41,7 @@ PATHS:
     - "src/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"
     - "src/assets/plugins/jquery-actual/jquery.actual.min.js"
     - "src/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"
+    - "src/assets/plugins/select2/js/select2.full.min.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

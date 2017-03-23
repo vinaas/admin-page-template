@@ -263,8 +263,8 @@
                     -webkit-transform: translateX(18px);
                 }
                 .menu-items .icon-thumbnail {
-                    transform: translate3d(-14px, 0, 0);
-                    -webkit-transform: -webkit-translate3d(-14px, 0, 0);   
+                    //transform: translate3d(-14px, 0, 0);
+                    //-webkit-transform: -webkit-translate3d(-14px, 0, 0);
                 }
             }
         }
@@ -524,7 +524,9 @@
         background-color: #fff;
         display: none;
         .bar-inner {
+
             display: block;
+
             max-height: 400px;
             overflow: scroll;
             -webkit-overflow-scrolling: touch;
@@ -666,7 +668,7 @@
     .horizontal-menu .bar{
         display: table !important;
         & + div{
-            padding-top: 50px;
+            padding-top: 60px;
         }
     }
 }
