@@ -36,52 +36,45 @@ Generated From SASS
 30. Demo
 -------------------------------------------------------------------*/
 
+
+
 // Color functions
 @import "color";
-
 // Import Vars
 @import "var";
-
 // Mixins tools
 @import "mixins";
-
 // Includes of Modules
 @import "modules";
-
 // Responsive Util
 @import "responsive";
-
 @import "pageIcon";
+@import "sweetalert/sweetalert";
 
-
-
-.portlet-progress.large{
-     > .progress-circle-indeterminate {
-        width: 90px;
-        height: 90px;
-
-        margin-left: -45px;
+.portlet-progress.large {
+  >.progress-circle-indeterminate {
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
     margin-top: -45px;
-    }
-
-    .loading-logo{
-        position: absolute;
-        top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%); 
-   font-size: 18px;
-   font-weight: bold;
-    }
+  }
+  .loading-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
-
-.form-filter{
+.form-filter {
   margin: 0 -10px;
-  .form-group{
+  .form-group {
     width: 20%;
     padding: 0 10px;
     float: left;
-    &.long{
+    &.long {
       width: 30%;
     }
   }

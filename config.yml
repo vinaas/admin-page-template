@@ -26,6 +26,7 @@ PATHS:
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "bower_components/bourbon/app/assets/stylesheets"
+    - "bower_components/bootstrap-sass/assets/stylesheets"
   # Paths to JavaScript libraries, which are combined into one file
   javascript:
     # Libraries required by Foundation
@@ -45,6 +46,7 @@ PATHS:
     - "src/assets/plugins/moment/moment.min.js"
     - "src/assets/plugins/select2/js/select2.full.min.js"
     - "src/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
+    - "bower_components/sweetalert/dist/sweetalert.min.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

@@ -161,7 +161,7 @@ function styleGuide(done) {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
-  return gulp.src('src/assets/scss/pages.scss')
+  return gulp.src(['src/assets/scss/pages.scss', 'src/assets/scss/bootstrap.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
