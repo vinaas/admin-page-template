@@ -87,9 +87,9 @@ function pages(){
           destination :'/dist',
 
           use: [
-            metadata({
-              directory: 'src/data/**/*.json'
-            }),
+            // metadata({
+            //   directory: 'src/data/**/*.json'
+            // }),
             metalsmithMatters({
                 '_enable': true,
                 'delims':  ['---json', '---'],

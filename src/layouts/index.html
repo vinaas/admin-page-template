@@ -239,7 +239,7 @@
 <i class="fa fa-cog"></i>
 </button>
                                             <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                <li><a href="#"><i class="fa fa-edit"></i> Sửa</a>
+                                                <li><a href="#" data-toggle="modal" data-target="#myModalUpdate"><i class="fa fa-edit"></i> Sửa</a>
                                                 </li>
                                                
                                         
@@ -379,6 +379,60 @@
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-default  m-t-5">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="myModalUpdate" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Cập nhập <span class="semi-bold"> thông tin khách hàng</span></h5>
+                <p>Thông tin lưu ý khi cập nhập hóa đơn</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class="bold text-uppercase">Thông tin khách hàng</h6>
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Tên khách hàng</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Địa chỉ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                  
+                </form>
+                <div class="row">
+                 
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
                     </div>
                 </div>
             </div>
