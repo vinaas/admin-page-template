@@ -36,8 +36,6 @@ Generated From SASS
 30. Demo
 -------------------------------------------------------------------*/
 
-
-
 // Color functions
 @import "color";
 // Import Vars
@@ -50,10 +48,8 @@ Generated From SASS
 @import "responsive";
 @import "pageIcon";
 @import "sweetalert/sweetalert";
-
 @import "aggrid";
 @import "auModal";
-
 .portlet-progress.large {
   >.progress-circle-indeterminate {
     width: 90px;
@@ -81,4 +77,9 @@ Generated From SASS
       width: 30%;
     }
   }
+}
+
+.modal,
+.modal.fade.in {
+  background-color: rgba(0, 0, 0, 0.4);
 }

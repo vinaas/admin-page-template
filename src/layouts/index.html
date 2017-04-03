@@ -235,14 +235,14 @@
                                     <td class="v-align-middle">
 
                                         <div class="dropdown pull-right">
-                                            <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fa fa-cog"></i>
 </button>
                                             <ul class="dropdown-menu profile-dropdown" role="menu">
                                                 <li><a href="#" data-toggle="modal" data-target="#myModalUpdate"><i class="fa fa-edit"></i> Sửa</a>
                                                 </li>
-                                               
-                                        
+
+
                                                 <li class="bg-master-lighter">
                                                     <a href="#" class="clearfix">
                                                         <span class="pull-left">Xóa</span>
@@ -298,7 +298,7 @@
 
 
 <!-- MODAL STICK UP  -->
-<div class="modal fade stick-up" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade stick-up" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
@@ -334,6 +334,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                            
+                                <th>Title</th>
+                                <th>Places</th>
+                                <th>Activities</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               
+                                <td class="v-align-middle ">
+                                    First Tour
+                                </td>
+                                <td class="v-align-middle">
+                                    United States, India, China,Africa
+                                </td>
+                                <td class="v-align-middle">
+                                    it is more
+                                </td>
+                                <td class="v-align-middle">
+                                    Public
+                                </td>
+                              
+                            </tr>
+
+                        </tbody>
+                    </table>
 
                     <h6 class="bold text-uppercase m-t-20">Thông tin khách hàng</h6>
                     <div class="form-group-attached">
@@ -378,7 +409,7 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-default  m-t-5">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#myModalUpdate">Hoàn tất</button>
                     </div>
                 </div>
             </div>
@@ -394,7 +425,7 @@
 
 
 <!-- MODAL STICK UP  -->
-<div class="modal fade stick-up" id="myModalUpdate" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade stick-up" id="myModalUpdate" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
@@ -422,14 +453,14 @@
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                          
+
                         </div>
                     </div>
 
-                  
+
                 </form>
                 <div class="row">
-                 
+
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-default  m-t-5">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
