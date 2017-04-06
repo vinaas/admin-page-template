@@ -83,3 +83,29 @@ Generated From SASS
 .modal.fade.in {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.select2-container--open{
+  z-index: 9999;
+}
+
+.select2-small{
+ .select2-container .select2-selection.select2-selection--single{
+      height: 21px;
+      padding: 0;
+      .select2-selection__rendered{
+            line-height: 17px;
+    padding: 0;
+      }
+}
+}
+
+.table-small{
+  margin-bottom: 0;
+  &.table thead tr th{
+    text-transform: capitalize;
+    padding-top: 8px;
+    padding-bottom: 8px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+  }
+}
