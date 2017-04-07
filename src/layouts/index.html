@@ -444,7 +444,7 @@
 
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày hiệu lực</label>
-                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-doitac1" >
                                     <span class="input-group-addon">
 <i class="fa fa-calendar"></i>
 </span>
@@ -458,7 +458,7 @@
 
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày kết thúc</label>
-                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-doitac2">
                                     <span class="input-group-addon">
 <i class="fa fa-calendar"></i>
 </span>
@@ -471,7 +471,7 @@
                     </div>
 
 
-                    <h6 class="bold text-uppercase m-t-20">Loại tiền thanh toán 
+                    <h6 class="bold text-uppercase m-t-20">Loại tiền thanh toán
 
                     </h6>
                     <div class="form-group-attached">
@@ -507,12 +507,12 @@
 
                         </div>
 
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10">Thêm mới</button>
+                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
                     </div>
 
 
                     <h6 class="bold text-uppercase m-t-20">Loại tiền giao dịch &nbsp;
-                       
+
                     </h6>
                     <div class="form-group-attached">
 
@@ -547,11 +547,11 @@
 
                         </div>
 
-                         <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10">Thêm mới</button>
+                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
                     </div>
 
                     <h6 class="bold text-uppercase m-t-20">Loại tiền chi &nbsp;
-                       
+
 
                     </h6>
                     <div class="form-group-attached">
@@ -586,17 +586,31 @@
 
 
                         </div>
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10">Thêm mới</button>
+                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
                     </div>
 
-                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ 
+                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
 
                     </h6>
                     <div class="form-group-attached">
 
                         <div class="row">
                             <div class="col-sm-12">
-                              
+                                <div class="checkbox check-success">
+                                    <input type="checkbox" checked="checked"  value="" id="po">
+                                    <label for="po"><b> PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox"  value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
 
                             </div>
 
@@ -758,6 +772,66 @@
 
 
 
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="addMoneyType" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Loại tiền <span class="semi-bold"> thanh toán</span></h5>
+                <p>Thông tin lưu ý khi cập nhập loại tiền</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="optionyes" id="usd">
+                                    <label for="usd">USD</label>
+                                    <input type="radio" checked="checked" value="no" name="optionyes" id="vnd">
+                                    <label for="vnd">VND</label>
+
+                                    <input type="radio" checked="checked" value="no" name="optionyes" id="eur">
+                                    <label for="eur">EUR</label>
+
+                                    <input type="radio" checked="checked" value="no" name="optionyes" id="gpt">
+                                    <label for="gpt">GBP</label>
+
+                                    <input type="radio" checked="checked" value="no" name="optionyes" id="jpy">
+                                    <label for="jpy">JPY</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default">
+                                    <label>Số tiền</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </form>
+                <div class="row">
+
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
 
 
 <!-- MODAL STICK UP  -->
@@ -814,7 +888,13 @@
 
 
 <script>
-    $('#datepicker-range,#datepicker-component, #datepicker-component2').datepicker();
+    $('#datepicker-range,#datepicker-component, #datepicker-component2').datepicker({
+        container:'#createDoiTac'
+    });
+
+    $('#datepicker-doitac1, #datepicker-doitac2').datepicker({
+        container:'#createDoiTac'
+    })
 </script>
 
 {{/content}} {{/extend}}

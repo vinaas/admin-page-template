@@ -113,3 +113,23 @@ Generated From SASS
 .form-group-attached{
   padding: 5px 15px;
 }
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+// .modal{
+    .select2-drop-active{
+        z-index: 1051;
+    }
+    .datepicker.dropdown-menu{
+        z-index: 1051 !important;
+    }
+    .select2-drop-mask{
+        z-index: 1050;
+    }
+    .cs-skin-slide.cs-active{
+        z-index: 1050;
+    }
+// }
