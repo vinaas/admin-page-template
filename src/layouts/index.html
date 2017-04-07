@@ -444,7 +444,7 @@
 
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày hiệu lực</label>
-                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-doitac1" >
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
                                     <span class="input-group-addon">
 <i class="fa fa-calendar"></i>
 </span>
@@ -458,7 +458,7 @@
 
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày kết thúc</label>
-                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-doitac2">
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
                                     <span class="input-group-addon">
 <i class="fa fa-calendar"></i>
 </span>
@@ -888,13 +888,7 @@
 
 
 <script>
-    $('#datepicker-range,#datepicker-component, #datepicker-component2').datepicker({
-        container:'#createDoiTac'
-    });
-
-    $('#datepicker-doitac1, #datepicker-doitac2').datepicker({
-        container:'#createDoiTac'
-    })
+    $('#datepicker-range,#datepicker-component, #datepicker-component2').datepicker();
 </script>
 
 {{/content}} {{/extend}}
