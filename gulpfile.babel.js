@@ -4,6 +4,7 @@ import plugins  from 'gulp-load-plugins';
 import yargs    from 'yargs';
 import browser  from 'browser-sync';
 import gulp     from 'gulp';
+import ghPages from 'gulp-gh-pages';
 import panini   from 'panini';
 import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
@@ -31,6 +32,11 @@ const PRODUCTION = !!(yargs.argv.production);
 
 // Load settings from settings.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({remoteUrl:'https://github.com/vinaas/admin-page-template.git'}));
+});
 
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
