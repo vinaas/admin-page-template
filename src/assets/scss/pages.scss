@@ -110,9 +110,10 @@ Generated From SASS
   }
 }
 
-.modal .form-group-attached , .modal .form-group {
+.modal .form-group-attached  {
   padding: 5px 15px;
 }
+
 
 .modal {
   overflow-x: hidden;
@@ -160,4 +161,12 @@ Generated From SASS
     font-size: 13px;
     font-weight: normal;
     text-transform: initial;
+}
+
+.input-black{
+  color: black !important;
+}
+
+.form-group-default.disabled input {
+    opacity: 1;
 }
