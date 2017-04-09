@@ -84,52 +84,80 @@ Generated From SASS
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.select2-container--open{
+.select2-container--open {
   z-index: 9999;
 }
 
-.select2-small{
- .select2-container .select2-selection.select2-selection--single{
-      height: 21px;
-      padding: 0;
-      .select2-selection__rendered{
-            line-height: 17px;
+.select2-small {
+  .select2-container .select2-selection.select2-selection--single {
+    height: 21px;
     padding: 0;
-      }
-}
-}
-
-.table-small{
-  margin-bottom: 0;
-  &.table thead tr th{
-    text-transform: capitalize;
-    padding-top: 8px;
-    padding-bottom: 8px;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+    .select2-selection__rendered {
+      line-height: 17px;
+      padding: 0;
+    }
   }
 }
 
-.form-group-attached{
+.table-small {
+  margin-bottom: 0;
+  &.table thead tr th {
+    text-transform: capitalize;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+.modal .form-group-attached , .modal .form-group {
   padding: 5px 15px;
 }
 
 .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 // .modal{
-    .select2-drop-active{
-        z-index: 1051;
-    }
-    .datepicker.dropdown-menu{
-        z-index: 1051 !important;
-    }
-    .select2-drop-mask{
-        z-index: 1050;
-    }
-    .cs-skin-slide.cs-active{
-        z-index: 1050;
-    }
+.select2-drop-active {
+  z-index: 1051;
+}
+
+.datepicker.dropdown-menu {
+  z-index: 1051 !important;
+}
+
+.select2-drop-mask {
+  z-index: 1050;
+}
+
+.cs-skin-slide.cs-active {
+  z-index: 1050;
+}
+
 // }
+.table {
+  .radio label,
+  .checkbox label {
+    margin-right: 0
+  }
+}
+
+.static-info {
+  margin-bottom: 10px;
+  .name {}
+  .value {
+    font-weight: bold;
+  }
+}
+
+.panel-body .static-info:last-child{
+  margin-bottom: 0
+}
+
+.form-group .radio label,.form-group  .checkbox label {
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: initial;
+}
