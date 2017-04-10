@@ -4,7 +4,8 @@
     "slug": "",
     "description": "Index Page",
     "layout": "doitac-hanmuc.html",
-    "permalink" : false
+    "permalink" : false,
+    "activeLink" : "doitac-hanmuc"
 }
 ---
 

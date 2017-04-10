@@ -4,7 +4,8 @@
     "slug": "",
     "description": "Index Page",
     "layout": "doitac-hopdong.html",
-    "permalink" : false
+    "permalink" : false,
+    "activeLink" : "doitac-hopdong"
 }
 ---
 
