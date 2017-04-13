@@ -1467,40 +1467,6 @@
 <!-- END MODAL STICK UP  -->
 
 
-<!-- MODAL STICK UP  -->
-<div class="modal fade stick-up" id="modalXoa" data-backdrop="static" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header clearfix text-left">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
-                  </button>
-
-
-                <h3 class="text-center m-t-20 m-b-20">
-                    Xác nhận xóa
-                </h3>
-
-
-
-
-            </div>
-            <div class="modal-body">
-
-                <div class="row">
-
-                    <div class="col-sm-12 m-t-10 text-center">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-danger  m-t-5">Xóa</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!-- END MODAL STICK UP  -->
-
 
 
 
@@ -1595,7 +1561,7 @@
                     <thead>
                         <tr>
 
-                  
+
                             <th>STT</th>
                             <th>Ngày</th>
                             <th>Tên giao dịch</th>
@@ -1611,7 +1577,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                      
+
 
                             <td class="v-align-middle">
                                 1
@@ -1663,7 +1629,7 @@
                         </tr>
 
                         <tr>
-                       
+
                             <td class="v-align-middle">
                                 1
                             </td>
@@ -1878,6 +1844,330 @@
 
 
 <!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="createHoaHong" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Tạo mới <span class="semi-bold">Hoa hồng</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới hoa hồng</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+
+                            <div class="form-group form-group-attached">
+                                <label>Tên đối tác</label>
+                                <span class="help"> </span>
+
+                                <select class="full-width " data-init-plugin="select2">
+                                        <option value="AK" disabled selected>Chọn đối tác</option>
+                                        <option value="AK">Nguyễn Văn B</option>
+                                        <option value="HI">Nguyễn Văn A</option>
+
+                                    
+                              
+                                  </select>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <div class="form-group  form-group-attached">
+                                <label>ID đối tác</label>
+
+                                <div class="input-group ">
+                                    <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group   form-group-attached">
+                        <label>Tên đối tác</label>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="diaBan" id="diaBan-tinh">
+                                    <label for="diaBan-tinh">Tỉnh</label>
+                                    <input type="radio" checked="checked" value="no" name="diaBan" id="diaBan-thanhpho">
+                                    <label for="diaBan-thanhpho">Thành phố</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ</h6>
+
+                    <div class="form-group   form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" checked="checked" name="" id="dv-po">
+                                    <label for="dv-po">PO</label>
+                                    <input type="checkbox" value="" name="" id="dv-pr">
+                                    <label for="dv-pr">PR</label>
+
+                                    <input type="checkbox" value="" name="" id="dv-ad">
+                                    <label for="dv-ad">AD (OCB)</label>
+
+                                    <br>
+                                    <br>
+
+                                    <input type="checkbox" value="" name="" id="dv-pb">
+                                    <label for="dv-pb">PB</label>
+
+                                    <input type="checkbox" value="" name="" id="dv-hd">
+                                    <label for="dv-hd">HD</label>
+
+                                    <input type="checkbox" value="" name="" id="dv-ad2">
+                                    <label for="dv-ad2">AD (Other bank)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <h6 class="bold text-uppercase m-t-20">Loại hoa hồng</h6>
+
+                    <div class="form-group   form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="loaiHoaHong" id="loaiHoaHong-hanmuc">
+                                    <label for="loaiHoaHong-hanmuc">Hạn mức</label>
+                                    <input type="radio" checked="checked" value="no" name="loaiHoaHong" id="loaiHoaHong-codinh">
+                                    <label for="loaiHoaHong-codinh">Cố định</label>
+
+                                    <input type="radio" checked="checked" value="no" name="loaiHoaHong" id="loaiHoaHong-doanhsothang">
+                                    <label for="loaiHoaHong-doanhsothang">Doanh số tháng</label>
+
+                                    <input type="radio" checked="checked" value="no" name="loaiHoaHong" id="loaiHoaHong-phinguoigui">
+                                    <label for="loaiHoaHong-phinguoigui">Phí người gửi</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-group-attached">
+
+                        <table class="table table-hover table-small" id="">
+                            <thead>
+                                <tr>
+
+                                    <th style="width:20%">hạn mức</th>
+                                    <th style="width:20%">Mức phí</th>
+                                    <th style="width:20%">Phần trăm</th>
+                                    <th style="width:20%">Loại tiền</th>
+                                    <th style="width:20%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle ">0.1 - 3000</td>
+                                    <td class="v-align-middle ">0.2</td>
+                                    <td class="v-align-middle">Phần trăm</td>
+                                    <td class="v-align-middle bold">
+                                        <span class="label label-default">USD</span>
+                                        <span class="label label-default">CAD</span>
+
+                                    </td>
+                                    <td class="v-align-middle text-center">
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMoneyType"> <i class="fa fa-edit"></i> Sửa</button>
+                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addHoaHong">Thêm mới</button>
+                    </div>
+
+
+                </form>
+
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="addHoaHong" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Thêm loại hoa hồng <span class="semi-bold"> hạn mức</span></h5>
+                <p>Thông tin lưu ý khi cập nhập loại tiền</p>
+            </div>
+            <div class="modal-body">
+
+                <form role="form">
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin</h6>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group form-group-attached">
+                                <label>Khoảng hạn mức</label>
+                                <!--<span class="help">e.g. "Mona Lisa Portrait"</span>-->
+                                <input type="text" class="form-control" placeholder="Từ">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label for="">&nbsp;</label>
+
+                            <div class="form-group form-group-attached">
+                                <!--<span class="help">e.g. "Mona Lisa Portrait"</span>-->
+                                <input type="text" class="form-control" placeholder="Đến">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group form-group-attached">
+                                <label>Mức phí</label>
+                                <!--<span class="help">e.g. "Mona Lisa Portrait"</span>-->
+                                <input type="text" class="form-control" placeholder="0.2">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8">
+
+                            <div class="form-group   form-group-attached">
+                                <label>Loại phí</label>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="radio m-t-10 radio-primary">
+                                            <input type="radio" checked="checked" name="mucPhi" id="phantram">
+                                            <label for="phantram">Phần trăm</label>
+                                            <input type="radio" name="mucPhi" id="phifix">
+                                            <label for="phifix">Phí fix</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <h6 class="bold text-uppercase m-t-20">Loại tiền</h6>
+
+                    <div class="form-group   form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" checked="checked" name="" id="">
+                                    <label for="">USD</label>
+
+                                    <input type="checkbox" value="" name="" id="">
+                                    <label for="">EUR</label>
+
+                                    <input type="checkbox" value="" name="" id="">
+                                    <label for="">AUD</label>
+
+                                    <br>
+                                    <br>
+
+                                    <input type="checkbox" value="" name="" id="">
+                                    <label for="">USD</label>
+
+                                    <input type="checkbox" value="" name="" id="">
+                                    <label for="">EUR</label>
+
+                                    <input type="checkbox" value="" name="" id="">
+                                    <label for="">AUD</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </form>
+
+
+
+                <div class="row">
+
+                    <div class="col-sm-12 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="addMoneyType" data-backdrop="static" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1928,6 +2218,41 @@
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalXoa" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+
+
+                <h3 class="text-center m-t-20 m-b-20">
+                    Xác nhận xóa
+                </h3>
+
+
+
+
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12 m-t-10 text-center">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5">Xóa</button>
                     </div>
                 </div>
             </div>
