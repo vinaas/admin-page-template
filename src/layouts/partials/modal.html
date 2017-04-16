@@ -373,35 +373,7 @@
 
                     <h6 class="bold text-uppercase m-t-20">Loại tiền chuyển đến</h6>
 
-
-                    <div class="form-group-attached">
-
-                        <table class="table table-hover table-condensed table-small" id="">
-                            <thead>
-                                <tr>
-
-                                    <th style="width:20%">Loại tiền</th>
-                                    <th style="width:40%">Số tiền</th>
-                                    <th style="width:40%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle bold">USD</td>
-                                    <td class="v-align-middle">5,000</td>
-                                    <td class="v-align-middle text-center">
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMoneyType"> <i class="fa fa-edit"></i> Sửa</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
-                    </div>
+                    {{> loaitien}}
 
 
 
@@ -1062,7 +1034,7 @@
                     <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
 
 
-                   {{> loaitien-hanmuc}}
+                    {{> loaitien-hanmuc}}
 
 
                 </form>
@@ -1494,13 +1466,13 @@
             </div>
             <div class="modal-body">
                 <form role="form">
-                  
+
                     <div class="form-group">
                         <label>Nội dung</label>
                         <!--<span class="help">e.g. "some@example.com"</span>-->
                         <textarea rows="" cols="" class="form-control"></textarea>
                     </div>
-                   
+
                 </form>
                 <div class="row">
 
