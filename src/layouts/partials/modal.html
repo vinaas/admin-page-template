@@ -105,13 +105,21 @@
 
                     <div class="form-group-attached">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-2">
                                 <div class="form-group form-group-default required">
                                     <label>Số hợp đồng</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
 
 
                                 <div class="form-group form-group-default input-group col-sm-10">
@@ -125,7 +133,7 @@
 
                             </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
 
 
                                 <div class="form-group form-group-default input-group col-sm-10">
@@ -152,18 +160,42 @@
                     <h6 class="bold text-uppercase m-t-20">Loại tiền giao dịch &nbsp;
 
                     </h6>
-                     {{> loaitien}}
+                    {{> loaitien}}
 
                     <h6 class="bold text-uppercase m-t-20">Loại tiền chi &nbsp;
 
 
                     </h6>
-                     {{> loaitien}}
+                    {{> loaitien}}
 
                     <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
 
                     </h6>
-                     {{> loaitien}}
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" id="po">
+                                    <label for="po"><b> PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox" value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
                 </form>
 
 
@@ -866,7 +898,7 @@
 
                                 <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
 
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
 
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
 
@@ -898,15 +930,15 @@
                             </td>
 
                             <td class="v-align-middle">
-                              TP HCM
+                                TP HCM
                             </td>
 
                             <td class="v-align-middle">
-                               PO
+                                PO
                             </td>
 
                             <td class="v-align-middle">
-                               Cố định
+                                Cố định
                             </td>
 
                             <td class="v-align-middle">
