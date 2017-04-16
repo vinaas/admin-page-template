@@ -1062,37 +1062,7 @@
                     <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
 
 
-                    <div class="form-group-attached">
-
-                        <table class="table table-hover table-condensed table-small" id="">
-                            <thead>
-                                <tr>
-
-                                    <th style="width:20%">Loại tiền</th>
-                                    <th style="width:30%">Phí xử lý</th>
-                                    <th style="width:30%">Hạn mức</th>
-                                    <th style="width:20%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle bold">USD</td>
-                                    <td class="v-align-middle">0</td>
-                                    <td class="v-align-middle">0,2</td>
-                                    <td class="v-align-middle text-center">
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMoneyType"> <i class="fa fa-edit"></i> Sửa</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
-                    </div>
-
+                   {{> loaitien-hanmuc}}
 
 
                 </form>
@@ -1572,6 +1542,41 @@
                     <div class="col-sm-12 m-t-10 text-center">
                         <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-danger  m-t-5">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalDuyet" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+
+
+                <h3 class="text-center m-t-20 m-b-20">
+                    Xác nhận duyệt
+                </h3>
+
+
+
+
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12 m-t-10 text-center">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-dismiss="modal">Hoàn thành</button>
                     </div>
                 </div>
             </div>
