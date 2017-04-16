@@ -1,0 +1,31 @@
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifCond activeLink 'phongkinhdoanh'}} active {{else}} {{/ifCond}}">
+                <a href="phongkinhdoanh.html">
+                    <span class="">Danh sách nhập liệu </span>
+                </a>
+            </li>
+
+              <li class="{{#ifCond activeLink 'phongkinhdoanh-duyet'}} active {{else}} {{/ifCond}}">
+                <a href="phongkinhdoanh-duyet.html">
+                    <span class="">Danh sách duyệt</span>
+                </a>
+            </li>
+
+            <li class="{{#ifCond activeLink 'phongkinhdoanh-thongke'}} active {{else}} {{/ifCond}}">
+                <a href="phongkinhdoanh-thongke.html">
+                    <span class="">Thống kê</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
