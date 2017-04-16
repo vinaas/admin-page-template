@@ -46,6 +46,7 @@ PATHS:
     - "src/assets/plugins/moment/moment.min.js"
     - "src/assets/plugins/select2/js/select2.full.min.js"
     - "src/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
+    - "src/assets/plugins/jquery-autonumeric/autoNumeric.js"
     - "bower_components/sweetalert/dist/sweetalert.min.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"

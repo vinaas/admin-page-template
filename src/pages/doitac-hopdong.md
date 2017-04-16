@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-hopdong.html",
     "permalink" : false,
-    "activeLink" : "doitac-hopdong"
+    "activeLink" : "index"
 }
 ---
 
