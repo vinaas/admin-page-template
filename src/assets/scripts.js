@@ -341,8 +341,11 @@
     Pages.prototype.initSelect2Plugin = function(context) {
         $.fn.select2 && $('[data-init-plugin="select2"]', context).each(function() {
             $(this).select2({
-                minimumResultsForSearch: ($(this).attr('data-disable-search') == 'true' ? -1 : 1)
+                placeholder: $(this).attr('data-placeholder'),
+                minimumResultsForSearch: ($(this).attr('data-disable-search') == 'true' ? -1 : 1),
+                
             }).on('select2:open', function() {
+                // console.log($(this).attr('data-placeholder'));
                 $.fn.scrollbar && $('.select2-results__options').scrollbar({
                     ignoreMobile: false
                 })
