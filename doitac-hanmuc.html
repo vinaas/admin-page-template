@@ -74,11 +74,19 @@
           <span class="icon-thumbnail "><i class="fa fa-group"></i></span>
         </li>
         <li class="">
-          <a href="#">
-            <span class="title">Quản lý số dư</span>
+          <a href="phongkinhdoanh.html">
+            <span class="title">Phòng kinh doanh</span>
           </a>
-          <span class="icon-thumbnail "><i class="pg-social"></i></span>
+          <span class="icon-thumbnail "><i class="fa fa-money"></i></span>
         </li>
+
+        <li class="">
+          <a href="banlanhdao.html">
+            <span class="title">Ban lãnh đạo</span>
+          </a>
+          <span class="icon-thumbnail "><i class="fa fa-users"></i></span>
+        </li>
+
         <li class="">
           <a href="javascript:;">
             <span class="title">Quản lý nhân viên</span>
@@ -278,7 +286,8 @@
                   </li>
                 </ul>
                 <!-- END NOTIFICATIONS LIST -->
-                <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> </div>
+                <!--<a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>-->
+                 </div>
             </div>
             <div class=" pull-right">
               <div class="header-inner">
@@ -523,7 +532,7 @@
 
                                     <th style="width: 300px">Hạn mức tín dụng</th>
 
-                                    <th style="width: 200px"></th>
+                                    <th style=""></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -550,7 +559,7 @@
                                     <td class="v-align-middle">
 
                                         <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalXoa"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
                                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối</button>
                                         </div>
 
@@ -706,13 +715,21 @@
 
                     <div class="form-group-attached">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-2">
                                 <div class="form-group form-group-default required">
                                     <label>Số hợp đồng</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
 
 
                                 <div class="form-group form-group-default input-group col-sm-10">
@@ -726,7 +743,7 @@
 
                             </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
 
 
                                 <div class="form-group form-group-default input-group col-sm-10">
@@ -809,187 +826,155 @@
                     <h6 class="bold text-uppercase m-t-20">Loại tiền giao dịch &nbsp;
 
                     </h6>
-                     <div class="form-group-attached">
-                     
-                         <div class="row">
-                             <div class="col-sm-12">
-                                 <div class="checkbox check-primary">
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
-                                     <label for="usd">USD</label>
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
-                                     <label for="vnd">VND</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="eur">
-                                     <label for="eur">EUR</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="gpt">
-                                     <label for="gpt">GBP</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="jpy">
-                                     <label for="jpy">JPY</label>
-                                 </div>
-                             </div>
-                             <div class="col-sm-8">
-                                 <table class="table table-hover table-small" id="">
-                                     <thead>
-                                         <tr>
-                                             <th style="width:20%">Loại tiền</th>
-                                             <th style="width:50%">Số tiền chuyển trước</th>
-                                         </tr>
-                                     </thead>
-                                     <tbody>
-                                         <tr>
-                                             <td class="v-align-middle bold">USD</td>
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                         <tr>
-                                             <td class="v-align-middle bold">VND</td>
-                     
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                     </tbody>
-                                 </table>
-                     
-                             </div>
-                     
-                     
-                         </div>
-                     
-                         <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
-                     </div>
+                    <div class="form-group-attached">
+                    
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                    <label for="usd">USD</label>
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                    <label for="vnd">VND</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="eur">
+                                    <label for="eur">EUR</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="gpt">
+                                    <label for="gpt">GBP</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="jpy">
+                                    <label for="jpy">JPY</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <table class="table table-hover table-small" id="">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%">Loại tiền</th>
+                                            <th style="width:50%">Số tiền chuyển trước</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle bold">USD</td>
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                        <tr>
+                                            <td class="v-align-middle bold">VND</td>
+                    
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                    
+                    
+                        </div>
+                    
+                        <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
+                    </div>
                     <h6 class="bold text-uppercase m-t-20">Loại tiền chi &nbsp;
 
 
                     </h6>
-                     <div class="form-group-attached">
-                     
-                         <div class="row">
-                             <div class="col-sm-12">
-                                 <div class="checkbox check-primary">
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
-                                     <label for="usd">USD</label>
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
-                                     <label for="vnd">VND</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="eur">
-                                     <label for="eur">EUR</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="gpt">
-                                     <label for="gpt">GBP</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="jpy">
-                                     <label for="jpy">JPY</label>
-                                 </div>
-                             </div>
-                             <div class="col-sm-8">
-                                 <table class="table table-hover table-small" id="">
-                                     <thead>
-                                         <tr>
-                                             <th style="width:20%">Loại tiền</th>
-                                             <th style="width:50%">Số tiền chuyển trước</th>
-                                         </tr>
-                                     </thead>
-                                     <tbody>
-                                         <tr>
-                                             <td class="v-align-middle bold">USD</td>
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                         <tr>
-                                             <td class="v-align-middle bold">VND</td>
-                     
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                     </tbody>
-                                 </table>
-                     
-                             </div>
-                     
-                     
-                         </div>
-                     
-                         <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
-                     </div>
+                    <div class="form-group-attached">
+                    
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                    <label for="usd">USD</label>
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                    <label for="vnd">VND</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="eur">
+                                    <label for="eur">EUR</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="gpt">
+                                    <label for="gpt">GBP</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="jpy">
+                                    <label for="jpy">JPY</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <table class="table table-hover table-small" id="">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%">Loại tiền</th>
+                                            <th style="width:50%">Số tiền chuyển trước</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle bold">USD</td>
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                        <tr>
+                                            <td class="v-align-middle bold">VND</td>
+                    
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                    
+                    
+                        </div>
+                    
+                        <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
+                    </div>
                     <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
 
                     </h6>
-                     <div class="form-group-attached">
-                     
-                         <div class="row">
-                             <div class="col-sm-12">
-                                 <div class="checkbox check-primary">
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
-                                     <label for="usd">USD</label>
-                                     <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
-                                     <label for="vnd">VND</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="eur">
-                                     <label for="eur">EUR</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="gpt">
-                                     <label for="gpt">GBP</label>
-                     
-                                     <input type="checkbox" value="" name="optionyes" id="jpy">
-                                     <label for="jpy">JPY</label>
-                                 </div>
-                             </div>
-                             <div class="col-sm-8">
-                                 <table class="table table-hover table-small" id="">
-                                     <thead>
-                                         <tr>
-                                             <th style="width:20%">Loại tiền</th>
-                                             <th style="width:50%">Số tiền chuyển trước</th>
-                                         </tr>
-                                     </thead>
-                                     <tbody>
-                                         <tr>
-                                             <td class="v-align-middle bold">USD</td>
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                         <tr>
-                                             <td class="v-align-middle bold">VND</td>
-                     
-                                             <td class="v-align-middle">
-                                                 <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
-                                             </td>
-                     
-                                         </tr>
-                     
-                     
-                                     </tbody>
-                                 </table>
-                     
-                             </div>
-                     
-                     
-                         </div>
-                     
-                         <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
-                     </div>                </form>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" id="po">
+                                    <label for="po"><b> PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox" value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
 
 
 
@@ -1166,36 +1151,64 @@
 
                     <h6 class="bold text-uppercase m-t-20">Loại tiền chuyển đến</h6>
 
-
                     <div class="form-group-attached">
-
-                        <table class="table table-hover table-condensed table-small" id="">
-                            <thead>
-                                <tr>
-
-                                    <th style="width:20%">Loại tiền</th>
-                                    <th style="width:40%">Số tiền</th>
-                                    <th style="width:40%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle bold">USD</td>
-                                    <td class="v-align-middle">5,000</td>
-                                    <td class="v-align-middle text-center">
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMoneyType"> <i class="fa fa-edit"></i> Sửa</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
+                    
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                    <label for="usd">USD</label>
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                    <label for="vnd">VND</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="eur">
+                                    <label for="eur">EUR</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="gpt">
+                                    <label for="gpt">GBP</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="jpy">
+                                    <label for="jpy">JPY</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <table class="table table-hover table-small" id="">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%">Loại tiền</th>
+                                            <th style="width:50%">Số tiền chuyển trước</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle bold">USD</td>
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                        <tr>
+                                            <td class="v-align-middle bold">VND</td>
+                    
+                                            <td class="v-align-middle">
+                                                <input type="text" data-m-dec="0" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                                            </td>
+                    
+                                        </tr>
+                    
+                    
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                    
+                    
+                        </div>
+                    
+                        <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
                     </div>
-
 
 
                 </form>
@@ -1691,7 +1704,7 @@
 
                                 <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
 
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
 
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
 
@@ -1723,15 +1736,15 @@
                             </td>
 
                             <td class="v-align-middle">
-                              TP HCM
+                                TP HCM
                             </td>
 
                             <td class="v-align-middle">
-                               PO
+                                PO
                             </td>
 
                             <td class="v-align-middle">
-                               Cố định
+                                Cố định
                             </td>
 
                             <td class="v-align-middle">
@@ -1856,37 +1869,65 @@
 
 
                     <div class="form-group-attached">
-
-                        <table class="table table-hover table-condensed table-small" id="">
-                            <thead>
-                                <tr>
-
-                                    <th style="width:20%">Loại tiền</th>
-                                    <th style="width:30%">Phí xử lý</th>
-                                    <th style="width:30%">Hạn mức</th>
-                                    <th style="width:20%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle bold">USD</td>
-                                    <td class="v-align-middle">0</td>
-                                    <td class="v-align-middle">0,2</td>
-                                    <td class="v-align-middle text-center">
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addMoneyType"> <i class="fa fa-edit"></i> Sửa</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>
+                    
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                    <label for="usd">USD</label>
+                                    <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                    <label for="vnd">VND</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="eur">
+                                    <label for="eur">EUR</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="gpt">
+                                    <label for="gpt">GBP</label>
+                    
+                                    <input type="checkbox" value="" name="optionyes" id="jpy">
+                                    <label for="jpy">JPY</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <table class="table table-hover table-small" id="">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%">Loại tiền</th>
+                                            <th style="width:30%">Phí xử lý</th>
+                                            <th style="width:30%">Hạn mức</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                    
+                                            <td class="v-align-middle bold">USD</td>
+                                            <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                            <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                    
+                    
+                                        </tr>
+                    
+                    
+                                        <tr>
+                                            <td class="v-align-middle bold">VND</td>
+                                            <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                            <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                    
+                    
+                    
+                                        </tr>
+                    
+                    
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                    
+                    
+                        </div>
+                    
+                        <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
                     </div>
-
-
 
                 </form>
 
@@ -2114,6 +2155,202 @@
 
 
 
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalKinhDoanhTyGia" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Tạo mới <span class="semi-bold">Tỷ giá trao đổi với đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="form-group form-group-attached">
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
+
+                        <select class="full-width " data-init-plugin="select2">
+                                        <option value="AK" disabled selected>Chọn đối tác</option>
+                                        <option value="AK">Nguyễn Văn B</option>
+                                        <option value="HI">Nguyễn Văn A</option>
+
+                                    
+                              
+                                  </select>
+
+
+
+                    </div>
+
+                    <!--<div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                        </div>
+                    </div>-->
+
+                    <h6 class="bold text-uppercase m-t-20">Loại tiền</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Loại tiền bán</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                     <option value="">USD</option>
+                                     <option value="">VND</option>
+                                     <option value="">CAD</option>
+                                   
+                              
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Loại tiền mua</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                       <option value="">USD</option>
+                                     <option value="">VND</option>
+                                     <option value="">CAD</option>
+                                   
+                              
+                                  </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin</h6>
+
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá OCB</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá FX</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá đối tác</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá bán ngoại tệ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá mua ngoại tệ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Số tiền bán</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                    <h6 class="bold text-uppercase m-t-20">Thành tiền</h6>
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Thành tiền TT</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Thành tiền đối tác</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+
+
+
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="addHoaHong" data-backdrop="static" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -2306,6 +2543,42 @@
 
 
 <!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalTuChoi" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Lý do <span class="semi-bold"> từ chối</span></h5>
+                <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <div class="form-group">
+                        <label>Nội dung</label>
+                        <!--<span class="help">e.g. "some@example.com"</span>-->
+                        <textarea rows="" cols="" class="form-control"></textarea>
+                    </div>
+
+                </form>
+                <div class="row">
+
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Hoàn thành</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="modalXoa" data-backdrop="static" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -2329,6 +2602,41 @@
                     <div class="col-sm-12 m-t-10 text-center">
                         <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-danger  m-t-5">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalDuyet" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+
+
+                <h3 class="text-center m-t-20 m-b-20">
+                    Xác nhận duyệt
+                </h3>
+
+
+
+
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-sm-12 m-t-10 text-center">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-dismiss="modal">Hoàn thành</button>
                     </div>
                 </div>
             </div>

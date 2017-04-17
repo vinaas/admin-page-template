@@ -331,7 +331,9 @@
       <!-- START PAGE CONTENT -->
       <div class="content">
         <!-- START JUMBOTRON -->
-         
+        
+
+
 <div class="bar">
     <div class="pull-right">
         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
@@ -340,7 +342,7 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class=" ">
+            <li class=" active ">
                 <a href="index.html">
                     <span class="">Danh sách đối tác </span>
                 </a>
@@ -358,7 +360,7 @@
                 </a>
             </li>
 
-             <li class=" active ">
+             <li class=" ">
                 <a href="doitac-hoahong.html">
                     <span class="">Hoa hồng đối tác</span>
                 </a>
@@ -367,7 +369,6 @@
         </ul>
     </div>
 </div>
-
 <!--<div class="" data-pages="parallax">-->
 <!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
 <!--<div class="inner">-->
@@ -393,22 +394,20 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Danh sách hoa hồng đối tác</h3>
+            <h3 class="page-title"> <a href="index.html" class="btn btn-tag  btn-tag-light m-r-20"> <i class="fa fa-chevron-left"></i> Quay lại</a>  Danh sách đối tác chờ duyệt</h3>
 
         </div>
 
-        <div class="col-sm-5">
+        <!--<div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHoaHong"><i class="pg-form"></i> Tạo mới Hoa hồng
-                </button>
 
+                <a href="index.html" class="btn btn-info  btn-cons m-b-10"><i class="fa fa-list-alt"></i> Danh sách đối tác 
+                </a>
 
             </div>
-        </div>
+        </div>-->
 
     </div>
-
-
 
     <div class="row">
 
@@ -461,6 +460,12 @@
                             </div>
                         </div>
 
+                        <!--<div class="form-group">-->
+                        <!--<label>Disabled</label>-->
+                        <!--<span class="help">e.g. </span>-->
+                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+                        <!--</div>-->
+
                         <div class="form-group">
 
                             <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
@@ -479,18 +484,23 @@
             </div>
 
 
+
+
+
+
+
+
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                        <button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                          </button>
-
+               
                     </div>
 
 
@@ -527,16 +537,21 @@
                                         </div>
 
                                     </th>
-                                    <th style="width: 50px">STT</th>
-                                    <th style="width: 150px">Ngày</th>
-                                    <th style="width: 200px">Tên giao dịch</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Mã đối tác</th>
+                                    <th>Tên đầy đủ</th>
+                                    <th>Đơn vị ký HĐ</th>
+                                    <th>Số HĐ</th>
+                                    <th>Ngày HL</th>
+                                    <th>Ngày hết HL</th>
+                                    <th>Loại tiền thanh toán</th>
+                                    <th>Số tiền chuyển trước</th>
+                                    <th>Loại tiền giao dịch</th>
+                                    <th>Loại tiền chi</th>
+                                    <th>Loại dịch vụ</th>
 
-                                    <th style="width: 100px">ID đối tác</th>
-                                    <th style="width: 200px">CN/PGD</th>
-                                    <th style="width: 200px">Loại dịch vụ</th>
-                                    <th style="">Hoa hồng</th>
-
-                                    <th style="width: 200px">Chi tiết</th>
+                                    <th>Hợp đồng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -547,42 +562,50 @@
                                             <label for="checkbox2" class="m-r-0"></label>
                                         </div>
                                     </td>
-
-                                    <td class="v-align-middle">
-                                        1
+                                    <td>NA</td>
+                                    <td class="v-align-middle ">
+                                        04/03/2017
                                     </td>
-
                                     <td class="v-align-middle">
-                                        17/03/2017
+                                        12
                                     </td>
-
                                     <td class="v-align-middle">
                                         ABC
                                     </td>
-
                                     <td class="v-align-middle">
-                                        455
+                                        Công ty
                                     </td>
-
                                     <td class="v-align-middle">
-                                       Tỉnh, TP HCM
+                                        245
                                     </td>
-
-                                     <td class="v-align-middle">
-                                       PB, PO
-                                    </td>
-
                                     <td class="v-align-middle">
-                                       Hạn mức, Cố định
+                                        12/03/2017
                                     </td>
-
-
-                                    <td class="v-align-middle ">
-                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHoaHong">Xem</a>
+                                    <td class="v-align-middle">
+                                        25/06/2017
                                     </td>
+                                    <td class="v-align-middle">
+                                        <span class="label label-default">USD</span>
+                                        <span class="label label-primary">VND</span>
 
+                                    </td>
+                                    <td class="v-align-middle">
+                                        30.000
+                                    </td>
+                                    <td class="v-align-middle">
+                                        VND
+                                    </td>
+                                    <td class="v-align-middle">
+                                        CAD
+                                    </td>
+                                    <td class="v-align-middle">
+                                        PO, PR
+                                    </td>
+                                    <td class="v-align-middle text-center">
+                                        <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                    </td>
+                                 
                                 </tr>
-
 
                             </tbody>
                         </table>
@@ -621,7 +644,6 @@
     </div>
 
 </div>
-
 
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="createDoiTac" role="dialog" aria-hidden="true" data-backdrop="static">
@@ -2660,7 +2682,8 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-<!-- END MODAL STICK UP  --> 
+<!-- END MODAL STICK UP  -->
+
 
         <!-- END CONTAINER FLUID -->
       </div>
