@@ -331,43 +331,39 @@
       <!-- START PAGE CONTENT -->
       <div class="content">
         <!-- START JUMBOTRON -->
-         
-<div class="bar">
-    <div class="pull-right">
-        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
-            <i class=" pg-close_line"></i>
-        </a>
-    </div>
-    <div class="bar-inner">
-        <ul>
-            <li class=" ">
-                <a href="index.html">
-                    <span class="">Danh sách đối tác </span>
-                </a>
-            </li>
+        
 
-              <li class=" active ">
-                <a href="doitac-nhantien.html">
-                    <span class="">Nhận tiền đối tác chuyển về</span>
-                </a>
-            </li>
-
-            <li class=" ">
-                <a href="doitac-hanmuc.html">
-                    <span class="">Danh sách hạn mức</span>
-                </a>
-            </li>
-
+ 
+ <div class="bar">
+     <div class="pull-right">
+         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+             <i class=" pg-close_line"></i>
+         </a>
+     </div>
+     <div class="bar-inner">
+         <ul>
              <li class=" ">
-                <a href="doitac-hoahong.html">
-                    <span class="">Hoa hồng đối tác</span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
+                 <a href="phongkinhdoanh.html">
+                     <span class="">Danh sách nhập liệu </span>
+                 </a>
+             </li>
+ 
+               <li class=" active ">
+                 <a href="phongkinhdoanh-duyet.html">
+                     <span class="">Danh sách duyệt</span>
+                 </a>
+             </li>
+ 
+             <li class=" ">
+                 <a href="phongkinhdoanh-thongke.html">
+                     <span class="">Thống kê</span>
+                 </a>
+             </li>
+ 
+ 
+         </ul>
+     </div>
+ </div>
 <!--<div class="" data-pages="parallax">-->
 <!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
 <!--<div class="inner">-->
@@ -393,18 +389,18 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Danh sách giao dịch tiền về</h3>
+            <h3 class="page-title">Tổng hợp yêu cầu duyệt</h3>
 
         </div>
 
-        <div class="col-sm-5">
+        <!--<div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createGiaoDichTienVe"><i class="pg-form"></i> Tạo mới Giao dịch tiền về
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
                 </button>
 
 
             </div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -532,17 +528,19 @@
                                         </div>
 
                                     </th>
-                                    <th style="width: 150px">Ngày </th>
+                                    <th style="">Ngày yêu cầu</th>
+                                    <th style="">Ngày duyệt</th>
+                                    <th style="">Tên đối tác</th>
+                                    <th style="">Loại tiền bán</th>
+                                    <th style="">Loại tiền mua</th>
+                                    <th style="">Tỷ giá FX</th>
+                                    <th style="">Tỷ giá đối tác</th>
+                                    <th style="">Người thực hiện</th>
+                                    <th style="">Trạng thái</th>
 
-                                    <th style="width: 100px">ID đối tác</th>
-                                    <th style="width: 150px">Tên đối tác</th>
-                                    <th style="width: 200px">Hình thức chuyển tiền</th>
+                                    <th style="width: 70px">Chi tiết</th>
 
-
-                                    <th>Loại tiền chuyển đến</th>
-
-
-                                    <th style="width: 200px"></th>
+                                    <th style="width: 240px"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -556,37 +554,54 @@
                                     <td class="v-align-middle">
                                         12/03/2017
                                     </td>
+
+                                      <td class="v-align-middle">
+                                        17/03/2017
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        ABC
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                       <span class="label label-primary">VND</span>
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                       <span class="label label-primary">EUR</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      Nguyễn Văn A
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      <span class="label label-default">Chưa duyệt</span>
+                                    </td>
+
                                     <td class="v-align-middle ">
-                                        15
+                                         <a href="#" class="btn btn-default " data-toggle="modal" data-target="#kinhdoanh-xemnhaplieu">Xem</a>
                                     </td>
 
-                                    <td class="v-align-middle">
-                                        Company 1
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Hoán đổi tiền tệ
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
-                                    </td>
+                                
 
                                     <td class="v-align-middle">
 
                                         <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createGiaoDichTienVe2"> <i class="fa fa-edit"></i> Xem</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
                                         </div>
-
-
 
                                     </td>
                                 </tr>
-
 
                                 <tr >
                                     <td class="v-align-middle">
@@ -598,36 +613,55 @@
                                     <td class="v-align-middle">
                                         12/03/2017
                                     </td>
+
+                                      <td class="v-align-middle">
+                                        17/03/2017
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        ABC
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                       <span class="label label-primary">VND</span>
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                       <span class="label label-primary">EUR</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      Nguyễn Văn A
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      <span class="label label-success">Đã duyệt</span>
+                                    </td>
+
                                     <td class="v-align-middle ">
-                                        15
+                                         <a href="#" class="btn btn-default " data-toggle="modal" data-target="#kinhdoanh-xemnhaplieu">Xem</a>
                                     </td>
 
-                                    <td class="v-align-middle">
-                                        Company 1
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Trực tiếp
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
-                                    </td>
+                                
 
                                     <td class="v-align-middle">
 
                                         <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createGiaoDichTienVe"> <i class="fa fa-edit"></i> Xem</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
                                         </div>
-
-
 
                                     </td>
                                 </tr>
+
 
                             </tbody>
                         </table>
@@ -3344,7 +3378,6 @@
   </script>
 
  
-
 
 
 

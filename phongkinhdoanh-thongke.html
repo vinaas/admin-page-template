@@ -331,43 +331,39 @@
       <!-- START PAGE CONTENT -->
       <div class="content">
         <!-- START JUMBOTRON -->
-         
-<div class="bar">
-    <div class="pull-right">
-        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
-            <i class=" pg-close_line"></i>
-        </a>
-    </div>
-    <div class="bar-inner">
-        <ul>
-            <li class=" ">
-                <a href="index.html">
-                    <span class="">Danh sách đối tác </span>
-                </a>
-            </li>
+        
 
-              <li class=" active ">
-                <a href="doitac-nhantien.html">
-                    <span class="">Nhận tiền đối tác chuyển về</span>
-                </a>
-            </li>
-
-            <li class=" ">
-                <a href="doitac-hanmuc.html">
-                    <span class="">Danh sách hạn mức</span>
-                </a>
-            </li>
-
+ 
+ <div class="bar">
+     <div class="pull-right">
+         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+             <i class=" pg-close_line"></i>
+         </a>
+     </div>
+     <div class="bar-inner">
+         <ul>
              <li class=" ">
-                <a href="doitac-hoahong.html">
-                    <span class="">Hoa hồng đối tác</span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
+                 <a href="phongkinhdoanh.html">
+                     <span class="">Danh sách nhập liệu </span>
+                 </a>
+             </li>
+ 
+               <li class=" ">
+                 <a href="phongkinhdoanh-duyet.html">
+                     <span class="">Danh sách duyệt</span>
+                 </a>
+             </li>
+ 
+             <li class=" active ">
+                 <a href="phongkinhdoanh-thongke.html">
+                     <span class="">Thống kê</span>
+                 </a>
+             </li>
+ 
+ 
+         </ul>
+     </div>
+ </div>
 <!--<div class="" data-pages="parallax">-->
 <!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
 <!--<div class="inner">-->
@@ -393,18 +389,18 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Danh sách giao dịch tiền về</h3>
+            <h3 class="page-title">Thống kê</h3>
 
         </div>
 
-        <div class="col-sm-5">
+        <!--<div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createGiaoDichTienVe"><i class="pg-form"></i> Tạo mới Giao dịch tiền về
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
                 </button>
 
 
             </div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -413,87 +409,78 @@
     <div class="row">
 
         <div class="col-md-12">
-
-          <div class="panel panel-default">
-                         <!--<div class="panel-heading">-->
-                         <!--<div class="panel-title">-->
-                         <!--Option #two-->
-                         <!--</div>-->
-                         <!--</div>-->
-                         <div class="panel-body">
-                             <h5 class="m-t-0">
-                                 Tìm kiếm
-                             </h5>
-                             <form role="form" lpformnum="2" class="form-filter">
-                                 <div class="form-group">
-                                     <label>Từ khóa</label>
-                                     <span class="help">e.g. </span>
-                                     <input type="email" class="form-control">
-                                 </div>
-                                 <!--<div class="form-group">
-                                     <label>Thuộc danh mục</label>
-         
-                                     <select class="full-width" data-init-plugin="select2">
-                                         <optgroup label="Alaskan/Hawaiian Time Zone">
-                                         <option value="AK">Alaska</option>
-                                         <option value="HI">Hawaii</option>
-                                         </optgroup>
-                                         <optgroup label="Pacific Time Zone">
-                                         <option value="CA">California</option>
-                                         <option value="NV">Nevada</option>
-                                         <option value="OR">Oregon</option>
-                                         <option value="WA">Washington</option>
-                                         </optgroup>
-                                         <optgroup label="Mountain Time Zone">
-                                         <option value="AZ">Arizona</option>
-                                         <option value="CO">Colorado</option>
-                                       
-                                         </optgroup>
-                                       
-                                         </select>
-                                 </div>-->
-                                 <div class="form-group long">
-                                     <label>THEO NGÀY</label>
-                                     <div class="input-daterange input-group" id="datepicker-range">
-                                         <input type="text" class="input form-control" name="start" />
-                                         <span class="input-group-addon">đến</span>
-                                         <input type="text" class="input form-control" name="end" />
-                                     </div>
-                                 </div>
-         
-                                 <!--<div class="form-group">-->
-                                 <!--<label>Disabled</label>-->
-                                 <!--<span class="help">e.g. </span>-->
-                                 <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
-                                 <!--</div>-->
-         
-                                 <div class="form-group">
-         
-                                     <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                                     </button>
-         
-                                 </div>
-                             </form>
-         
-         
-         
-                         </div>
-         
-         
-         
-         
-                     </div>
-
+ <div class="panel panel-default">
+     <!--<div class="panel-heading">-->
+     <!--<div class="panel-title">-->
+     <!--Option #two-->
+     <!--</div>-->
+     <!--</div>-->
+     <div class="panel-body">
+         <h5 class="m-t-0">
+             Tìm kiếm
+         </h5>
+         <form role="form" lpformnum="2" class="form-filter">
+             <!--<div class="form-group">
+                 <label>Từ khóa</label>
+                 <span class="help">e.g. </span>
+                 <input type="email" class="form-control">
+             </div>-->
+             <div class="form-group">
+                 <label>Tên đối tác</label>
+ 
+                 <select class="full-width" data-init-plugin="select2" data-placeholder="Họ tên">
+                                 <option value=""></option>
+                                 <option value="AK">Nguyễn Văn A</option>
+                                 <option value="AK">Nguyễn Văn B</option>
+                                 <option value="AK">Nguyễn Văn C</option>
+                 </select>
+ 
+ 
+             </div>
+             <div class="form-group long">
+                 <label>THEO NGÀY</label>
+                 <div class="input-daterange input-group" id="datepicker-range">
+                     <input type="text" class="input form-control" name="start" />
+                     <span class="input-group-addon">đến</span>
+                     <input type="text" class="input form-control" name="end" />
+                 </div>
+             </div>
+ 
+             <!--<div class="form-group">-->
+             <!--<label>Disabled</label>-->
+             <!--<span class="help">e.g. </span>-->
+             <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+             <!--</div>-->
+ 
+             <div class="form-group">
+ 
+                 <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Thống kê
+                             </button>
+ 
+                              <button class="btn btn-default btn-cons m-t-25" type="button"><i class="fa fa-rotate-left"></i> Làm mới
+                             </button>
+ 
+             </div>
+         </form>
+ 
+ 
+ 
+     </div>
+ 
+ 
+ 
+ 
+ </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách excel
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                        <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
                           </button>
 
                     </div>
@@ -532,17 +519,25 @@
                                         </div>
 
                                     </th>
-                                    <th style="width: 150px">Ngày </th>
+                                    <th style="">Ngày</th>
+                                    <th style="">Tên đối tác</th>
+                                    
+                                    <th style="">Loại tiền bán</th>
+                                    <th style="">Số tiền bán</th>
 
-                                    <th style="width: 100px">ID đối tác</th>
-                                    <th style="width: 150px">Tên đối tác</th>
-                                    <th style="width: 200px">Hình thức chuyển tiền</th>
+                                    <th style="">Tỷ giá FX</th>
 
+                                    <th style="">Tỷ giá mua ngoại tệ</th>
 
-                                    <th>Loại tiền chuyển đến</th>
+                                    <th style="">Loại tiền mua</th>
+                                    
+                                    <th style="">Tỷ giá đối tác</th>
 
+                                    <th style="">Tỷ giá bán ngoại tệ</th>
 
-                                    <th style="width: 200px"></th>
+                                    <th style="">Thành tiền đối tác</th>
+                                    <th style="">Thành tiền TT</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -556,78 +551,53 @@
                                     <td class="v-align-middle">
                                         12/03/2017
                                     </td>
-                                    <td class="v-align-middle ">
-                                        15
+
+                                      <td class="v-align-middle">
+                                       ABC
                                     </td>
 
                                     <td class="v-align-middle">
-                                        Company 1
+                                        <span class="label label-primary">VND</span>
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                     500
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      22600
                                     </td>
 
                                     <td class="v-align-middle">
-                                        Hoán đổi tiền tệ
+                                      22500
                                     </td>
 
                                     <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
+                                      <span class="label label-primary">EUR</span>
                                     </td>
 
                                     <td class="v-align-middle">
-
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createGiaoDichTienVe2"> <i class="fa fa-edit"></i> Xem</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-
-
-
+                                      
                                     </td>
+
+                                     <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      425
+                                    </td>
+
+                                      <td class="v-align-middle">
+                                      11300000
+                                    </td>
+
+
+
                                 </tr>
 
+                            
 
-                                <tr >
-                                    <td class="v-align-middle">
-                                        <div class="checkbox ">
-                                            <input type="checkbox" value="3" id="checkbox2">
-                                            <label for="checkbox2" class="m-r-0"></label>
-                                        </div>
-                                    </td>
-                                    <td class="v-align-middle">
-                                        12/03/2017
-                                    </td>
-                                    <td class="v-align-middle ">
-                                        15
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Company 1
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Trực tiếp
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
-                                    </td>
-
-                                    <td class="v-align-middle">
-
-                                        <div class="btn-group btn-group-sm">
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createGiaoDichTienVe"> <i class="fa fa-edit"></i> Xem</button>
-                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        </div>
-
-
-
-                                    </td>
-                                </tr>
 
                             </tbody>
                         </table>
@@ -3344,7 +3314,6 @@
   </script>
 
  
-
 
 
 
