@@ -427,7 +427,7 @@
                                 <div class="form-group">
                                     <label>Tên đối tác</label>
 
-                                    <select class="full-width" data-init-plugin="select2" data-placeholder="Họ tên">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                 <option value=""></option>
                                 <option value="AK">Nguyễn Văn A</option>
                                 <option value="AK">Nguyễn Văn B</option>
@@ -458,7 +458,9 @@
                                             <th style="width: 70px">STT</th>
                                             <th style="width: 150px">Tên đối tác</th>
                                             <th style="width: 150px">Ngày yêu cầu</th>
+                                            
                                             <th style="width: 150px">Ngày hiệu lực</th>
+                                            <th style="width: 150px">Ngày hết hiệu lực</th>
                                             <th style="width: 150px">Trạng thái</th>
 
                                             <th>Chi tiết</th>
@@ -480,7 +482,11 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                16/03/2017
+                                                12/03/2017
+                                            </td>
+
+                                             <td class="v-align-middle ">
+                                                12/03/2017
                                             </td>
 
                                             <td class="v-align-middle">
@@ -493,13 +499,13 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
+                                        <tr class="active">
                                             <td class="v-align-middle text-center">
                                                 1
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                               DEF
                                             </td>
 
 
@@ -508,35 +514,11 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                16/03/2017
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-default">Chưa duyệt</span>
-                                                <!--<span class="label label-success">Duyệt</span>-->
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <a href="#" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="v-align-middle text-center">
-                                                1
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                ABC
-                                            </td>
-
-
-                                            <td class="v-align-middle ">
                                                 12/03/2017
                                             </td>
 
-                                            <td class="v-align-middle ">
-                                                16/03/2017
+                                             <td class="v-align-middle ">
+                                                15/03/2017
                                             </td>
 
                                             <td class="v-align-middle">
@@ -549,7 +531,7 @@
                                             </td>
                                         </tr>
 
-
+                                      
 
                                     </tbody>
                                 </table>
@@ -567,7 +549,7 @@
 
                                     <div class="row static-info">
                                         <div class="col-md-2 name"> Tên đối tác: </div>
-                                        <div class="col-md-2 value"> <b>Nguyễn Văn A</b>
+                                        <div class="col-md-2 value"> <b>DEF</b>
                                         </div>
 
                                         <div class="col-md-2  name"> Ngày yêu cầu duyệt: </div>
@@ -586,7 +568,7 @@
 
 
                                         <div class="col-md-2 name"> Ngày hết hiệu lực: </div>
-                                        <div class="col-md-2 value"> <b> 18/03/2017</b>
+                                        <div class="col-md-2 value"> <b> 15/03/2017</b>
                                         </div>
                                     </div>
                                     <br>
@@ -643,16 +625,16 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    <span class="label label-default">EUR</span>
+                                                    <span class="label label-default">CAN</span>
 
                                                 </td>
 
                                                 <td class="v-align-middle ">
-                                                    0.2
+                                                    0.20
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    0.3
+                                                    0.30
                                                 </td>
 
 
@@ -670,7 +652,7 @@
 
                                             </tr>
 
-                                            <tr>
+                                             <tr>
 
                                                 <td class="v-align-middle">
                                                     <div class="checkbox ">
@@ -681,7 +663,7 @@
 
 
                                                 <td class="v-align-middle">
-                                                    1
+                                                    2
                                                 </td>
 
                                                 <td class="v-align-middle">
@@ -690,27 +672,65 @@
                                                 </td>
 
                                                 <td class="v-align-middle ">
-                                                    0.2
+                                                    0.20
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    0.3
+                                                    0.30
                                                 </td>
 
 
                                                 <td class="v-align-middle">
                                                     <!--<span class="label label-success">Đã duyệt</span>-->
-                                                    <span class="label label-default">Chưa duyệt</span>
+                                                    <span class="label label-danger">Từ chối</span>
                                                 </td>
 
                                                 <td class="v-align-middle ">
-                                                    <div class="btn-group btn-group-sm">
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
-                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
-                                                    </div>
+                                                
                                                 </td>
 
                                             </tr>
+
+                                             <tr>
+
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+
+
+                                                <td class="v-align-middle">
+                                                    3
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-default">USD</span>
+
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                    0.20
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    0.30
+                                                </td>
+
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-success">Đã duyệt</span>
+                                                    <!--<span class="label label-danger">Từ chối</span>-->
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                
+                                                </td>
+
+                                            </tr>
+
+                                           
 
 
 
@@ -740,7 +760,7 @@
                                 <div class="form-group">
                                     <label>Tên đối tác</label>
 
-                                    <select class="full-width" data-init-plugin="select2" data-placeholder="Họ tên">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                 <option value=""></option>
                                 <option value="AK">Nguyễn Văn A</option>
                                 <option value="AK">Nguyễn Văn B</option>
@@ -768,34 +788,38 @@
 
                                             <th style="width: 70px">STT</th>
                                             <th style="width: 150px">Tên đối tác</th>
-                                            <th style="width: 150px">Ngày yêu cầu</th>
                                             <th style="width: 150px">Ngày hiệu lực</th>
-                                            <th style="width: 150px">Trạng thái</th>
+                                            <th style="width: 150px">Ngày hết hiệu lực</th>
+                                            <th style="width: 150px">Ngày yêu cầu</th>
+                                            <th style="width: 150px">Ngày duyệt</th>
 
                                             <th>Chi tiết</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="active">
                                             <td class="v-align-middle text-center">
                                                 1
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                                XYZ
                                             </td>
 
 
                                             <td class="v-align-middle ">
-                                                12/03/2017
+                                                13/03/2017
+                                            </td>
+
+                                              <td class="v-align-middle ">
+                                                13/03/2017
+                                            </td>
+                                              <td class="v-align-middle ">
+                                                13/03/2017
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                16/03/2017
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
+                                                13/03/2017
                                             </td>
 
                                             <td class="v-align-middle">
@@ -803,26 +827,29 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
+                                         <tr class="">
                                             <td class="v-align-middle text-center">
-                                                1
+                                                2
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                               QW
                                             </td>
 
 
                                             <td class="v-align-middle ">
-                                                12/03/2017
+                                                13/03/2017
+                                            </td>
+
+                                              <td class="v-align-middle ">
+                                                13/03/2017
+                                            </td>
+                                              <td class="v-align-middle ">
+                                                13/03/2017
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                16/03/2017
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
+                                                13/03/2017
                                             </td>
 
                                             <td class="v-align-middle">
@@ -830,33 +857,7 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            <td class="v-align-middle text-center">
-                                                1
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                ABC
-                                            </td>
-
-
-                                            <td class="v-align-middle ">
-                                                12/03/2017
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                16/03/2017
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <a href="#" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                            </td>
-                                        </tr>
-
+                                      
 
 
                                     </tbody>
@@ -875,17 +876,17 @@
 
                                     <div class="row static-info">
                                         <div class="col-md-2 name"> Tên đối tác: </div>
-                                        <div class="col-md-2 value"> <b>Nguyễn Văn A</b>
+                                        <div class="col-md-2 value"> <b>XYZ</b>
                                         </div>
 
                                     </div>
                                     <div class="row static-info">
                                         <div class="col-md-2  name"> Ngày yêu cầu duyệt: </div>
-                                        <div class="col-md-2 value"> <b>12/03/2017</b>
+                                        <div class="col-md-2 value"> <b>13/03/2017</b>
                                         </div>
 
                                         <div class="col-md-2 name"> Ngày duyệt: </div>
-                                        <div class="col-md-2 value"> <b> 12/03/2017</b>
+                                        <div class="col-md-2 value"> <b> 13/03/2017</b>
                                         </div>
 
 
@@ -896,10 +897,10 @@
 
                                     <div class="row static-info">
                                         <div class="col-md-2 name"> Ngày hiệu lực: </div>
-                                        <div class="col-md-2 value"> <b> 18/03/2017</b>
+                                        <div class="col-md-2 value"> <b> 13/03/2017</b>
                                         </div >
                                         <div class="col-md-2 name"> Ngày hết hiệu lực: </div>
-                                    <div class="col-md-2 value"> <b> 18/03/2017</b>
+                                    <div class="col-md-2 value"> <b> 13/03/2017</b>
                                     </div>
                                 </div>
                                 <br>
@@ -926,12 +927,40 @@
                                             </td>
 
                                             <td class="v-align-middle">
-                                                <span class="label label-default">EUR</span>
+                                                <span class="label label-default">USD</span>
 
                                             </td>
 
                                             <td class="v-align-middle ">
                                                 0.25
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                0.3
+                                            </td>
+
+                                        
+                                            <td class="v-align-middle">
+                                                <span class="label label-success">Đã duyệt</span>
+                                            </td>
+
+
+
+                                        </tr>
+
+                                         <tr>
+
+                                            <td class="v-align-middle">
+                                                2
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                <span class="label label-default">VND</span>
+
+                                            </td>
+
+                                            <td class="v-align-middle ">
+                                                0.3
                                             </td>
 
                                             <td class="v-align-middle">

@@ -427,7 +427,7 @@
                                 <div class="form-group">
                                     <label>Tên đối tác</label>
 
-                                    <select class="full-width" data-init-plugin="select2" data-placeholder="Họ tên">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                 <option value=""></option>
                                 <option value="AK">Nguyễn Văn A</option>
                                 <option value="AK">Nguyễn Văn B</option>
@@ -505,20 +505,20 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
+                                        <tr class="active">
                                             <td class="v-align-middle text-center">
-                                                1
+                                                2
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                123
+                                                125
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                                DEF
                                             </td>
                                             <td class="v-align-middle ">
-                                                0001
+                                                0002
                                             </td>
 
                                             <td class="v-align-middle ">
@@ -526,7 +526,9 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                <span class="label label-default">USD</span>
+                                                  <span class="label label-default">CAN</span>
+                                                <span class="label label-primary">EUR</span>
+                                                <span class="label label-primary">FRA</span>
                                                 <span class="label label-primary">VND</span>
                                             </td>
 
@@ -550,10 +552,10 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                                GHJ
                                             </td>
                                             <td class="v-align-middle ">
-                                                0001
+                                                0003
                                             </td>
 
                                             <td class="v-align-middle ">
@@ -561,7 +563,8 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                <span class="label label-default">USD</span>
+                                                <span class="label label-default">CAN</span>
+                                       
                                                 <span class="label label-primary">VND</span>
                                             </td>
 
@@ -591,11 +594,11 @@
 
                                     <div class="row static-info">
                                         <div class="col-md-2 name"> Tên đối tác: </div>
-                                        <div class="col-md-2 value"> <b>Nguyễn Văn A</b>
+                                        <div class="col-md-2 value"> <b>DEF</b>
                                         </div>
 
                                         <div class="col-md-2 col-lg-1 name"> Mã danh sách: </div>
-                                        <div class="col-md-2 value"> <b>001</b>
+                                        <div class="col-md-2 value"> <b>0002</b>
                                         </div>
                                     </div>
                                     <div class="row static-info">
@@ -658,7 +661,7 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    <span class="label label-default">EUR</span>
+                                                    <span class="label label-default">CAN</span>
 
                                                 </td>
 
@@ -667,11 +670,11 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                   3000
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                    4000
                                                 </td>
 
                                                 <td class="v-align-middle">
@@ -699,7 +702,7 @@
 
 
                                                 <td class="v-align-middle">
-                                                    1
+                                                    2
                                                 </td>
 
                                                 <td class="v-align-middle">
@@ -708,15 +711,15 @@
                                                 </td>
 
                                                 <td class="v-align-middle text-center">
-                                                    4
+                                                    5
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                    3200
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                    3500
                                                 </td>
 
                                                 <td class="v-align-middle">
@@ -729,6 +732,96 @@
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
                                                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối</button>
                                                     </div>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+
+
+                                                <td class="v-align-middle">
+                                                    2
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-primary">FRA</span>
+
+                                                </td>
+
+                                                <td class="v-align-middle text-center">
+                                                    6
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    1500
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    2000
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-success">Đã duyệt</span>
+                                                    <!--<span class="label label-default">Chưa duyệt</span>-->
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                    <!--<div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                                    </div>-->
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+
+
+                                                <td class="v-align-middle">
+                                                    2
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-primary">VND</span>
+
+                                                </td>
+
+                                                <td class="v-align-middle text-center">
+                                                    2
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    4,000,000
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    5,000,000
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <span class="label label-success">Đã duyệt</span>
+                                                    <!--<span class="label label-default">Chưa duyệt</span>-->
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                    <!--<div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                                    </div>-->
                                                 </td>
 
                                             </tr>
@@ -761,7 +854,7 @@
                                 <div class="form-group">
                                     <label>Tên đối tác</label>
 
-                                    <select class="full-width" data-init-plugin="select2" data-placeholder="Họ tên">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                 <option value=""></option>
                                 <option value="AK">Nguyễn Văn A</option>
                                 <option value="AK">Nguyễn Văn B</option>
@@ -797,6 +890,7 @@
                                             <th style="width: 150px">Tên đối tác</th>
                                             <th style="width: 150px">Mã danh sách</th>
                                             <th style="width: 150px">Ngày yêu cầu</th>
+                                            <th style="width: 150px">Ngày duyệt</th>
                                             <th style="width: 200px">Dánh sách loại tiền</th>
                                             <th style="width: 150px">Trạng thái</th>
 
@@ -804,7 +898,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="active">
                                             <td class="v-align-middle text-center">
                                                 1
                                             </td>
@@ -825,8 +919,12 @@
                                             </td>
 
                                             <td class="v-align-middle ">
+                                                15/03/2017
+                                            </td>
+
+                                            <td class="v-align-middle ">
                                                 <span class="label label-default">USD</span>
-                                                <span class="label label-primary">VND</span>
+                                                <span class="label label-primary">CAD</span>
                                             </td>
 
                                             <td class="v-align-middle">
@@ -845,23 +943,28 @@
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                123
+                                                235
                                             </td>
 
                                             <td class="v-align-middle ">
-                                                ABC
+                                                DEF
                                             </td>
                                             <td class="v-align-middle ">
-                                                0001
+                                                0002
                                             </td>
 
                                             <td class="v-align-middle ">
                                                 12/03/2017
                                             </td>
 
+                                             <td class="v-align-middle ">
+                                                15/03/2017
+                                            </td>
+
                                             <td class="v-align-middle ">
-                                                <span class="label label-default">USD</span>
-                                                <span class="label label-primary">VND</span>
+                                                <span class="label label-default">VND</span>
+                                                <span class="label label-primary">EUR</span>
+                                                <span class="label label-primary">USD</span>
                                             </td>
 
                                             <td class="v-align-middle">
@@ -891,7 +994,7 @@
 
                                     <div class="row static-info">
                                         <div class="col-md-2 name"> Tên đối tác: </div>
-                                        <div class="col-md-2 value"> <b>Nguyễn Văn A</b>
+                                        <div class="col-md-2 value"> <b>ABC</b>
                                         </div>
 
                                         <div class="col-md-2 col-lg-1 name"> Mã danh sách: </div>
@@ -904,7 +1007,7 @@
                                         </div>
 
                                         <div class="col-md-2 col-lg-1 name"> Ngày duyệt: </div>
-                                        <div class="col-md-2 value"> <b> 14/03/2017</b>
+                                        <div class="col-md-2 value"> <b> 15/03/2017</b>
                                         </div>
                                     </div>
                                     <br>
@@ -914,12 +1017,12 @@
                                         <thead>
                                             <tr>
 
-                                                <th>STT</th>
-                                                <th>Loại tiền thanh toán</th>
-                                                <th>Số lượng giao dịch</th>
+                                                <th style="width: 70px">STT</th>
+                                                <th  style="width: 150px">Loại tiền thanh toán</th>
+                                                <th  style="width: 150px">Số lượng giao dịch</th>
 
-                                                <th>Tổng số tiền giao dịch</th>
-                                                <th>Số dư khả dụng</th>
+                                                <th  style="width: 200px">Tổng số tiền giao dịch</th>
+                                     
                                                 <th>Trạng thái</th>
 
                                             </tr>
@@ -935,7 +1038,7 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    <span class="label label-default">EUR</span>
+                                                    <span class="label label-default">USD</span>
 
                                                 </td>
 
@@ -944,12 +1047,9 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                    3000
                                                 </td>
 
-                                                <td class="v-align-middle">
-                                                    450000
-                                                </td>
 
                                                 <td class="v-align-middle">
                                                     <span class="label label-success">Đã duyệt</span>
@@ -959,36 +1059,33 @@
 
                                             </tr>
 
-                                            <tr>
+                                          <tr>
 
 
 
 
                                                 <td class="v-align-middle">
-                                                    1
+                                                    2
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    <span class="label label-default">EUR</span>
+                                                    <span class="label label-default">CAN</span>
 
                                                 </td>
 
                                                 <td class="v-align-middle ">
-                                                    4
+                                                    5
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                    450000
+                                                    3200
                                                 </td>
 
-                                                <td class="v-align-middle">
-                                                    450000
-                                                </td>
 
                                                 <td class="v-align-middle">
                                                     <span class="label label-success">Đã duyệt</span>
-                                                    <!--<span class="label label-default">Chưa duyệt</span>-->
                                                 </td>
+
 
 
                                             </tr>
