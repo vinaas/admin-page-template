@@ -1,0 +1,223 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori}}
+
+<!--<div class="" data-pages="parallax">-->
+<!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
+<!--<div class="inner">-->
+<!--&lt;!&ndash; START BREADCRUMB &ndash;&gt;-->
+<!--<ul class="breadcrumb">-->
+<!--<li>-->
+<!--<p>Pages</p>-->
+<!--</li>-->
+<!--<li><a href="#" class="active">Barebone template</a>-->
+<!--</li>-->
+<!--</ul>-->
+
+
+<!--&lt;!&ndash; END BREADCRUMB &ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!-- END JUMBOTRON -->
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Tổng hợp giao dịch chi trả</h3>
+
+        </div>
+
+        <!--<div class="col-sm-5">
+            <div class="text-right">
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
+                </button>
+
+
+            </div>
+        </div>-->
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+ {{> formSearchGiaoDichChiTra}}
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách excel
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
+                          </button>
+
+                    </div>
+
+
+
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+
+                    <div class="tabler-responsive">
+
+
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="">Ngày GD</th>
+                                    <th style="">Mã CN/PGD</th>
+                                    
+                                    <th style="">Tên CN/PGD</th>
+                                    <th style="">Tên GD</th>
+
+                                    <th style="">Loại tiền TT</th>
+
+                                    <th style="">Loại tiền GD</th>
+
+                                    <th style="">Loại tiền chi</th>
+                                    
+                                    <th style="">Số tiền TT</th>
+
+                                    <th style="">Số tiền GD</th>
+
+                                    <th style="">Số tiền chi</th>
+                                    <th style="">Tỷ giá</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
+
+                                      <td class="v-align-middle">
+                                       ABC
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        ABC
+                                        
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                     
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      <span class="label label-primary">VND</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                     <span class="label label-primary">VND</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      <span class="label label-primary">EUR</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      425
+                                    </td>
+
+                                      <td class="v-align-middle">
+                                      0.2
+                                    </td>
+
+
+
+                                </tr>
+
+                            
+
+
+                            </tbody>
+                        </table>
+
+
+                        <nav aria-label="Page navigation" class="text-center">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+{{> modal}} {{/content}} {{#content "script" mode="append"}}
+
+
+
+{{/content}} {{/extend}}
