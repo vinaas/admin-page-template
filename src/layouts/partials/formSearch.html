@@ -1,69 +1,259 @@
- <div class="panel panel-default">
-                <!--<div class="panel-heading">-->
-                <!--<div class="panel-title">-->
-                <!--Option #two-->
-                <!--</div>-->
-                <!--</div>-->
-                <div class="panel-body">
-                    <h5 class="m-t-0">
-                        Tìm kiếm
-                    </h5>
-                    <form role="form" lpformnum="2" class="form-filter">
-                        <div class="form-group">
-                            <label>Từ khóa</label>
-                            <span class="help">e.g. </span>
-                            <input type="email" class="form-control">
-                        </div>
-                        <!--<div class="form-group">
-                            <label>Thuộc danh mục</label>
+{{#ifEqual type "normal"}}
 
-                            <select class="full-width" data-init-plugin="select2">
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                <option value="AK">Alaska</option>
-                                <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                <option value="CA">California</option>
-                                <option value="NV">Nevada</option>
-                                <option value="OR">Oregon</option>
-                                <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                <option value="AZ">Arizona</option>
-                                <option value="CO">Colorado</option>
-                              
-                                </optgroup>
-                              
-                                </select>
-                        </div>-->
-                        <div class="form-group long">
-                            <label>THEO NGÀY</label>
-                            <div class="input-daterange input-group" id="datepicker-range">
-                                <input type="text" class="input form-control" name="start" />
-                                <span class="input-group-addon">đến</span>
-                                <input type="text" class="input form-control" name="end" />
-                            </div>
-                        </div>
+<div class="panel panel-default">
+    <!--<div class="panel-heading">-->
+    <!--<div class="panel-title">-->
+    <!--Option #two-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="panel-body">
+        <h5 class="m-t-0">
+            Tìm kiếm
+        </h5>
+        <form role="form" lpformnum="2" class="form-filter">
+            <div class="form-group">
+                <label>Từ khóa</label>
+                <span class="help">e.g. </span>
+                <input type="email" class="form-control">
+            </div>
+            <!--<div class="form-group">
+                <label>Thuộc danh mục</label>
 
-                        <!--<div class="form-group">-->
-                        <!--<label>Disabled</label>-->
-                        <!--<span class="help">e.g. </span>-->
-                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
-                        <!--</div>-->
+                <select class="full-width" data-init-plugin="select2">
+                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                    <option value="AK">Alaska</option>
+                    <option value="HI">Hawaii</option>
+                    </optgroup>
+                    <optgroup label="Pacific Time Zone">
+                    <option value="CA">California</option>
+                    <option value="NV">Nevada</option>
+                    <option value="OR">Oregon</option>
+                    <option value="WA">Washington</option>
+                    </optgroup>
+                    <optgroup label="Mountain Time Zone">
+                    <option value="AZ">Arizona</option>
+                    <option value="CO">Colorado</option>
 
-                        <div class="form-group">
+                    </optgroup>
 
-                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                            </button>
-
-                        </div>
-                    </form>
-
-
-
+                    </select>
+            </div>-->
+            <div class="form-group long">
+                <label>THEO NGÀY</label>
+                <div class="input-daterange input-group" id="datepicker-range">
+                    <input type="text" class="input form-control" name="start"/>
+                    <span class="input-group-addon">đến</span>
+                    <input type="text" class="input form-control" name="end"/>
                 </div>
+            </div>
+
+            <!--<div class="form-group">-->
+            <!--<label>Disabled</label>-->
+            <!--<span class="help">e.g. </span>-->
+            <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+            <!--</div>-->
+
+            <div class="form-group">
+
+                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                </button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+{{/ifEqual}}
 
 
+{{#ifEqual type "normal2"}}
+<div class="panel panel-default">
+    <!--<div class="panel-heading">-->
+    <!--<div class="panel-title">-->
+    <!--Option #two-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="panel-body">
+        <h5 class="m-t-0">
+            Tìm kiếm
+        </h5>
+        <form role="form" lpformnum="2" class="form-filter">
+            <!--<div class="form-group">
+                <label>Từ khóa</label>
+                <span class="help">e.g. </span>
+                <input type="email" class="form-control">
+            </div>-->
+            <div class="form-group">
+                <label>Tên đối tác</label>
+
+                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                    <option value=""></option>
+                    <option value="AK">Nguyễn Văn A</option>
+                    <option value="AK">Nguyễn Văn B</option>
+                    <option value="AK">Nguyễn Văn C</option>
+                </select>
 
 
             </div>
+            <div class="form-group long">
+                <label>THEO NGÀY</label>
+                <div class="input-daterange input-group" id="datepicker-range">
+                    <input type="text" class="input form-control" name="start"/>
+                    <span class="input-group-addon">đến</span>
+                    <input type="text" class="input form-control" name="end"/>
+                </div>
+            </div>
+
+            <!--<div class="form-group">-->
+            <!--<label>Disabled</label>-->
+            <!--<span class="help">e.g. </span>-->
+            <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+            <!--</div>-->
+
+            <div class="form-group">
+
+                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Thống kê
+                </button>
+
+                <button class="btn btn-default btn-cons m-t-25" type="button"><i class="fa fa-rotate-left"></i> Làm mới
+                </button>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
+</div>
+{{/ifEqual}}
+
+
+{{#ifEqual type "banlanhdao"}}
+<form role="form" lpformnum="2" class="form-filter">
+    <!--<div class="form-group">
+<label>Từ khóa</label>
+<span class="help">e.g. </span>
+<input type="email" class="form-control">
+</div>-->
+    <div class="form-group">
+        <label>Tên đối tác</label>
+
+        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+            <option value=""></option>
+            <option value="AK">Nguyễn Văn A</option>
+            <option value="AK">Nguyễn Văn B</option>
+            <option value="AK">Nguyễn Văn C</option>
+        </select>
+
+
+    </div>
+
+    <div class="form-group">
+        <label>Mã danh sách</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                class="fa fa-search"></i> Tìm kiếm
+        </button>
+
+    </div>
+</form>
+{{/ifEqual}}
+
+
+
+{{#ifEqual type "giaodichchitra"}}
+
+<div class="panel panel-default">
+
+    <div class="panel-body">
+        <h5 class="m-t-0">
+            Tìm kiếm
+        </h5>
+        <form role="form" lpformnum="2" class="form-filter">
+            <div class="form-group">
+                <label>ID Đối tác</label>
+                <!--<span class="help">e.g. </span>-->
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Chi nhánh</label>
+
+                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                    <option value=""></option>
+                    <option value="AK">Australia</option>
+                    <option value="AK">Việt Nam</option>
+                    <option value="AK">Singapore</option>
+                </select>
+
+
+            </div>
+
+            <div class="form-group">
+                <label>Loại tiền thanh toán</label>
+
+                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                    <option value=""></option>
+                    <option value="AK">EUR</option>
+                    <option value="AK">VND</option>
+                    <option value="AK">CAD</option>
+                </select>
+
+
+            </div>
+
+            <div class="form-group">
+                <label>Loại tiền giao dịch</label>
+
+                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                    <option value=""></option>
+                    <option value="AK">EUR</option>
+                    <option value="AK">VND</option>
+                    <option value="AK">CAD</option>
+                </select>
+
+
+            </div>
+
+            <div class="form-group">
+                <label>Loại tiền chi</label>
+
+                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                    <option value=""></option>
+                    <option value="AK">EUR</option>
+                    <option value="AK">VND</option>
+                    <option value="AK">CAD</option>
+                </select>
+
+
+            </div>
+
+
+            <div class="form-group long">
+                <label>THEO NGÀY</label>
+                <div class="input-daterange input-group" id="datepicker-range">
+                    <input type="text" class="input form-control" name="start"/>
+                    <span class="input-group-addon">đến</span>
+                    <input type="text" class="input form-control" name="end"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn
+                </button>
+
+
+            </div>
+        </form>
+    </div>
+</div>
+
+{{/ifEqual}}
+
