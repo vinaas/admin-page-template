@@ -332,7 +332,6 @@
         <!-- START JUMBOTRON -->
         
 
-
 <div class="bar">
     <div class="pull-right">
         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
@@ -359,13 +358,13 @@
                 </a>
             </li>
 
-            <li class=" active ">
+            <li class="">
                 <a href="doitac-hoahong.html">
                     <span class="">Hoa hồng đối tác</span>
                 </a>
             </li>
             
-            <li class="">
+            <li class=" active ">
                 <a href="doitac-tonghopgiaodichchitra.html">
                     <span class="">Tổng hợp giao dịch chi trả</span>
                 </a>
@@ -379,25 +378,24 @@
 
 
 
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Danh sách hoa hồng đối tác</h3>
+            <h3 class="page-title">Tổng hợp giao dịch chi trả</h3>
 
         </div>
 
-        <div class="col-sm-5">
+        <!--<div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHoaHong"><i class="pg-form"></i> Tạo mới Hoa hồng
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
                 </button>
 
 
             </div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -406,46 +404,79 @@
     <div class="row">
 
         <div class="col-md-12">
-
+            
+            
+            
+            
+            
+            
+            
             
             <div class="panel panel-default">
-                <!--<div class="panel-heading">-->
-                <!--<div class="panel-title">-->
-                <!--Option #two-->
-                <!--</div>-->
-                <!--</div>-->
+            
                 <div class="panel-body">
                     <h5 class="m-t-0">
                         Tìm kiếm
                     </h5>
                     <form role="form" lpformnum="2" class="form-filter">
                         <div class="form-group">
-                            <label>Từ khóa</label>
-                            <span class="help">e.g. </span>
-                            <input type="email" class="form-control">
+                            <label>ID Đối tác</label>
+                            <!--<span class="help">e.g. </span>-->
+                            <input type="text" class="form-control">
                         </div>
-                        <!--<div class="form-group">
-                            <label>Thuộc danh mục</label>
+                        <div class="form-group">
+                            <label>Chi nhánh</label>
             
-                            <select class="full-width" data-init-plugin="select2">
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                <option value="AK">Alaska</option>
-                                <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                <option value="CA">California</option>
-                                <option value="NV">Nevada</option>
-                                <option value="OR">Oregon</option>
-                                <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                <option value="AZ">Arizona</option>
-                                <option value="CO">Colorado</option>
+                            <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                <option value=""></option>
+                                <option value="AK">Australia</option>
+                                <option value="AK">Việt Nam</option>
+                                <option value="AK">Singapore</option>
+                            </select>
             
-                                </optgroup>
             
-                                </select>
-                        </div>-->
+                        </div>
+            
+                        <div class="form-group">
+                            <label>Loại tiền thanh toán</label>
+            
+                            <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                <option value=""></option>
+                                <option value="AK">EUR</option>
+                                <option value="AK">VND</option>
+                                <option value="AK">CAD</option>
+                            </select>
+            
+            
+                        </div>
+            
+                        <div class="form-group">
+                            <label>Loại tiền giao dịch</label>
+            
+                            <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                <option value=""></option>
+                                <option value="AK">EUR</option>
+                                <option value="AK">VND</option>
+                                <option value="AK">CAD</option>
+                            </select>
+            
+            
+                        </div>
+            
+                        <div class="form-group">
+                            <label>Loại tiền chi</label>
+            
+                            <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                <option value=""></option>
+                                <option value="AK">EUR</option>
+                                <option value="AK">VND</option>
+                                <option value="AK">CAD</option>
+                            </select>
+            
+            
+                        </div>
+            
+            
                         <div class="form-group long">
                             <label>THEO NGÀY</label>
                             <div class="input-daterange input-group" id="datepicker-range">
@@ -455,44 +486,29 @@
                             </div>
                         </div>
             
-                        <!--<div class="form-group">-->
-                        <!--<label>Disabled</label>-->
-                        <!--<span class="help">e.g. </span>-->
-                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
-                        <!--</div>-->
-            
                         <div class="form-group">
             
-                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn
                             </button>
+            
             
                         </div>
                     </form>
-            
                 </div>
-            
             </div>
             
             
-            
-            
-            
-            
-            
-            
-            
-
 
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách excel
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
                           </button>
 
-                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                        <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
                           </button>
 
                     </div>
@@ -531,86 +547,109 @@
                                         </div>
 
                                     </th>
-                                    <th style="width: 50px">STT</th>
-                                    <th style="width: 150px">Ngày</th>
-                                    <th style="width: 200px">Tên giao dịch</th>
+                                    <th style="">Ngày GD</th>
+                                    <th style="">Mã CN/PGD</th>
+                                    
+                                    <th style="">Tên CN/PGD</th>
+                                    <th style="">Tên GD</th>
 
-                                    <th style="width: 100px">ID đối tác</th>
-                                    <th style="width: 200px">CN/PGD</th>
-                                    <th style="width: 200px">Loại dịch vụ</th>
-                                    <th style="">Hoa hồng</th>
+                                    <th style="">Loại tiền TT</th>
 
-                                    <th style="width: 200px">Chi tiết</th>
+                                    <th style="">Loại tiền GD</th>
+
+                                    <th style="">Loại tiền chi</th>
+                                    
+                                    <th style="">Số tiền TT</th>
+
+                                    <th style="">Số tiền GD</th>
+
+                                    <th style="">Số tiền chi</th>
+                                    <th style="">Tỷ giá</th>
+
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr >
                                     <td class="v-align-middle">
                                         <div class="checkbox ">
                                             <input type="checkbox" value="3" id="checkbox2">
                                             <label for="checkbox2" class="m-r-0"></label>
                                         </div>
                                     </td>
-
                                     <td class="v-align-middle">
-                                        1
+                                        12/03/2017
                                     </td>
 
-                                    <td class="v-align-middle">
-                                        17/03/2017
+                                      <td class="v-align-middle">
+                                       ABC
                                     </td>
 
                                     <td class="v-align-middle">
                                         ABC
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        455
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                       Tỉnh, TP HCM
+                                        
                                     </td>
 
                                      <td class="v-align-middle">
-                                       PB, PO
+                                     
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      <span class="label label-primary">VND</span>
                                     </td>
 
                                     <td class="v-align-middle">
-                                       Hạn mức, Cố định
+                                     <span class="label label-primary">VND</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                      <span class="label label-primary">EUR</span>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      22600
+                                    </td>
+
+                                     <td class="v-align-middle">
+                                      425
+                                    </td>
+
+                                      <td class="v-align-middle">
+                                      0.2
                                     </td>
 
 
-                                    <td class="v-align-middle ">
-                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHoaHong">Xem</a>
-                                    </td>
 
                                 </tr>
+
+                            
 
 
                             </tbody>
                         </table>
 
 
-                         <nav aria-label="Page navigation" class="text-center">
-                           <ul class="pagination">
-                             <li>
-                               <a href="#" aria-label="Previous">
-                                 <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
-                               </a>
-                             </li>
-                             <li><a href="#">1</a></li>
-                             <li><a href="#">2</a></li>
-                             <li><a href="#">3</a></li>
-                             <li><a href="#">4</a></li>
-                             <li><a href="#">5</a></li>
-                             <li>
-                               <a href="#" aria-label="Next">
-                                 <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
-                               </a>
-                             </li>
-                           </ul>
-                         </nav>
+                        <nav aria-label="Page navigation" class="text-center">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
 
                     </div>
                 </div>
@@ -2793,7 +2832,6 @@
   </script>
 
  
-
 
 
 
