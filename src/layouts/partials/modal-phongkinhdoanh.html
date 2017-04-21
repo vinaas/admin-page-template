@@ -1,0 +1,319 @@
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalKinhDoanhTyGia" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h5>Tạo mới <span class="semi-bold">Tỷ giá trao đổi với đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="form-group form-group-attached">
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
+
+                        <select class="full-width " data-init-plugin="select2">
+                            <option value="AK" disabled selected>Chọn đối tác</option>
+                            <option value="AK">Nguyễn Văn B</option>
+                            <option value="HI">Nguyễn Văn A</option>
+
+
+
+                        </select>
+
+
+
+                    </div>
+
+                    <!--<div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                        </div>
+                    </div>-->
+
+                    <h6 class="bold text-uppercase m-t-20">Loại tiền</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Loại tiền bán</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                        <option value="">USD</option>
+                                        <option value="">VND</option>
+                                        <option value="">CAD</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Loại tiền mua</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                        <option value="">USD</option>
+                                        <option value="">VND</option>
+                                        <option value="">CAD</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin</h6>
+
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá OCB</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá FX</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá đối tác</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá bán ngoại tệ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tỷ giá mua ngoại tệ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Số tiền bán</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                    <h6 class="bold text-uppercase m-t-20">Thành tiền</h6>
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Thành tiền TT</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Thành tiền đối tác</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="kinhdoanh-xemnhaplieu" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết <span class="semi-bold">Yêu cầu duyệt</span></h5>
+            </div>
+            <div class="modal-body">
+                <div class="panel panel-default">
+
+
+                    <div class="panel-body">
+
+                        <div class="row static-info">
+                            <div class="col-md-2 name"> Tên đối tác: </div>
+                            <div class="col-md-9 value"> ABC
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <table class="table table-hover table-small">
+                    <thead>
+                    <tr>
+
+                        <th style="">Ngày yêu cầu</th>
+                        <th style="">Ngày duyệt</th>
+                        <th style="">Loại tiền bán</th>
+                        <th style="">Số tiền bán</th>
+
+
+                        <th style="">Tỷ giá FX</th>
+                        <th style="">Tỷ giá mua ngoại tệ</th>
+
+                        <th style="">Loại tiền mua</th>
+
+                        <th style="">Tỷ giá đối tác</th>
+                        <th style="">Tỷ giá bán ngoại tệ</th>
+                        <th style="">Thành tiền đối tác</th>
+                        <th style="">Thành tiền TT</th>
+
+                        <th style="">Trạng thái</th>
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td class="v-align-middle">
+                            12/03/2017
+                        </td>
+
+                        <td class="v-align-middle">
+                            17/03/2017
+                        </td>
+
+                        <td class="v-align-middle">
+                            <span class="label label-primary">VND</span>
+                        </td>
+
+                        <td class="v-align-middle">
+                            500
+                        </td>
+
+                        <td class="v-align-middle">
+                        </td>
+
+
+                        <td class="v-align-middle">
+                            22600
+                        </td>
+
+
+
+                        <td class="v-align-middle">
+                            <span class="label label-primary">EUR</span>
+                        </td>
+
+                        <td class="v-align-middle">
+                        </td>
+
+                        <td class="v-align-middle">
+                            22600
+                        </td>
+
+                        <td class="v-align-middle">
+                            425
+                        </td>
+
+                        <td class="v-align-middle">
+                        </td>
+
+
+
+                        <td class="v-align-middle">
+                            <span class="label label-default">Chưa duyệt</span>
+                        </td>
+
+
+
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
