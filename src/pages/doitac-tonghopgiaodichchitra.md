@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-tonghopgiaodichchitra.html",
     "permalink" : false,
-    "activeLink" : "doitac-tonghopgiaodichchitra"
+    "activeLink" : "doitac"
 }
 ---
 

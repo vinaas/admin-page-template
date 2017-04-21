@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-nhantien.html",
     "permalink" : false,
-    "activeLink" : "doitac-nhantien"
+    "activeLink" : "doitac"
 }
 ---
 

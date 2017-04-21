@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-choduyet.html",
     "permalink" : false,
-    "activeLink" : "index"
+    "activeLink" : "doitac"
 }
 ---
 

@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "banlanhdao-tindung.html",
     "permalink" : false,
-    "activeLink" : "banlanhdao-tindung"
+    "activeLink" : "banlanhdao"
 }
 ---
 

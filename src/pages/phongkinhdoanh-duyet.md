@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "phongkinhdoanh-duyet.html",
     "permalink" : false,
-    "activeLink" : "phongkinhdoanh-duyet"
+    "activeLink" : "phongkinhdoanh"
 }
 ---
 

@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "phongkinhdoanh-thongke.html",
     "permalink" : false,
-    "activeLink" : "phongkinhdoanh-thongke"
+    "activeLink" : "phongkinhdoanh"
 }
 ---
 
