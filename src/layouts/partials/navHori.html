@@ -1,4 +1,4 @@
-
+{{#ifEqual type "doitac"}}
 <div class="bar">
     <div class="pull-right">
         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
@@ -40,3 +40,68 @@
         </ul>
     </div>
 </div>
+
+{{/ifEqual}}
+
+{{#ifEqual type "phongkinhdoanh"}}
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'phongkinhdoanh'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh.html">
+                    <span class="">Danh sách nhập liệu </span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongkinhdoanh-duyet'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh-duyet.html">
+                    <span class="">Danh sách duyệt</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongkinhdoanh-thongke'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh-thongke.html">
+                    <span class="">Thống kê</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
+
+
+{{#ifEqual type "banlanhdao"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'banlanhdao'}} active {{/ifEqual}}">
+                <a href="banlanhdao.html">
+                    <span class="">Duyệt danh sách giao dịch </span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'banlanhdao-tindung'}} active {{/ifEqual}}">
+                <a href="banlanhdao-tindung.html">
+                    <span class="">Duyệt hạn mức tín dụng</span>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
