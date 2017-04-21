@@ -16,7 +16,7 @@ import metalsmithLayouts   from  'metalsmith-layouts';
 import metalsmithMarkdown   from 'metalsmith-markdown';
 import metalsmithMatters from 'metalsmith-matters';
 import metalsmithCollections from 'metalsmith-collections';
-import metadata from 'metalsmith-metadata-directory';
+import metalsmithPath from 'metalsmith-paths';
 
 import Handlebars       from 'handlebars';
 require('./src/helpers/handlebars-helper.js')(Handlebars);
@@ -65,17 +65,7 @@ function copy() {
 }
 
 // Copy page templates into finished HTML files
-function pages2() {
-  return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
-    .pipe(panini({
-      root: 'src/pages/',
-      layouts: 'src/layouts/',
-      partials: 'src/partials/',
-      data: 'src/data/',
-      helpers: 'src/helpers/'
-    }))
-    .pipe(gulp.dest(PATHS.dist));
-}
+
 
 function pages(){
   return gulp.src('src/pages/**')
@@ -93,9 +83,10 @@ function pages(){
           destination :'/dist',
 
           use: [
-            // metadata({
-            //   directory: 'src/data/**/*.json'
-            // }),
+       
+            metalsmithPath({
+              "property": "path"
+            }),
             metalsmithMatters({
                 '_enable': true,
                 'delims':  ['---json', '---'],
@@ -120,10 +111,7 @@ function pages(){
               })
               
           ],
-          // Initial Metalsmith metadata, defaults to {} 
-          metadata: {
-              site_title: 'Sample static site'
-          },
+      
           // List of JSON files that contain page definitions 
           // true means "all JSON files", see the section below 
           json: ['src/pages.json']

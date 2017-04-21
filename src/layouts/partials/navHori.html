@@ -7,31 +7,31 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="{{#ifCond activeLink 'index'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'index'}} active {{/ifEqual}}">
                 <a href="index.html">
                     <span class="">Danh sách đối tác </span>
                 </a>
             </li>
 
-              <li class="{{#ifCond activeLink 'doitac-nhantien'}} active {{else}} {{/ifCond}}">
+              <li class="{{#ifEqual path.name 'doitac-nhantien'}} active {{/ifEqual}}">
+
                 <a href="doitac-nhantien.html">
                     <span class="">Nhận tiền đối tác chuyển về</span>
                 </a>
             </li>
-
-            <li class="{{#ifCond activeLink 'doitac-hanmuc'}} active {{else}} {{/ifCond}}">
+             <li class="{{#ifEqual path.name 'doitac-hanmuc'}} active {{/ifEqual}}">
                 <a href="doitac-hanmuc.html">
                     <span class="">Danh sách hạn mức</span>
                 </a>
             </li>
 
-             <li class="{{#ifCond activeLink 'doitac-hoahong'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'doitac-hoahong'}} active {{/ifEqual}}">
                 <a href="doitac-hoahong.html">
                     <span class="">Hoa hồng đối tác</span>
                 </a>
             </li>
-
-             <li class="{{#ifCond activeLink 'doitac-tonghopgiaodichchitra'}} active {{else}} {{/ifCond}}">
+            
+            <li class="{{#ifEqual path.name 'doitac-tonghopgiaodichchitra'}} active {{/ifEqual}}">
                 <a href="doitac-tonghopgiaodichchitra.html">
                     <span class="">Tổng hợp giao dịch chi trả</span>
                 </a>

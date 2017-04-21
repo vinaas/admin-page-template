@@ -7,19 +7,19 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="{{#ifCond activeLink 'phongkinhdoanh'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'phongkinhdoanh'}} active {{/ifEqual}}">
                 <a href="phongkinhdoanh.html">
                     <span class="">Danh sách nhập liệu </span>
                 </a>
             </li>
 
-              <li class="{{#ifCond activeLink 'phongkinhdoanh-duyet'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'phongkinhdoanh-duyet'}} active {{/ifEqual}}">
                 <a href="phongkinhdoanh-duyet.html">
                     <span class="">Danh sách duyệt</span>
                 </a>
             </li>
 
-            <li class="{{#ifCond activeLink 'phongkinhdoanh-thongke'}} active {{else}} {{/ifCond}}">
+             <li class="{{#ifEqual path.name 'phongkinhdoanh-thongke'}} active {{/ifEqual}}">
                 <a href="phongkinhdoanh-thongke.html">
                     <span class="">Thống kê</span>
                 </a>

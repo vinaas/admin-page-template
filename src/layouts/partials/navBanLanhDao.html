@@ -7,13 +7,13 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="{{#ifCond activeLink 'banlanhdao'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'banlanhdao'}} active {{/ifEqual}}">
                 <a href="banlanhdao.html">
                     <span class="">Duyệt danh sách giao dịch </span>
                 </a>
             </li>
 
-              <li class="{{#ifCond activeLink 'banlanhdao-tindung'}} active {{else}} {{/ifCond}}">
+            <li class="{{#ifEqual path.name 'banlanhdao-tindung'}} active {{/ifEqual}}">
                 <a href="banlanhdao-tindung.html">
                     <span class="">Duyệt hạn mức tín dụng</span>
                 </a>

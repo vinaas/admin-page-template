@@ -2,29 +2,33 @@
 
 var HandlebarsLayouts = require('handlebars-layouts');
 
-var Helpers = require('handlebars-helpers');
-
 module.exports = function (Handlebars) {
     Handlebars.registerHelper(HandlebarsLayouts(Handlebars));
 
-    // Helpers({handlebars: Handlebars});
-
-     ['array', 'code', 'collection', 'comparison', 'date', 'fs', 'html', 'i18n', 'inflection', 'logging', 'markdown', 'match', 'math', 'misc', 'number', 'path', 'string', 'url'].forEach(function(name) {
-        Helpers[name]({
-        handlebars: Handlebars
-        });
+    Handlebars.registerHelper('ifEqual', function (a, b, options) {
+        if (a === b) return options.fn(this);
+        else return options.inverse(this);
     });
 
-     Handlebars.registerHelper('ifCond', function(v1, v2, options) {
-        if(v1 === v2) {
-          return options.fn(this);
+    Handlebars.registerHelper('repeat', function (count, options) {
+        var str = '';
+        var data;
+
+        if (options.data) {
+            data = Handlebars.createFrame(options.data);
         }
-        return options.inverse(this);
-      });
 
+        for (var i = 0; i < count; i++) {
+            if (data) {
+                data.index = i;
+            }
 
-    Handlebars.registerHelper('json', function (obj) {
-        return JSON.stringify(obj);
+            str += options.fn(this, {
+                data: data
+            });
+        }
+
+        return str;
     });
 
 };
