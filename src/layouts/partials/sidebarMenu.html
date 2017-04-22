@@ -22,11 +22,44 @@
           <span class="icon-thumbnail "><i class="fa fa-users"></i></span>
         </li>
 
+
         <li class="{{#ifEqual activeLink 'phongvanhanh'}} active {{/ifEqual}}">
-          <a href="phongvanhanh.html">
-            <span class="title">Phòng vận hành</span>
+          <a href="javascript:;">
+           <span class="title">Phòng vận hành</span>
+            <span class=" arrow"></span>
           </a>
-          <span class="icon-thumbnail "><i class="fa fa-users"></i></span>
+          <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+
+          <ul class="sub-menu">
+
+
+            <li class="{{#ifEqual activeLink 'phongvanhanh'}} active {{/ifEqual}}">
+              <a href="phongvanhanh.html">Danh sách giao dịch</a>
+              <span class="icon-thumbnail"></span>
+            </li>
+
+            <li  class="{{#ifEqual activeLink 'phongvanhanh-quanlygiaodich'}} active {{/ifEqual}}">
+              <a href="phongvanhanh-quanlygiaodich.html">Quản lý Giao dịch</a>
+              <span class="icon-thumbnail"></span>
+            </li>
+
+            <li  class="{{#ifEqual activeLink 'phongvanhanh-thuchiengiaodich'}} active {{/ifEqual}}">
+              <a href="phongvanhanh-thuchiengiaodich.html">Thực hiện Giao dịch</a>
+              <span class="icon-thumbnail"></span>
+            </li>
+
+            <li  class="{{#ifEqual activeLink 'phongvanhanh-hoibao'}} active {{/ifEqual}}">
+              <a href="phongvanhanh-hoibao.html">Hồi báo</a>
+              <span class="icon-thumbnail"></span>
+            </li>
+
+            <li  class="{{#ifEqual activeLink 'phongvanhanh-truyvan'}} active {{/ifEqual}}">
+              <a href="phongvanhanh-truyvan.html">Truy vấn</a>
+              <span class="icon-thumbnail"></span>
+            </li>
+
+
+          </ul>
         </li>
 
         <!--<li class="">
@@ -50,6 +83,8 @@
             </li>
           </ul>
         </li>-->
+
+
       </ul>
       <div class="clearfix"></div>
     </div>
