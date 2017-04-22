@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Nhập danh sách tổng",
+    "title": "Nhập danh sách chi tiết",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh.html",
+    "layout": "phongvanhanh-nhapdanhsachchitiet.html",
     "permalink" : false,
-    "activeLink" : "phongvanhanh"
+    "activeLink" : "phongvanhanh-nhapdanhsachchitiet"
 }
 ---
 
