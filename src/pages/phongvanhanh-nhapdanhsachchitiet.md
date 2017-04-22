@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "phongvanhanh-nhapdanhsachchitiet.html",
     "permalink" : false,
-    "activeLink" : "phongvanhanh-nhapdanhsachchitiet"
+    "activeLink" : "phongvanhanh"
 }
 ---
 

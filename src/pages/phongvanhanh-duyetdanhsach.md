@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "phongvanhanh-duyetdanhsach.html",
     "permalink" : false,
-    "activeLink" : "phongvanhanh-duyetdanhsach"
+    "activeLink" : "phongvanhanh"
 }
 ---
 
