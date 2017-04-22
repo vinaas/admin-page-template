@@ -382,7 +382,7 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="   active ">
+            <li class=" active   ">
                 <a href="doitac.html">
                     <span class="">Danh sách đối tác </span>
                 </a>
@@ -423,24 +423,6 @@
 
 
 
-<!--<div class="" data-pages="parallax">-->
-<!--<div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">-->
-<!--<div class="inner">-->
-<!--&lt;!&ndash; START BREADCRUMB &ndash;&gt;-->
-<!--<ul class="breadcrumb">-->
-<!--<li>-->
-<!--<p>Pages</p>-->
-<!--</li>-->
-<!--<li><a href="#" class="active">Barebone template</a>-->
-<!--</li>-->
-<!--</ul>-->
-
-
-<!--&lt;!&ndash; END BREADCRUMB &ndash;&gt;-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!-- END JUMBOTRON -->
 <!-- START CONTAINER FLUID -->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
@@ -448,18 +430,23 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title"> <a href="index.html" class="btn btn-tag  btn-tag-light m-r-20"> <i class="fa fa-chevron-left"></i> Quay lại</a>  Danh sách đối tác chờ duyệt</h3>
+            <h3 class="page-title">Quản lý danh sách đối tác  <a href="doitac-choduyet.html" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Danh sách đối tác chờ duyệt <i class="fa fa-chevron-right"></i> </a> </h3>
 
         </div>
 
-        <!--<div class="col-sm-5">
+        <div class="col-sm-5">
             <div class="text-right">
 
-                <a href="index.html" class="btn btn-info  btn-cons m-b-10"><i class="fa fa-list-alt"></i> Danh sách đối tác 
-                </a>
+
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
+                </button>
+
+                <!--
+                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
+                </button>-->
 
             </div>
-        </div>-->
+        </div>
 
     </div>
 
@@ -467,91 +454,94 @@
 
         <div class="col-md-12">
 
-            
-            <div class="panel panel-default">
-                <!--<div class="panel-heading">-->
-                <!--<div class="panel-title">-->
-                <!--Option #two-->
-                <!--</div>-->
-                <!--</div>-->
-                <div class="panel-body">
-                    <h5 class="m-t-0">
-                        Tìm kiếm
-                    </h5>
-                    <form role="form" lpformnum="2" class="form-filter">
-                        <div class="form-group">
-                            <label>Từ khóa</label>
-                            <span class="help">e.g. </span>
-                            <input type="email" class="form-control">
-                        </div>
-                        <!--<div class="form-group">
-                            <label>Thuộc danh mục</label>
-            
-                            <select class="full-width" data-init-plugin="select2">
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                <option value="AK">Alaska</option>
-                                <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                <option value="CA">California</option>
-                                <option value="NV">Nevada</option>
-                                <option value="OR">Oregon</option>
-                                <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                <option value="AZ">Arizona</option>
-                                <option value="CO">Colorado</option>
-            
-                                </optgroup>
-            
-                                </select>
-                        </div>-->
-                        <div class="form-group long">
-                            <label>THEO NGÀY</label>
-                            <div class="input-daterange input-group" id="datepicker-range">
-                                <input type="text" class="input form-control" name="start"/>
-                                <span class="input-group-addon">đến</span>
-                                <input type="text" class="input form-control" name="end"/>
-                            </div>
-                        </div>
-            
-                        <!--<div class="form-group">-->
-                        <!--<label>Disabled</label>-->
-                        <!--<span class="help">e.g. </span>-->
-                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
-                        <!--</div>-->
-            
-                        <div class="form-group">
-            
-                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                            </button>
-            
-                        </div>
-                    </form>
-            
-                </div>
-            
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
+       
+       <div class="panel panel-default">
+           <!--<div class="panel-heading">-->
+           <!--<div class="panel-title">-->
+           <!--Option #two-->
+           <!--</div>-->
+           <!--</div>-->
+           <div class="panel-body">
+               <h5 class="m-t-0">
+                   Tìm kiếm
+               </h5>
+               <form role="form" lpformnum="2" class="form-filter">
+                   <div class="form-group">
+                       <label>Từ khóa</label>
+                       <span class="help">e.g. </span>
+                       <input type="email" class="form-control">
+                   </div>
+                   <!--<div class="form-group">
+                       <label>Thuộc danh mục</label>
+       
+                       <select class="full-width" data-init-plugin="select2">
+                           <optgroup label="Alaskan/Hawaiian Time Zone">
+                           <option value="AK">Alaska</option>
+                           <option value="HI">Hawaii</option>
+                           </optgroup>
+                           <optgroup label="Pacific Time Zone">
+                           <option value="CA">California</option>
+                           <option value="NV">Nevada</option>
+                           <option value="OR">Oregon</option>
+                           <option value="WA">Washington</option>
+                           </optgroup>
+                           <optgroup label="Mountain Time Zone">
+                           <option value="AZ">Arizona</option>
+                           <option value="CO">Colorado</option>
+       
+                           </optgroup>
+       
+                           </select>
+                   </div>-->
+                   <div class="form-group long">
+                       <label>THEO NGÀY</label>
+                       <div class="input-daterange input-group" id="datepicker-range">
+                           <input type="text" class="input form-control" name="start"/>
+                           <span class="input-group-addon">đến</span>
+                           <input type="text" class="input form-control" name="end"/>
+                       </div>
+                   </div>
+       
+                   <!--<div class="form-group">-->
+                   <!--<label>Disabled</label>-->
+                   <!--<span class="help">e.g. </span>-->
+                   <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+                   <!--</div>-->
+       
+                   <div class="form-group">
+       
+                       <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                       </button>
+       
+                   </div>
+               </form>
+       
+           </div>
+       
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+
 
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
                           </button>
 
-                        <button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
                           </button>
 
-               
+                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
                     </div>
 
 
@@ -588,7 +578,6 @@
                                         </div>
 
                                     </th>
-                                    <th>Trạng thái</th>
                                     <th>Ngày tạo</th>
                                     <th>Mã đối tác</th>
                                     <th>Tên đầy đủ</th>
@@ -603,6 +592,7 @@
                                     <th>Loại dịch vụ</th>
 
                                     <th>Hợp đồng</th>
+                                    <th style="width: 70px"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -613,7 +603,6 @@
                                             <label for="checkbox2" class="m-r-0"></label>
                                         </div>
                                     </td>
-                                    <td>NA</td>
                                     <td class="v-align-middle ">
                                         04/03/2017
                                     </td>
@@ -650,12 +639,34 @@
                                         CAD
                                     </td>
                                     <td class="v-align-middle">
-                                        PO, PR
+                                        Tại quầy theo DS/MS
                                     </td>
                                     <td class="v-align-middle text-center">
                                         <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                     </td>
-                                 
+                                    <td class="v-align-middle">
+
+                                        <div class="dropdown pull-right">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fa fa-cog"></i>
+</button>
+                                            <ul class="dropdown-menu profile-dropdown" role="menu">
+                                                <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i class="fa fa-edit"></i> Sửa</a>
+                                                </li>
+
+
+                                                <li class="bg-master-lighter">
+                                                    <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
+                                                        <span class="pull-left">Xóa</span>
+                                                        <span class="pull-right"><i class="fa fa-trash-o"></i></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </td>
                                 </tr>
 
                             </tbody>
