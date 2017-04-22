@@ -3,8 +3,9 @@
     "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "index.html",
-    "permalink" : false
+    "layout": "doitac.html",
+    "permalink" : false,
+    "activeLink" : "doitac"
 }
 ---
 

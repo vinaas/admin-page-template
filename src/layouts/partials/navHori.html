@@ -7,8 +7,8 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="{{#ifEqual path.name 'index'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-hopdong'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-choduyet'}} active {{/ifEqual}}">
-                <a href="index.html">
+            <li class="{{#ifEqual path.name 'doitac'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-hopdong'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-choduyet'}} active {{/ifEqual}}">
+                <a href="doitac.html">
                     <span class="">Danh sách đối tác </span>
                 </a>
             </li>
@@ -52,9 +52,12 @@
     </div>
     <div class="bar-inner">
         <ul>
+
+            
+
             <li class="{{#ifEqual path.name 'phongkinhdoanh'}} active {{/ifEqual}}">
                 <a href="phongkinhdoanh.html">
-                    <span class="">Danh sách nhập liệu </span>
+                    <span class="">{{path.base }} Danh sách nhập liệu </span>
                 </a>
             </li>
 

@@ -1,205 +1,85 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type=activeLink}}
-
-<!-- START CONTAINER FLUID -->
-<div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
-    <div class="row">
-        <div class="col-sm-7">
-
-            <h3 class="page-title">Quản lý danh sách đối tác  <a href="doitac-choduyet.html" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Danh sách đối tác chờ duyệt <i class="fa fa-chevron-right"></i> </a> </h3>
-
-        </div>
-
-        <div class="col-sm-5">
-            <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-
-                <!--
-                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
-                </button>-->
-
-            </div>
-        </div>
-
+{{#extend "login"}}
+ {{#content "main"}}
+  <div class="login-wrapper ">
+    <!-- START Login Background Pic Wrapper-->
+    <div class="bg-pic">
+      <!-- START Background Pic-->
+      <img src="assets/img/ocb-bg.jpg" data-src="assets/img/ocb-bg.jpg"
+        data-src-retina="assets/img/ocb-bg.jpg" alt="" class="lazy">
+      <!-- END Background Pic-->
+      <!-- START Background Caption-->
+      <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+        <h2 class="semi-bold text-white">
+         Ngân Hàng TMCP Phương Đông Việt Nam (OCB)</h2>
+        <p class="small">
+          Chào mừng bạn đến với Ngân hàng Phương Đông (tên viết tắt OCB), một trong những ngân hàng TMCP tốt nhất Việt Nam!
+        </p>
+      </div>
+      <!-- END Background Caption-->
     </div>
-
-    <div class="row">
-
-        <div class="col-md-12">
-
-       {{> formSearch type="normal"}}
-
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
-                          </button>
-
-                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
-                          </button>
-
-                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                          </button>
-
-                    </div>
-
-
-
-
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                          </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                          </button>
-
-                        </div>
-                    </div>
-
-
-                    <div class="clearfix"></div>
-                </div>
-                <div class="panel-body">
-
-                    <div class="tabler-responsive">
-
-
-
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-
-                                    <th style="width: 50px;padding: 10px 11px !important;">
-                                        <div class="checkbox ">
-                                            <input type="checkbox" value="3" id="checkbox1">
-                                            <label for="checkbox1" class="m-r-0"></label>
-                                        </div>
-
-                                    </th>
-                                    <th>Ngày tạo</th>
-                                    <th>Mã đối tác</th>
-                                    <th>Tên đầy đủ</th>
-                                    <th>Đơn vị ký HĐ</th>
-                                    <th>Số HĐ</th>
-                                    <th>Ngày HL</th>
-                                    <th>Ngày hết HL</th>
-                                    <th>Loại tiền thanh toán</th>
-                                    <th>Số tiền chuyển trước</th>
-                                    <th>Loại tiền giao dịch</th>
-                                    <th>Loại tiền chi</th>
-                                    <th>Loại dịch vụ</th>
-
-                                    <th>Hợp đồng</th>
-                                    <th style="width: 70px"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle">
-                                        <div class="checkbox ">
-                                            <input type="checkbox" value="3" id="checkbox2">
-                                            <label for="checkbox2" class="m-r-0"></label>
-                                        </div>
-                                    </td>
-                                    <td class="v-align-middle ">
-                                        04/03/2017
-                                    </td>
-                                    <td class="v-align-middle">
-                                        12
-                                    </td>
-                                    <td class="v-align-middle">
-                                        ABC
-                                    </td>
-                                    <td class="v-align-middle">
-                                        Công ty
-                                    </td>
-                                    <td class="v-align-middle">
-                                        245
-                                    </td>
-                                    <td class="v-align-middle">
-                                        12/03/2017
-                                    </td>
-                                    <td class="v-align-middle">
-                                        25/06/2017
-                                    </td>
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-primary">VND</span>
-
-                                    </td>
-                                    <td class="v-align-middle">
-                                        30.000
-                                    </td>
-                                    <td class="v-align-middle">
-                                        VND
-                                    </td>
-                                    <td class="v-align-middle">
-                                        CAD
-                                    </td>
-                                    <td class="v-align-middle">
-                                        Tại quầy theo DS/MS
-                                    </td>
-                                    <td class="v-align-middle text-center">
-                                        <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                    </td>
-                                    <td class="v-align-middle">
-
-                                        <div class="dropdown pull-right">
-                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fa fa-cog"></i>
-</button>
-                                            <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i class="fa fa-edit"></i> Sửa</a>
-                                                </li>
-
-
-                                                <li class="bg-master-lighter">
-                                                    <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
-                                                        <span class="pull-left">Xóa</span>
-                                                        <span class="pull-right"><i class="fa fa-trash-o"></i></span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-
-                         {{>pagination}}
-
-
-                    </div>
-                </div>
+    <!-- END Login Background Pic Wrapper-->
+    <!-- START Login Right Container-->
+    <div class="login-container bg-white">
+      <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+         <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" height="40">
+        <p class="p-t-35">Sign into your pages account</p>
+        <!-- START Login Form -->
+        <form id="form-login" class="p-t-15" role="form" action="index.html">
+            <!-- START Form Control-->
+            <div class="form-group form-group-default">
+              <label>Login</label>
+              <div class="controls">
+                <input type="text" name="username" placeholder="User Name" class="form-control" required>
+              </div>
             </div>
+            <!-- END Form Control-->
+            <!-- START Form Control-->
+            <div class="form-group form-group-default">
+              <label>Password</label>
+              <div class="controls">
+                <input type="password" class="form-control" name="password" placeholder="Credentials" required>
+              </div>
+            </div>
+            <!-- START Form Control-->
+            <div class="row">
+              <div class="col-md-6 no-padding">
+                <div class="checkbox ">
+                  <input type="checkbox" value="1" id="checkbox1">
+                  <label for="checkbox1">Keep Me Signed in</label>
+                </div>
+              </div>
+              <div class="col-md-6 text-right">
+                <a href="#" class="text-info small">Help? Contact Support</a>
+              </div>
+            </div>
+            <!-- END Form Control-->
+            <a class="btn btn-primary btn-cons m-t-10" type="submit" href="doitac.html">Đăng nhập</a>
+          </form>
 
-        </div>
+        <!--END Login Form-->
+        <!--<div class="pull-bottom sm-pull-bottom">
+          <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+            <div class="col-sm-3 col-md-2 no-padding">
+                <img alt="" class="m-t-5" data-src="assets/img/demo/pages_icon.png" data-src-retina="assets/img/demo/pages_icon_2x.png" height="60" src="assets/img/demo/pages_icon.png" width="60">
+              </div>
+            <div class="col-sm-9 no-padding m-t-10">
+              <p>
+                <small>
+									Create a pages account. If you have a facebook account, log into it for this
+									process. Sign in with <a href="#" class="text-info">Facebook</a> or <a href="#"
+									                                                                       class="text-info">Google</a>
+								</small>
+              </p>
+            </div>
+          </div>
+        </div>-->
 
 
 
-
+      </div>
     </div>
+    <!-- END Login Right Container-->
+  </div>
 
-</div>
-
-
-
-{{/content}} {{#content "script" mode="append"}}
-
-
-
-
-{{/content}} {{/extend}}
+{{/content}}
+{{/extend}}

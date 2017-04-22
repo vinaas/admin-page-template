@@ -1,0 +1,205 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Quản lý danh sách đối tác  <a href="doitac-choduyet.html" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Danh sách đối tác chờ duyệt <i class="fa fa-chevron-right"></i> </a> </h3>
+
+        </div>
+
+        <div class="col-sm-5">
+            <div class="text-right">
+
+
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
+                </button>
+
+                <!--
+                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
+                </button>-->
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+       {{> formSearch type="normal"}}
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                    </div>
+
+
+
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+
+                    <div class="tabler-responsive">
+
+
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th>Ngày tạo</th>
+                                    <th>Mã đối tác</th>
+                                    <th>Tên đầy đủ</th>
+                                    <th>Đơn vị ký HĐ</th>
+                                    <th>Số HĐ</th>
+                                    <th>Ngày HL</th>
+                                    <th>Ngày hết HL</th>
+                                    <th>Loại tiền thanh toán</th>
+                                    <th>Số tiền chuyển trước</th>
+                                    <th>Loại tiền giao dịch</th>
+                                    <th>Loại tiền chi</th>
+                                    <th>Loại dịch vụ</th>
+
+                                    <th>Hợp đồng</th>
+                                    <th style="width: 70px"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        04/03/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12
+                                    </td>
+                                    <td class="v-align-middle">
+                                        ABC
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Công ty
+                                    </td>
+                                    <td class="v-align-middle">
+                                        245
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        25/06/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <span class="label label-default">USD</span>
+                                        <span class="label label-primary">VND</span>
+
+                                    </td>
+                                    <td class="v-align-middle">
+                                        30.000
+                                    </td>
+                                    <td class="v-align-middle">
+                                        VND
+                                    </td>
+                                    <td class="v-align-middle">
+                                        CAD
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Tại quầy theo DS/MS
+                                    </td>
+                                    <td class="v-align-middle text-center">
+                                        <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                    </td>
+                                    <td class="v-align-middle">
+
+                                        <div class="dropdown pull-right">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fa fa-cog"></i>
+</button>
+                                            <ul class="dropdown-menu profile-dropdown" role="menu">
+                                                <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i class="fa fa-edit"></i> Sửa</a>
+                                                </li>
+
+
+                                                <li class="bg-master-lighter">
+                                                    <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
+                                                        <span class="pull-left">Xóa</span>
+                                                        <span class="pull-right"><i class="fa fa-trash-o"></i></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                         {{>pagination}}
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+
+
+{{/content}} {{/extend}}

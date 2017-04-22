@@ -9,6 +9,11 @@ module.exports = function (Handlebars) {
         if (a === b) return options.fn(this);
         else return options.inverse(this);
     });
+    Handlebars.registerHelper('ifContain', function (b, a, options) {
+        if (a.indexOf(b) != -1) return options.fn(this);
+        else return options.inverse(this);
+    });
+
 
     Handlebars.registerHelper('repeat', function (count, options) {
         var str = '';
