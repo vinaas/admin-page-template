@@ -1,3 +1,11 @@
+#### Hướng dẫn cài đặt phía dưới
+
+
+##### Cách tạo 1 trang mới
+
+
+
+
 # Zurb Foundation 6 - Metalsmith
 
 **Please open all issues with this template on the main [HTML-foundation6-metalsmith](http://gitlab.vienthonga.com/WebSite/HTML-foundation6-metalsmith) repo.**
