@@ -189,7 +189,7 @@
 
 
 
-                            <div class="tabler-responsive">
+                            <div class="table-responsive">
 
 
                                 <table class="table table-hover">
@@ -325,29 +325,40 @@
                     <div class="tab-pane " id="tabDaDuyet">
                         <div class="panel-body">
 
-                            {{>formSearch type="banlanhdao"}}
+                            {{>formSearch type="phongvanhanh2"}}
 
-                            <div class="tabler-responsive">
+                            <br>
 
+                            <div class="table-responsive">
 
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>
 
                                         <th style="width: 70px">STT</th>
-                                        <th style="width: 100px">ID</th>
-                                        <th style="width: 150px">Tên đối tác</th>
-                                        <th style="width: 150px">Mã danh sách</th>
-                                        <th style="width: 150px">Ngày yêu cầu</th>
-                                        <th style="width: 150px">Ngày duyệt</th>
-                                        <th style="width: 200px">Dánh sách loại tiền</th>
+                                        <th style="width: 150px">MÃ DANH SÁCH</th>
+                                        <th style="width: 200px">ĐỐI TÁC</th>
+                                        <th style="width: 70px">AUD</th>
+                                        <th style="width: 70px">CAD</th>
+                                        <th style="width: 70px">EUR</th>
+                                        <th style="width: 70px">GBP</th>
+                                        <th style="width: 70px">USD</th>
+                                        <th style="width: 70px">VND</th>
+                                        <th style="">HTTT</th>
+                                        <th style=" ">Tong ho so</th>
+                                        <th style=" ">Giờ thực hiện</th>
+
                                         <th style="width: 150px">Trạng thái</th>
 
-                                        <th>Chi tiết</th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="active">
+                                    <tr>
+
+
+
+
                                         <td class="v-align-middle text-center">
                                             1
                                         </td>
@@ -357,73 +368,72 @@
                                         </td>
 
                                         <td class="v-align-middle ">
-                                            ABC
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0001
+                                            MAYZUS
                                         </td>
 
                                         <td class="v-align-middle ">
-                                            12/03/2017
+                                            200
                                         </td>
 
                                         <td class="v-align-middle ">
-                                            15/03/2017
+                                            300
+                                        </td>
+                                        <td class="v-align-middle ">
+                                            400
                                         </td>
 
                                         <td class="v-align-middle ">
-                                            <span class="label label-default">USD</span>
-                                            <span class="label label-primary">CAD</span>
+                                            500
+                                        </td>
+
+                                        <td class="v-align-middle ">
+                                            100
+                                        </td>
+                                        <td class="v-align-middle ">
+                                            0
+                                        </td>
+
+
+                                        <td class="v-align-middle ">
+                                            tiền mặt
+                                        </td>
+
+                                        <td class="v-align-middle ">
+                                            100
+                                        </td>
+                                        <td class="v-align-middle ">
+                                            8h30
+                                        </td>
+
+
+                                        <td class="v-align-middle">
+                                            <span class="label label-default">Chờ duyệt</span>
+                                            <!--<span class="label label-success">Duyệt</span>-->
                                         </td>
 
                                         <td class="v-align-middle">
-                                            <!--<span class="label label-default">Chưa duyệt</span>-->
-                                            <span class="label label-success">Đã duyệt</span>
-                                        </td>
+                                            <div class="dropdown pull-right open">
+                                                <button type="button" class="btn btn-default dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="true">
+                                                    <i class="fa fa-cog"></i>
+                                                </button>
+                                                <ul class="dropdown-menu profile-dropdown" role="menu">
+                                                    <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i
+                                                            class="fa fa-edit"></i> Sửa</a>
+                                                    </li>
 
-                                        <td class="v-align-middle">
-                                            <a href="#"
-                                               class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td class="v-align-middle text-center">
-                                            1
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            235
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            DEF
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0002
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            12/03/2017
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            15/03/2017
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            <span class="label label-default">VND</span>
-                                            <span class="label label-primary">EUR</span>
-                                            <span class="label label-primary">USD</span>
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <span class="label label-success">Đã duyệt</span>
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="#"
-                                               class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                                    <li class="bg-master-lighter">
+                                                        <a href="#" data-toggle="modal" data-target="#modalXoa"
+                                                           class="clearfix">
+                                                            <span class="pull-left">Xóa</span>
+                                                            <span class="pull-right"><i
+                                                                    class="fa fa-trash-o"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
 
@@ -432,10 +442,11 @@
                                 </table>
 
 
+
                             </div>
 
 
-                            <h5>Chi tiết <span class="semi-bold">giao dịch</span></h5>
+                       <!--     <h5>Chi tiết <span class="semi-bold">danh sách</span></h5>
 
                             <div class="panel panel-default">
 
@@ -542,7 +553,7 @@
                                 </div>
 
                             </div>
-
+-->
 
                         </div>
                     </div>
