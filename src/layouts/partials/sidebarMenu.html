@@ -1,21 +1,21 @@
 <!-- BEGIN SIDEBAR MENU -->
     <div class="sidebar-menu">
       <ul class="menu-items">
-        <li class="m-t-30 {{#ifContain "doitac" layout }} active {{/ifContain}}">
+        <li class="m-t-30 {{#ifContain 'doitac' layout }} active {{/ifContain}}">
           <a href="doitac.html" class="detailed">
             <span class="title">Quản lý đối tác</span>
             <span class="details">2 thông báo</span>
           </a>
           <span class="icon-thumbnail "><i class="fa fa-group"></i></span>
         </li>
-        <li class="{{#ifContain "phongkinhdoanh" layout }} active {{/ifContain}}">
+        <li class="{{#ifContain 'phongkinhdoanh' layout }} active {{/ifContain}}">
           <a href="phongkinhdoanh.html">
             <span class="title">Phòng kinh doanh</span>
           </a>
           <span class="icon-thumbnail "><i class="fa fa-money"></i></span>
         </li>
 
-        <li class="{{#ifContain "banlanhdao" layout }} active {{/ifContain}}">
+        <li class="{{#ifContain 'banlanhdao' layout }} active {{/ifContain}}">
           <a href="banlanhdao.html">
             <span class="title">Ban lãnh đạo</span>
           </a>
@@ -23,7 +23,7 @@
         </li>
 
 
-        <li class="{{#ifContain "phongvanhanh" layout }} active {{/ifContain}}">
+        <li class="{{#ifContain 'phongvanhanh' layout }} active {{/ifContain}}">
           <a href="javascript:;">
            <span class="title">Phòng vận hành</span>
             <span class=" arrow"></span>
@@ -33,29 +33,29 @@
           <ul class="sub-menu">
 
 
-            <li >
+            <li class="{{#ifContain 'phongvanhanh' layout }} active {{/ifContain}}">
               <a href="phongvanhanh.html">Danh sách giao dịch</a>
-              <span class="icon-thumbnail"></span>
+              <span class="icon-thumbnail">1</span>
             </li>
 
             <li >
               <a href="phongvanhanh-quanlygiaodich.html">Quản lý Giao dịch</a>
-              <span class="icon-thumbnail"></span>
+              <span class="icon-thumbnail">2</span>
             </li>
 
             <li >
               <a href="phongvanhanh-thuchiengiaodich.html">Thực hiện Giao dịch</a>
-              <span class="icon-thumbnail"></span>
+              <span class="icon-thumbnail">3</span>
             </li>
 
             <li >
               <a href="phongvanhanh-hoibao.html">Hồi báo</a>
-              <span class="icon-thumbnail"></span>
+              <span class="icon-thumbnail">4</span>
             </li>
 
             <li >
               <a href="phongvanhanh-truyvan.html">Truy vấn</a>
-              <span class="icon-thumbnail"></span>
+              <span class="icon-thumbnail">5</span>
             </li>
 
 
