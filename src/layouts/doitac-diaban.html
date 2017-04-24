@@ -1,0 +1,153 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}  <a href="doitac-diabanduyet.html" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Duyệt danh mục địa bàn <i class="fa fa-chevron-right"></i> </a></h3>
+
+        </div>
+
+        <div class="col-sm-5">
+            <div class="text-right">
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal"
+                        data-target="#createDiaban"><i class="pg-form"></i> Tạo mới Địa bàn
+                </button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            {{>formSearch type="normal"}}
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                        </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+
+                    <div class="tabler-responsive">
+
+
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+
+                                <th style="width: 50px;padding: 10px 11px !important;">
+                                    <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox1">
+                                        <label for="checkbox1" class="m-r-0"></label>
+                                    </div>
+
+                                </th>
+                                <th style="width: 150px">Tên chi nhánh</th>
+                                <th style="width: 150px">Mã CN</th>
+
+                                <th style="width: 200px">Tên chi nhánh</th>
+                                <th style="width: 200px">Mã chi nhánh QL</th>
+                                <th style="width: 300px">Địa chỉ</th>
+
+                                <th style=""></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="v-align-middle">
+                                    <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox2">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </td>
+                                <td class="v-align-middle">
+                                    CN BEN THANH
+                                </td>
+
+                                <td class="v-align-middle">
+                                    1
+                                </td>
+                                <td class="v-align-middle ">
+                                    CN BEN THANH
+                                </td>
+
+                                <td class="v-align-middle">
+                                    1
+                                </td>
+
+                                <td class="v-align-middle">
+                                    Quận 1, Hồ chí minh
+                                </td>
+
+
+                                <td class="v-align-middle">
+
+                                    <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-toggle="modal"
+                                                data-target="#modalXoa"><i class="fa fa-edit"></i> Xóa
+                                        </button>
+
+                                    </div>
+
+
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                        {{>pagination}}
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+{{/content}} {{/extend}}
