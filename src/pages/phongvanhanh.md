@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Nhập danh sách tổng",
+    "title": "Danh sách tổng",
     "slug": "",
     "description": "Index Page",
     "layout": "phongvanhanh.html",

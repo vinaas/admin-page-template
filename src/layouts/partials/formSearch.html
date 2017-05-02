@@ -306,4 +306,80 @@
 
     </div>
 </form>
+
+{{/ifEqual}}
+
+
+{{#ifEqual type "phongvanhanh3"}}
+<form role="form" lpformnum="2" class="form-filter">
+    <!--<div class="form-group">
+<label>Từ khóa</label>
+<span class="help">e.g. </span>
+<input type="email" class="form-control">
+</div>-->
+
+
+    <div class="form-group long">
+        <label>THEO NGÀY</label>
+        <div class="input-daterange input-group" id="datepicker-range">
+            <input type="text" class="input form-control" name="start"/>
+            <span class="input-group-addon">đến</span>
+            <input type="text" class="input form-control" name="end"/>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label>Tên đối tác</label>
+        <input type="text" class="form-control">
+    </div>
+
+
+
+
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                class="fa fa-search"></i> Tìm kiếm
+        </button>
+
+    </div>
+</form>
+
+{{/ifEqual}}
+
+
+
+{{#ifEqual type "phongvanhanh4"}}
+<form role="form" lpformnum="2" class="form-filter">
+    <div class="form-group">
+        <label>Loại dịch vụ</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Địa bàn</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Số tiền lọc</label>
+        <input type="text" class="form-control">
+    </div>
+
+
+
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                class="fa fa-file-text"></i> Lọc danh sách
+        </button>
+
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                class="fa fa-rotate-left"></i> Làm mới
+        </button>
+
+    </div>
+</form>
+
 {{/ifEqual}}
