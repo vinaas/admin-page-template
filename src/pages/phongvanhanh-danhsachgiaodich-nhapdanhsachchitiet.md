@@ -3,7 +3,7 @@
     "title": "Danh sách chi tiết",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-nhapdanhsachchitiet.html",
+    "layout": "phongvanhanh-danhsachgiaodich-nhapdanhsachchitiet.html",
     "permalink" : false,
     "activeLink" : "phongvanhanh"
 }

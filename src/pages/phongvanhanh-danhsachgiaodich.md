@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Duyệt danh sách",
+    "title": "Danh sách tổng",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-duyetdanhsach.html",
+    "layout": "phongvanhanh-danhsachgiaodich.html",
     "permalink" : false,
     "activeLink" : "phongvanhanh"
 }
