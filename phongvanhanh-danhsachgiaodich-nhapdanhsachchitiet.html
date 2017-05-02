@@ -99,11 +99,11 @@
     
     
                 <li class=" active ">
-                  <a href="phongvanhanh.html">Danh sách giao dịch</a>
+                  <a href="phongvanhanh-danhsachgiaodich.html">Danh sách giao dịch</a>
                   <span class="icon-thumbnail">1</span>
                 </li>
     
-                <li >
+                <li class="">
                   <a href="phongvanhanh-quanlygiaodich.html">Quản lý Giao dịch</a>
                   <span class="icon-thumbnail">2</span>
                 </li>
@@ -390,20 +390,20 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class=" active ">
-                <a href="phongvanhanh.html">
+            <li class="">
+                <a href="phongvanhanh-danhsachgiaodich.html">
                     <span class="">Nhập DS Tổng</span>
                 </a>
             </li>
 
-            <li class="">
-                <a href="phongvanhanh-nhapdanhsachchitiet.html">
+            <li class=" active ">
+                <a href="phongvanhanh-danhsachgiaodich-nhapdanhsachchitiet.html">
                     <span class="">Nhập DS chi tiết</span>
                 </a>
             </li>
 
             <li class="">
-                <a href="phongvanhanh-duyetdanhsach.html">
+                <a href="phongvanhanh-danhsachgiaodich-duyetdanhsach.html">
                     <span class="">Duyệt DS</span>
                 </a>
             </li>
@@ -413,13 +413,16 @@
 </div>
 
 
+
+
+
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Nhập danh sách tổng</h3>
+            <h3 class="page-title">Danh sách chi tiết</h3>
 
         </div>
 
@@ -442,190 +445,102 @@
 
             <div class="panel panel-default ">
 
+
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist"
                     data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
+
                     <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>
+
+                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
 
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaDuyet">
 
-                        <div class="panel-body">
+                        <h5>Chi tiết <span class="semi-bold">Danh sách tổng</span></h5>
 
 
-                            <div class="panel panel-default">
-                                <!--<div class="panel-heading">-->
-                                <!--<div class="panel-title">-->
-                                <!--Option #two-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <div class="panel-body">
-                                    <h5 class="m-t-0">
-                                        Tạo danh sách
-                                    </h5>
-
-                                    <form role="form">
-
-                                        <div class="row">
-                                            <div class="col-md-4">
-
-                                                <h6 class="bold text-uppercase">Thông tin</h6>
-
-                                                <div class="form-group m-l-10">
-                                                    <label>Tên đối tác</label>
-
-                                                    <select class="full-width" data-init-plugin="select2"
-                                                            data-placeholder="">
-                                                        <option value=""></option>
-                                                        <option value="AK">Nguyễn Văn A</option>
-                                                        <option value="AK">Nguyễn Văn B</option>
-                                                        <option value="AK">Nguyễn Văn C</option>
-                                                    </select>
-                                                </div>
+                        <div class="panel panel-default">
 
 
-                                                <div class="form-group m-l-10">
-                                                    <label>Số hồ sơ</label>
-                                                    <!--<span class="help">e.g. </span>-->
-                                                    <input type="text" class="form-control">
-                                                </div>
+                            <div class="panel-body">
 
-                                                <div class="form-group m-l-10">
-                                                    <label>Tổng hồ sơ</label>
-                                                    <!--<span class="help">e.g. </span>-->
-                                                    <input type="text" class="form-control">
-                                                </div>
 
-                                            </div>
-                                            <div class="col-md-4">
+                                        <table class="table table-hover ">
+                                            <thead>
+                                            <tr class="active">
 
-                                                <h6 class="bold text-uppercase">Loại tiền</h6>
+                                                <th>Ngày</th>
+                                                <th>Mã danh sách</th>
+                                                <th>Tổng hồ sơ</th>
+                                                <th>Đối tác</th>
 
-                                                <div class="row ">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group m-l-10">
-                                                            <label>AUD</label>
-                                                            <!--<span class="help">e.g. </span>-->
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <th style="">AUD</th>
+                                                <th style="">CAD</th>
+                                                <th style="">EUR</th>
+                                                <th style="">GBP</th>
+                                                <th style="">USD</th>
+                                                <th style="">VND</th>
 
-                                                    </div>
-                                                    <div class="col-sm-6">
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                 <td class="v-align-middle"> 12/03/2017</td>
+                                                 <td class="v-align-middle"> 1-2000-120317-830</td>
+                                                 <td class="v-align-middle"> 100</td>
+                                                 <td class="v-align-middle"> MAYZUS</td>
+                                                 <td class="v-align-middle">200</td>
+                                                 <td class="v-align-middle">300</td>
+                                                 <td class="v-align-middle">400</td>
+                                                 <td class="v-align-middle">500</td>
+                                                 <td class="v-align-middle">400</td>
+                                                 <td class="v-align-middle">44,000,000</td>
 
-                                                        <div class="form-group m-l-10">
-                                                            <label>USD</label>
-                                                            <!--<span class="help">e.g. </span>-->
-                                                            <input type="text" class="form-control">
-                                                        </div>
 
-                                                    </div>
-                                                </div>
 
-                                                <div class="row">
-                                                    <div class="col-sm-6">
+                                            </tr>
 
-                                                        <div class="form-group m-l-10">
-                                                            <label>CAD</label>
-                                                            <!--<span class="help">e.g. </span>-->
-                                                            <input type="text" class="form-control">
-                                                        </div>
 
-                                                    </div>
-                                                    <div class="col-sm-6">
-
-                                                        <div class="form-group m-l-10">
-                                                            <label>GBP</label>
-                                                            <!--<span class="help">e.g. </span>-->
-                                                            <input type="text" class="form-control">
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-
-                                                        <div class="form-group m-l-10">
-                                                            <label>EUR</label>
-                                                            <!--<span class="help">e.g. </span>-->
-                                                            <input type="text" class="form-control">
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-md-8 m-t-10 sm-m-t-10 text-right">
-                                                <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
-                                                <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu
-                                                    duyệt
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                    </form>
-
-                                </div>
+                                            </tbody>
+                                        </table>
 
                             </div>
 
-                            <div class="row">
-                                <div class="col-sm-9">
+                        </div>
 
-                                    <div class="btn-group ">
 
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                        </button>
+                        <h5>Danh sách<span class="semi-bold"> chi tiết</span></h5>
 
+                        <div class="panel panel-default">
+
+
+                            <div class="panel-body">
+
+                                <form role="form">
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+
+                                            <div class="form-group">
+                                                <label>File danh sách</label>
+                                                <span class="help">e.g. "Mona Lisa Portrait"</span>
+                                                <input type="file" class="form-control" required="">
+                                            </div>
+
+                                        </div>
                                     </div>
 
-                                </div>
-
-                                <div class="col-sm-3 text-right">
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <form role="form" lpformnum="2" class="">
-                                    
-                                    
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Mã danh sách">
-                                            <span class="input-group-addon primary">
-                                                <i class="fa fa-search"></i>
-                                            </span>
-                                        </div>
-                                    </form>
-                                    
-                                    
-                                    
-                                    
+                                </form>
 
 
-
-                                </div>
-
-
-                            </div>
-
-
-
-                            <div class="table-responsive">
-
-
-                                <table class="table table-hover">
+                                <table class="table table-hover ">
                                     <thead>
                                     <tr>
-
                                         <th style="width: 50px;padding: 10px 11px !important;">
                                             <div class="checkbox ">
                                                 <input type="checkbox" value="3" id="checkbox1">
@@ -633,114 +548,151 @@
                                             </div>
 
                                         </th>
+                                        <th>STT</th>
+                                        <th>Ngày*</th>
+                                        <th>Mã số*</th>
+                                        <th>Người gửi*</th>
+                                        <th>Người nhận*</th>
+                                        <th>Số tiền gửi*</th>
+                                        <th>Loại tiền gửi*</th>
+                                        <th>Loại tiền chi*</th>
+                                        <th>Tỉnh thành*</th>
+                                        <th>Điểm giao dịch*</th>
+                                        <th>Loại dịch vụ* ^</th>
+                                        <th> Chi tiết</th>
 
-                                        <th style="width: 70px">STT</th>
-                                        <th style="width: 150px">MÃ DANH SÁCH</th>
-                                        <th style="width: 200px">ĐỐI TÁC</th>
-                                        <th style="width: 70px">AUD</th>
-                                        <th style="width: 70px">CAD</th>
-                                        <th style="width: 70px">EUR</th>
-                                        <th style="width: 70px">GBP</th>
-                                        <th style="width: 70px">USD</th>
-                                        <th style="width: 70px">VND</th>
-                                        <th style="">HTTT</th>
-                                        <th style=" ">Tong ho so</th>
-                                        <th style=" ">Giờ thực hiện</th>
-
-                                        <th style="width: 150px">Trạng thái</th>
-
-                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-
                                         <td class="v-align-middle">
                                             <div class="checkbox ">
                                                 <input type="checkbox" value="3" id="checkbox2">
                                                 <label for="checkbox2" class="m-r-0"></label>
                                             </div>
                                         </td>
-
-
-                                        <td class="v-align-middle text-center">
-                                            1
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            123
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            MAYZUS
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            200
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            300
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            400
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            500
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0
-                                        </td>
-
-
-                                        <td class="v-align-middle ">
-                                            tiền mặt
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            8h30
-                                        </td>
-
-
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">DANG ANH NHAT</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">22;000;000</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">AD</td>
                                         <td class="v-align-middle">
-                                            <span class="label label-default">Chờ duyệt</span>
-                                            <!--<span class="label label-success">Duyệt</span>-->
-                                        </td>
 
-                                        <td class="v-align-middle">
-                                            <div class="dropdown pull-right open">
-                                                <button type="button" class="btn btn-default dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i class="fa fa-cog"></i>
-                                                </button>
-                                                <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                    <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i
-                                                            class="fa fa-edit"></i> Sửa</a>
-                                                    </li>
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
 
 
-                                                    <li class="bg-master-lighter">
-                                                        <a href="#" data-toggle="modal" data-target="#modalXoa"
-                                                           class="clearfix">
-                                                            <span class="pull-left">Xóa</span>
-                                                            <span class="pull-right"><i
-                                                                    class="fa fa-trash-o"></i></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">2</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">DANG ANH NHAT</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">22;000;000</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">AD</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">3</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">DANG ANH NHAT</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">200</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PB</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">4</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">DANG ANH NHAT</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PB</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">5</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">DANG ANH NHAT</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PR</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
 
+                                    </tr>
 
                                     </tbody>
                                 </table>
@@ -748,13 +700,16 @@
 
                             </div>
 
-
                         </div>
 
+
                     </div>
+
                     <div class="tab-pane " id="tabDaDuyet">
                         <div class="panel-body">
 
+                            
+                            
                             
                             
                             
@@ -774,16 +729,18 @@
                             </div>-->
                             
                             
-                                <div class="form-group" >
-                                    <label>Theo ngày</label>
-                                    <div id="datepicker-component" class="input-group date ">
-                                        <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <div class="form-group long">
+                                    <label>THEO NGÀY</label>
+                                    <div class="input-daterange input-group" id="datepicker-range">
+                                        <input type="text" class="input form-control" name="start"/>
+                                        <span class="input-group-addon">đến</span>
+                                        <input type="text" class="input form-control" name="end"/>
                                     </div>
                                 </div>
                             
                             
                                 <div class="form-group">
-                                    <label>Mã danh sách</label>
+                                    <label>Tên đối tác</label>
                                     <input type="text" class="form-control">
                                 </div>
                             
@@ -798,246 +755,450 @@
                             
                                 </div>
                             </form>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
 
-                            <br>
 
-                            <div class="table-responsive">
+                            <table class="table table-hover ">
+                                <thead>
+                                <tr><th> STT</th>
+                                    <th> MÃ DANH SÁCH </th>
+                                    <th> ĐỐI TÁC </th>
+                                    <th> AUD</th>
+                                    <th> CAD</th>
+                                    <th> EUR</th>
+                                    <th> GBP</th>
+                                    <th> USD</th>
+                                    <th> VND</th>
+                                    <th>TỔNG HỒ SƠ </th>
+                                    <th>NGƯỜI DUYỆT</th>
+                                    <th> GIỜ THỰC HIỆN</th>
+                                    <th>TRẠNG THÁI</th>
+
+                                </tr>
+                                </thead>
+                                <tbody> <tr><td class="v-align-middle">1</td>
+                                    <td class="v-align-middle"> 1-2000-120317-830</td>
+                                    <td class="v-align-middle"> MAYZUS</td>
+                                    <td class="v-align-middle">200</td>
+                                    <td class="v-align-middle">300</td>
+                                    <td class="v-align-middle">400</td>
+                                    <td class="v-align-middle">500</td>
+                                    <td class="v-align-middle">400</td>
+                                    <td class="v-align-middle">44;000;000</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">Nguyễn Văn B</td>
+                                    <td class="v-align-middle">9h00</td>
+                                    <td class="v-align-middle">
+                                        <span class="label label-success">Đã duyệt</span>
+                                    </td>
+                                </tr>
+                                <tr><td class="v-align-middle">2</td>
+                                    <td class="v-align-middle"> 2-2001-130317-8</td>
+                                    <td class="v-align-middle"> ABC</td>
+                                    <td class="v-align-middle">200</td>
+                                    <td class="v-align-middle">300</td>
+                                    <td class="v-align-middle">400</td>
+                                    <td class="v-align-middle">500</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">0</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">Nguyễn Văn B</td>
+                                    <td class="v-align-middle">8h</td>
+                                    <td class="v-align-middle">
+                                        <span class="label label-success">Đã duyệt</span>
+                                    </td>
+                                </tr>
+                                <tr><td class="v-align-middle">3</td>
+                                    <td class="v-align-middle"> 3-2002-140317-1330</td>
+                                    <td class="v-align-middle"> DEF</td>
+                                    <td class="v-align-middle">200</td>
+                                    <td class="v-align-middle">300</td>
+                                    <td class="v-align-middle">400</td>
+                                    <td class="v-align-middle">500</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">0</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">Nguyễn Văn B</td>
+                                    <td class="v-align-middle">13h30</td>
+                                    <td class="v-align-middle">
+                                        <span class="label label-success">Đã duyệt</span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane " id="tabTraVe">
+
+                        <h5><span class="semi-bold">Danh sách tổng</span></h5>
+
+
+                        <div class="panel panel-default">
+
+
+                            <div class="panel-body">
+
+                                <table class="table table-hover ">
+                                    <thead>
+                                    <tr><th> STT</th>
+                                        <th> MÃ DANH SÁCH </th>
+                                        <th> ĐỐI TÁC </th>
+                                        <th> AUD</th>
+                                        <th> CAD</th>
+                                        <th> EUR</th>
+                                        <th> GBP</th>
+                                        <th> USD</th>
+                                        <th> VND</th>
+                                        <th>TỔNG HỒ SƠ</th>
+                                        <th>GIỜ THỰC HIỆN</th>
+                                        <th>TRẠNG THÁI</th>
+                                        <th>LÝ DO</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody> <tr><td class="v-align-middle">1</td>
+                                        <td class="v-align-middle"> 1-2000-120317-830</td>
+                                        <td class="v-align-middle"> MAYZUS</td>
+                                        <td class="v-align-middle">200</td>
+                                        <td class="v-align-middle">300</td>
+                                        <td class="v-align-middle">400</td>
+                                        <td class="v-align-middle">500</td>
+                                        <td class="v-align-middle">400</td>
+                                        <td class="v-align-middle">44;000;000</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">8h30</td>
+                                        <td class="v-align-middle"> <span class="label label-default">Chưa duyệt</span></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr><td class="v-align-middle">2</td>
+                                        <td class="v-align-middle"> 2-2001-130317-8</td>
+                                        <td class="v-align-middle"> MAYZUS</td>
+                                        <td class="v-align-middle">200</td>
+                                        <td class="v-align-middle">300</td>
+                                        <td class="v-align-middle">400</td>
+                                        <td class="v-align-middle">500</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">10;000;000</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">8h00</td>
+                                        <td class="v-align-middle"> <span class="label label-default">Chưa duyệt</span></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr><td class="v-align-middle">3</td>
+                                        <td class="v-align-middle"> 3-2002-140317-1330</td>
+                                        <td class="v-align-middle"> DEF</td>
+                                        <td class="v-align-middle">200</td>
+                                        <td class="v-align-middle">300</td>
+                                        <td class="v-align-middle">400</td>
+                                        <td class="v-align-middle">500</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">50;000;000</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">13h30</td>
+                                        <td class="v-align-middle"> <span class="label label-default">Chưa duyệt</span></td>
+                                        <td></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <h5>Danh sách<span class="semi-bold"> chi tiết</span></h5>
+
+                        <div class="panel panel-default">
+
+
+                            <div class="panel-body">
+
+
+
+                                <div class="row static-info">
+                                    <div class="col-md-2 col-lg-1 name"> Tên đối tác</div>
+                                    <div class="col-md-2 value"><b> MAYZUS</b>
+                                    </div>
+
+                                    <div class="col-md-2 col-lg-1 name"> Mã danh sách:</div>
+                                    <div class="col-md-2 value"><b> 1-2000-120317-830</b>
+                                    </div>
+                                </div>
+
+                                <div class="row static-info">
+                                    <div class="col-md-2 col-lg-1 name"> Tổng số hồ sơ</div>
+                                    <div class="col-md-2 value"><b> 100</b>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row static-info">
+                                    <div class="col-md-2 col-lg-1 name"> Tổng số tiền</div>
+                                    <div class="col-md-2 value">
+                                        <div class="form-group">
+                                            <label>VND</label>
+                                            <input type="text" class="form-control" required="" placeholder="44,000,000">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 value">
+                                        <div class="form-group">
+                                            <label>USD</label>
+                                            <input type="text" class="form-control" required="" placeholder="400">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr/>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <form role="form" lpformnum="2" class="form-filter">
+                                    <div class="form-group">
+                                        <label>Loại dịch vụ</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label>Địa bàn</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label>Số tiền lọc</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                
+                                
+                                
+                                    <div class="form-group">
+                                
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                                                class="fa fa-file-text"></i> Lọc danh sách
+                                        </button>
+                                
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
+                                                class="fa fa-rotate-left"></i> Làm mới
+                                        </button>
+                                
+                                    </div>
+                                </form>
+                                
+                                
+                                
+                                
+                                
+                                
+
 
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>
 
-                                        <th style="width: 70px">STT</th>
-                                        <th style="width: 150px">MÃ DANH SÁCH</th>
-                                        <th style="width: 200px">ĐỐI TÁC</th>
-                                        <th style="width: 70px">AUD</th>
-                                        <th style="width: 70px">CAD</th>
-                                        <th style="width: 70px">EUR</th>
-                                        <th style="width: 70px">GBP</th>
-                                        <th style="width: 70px">USD</th>
-                                        <th style="width: 70px">VND</th>
-                                        <th style="">HTTT</th>
-                                        <th style=" ">Tong ho so</th>
-                                        <th style=" ">Giờ thực hiện</th>
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox1">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
 
-                                        <th style="width: 150px">Trạng thái</th>
+                                        </th>
 
-                                        <th></th>
+                                        <th>Mã Biên nhận</th>
+                                        <th>Ngày* </th>
+                                        <th>Mã số*</th>
+                                        <th>ma ds</th>
+                                        <th>Người nhận*</th>
+                                        <th>Số tiền gửi*</th>
+                                        <th>Loại tiền gửi* </th>
+                                        <th>Loại tiền chi* </th>
+                                        <th>Tỉnh thành*</th>
+                                        <th>Điểm giao dịch*</th>
+                                        <th>Loại dịch vụ* ^</th>
+                                        <th> Chi tiết</th>
+
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr>
-
-
-
-
-                                        <td class="v-align-middle text-center">
-                                            1
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            123
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            MAYZUS
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            200
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            300
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            400
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            500
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0
-                                        </td>
-
-
-                                        <td class="v-align-middle ">
-                                            tiền mặt
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            8h30
-                                        </td>
-
-
+                                    <tbody> <tr>
                                         <td class="v-align-middle">
-                                            <span class="label label-default">Chờ duyệt</span>
-                                            <!--<span class="label label-success">Duyệt</span>-->
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <div class="dropdown pull-right open">
-                                                <button type="button" class="btn btn-default dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i class="fa fa-cog"></i>
-                                                </button>
-                                                <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                    <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i
-                                                            class="fa fa-edit"></i> Sửa</a>
-                                                    </li>
-
-
-                                                    <li class="bg-master-lighter">
-                                                        <a href="#" data-toggle="modal" data-target="#modalXoa"
-                                                           class="clearfix">
-                                                            <span class="pull-left">Xóa</span>
-                                                            <span class="pull-right"><i
-                                                                    class="fa fa-trash-o"></i></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
                                             </div>
                                         </td>
+                                        <td class="v-align-middle">120317-0001</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">22;000;000</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">AD</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
                                     </tr>
-
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">120317-0002</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">971</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">22;000;000</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">VND</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">AD</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">120317-0003</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">974</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">200</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PB</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">120317-0004</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">972</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PB</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">120317-0005</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">976</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">PHAM THI NGON</td>
+                                        <td class="v-align-middle">100</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">USD</td>
+                                        <td class="v-align-middle">HATINH</td>
+                                        <td class="v-align-middle">HEAD</td>
+                                        <td class="v-align-middle">PR</td>
+                                        <td class="v-align-middle">
+                                            <a href=""
+                                               class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
+                                               data-target="#pvh-chitietGD">Xem
+                                            </a>
+                                        </td>
+                                    </tr>
 
                                     </tbody>
                                 </table>
 
 
 
-                            </div>
 
-
-                       <!--     <h5>Chi tiết <span class="semi-bold">danh sách</span></h5>
-
-                            <div class="panel panel-default">
-
-
-                                <div class="panel-body">
-
-                                    <div class="row static-info">
-                                        <div class="col-md-2 name"> Tên đối tác:</div>
-                                        <div class="col-md-2 value"><b>ABC</b>
-                                        </div>
-
-                                        <div class="col-md-2 col-lg-1 name"> Mã danh sách:</div>
-                                        <div class="col-md-2 value"><b>001</b>
-                                        </div>
-                                    </div>
-                                    <div class="row static-info">
-                                        <div class="col-md-2 name"> Ngày yêu cầu duyệt:</div>
-                                        <div class="col-md-2 value"><b> 12/03/2017</b>
-                                        </div>
-
-                                        <div class="col-md-2 col-lg-1 name"> Ngày duyệt:</div>
-                                        <div class="col-md-2 value"><b> 15/03/2017</b>
-                                        </div>
-                                    </div>
-                                    <br>
-
-
-                                    <table class="table table-hover table-small">
-                                        <thead>
-                                        <tr>
-
-                                            <th style="width: 70px">STT</th>
-                                            <th style="width: 150px">Loại tiền thanh toán</th>
-                                            <th style="width: 150px">Số lượng giao dịch</th>
-
-                                            <th style="width: 200px">Tổng số tiền giao dịch</th>
-
-                                            <th>Trạng thái</th>
-
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-
-
-                                            <td class="v-align-middle">
-                                                1
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-default">USD</span>
-
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                4
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                3000
-                                            </td>
-
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
-                                            </td>
-
-
-                                        </tr>
-
-                                        <tr>
-
-
-                                            <td class="v-align-middle">
-                                                2
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-default">CAN</span>
-
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                5
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                3200
-                                            </td>
-
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
-                                            </td>
-
-
-                                        </tr>
-
-
-                                        </tbody>
-                                    </table>
-
-
-                                </div>
 
                             </div>
--->
 
                         </div>
-                    </div>
-                </div>
 
+
+                    </div>
+
+                </div>
 
             </div>
 
+
         </div>
 
-
     </div>
+
+
+</div>
 
 </div>
 
@@ -1066,6 +1227,338 @@
       <!-- END FOOTER -->
       
       
+      
+      
+      
+      
+      
+      
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="pvh-chitietGD" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                              class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Chi tiết <span class="semi-bold">yêu cầu</span></h5>
+                      <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+      
+                          <!--<h6 class="bold text-uppercase">Đơn vị ký hợp đồng</h6>
+      
+                          <div class="form-group-attached">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="radio radio-primary">
+                                          <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                          <label for="donViKy-ocb">OCB</label>
+                                          <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                          <label for="donViKy-congty">Công ty</label>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                          </div>-->
+      
+      
+                          <h6 class="bold text-uppercase">Thông tin người gửi/nhận</h6>
+                          <div class="form-group-attached">
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Người gửi</label>
+                                          <input type="text" class="form-control" value="DANG ANH NHAT">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Người nhận</label>
+                                          <input type="text" class="form-control" value="PHAM THI NGON">
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="row">
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Điện thoại</label>
+                                          <input type="text" class="form-control" value="0987">
+                                      </div>
+                                  </div>
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>CMND</label>
+                                          <input type="text" class="form-control" value="0987">
+                                      </div>
+                                  </div>
+      
+      
+                              </div>
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Địa chỉ</label>
+                                          <input type="text" class="form-control" value="KY ANH">
+                                      </div>
+                                  </div>
+      
+                                  <div class="col-sm-6">
+      
+                                      <div class="form-group form-group-default required select2-small">
+                                          <label>Tỉnh thành</label>
+      
+                                          <select class="full-width" data-init-plugin="select2" >
+                                              <option value="">HA TINH</option>
+                                              <option value="AK">Australia</option>
+                                              <option value="AK">Việt Nam</option>
+                                              <option value="AK">Singapore</option>
+                                          </select>
+      
+      
+                                      </div>
+                                  </div>
+      
+                              </div>
+      
+      
+                          </div>
+      
+      
+                          <h6 class="bold text-uppercase">Thông tin thanh toán</h6>
+      
+                          <div class="form-group-attached">
+      
+                              <div class="row">
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required select2-small">
+                                          <label>Ngân hàng</label>
+                                          <select class="full-width" data-init-plugin="select2" >
+                                              <option value="">Citi bank</option>
+                                              <option value="AK">Australia</option>
+                                              <option value="AK">Việt Nam</option>
+                                              <option value="AK">Singapore</option>
+                                          </select>
+                                      </div>
+                                  </div>
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required select2-small">
+                                          <label>CN Ngân hàng</label>
+                                          <select class="full-width" data-init-plugin="select2">
+                                              <option value="">Ho chi minh</option>
+                                              <option value="AK">Australia</option>
+                                              <option value="AK">Việt Nam</option>
+                                              <option value="AK">Singapore</option>
+                                          </select>
+                                      </div>
+                                  </div>
+      
+      
+                              </div>
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Số tài khoản</label>
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Loại dịch vụ</label>
+                                          <select name="" id="" class="form-control">
+                                              <option value="TM">AD</option>
+                                              <option value="TG">PG</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+      
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Số tiền gửi</label>
+                                          <input type="text" class="form-control" value="22,000,000">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Loại tiền gửi</label>
+                                          <input type="text" class="form-control" value="VND">
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="row">
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Điểm giao dịch</label>
+                                          <input type="text" class="form-control" value="HEAD">
+                                      </div>
+                                  </div>
+      
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>HTTT</label>
+                                          <select name="" id="" class="form-control">
+                                              <option value="TM">TM</option>
+                                              <option value="TG">TG</option>
+                                          </select>
+                                      </div>
+                                  </div>
+      
+      
+                              </div>
+      
+      
+      
+                          </div>
+      
+      
+      
+      
+      
+      
+      
+                      </form>
+      
+      
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                                  <div class="pull-left">
+                                      <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                                  </div>
+                                  <div class="pull-right">
+                                      <p class="bold font-montserrat text-uppercase">$20.00</p>
+                                  </div>
+                              </div>-->
+                          </div>
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                              <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- END MODAL STICK UP  -->
+      
+      
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalYeuCauHuy" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Lý do <span class="semi-bold"> từ chối</span></h5>
+                      <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+      
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <!--<span class="help">e.g. "some@example.com"</span>-->
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+      
+                          <div class="form-group-attached">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="radio radio-primary">
+                                          <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                          <label for="donViKy-ocb">Đối tác</label>
+                                          <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                          <label for="donViKy-congty">Nội bộ</label>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                          </div>
+      
+                      </form>
+                      <div class="row">
+      
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                              <button type="button" class="btn btn-primary  m-t-5">Gửi</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- END MODAL STICK UP  -->
+      
+      
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalPhucHoi" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Lý do <span class="semi-bold"> từ chối</span></h5>
+                      <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+      
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <!--<span class="help">e.g. "some@example.com"</span>-->
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+      
+                          <div class="form-group-attached">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="radio radio-primary">
+                                          <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                          <label for="donViKy-ocb">Đối tác</label>
+                                          <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                          <label for="donViKy-congty">Nội bộ</label>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                          </div>
+      
+                      </form>
+                      <div class="row">
+      
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                              <button type="button" class="btn btn-primary  m-t-5">Gửi</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- END MODAL STICK UP  -->
       
       
       
