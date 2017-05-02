@@ -1,0 +1,97 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type="phongvanhanh-quanlygiaodich"}}
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+        <!--<div class="col-sm-5">
+            <div class="text-right">
+
+
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
+                </button>
+
+            </div>
+        </div>-->
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default ">
+
+
+
+                        <div class="panel-body">
+
+                            {{>formSearch type="phongvanhanh6"}}
+
+                            <table class="table table-hover">
+                                <thead>
+                                <tr><th>Mã Biên nhận</th>
+                                    <th>Ngày*</th>
+                                    <th>Mã số*</th>
+                                    <th>Mã DS</th>
+                                    <th>Người nhận*</th>
+                                    <th>Số tiền gửi*</th>
+                                    <th>Loại tiền gửi*</th>
+                                    <th>Loại tiền chi* </th>
+                                    <th>Tỉnh thành*</th>
+                                    <th>Điểm giao dịch*</th>
+                                    <th>Loại dịch vụ*</th>
+                                    <th> Hành động</th>
+
+                                </tr>
+                                </thead>
+                                <tbody> <tr><td class="v-align-middle">120317-0001</td>
+                                    <td class="v-align-middle">12/03/2017</td>
+                                    <td class="v-align-middle">970</td>
+                                    <td class="v-align-middle">1-2000-120317-830</td>
+                                    <td class="v-align-middle">PHAM THI NGON</td>
+                                    <td class="v-align-middle">44;000;000</td>
+                                    <td class="v-align-middle">VND</td>
+                                    <td class="v-align-middle">VND</td>
+                                    <td class="v-align-middle">HATINH</td>
+                                    <td class="v-align-middle">HEAD</td>
+                                    <td class="v-align-middle">AD</td>
+                                    <td class="v-align-middle">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPhucHoi"><i class="fa fa-trash-o"></i> Yêu cầu phục hồi</button>
+
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+ {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

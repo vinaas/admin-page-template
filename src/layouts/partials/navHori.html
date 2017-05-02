@@ -149,3 +149,45 @@
     </div>
 </div>
 {{/ifEqual}}
+
+
+
+{{#ifEqual type "phongvanhanh-quanlygiaodich"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'phongvanhanh-quanlygiaodich'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-quanlygiaodich.html">
+                    <span class="">Điều chỉnh giao dịch</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongvanhanh-quanlygiaodich-huygiaodich'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-quanlygiaodich-huygiaodich.html">
+                    <span class="">Hủy giao dịch</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongvanhanh-quanlygiaodich-phuchoigiaodich'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-quanlygiaodich-phuchoigiaodich.html">
+                    <span class="">Phục hồi giao dịch</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongvanhanh-quanlygiaodich-duyetphuchoigiaodich'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-quanlygiaodich-duyetphuchoigiaodich.html">
+                    <span class="">Duyệt phục hồi giao dịch</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
