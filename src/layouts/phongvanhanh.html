@@ -14,16 +14,6 @@
 
         </div>
 
-        <!--<div class="col-sm-5">
-            <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-
-            </div>
-        </div>-->
-
     </div>
 
     <div class="row">
@@ -40,22 +30,17 @@
                     <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
                     </li>
 
+                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
+                    </li>
+
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaDuyet">
-
                         <div class="panel-body">
-
-
                             <div class="panel panel-default">
-                                <!--<div class="panel-heading">-->
-                                <!--<div class="panel-title">-->
-                                <!--Option #two-->
-                                <!--</div>-->
-                                <!--</div>-->
                                 <div class="panel-body">
                                     <h5 class="m-t-0">
-                                        Tạo danh sách
+                                        Tạo yêu cầu
                                     </h5>
 
                                     <form role="form">
@@ -63,7 +48,7 @@
                                         <div class="row">
                                             <div class="col-md-4">
 
-                                                <h6 class="bold text-uppercase">Thông tin</h6>
+                                                <h6 class="bold text-uppercase">Thông tin đối tác</h6>
 
                                                 <div class="form-group m-l-10">
                                                     <label>Tên đối tác</label>
@@ -80,13 +65,11 @@
 
                                                 <div class="form-group m-l-10">
                                                     <label>Số hồ sơ</label>
-                                                    <!--<span class="help">e.g. </span>-->
                                                     <input type="text" class="form-control">
                                                 </div>
 
                                                 <div class="form-group m-l-10">
                                                     <label>Tổng hồ sơ</label>
-                                                    <!--<span class="help">e.g. </span>-->
                                                     <input type="text" class="form-control">
                                                 </div>
 
@@ -151,7 +134,7 @@
                                             </div>
 
                                             <div class="col-md-8 m-t-10 sm-m-t-10 text-right">
-                                                <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
+                                                <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
                                                 <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu
                                                     duyệt
                                                 </button>
@@ -164,12 +147,16 @@
 
                             </div>
 
+
+                            <h4>Danh sách tổng</h4>
+
                             <div class="row">
                                 <div class="col-sm-9">
 
                                     <div class="btn-group ">
 
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
                                         </button>
 
                                     </div>
@@ -181,142 +168,99 @@
                                     {{>formSearch type="phongvanhanh"}}
 
 
-
                                 </div>
 
 
                             </div>
 
 
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
 
-                            <div class="table-responsive">
+                                    </th>
+                                    <th> STT</th>
+                                    <th> MÃ DANH SÁCH</th>
+                                    <th> ĐỐI TÁC</th>
+                                    <th> AUD</th>
+                                    <th> CAD</th>
+                                    <th> EUR</th>
+                                    <th> GBP</th>
+                                    <th> USD</th>
+                                    <th> VND</th>
+                                    <th> HTTT</th>
+                                    <th>TỔNG HỒ SƠ</th>
+                                    <th> GIỜ THỰC HIỆN</th>
+                                    <th>TRẠNG THÁI</th>
+                                    <th></th>
 
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle"> 1</td>
+                                    <td class="v-align-middle"> 1-2000-120317-830</td>
+                                    <td class="v-align-middle"> MAYZUS</td>
+                                    <td class="v-align-middle"> 200</td>
+                                    <td class="v-align-middle"> 300</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 500</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 44;000;000</td>
+                                    <td class="v-align-middle">tiền mặt</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">8h30</td>
+                                    <td class="v-align-middle"><span class="label label-default">Chờ duyệt</span></td>
 
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
+                                    <td class="v-align-middle">
 
-                                        <th style="width: 50px;padding: 10px 11px !important;">
-                                            <div class="checkbox ">
-                                                <input type="checkbox" value="3" id="checkbox1">
-                                                <label for="checkbox1" class="m-r-0"></label>
-                                            </div>
+                                        {{> drop-edit-remove}}
 
-                                        </th>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle"> 2</td>
+                                    <td class="v-align-middle"> 2-2001-130317-8</td>
+                                    <td class="v-align-middle"> ABC</td>
+                                    <td class="v-align-middle"> 200</td>
+                                    <td class="v-align-middle"> 300</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 500</td>
+                                    <td class="v-align-middle"> 100</td>
+                                    <td class="v-align-middle"> 0</td>
+                                    <td class="v-align-middle">tiền mặt</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">8h</td>
+                                    <td class="v-align-middle"><span class="label label-default">Chờ duyệt</span></td>
+                                    <td class="v-align-middle">
 
-                                        <th style="width: 70px">STT</th>
-                                        <th style="width: 150px">MÃ DANH SÁCH</th>
-                                        <th style="width: 200px">ĐỐI TÁC</th>
-                                        <th style="width: 70px">AUD</th>
-                                        <th style="width: 70px">CAD</th>
-                                        <th style="width: 70px">EUR</th>
-                                        <th style="width: 70px">GBP</th>
-                                        <th style="width: 70px">USD</th>
-                                        <th style="width: 70px">VND</th>
-                                        <th style="">HTTT</th>
-                                        <th style=" ">Tong ho so</th>
-                                        <th style=" ">Giờ thực hiện</th>
+                                        {{> drop-edit-remove}}
 
-                                        <th style="width: 150px">Trạng thái</th>
+                                    </td>
+                                </tr>
 
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-
-                                        <td class="v-align-middle">
-                                            <div class="checkbox ">
-                                                <input type="checkbox" value="3" id="checkbox2">
-                                                <label for="checkbox2" class="m-r-0"></label>
-                                            </div>
-                                        </td>
-
-
-                                        <td class="v-align-middle text-center">
-                                            1
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            123
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            MAYZUS
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            200
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            300
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            400
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            500
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0
-                                        </td>
-
-
-                                        <td class="v-align-middle ">
-                                            tiền mặt
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            8h30
-                                        </td>
+                                </tbody>
+                            </table>
 
 
-                                        <td class="v-align-middle">
-                                            <span class="label label-default">Chờ duyệt</span>
-                                            <!--<span class="label label-success">Duyệt</span>-->
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <div class="dropdown pull-right open">
-                                                <button type="button" class="btn btn-default dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i class="fa fa-cog"></i>
-                                                </button>
-                                                <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                    <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i
-                                                            class="fa fa-edit"></i> Sửa</a>
-                                                    </li>
-
-
-                                                    <li class="bg-master-lighter">
-                                                        <a href="#" data-toggle="modal" data-target="#modalXoa"
-                                                           class="clearfix">
-                                                            <span class="pull-left">Xóa</span>
-                                                            <span class="pull-right"><i
-                                                                    class="fa fa-trash-o"></i></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    </tbody>
-                                </table>
-
-
-                            </div>
+                            {{>pagination}}
 
 
                         </div>
@@ -329,124 +273,60 @@
 
                             <br>
 
-                            <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
 
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
+                                    <th>NGÀY</th>
+                                    <th> MÃ DANH SÁCH</th>
+                                    <th> ĐỐI TÁC</th>
+                                    <th> TỔNG HỒ SƠ</th>
+                                    <th>NHÂN VIÊN THỰC HIỆN</th>
+                                    <th>NGƯỜI DUYỆT</th>
+                                    <th>GIỜ CHUYỂN DUYỆT</th>
+                                    <th>GIỜ DUYỆT</th>
+                                    <th>CHI TIẾT</th>
+                                    <th>DANH SÁCH CHI TIẾT</th>
 
-                                        <th style="width: 70px">STT</th>
-                                        <th style="width: 150px">MÃ DANH SÁCH</th>
-                                        <th style="width: 200px">ĐỐI TÁC</th>
-                                        <th style="width: 70px">AUD</th>
-                                        <th style="width: 70px">CAD</th>
-                                        <th style="width: 70px">EUR</th>
-                                        <th style="width: 70px">GBP</th>
-                                        <th style="width: 70px">USD</th>
-                                        <th style="width: 70px">VND</th>
-                                        <th style="">HTTT</th>
-                                        <th style=" ">Tong ho so</th>
-                                        <th style=" ">Giờ thực hiện</th>
+                                </tr>
+                                </thead>
+                                <tbody>
 
-                                        <th style="width: 150px">Trạng thái</th>
+                                <tr class="active">
 
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
+                                    <td class="v-align-middle">12/03/2017
+                                    </td>
+                                    <td class="v-align-middle"> 1-2000-120317-830
+                                    </td>
+                                    <td class="v-align-middle">MAYZUS
+                                    </td>
+                                    <td class="v-align-middle">100
+                                    </td>
+                                    <td class="v-align-middle">Nguyễn Văn A
+                                    </td>
+                                    <td class="v-align-middle">Nguyễn Văn B
+                                    </td>
 
+                                    <td class="v-align-middle">8h30
+                                    </td>
+                                    <td class="v-align-middle">9h00
+                                    </td>
+                                    <td class="v-align-middle"><a href=""
+                                                                  class="btn btn-tag   btn-tag-light btn-tag-rounded ">Xem</a>
+                                    </td>
 
+                                    <td class="v-align-middle"><a href=""
+                                                                  class="btn btn-tag   btn-tag-light btn-tag-rounded ">Import
+                                        DS chi tiết</a>
+                                    </td>
 
+                                </tr>
 
-                                        <td class="v-align-middle text-center">
-                                            1
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            123
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            MAYZUS
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            200
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            300
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            400
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            500
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            0
-                                        </td>
+                                </tbody>
+                            </table>
 
 
-                                        <td class="v-align-middle ">
-                                            tiền mặt
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            100
-                                        </td>
-                                        <td class="v-align-middle ">
-                                            8h30
-                                        </td>
-
-
-                                        <td class="v-align-middle">
-                                            <span class="label label-default">Chờ duyệt</span>
-                                            <!--<span class="label label-success">Duyệt</span>-->
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <div class="dropdown pull-right open">
-                                                <button type="button" class="btn btn-default dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i class="fa fa-cog"></i>
-                                                </button>
-                                                <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                    <li><a href="#" data-toggle="modal" data-target="#createDoiTac"><i
-                                                            class="fa fa-edit"></i> Sửa</a>
-                                                    </li>
-
-
-                                                    <li class="bg-master-lighter">
-                                                        <a href="#" data-toggle="modal" data-target="#modalXoa"
-                                                           class="clearfix">
-                                                            <span class="pull-left">Xóa</span>
-                                                            <span class="pull-right"><i
-                                                                    class="fa fa-trash-o"></i></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    </tbody>
-                                </table>
-
-
-
-                            </div>
-
-
-                       <!--     <h5>Chi tiết <span class="semi-bold">danh sách</span></h5>
+                            <h5>Chi tiết <span class="semi-bold">danh sách</span></h5>
 
                             <div class="panel panel-default">
 
@@ -454,108 +334,190 @@
                                 <div class="panel-body">
 
                                     <div class="row static-info">
-                                        <div class="col-md-2 name"> Tên đối tác:</div>
-                                        <div class="col-md-2 value"><b>ABC</b>
-                                        </div>
-
-                                        <div class="col-md-2 col-lg-1 name"> Mã danh sách:</div>
-                                        <div class="col-md-2 value"><b>001</b>
-                                        </div>
-                                    </div>
-                                    <div class="row static-info">
-                                        <div class="col-md-2 name"> Ngày yêu cầu duyệt:</div>
+                                        <div class="col-md-2 name"> Ngày</div>
                                         <div class="col-md-2 value"><b> 12/03/2017</b>
                                         </div>
 
-                                        <div class="col-md-2 col-lg-1 name"> Ngày duyệt:</div>
-                                        <div class="col-md-2 value"><b> 15/03/2017</b>
+                                        <div class="col-md-2 col-lg-1 name"> Mã danh sách:</div>
+                                        <div class="col-md-2 value"><b> 1-2000-120317-830</b>
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-2 name"> Tổng hồ sơ</div>
+                                        <div class="col-md-2 value"><b> 100</b>
+                                        </div>
+
+                                        <div class="col-md-2 col-lg-1 name"> Đối tác</div>
+                                        <div class="col-md-2 value"><b> MAYZUS</b>
                                         </div>
                                     </div>
                                     <br>
 
+                                    <div class="row">
+                                        <div class="col-sm-6">
 
-                                    <table class="table table-hover table-small">
-                                        <thead>
-                                        <tr>
+                                            <table class="table table-hover table-small">
+                                                <thead>
+                                                <tr>
 
-                                            <th style="width: 70px">STT</th>
-                                            <th style="width: 150px">Loại tiền thanh toán</th>
-                                            <th style="width: 150px">Số lượng giao dịch</th>
+                                                    <th style="">AUD</th>
+                                                    <th style="">CAD</th>
+                                                    <th style="">EUR</th>
+                                                    <th style="">GBP</th>
+                                                    <th style="">USD</th>
+                                                    <th style="">VND</th>
 
-                                            <th style="width: 200px">Tổng số tiền giao dịch</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>300</td>
+                                                    <td>400</td>
+                                                    <td>500</td>
+                                                    <td>400</td>
+                                                    <td>44,000,000</td>
 
-                                            <th>Trạng thái</th>
-
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-
-
-                                            <td class="v-align-middle">
-                                                1
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-default">USD</span>
-
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                4
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                3000
-                                            </td>
+                                                </tr>
 
 
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
-                                            </td>
 
 
-                                        </tr>
+                                                </tbody>
+                                            </table>
 
-                                        <tr>
-
-
-                                            <td class="v-align-middle">
-                                                2
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-default">CAN</span>
-
-                                            </td>
-
-                                            <td class="v-align-middle ">
-                                                5
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                3200
-                                            </td>
-
-
-                                            <td class="v-align-middle">
-                                                <span class="label label-success">Đã duyệt</span>
-                                            </td>
-
-
-                                        </tr>
-
-
-                                        </tbody>
-                                    </table>
+                                        </div>
+                                    </div>
 
 
                                 </div>
 
                             </div>
--->
 
                         </div>
+                    </div>
+
+                    <div class="tab-pane " id="tabTraVe">
+                        <div class="panel-body">
+
+
+                            <h4>Danh sách trả về</h4>
+
+                            <div class="row">
+                                <div class="col-sm-9">
+
+                                    <div class="btn-group ">
+
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-3 text-right">
+
+                                    {{>formSearch type="phongvanhanh"}}
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th> STT</th>
+                                    <th> MÃ DANH SÁCH</th>
+                                    <th> ĐỐI TÁC</th>
+                                    <th> AUD</th>
+                                    <th> CAD</th>
+                                    <th> EUR</th>
+                                    <th> GBP</th>
+                                    <th> USD</th>
+                                    <th> VND</th>
+                                    <th> HTTT</th>
+                                    <th>TỔNG HỒ SƠ</th>
+                                    <th> GIỜ THỰC HIỆN</th>
+                                    <th>TRẠNG THÁI</th>
+                                    <th></th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle"> 1</td>
+                                    <td class="v-align-middle"> 1-2000-120317-830</td>
+                                    <td class="v-align-middle"> MAYZUS</td>
+                                    <td class="v-align-middle"> 200</td>
+                                    <td class="v-align-middle"> 300</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 500</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 44;000;000</td>
+                                    <td class="v-align-middle">tiền mặt</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">8h30</td>
+                                    <td class="v-align-middle"><span class="label label-default">Chờ duyệt</span></td>
+
+                                    <td class="v-align-middle">
+
+                                        {{> drop-edit-remove}}
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle"> 2</td>
+                                    <td class="v-align-middle"> 2-2001-130317-8</td>
+                                    <td class="v-align-middle"> ABC</td>
+                                    <td class="v-align-middle"> 200</td>
+                                    <td class="v-align-middle"> 300</td>
+                                    <td class="v-align-middle"> 400</td>
+                                    <td class="v-align-middle"> 500</td>
+                                    <td class="v-align-middle"> 100</td>
+                                    <td class="v-align-middle"> 0</td>
+                                    <td class="v-align-middle">tiền mặt</td>
+                                    <td class="v-align-middle">100</td>
+                                    <td class="v-align-middle">8h</td>
+                                    <td class="v-align-middle"><span class="label label-default">Chờ duyệt</span></td>
+                                    <td class="v-align-middle">
+
+                                        {{> drop-edit-remove}}
+
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+
+                            {{>pagination}}
+
+
+                        </div>
+
                     </div>
                 </div>
 
