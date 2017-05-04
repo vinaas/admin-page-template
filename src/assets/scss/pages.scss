@@ -170,3 +170,8 @@ Generated From SASS
 .form-group-default.disabled input {
     opacity: 1;
 }
+
+table .btn-group,table .btn-group-vertical {
+
+  min-width: 210px;
+}

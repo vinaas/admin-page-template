@@ -427,14 +427,14 @@ input[type=checkbox]:checked + label{
             border-bottom: none;
         }
         &:hover .control-label{
-            opacity: .6;
+            opacity: 1;
         }
         &.focused .control-label{
             opacity: 1;
         }
         .control-label{
             text-align: left;
-            opacity: .42;
+            opacity: .8;
             @include transition(opacity ease .3s);
         }
     }
