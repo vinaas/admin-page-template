@@ -191,3 +191,33 @@
     </div>
 </div>
 {{/ifEqual}}
+
+
+
+{{#ifEqual type "pcrt-nhandiengiaodich"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'pcrt-nhandiengiaodich-dauhieudangngo'}} active {{/ifEqual}}">
+                <a href="pcrt-nhandiengiaodich-dauhieudangngo.html">
+                    <span class="">Dấu hiệu đáng ngờ</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'pcrt-nhandiengiaodich-mucgiatrigiaodichlon'}} active {{/ifEqual}}">
+                <a href="pcrt-nhandiengiaodich-mucgiatrigiaodichlon.html">
+                    <span class="">Mức giá trị giao dịch lớn</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
