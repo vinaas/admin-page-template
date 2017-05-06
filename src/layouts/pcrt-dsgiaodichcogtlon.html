@@ -1,0 +1,102 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+
+
+            <div class="panel panel-default">
+
+
+
+                <div class="panel-body">
+
+                    {{>formSearch type="pcrt-3"}}
+
+
+
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr><th>STT</th>
+                            <th>Ngày chi trả</th>
+                            <th>Mã số nhận tiền</th>
+                            <th>Đối tác</th>
+                            <th>Tên người nhận</th>
+                            <th>Số giấy tờ</th>
+                            <th>Loại tiền chi</th>
+                            <th>Số tiền</th>
+
+                        </tr>
+                        </thead>
+                        <tbody> <tr><td class="v-align-middle">1</td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                        </tr>
+                        <tr><td class="v-align-middle">2</td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                        </tr>
+                        <tr><td class="v-align-middle">3</td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                            <td class="v-align-middle"></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                        {{>pagination}}
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
