@@ -110,7 +110,7 @@ Generated From SASS
   }
 }
 
-.modal .form-group-attached  {
+.modal .form-group-attached, .modal .form-inline {
   padding: 5px 15px;
 }
 
@@ -174,4 +174,16 @@ Generated From SASS
 table .btn-group,table .btn-group-vertical {
 
   min-width: 210px;
+}
+
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.form-inline .form-control {
+  display: block;
+  margin-bottom: 0;
+  min-width: 160px;
 }
