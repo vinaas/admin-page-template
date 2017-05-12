@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Danh sách đối tượng cảnh báo",
+    "title": "Danh sách dấu hiệu đáng ngờ",
     "slug": "",
     "description": "Index Page",
     "layout": "pcrt-nhandiengiaodich-dauhieudangngo.html",
