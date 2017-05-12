@@ -1,0 +1,119 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+
+<!--Truy vấn công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{>formSearch type="pcrt-5"}}
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+                    <h5>Danh sách công văn chưa xem</h5>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Số công văn</th>
+                            <th>Hiệu lực</th>
+                            <th>Chi tiết</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="v-align-middle">1</td>
+                            <td class="v-align-middle">abc</td>
+                            <td class="v-align-middle">Còn hiệu lực</td>
+                            <td class="v-align-middle ">
+                                <a href="#" class="btn btn-default m-r-20" data-toggle="modal-pcrt"
+                                   data-target="#">Xem</a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="v-align-middle">2</td>
+                            <td class="v-align-middle">cde</td>
+                            <td class="v-align-middle">Hết hiệu lực</td>
+                            <td class="v-align-middle ">
+                                <a href="#" class="btn btn-default m-r-20" data-toggle="modal-prct"
+                                   data-target="#">Xem</a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <h5>Danh sách công văn đã xem</h5>
+
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th> Số công văn</th>
+                                <th>Hiệu lực</th>
+                                <th>Chi tiết</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="v-align-middle">1</td>
+                                <td class="v-align-middle">cbd</td>
+                                <td class="v-align-middle">Còn hiệu lực</td>
+                                <td class="v-align-middle ">
+                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal-prct"
+                                       data-target="#">Xem</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="v-align-middle">2</td>
+                                <td class="v-align-middle">df</td>
+                                <td class="v-align-middle">Hết hiệu lực</td>
+                                <td class="v-align-middle ">
+                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal-prct"
+                                       data-target="#">Xem</a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
