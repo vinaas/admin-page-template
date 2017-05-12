@@ -124,10 +124,10 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày hiệu lực</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component">
+                                    id="datepicker-component">
                                     <span class="input-group-addon">
-<i class="fa fa-calendar"></i>
-</span>
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
                                 </div>
 
 
@@ -139,10 +139,10 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày kết thúc</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component2">
+                                    id="datepicker-component2">
                                     <span class="input-group-addon">
-<i class="fa fa-calendar"></i>
-</span>
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
                                 </div>
 
 
@@ -207,7 +207,6 @@
     <!-- /.modal-content -->
 </div>
 <!-- /.modal-dialog -->
-</div>
 <!-- END MODAL STICK UP  -->
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="createHopDong" role="dialog" aria-hidden="true" data-backdrop="static">
@@ -215,7 +214,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Tạo mới <span class="semi-bold">Hợp đồng</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
@@ -232,7 +231,7 @@
                                     <input type="radio" value="yes" name="typeHopDong" id="typeHopdong-hopdong">
                                     <label for="typeHopdong-hopdong">Hợp đồng</label>
                                     <input type="radio" checked="checked" value="no" name="typeHopDong"
-                                           id="typeHopdong-phuluc">
+                                    id="typeHopdong-phuluc">
                                     <label for="typeHopdong-phuluc">Phụ lục</label>
                                 </div>
                             </div>
@@ -280,7 +279,7 @@
                             <div class="col-sm-12">
                                 <div class="checkbox check-primary">
                                     <input type="checkbox" value="yes" name="typeGiaHanHopDong"
-                                           id="typeGiaHanHopdong-hopdong">
+                                    id="typeGiaHanHopdong-hopdong">
                                     <label for="typeGiaHanHopdong-hopdong">Hợp đồng</label>
 
                                 </div>
@@ -303,7 +302,7 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
                     </div>
                 </div>
@@ -313,8 +312,206 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-<!-- END MODAL STICK UP  -->
+<!-- END MODAL STICK UP -ChiTiet Hoa hong  -->
+<div class="modal fade stick-up" id="chiTietHoaHong" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết <span class="semi-bold">Hoa hồng</span></h5>
 
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                   <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                   <h6 class="bold text-uppercase m-t-30">Thông tin đối tác</h6>
+                   <div class="form-group form-group-attached">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group ">
+                                <label>Tên đầy đủ</label>
+                                <input type="text" placeholder="ACB" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group ">
+                                <label>ID đối tác</label>
+                                <input type="text"  disabled="" placeholder="1234" class="form-control input-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h6 class="bold text-uppercase m-t-30">Chi tiết hoa hồng</h6>
+
+                <div class="form-group form-group-attached">
+
+                    <div class="panel-default">
+                        <div class="panel panel-heading">
+                        <div class="row">
+                            <div class="form-group ">
+                            
+                                <label>Loại tiền</label>
+                                <select class="full-width select2-hidden-accessible" disabled="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                    <option value="AK">USD</option>
+                                    <option value="HI">VND</option>
+
+                                </select>
+                              
+                                </div>
+                            <div class="form-group ">
+                                <div class="col-md-4">
+                                    <label>Hạn mức</label>
+                                    <input type="text" placeholder="0.1" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>tới</label>
+                                    <input type="text" placeholder="3000" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>mức phí</label>
+                                    <input type="text" placeholder="0.2%" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-md-4">
+                                    <label>Hạn mức</label>
+                                    <input type="text" placeholder="0.1" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>tới</label>
+                                    <input type="text" placeholder="3000" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>mức phí</label>
+                                    <input type="text" placeholder="0.2%" class="form-control">
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <div class="panel panel-heading">
+                        <div class="row">
+                            <div class="form-group ">
+                            
+                                <label>Loại tiền</label>
+                                <select class="full-width select2-hidden-accessible" disabled="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                    <option value="AK">VND</option>
+                                    <option value="HI">VND</option>
+
+                                </select>
+                              
+                                </div>
+                            <div class="form-group ">
+                                <div class="col-md-4">
+                                    <label>Hạn mức</label>
+                                    <input type="text" placeholder="0.1" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>tới</label>
+                                    <input type="text" placeholder="3000" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>mức phí</label>
+                                    <input type="text" placeholder="0.2%" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-md-4">
+                                    <label>Hạn mức</label>
+                                    <input type="text" placeholder="0.1" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>tới</label>
+                                    <input type="text" placeholder="3000" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>mức phí</label>
+                                    <input type="text" placeholder="0.2%" class="form-control">
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>  
+                        </div>
+
+                        
+
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-30">Địa bàn</h6>
+
+                    <div class="form-group form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="yes" name="diaBan" id="diaBan-tinh">
+                                    <label for="diaBan-tinh">Tỉnh</label>
+                                    <input type="checkbox" checked="checked" value="no" name="diaBan"
+                                    id="diaBan-thanhpho">
+                                    <label for="diaBan-thanhpho">Hồ Chí Minh</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="bold text-uppercase m-t-30">Loại dịch vụ</h6>
+                    <div class="form-group form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="yes" name="dichvu" id="hh-po">
+                                    <label for="hh-po">PO</label>
+                                    <input type="checkbox" checked="checked" value="no" name="dichvu"
+                                    id="hh-pr">
+                                    <label for="hh-pr">PR</label>
+
+                                    <input type="checkbox" checked="checked" value="no" name="dichvu"
+                                    id="hh-pb">
+                                    <label for="hh-pb">PB</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                </form>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-warning" data-toggle="modal"
+                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
+                            chối
+                        </button>
+                        <button type="button" class="btn btn-primary "data-toggle="modal"
+                                data-target="#modalDuyet">Duyệt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 <!-- MODAL STICK UP  -->
 
@@ -323,7 +520,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Chi tiết <span class="semi-bold">Đối tác</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
@@ -350,8 +547,18 @@
 
 
                     <h6 class="bold text-uppercase">Thông tin đối tác</h6>
-                    <div class="form-group-attached">
+                    
 
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>ID đối tác</label>
+                                    <input type="text" disabled="" placeholder="123" class="form-control">
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default required">
@@ -419,7 +626,7 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày hiệu lực</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component">
+                                    id="datepicker-component">
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -434,7 +641,7 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày kết thúc</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component2">
+                                    id="datepicker-component2">
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -447,56 +654,46 @@
                     </div>
 
 
-                    <h6 class="bold text-uppercase m-t-20">Loại tiền thanh toán
 
-                    </h6>
-                    {{> loaitien}}
-
-
-                    <h6 class="bold text-uppercase m-t-20">Loại tiền giao dịch &nbsp;
-
-                    </h6>
-                    {{> loaitien}}
-
-                    <h6 class="bold text-uppercase m-t-20">Loại tiền chi &nbsp;
+                </h6>
+                {{> loaitien}}
 
 
-                    </h6>
-                    {{> loaitien}}
 
-                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
 
-                    </h6>
-                    <div class="form-group-attached">
+                <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
 
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="checkbox check-primary">
-                                    <input type="checkbox" checked="checked" value="" id="xemct-po">
-                                    <label for="xemct-po"><b> PO</b></label>
-                                    <input type="checkbox" value="" id="xemct-pb">
-                                    <label for="xemct-pb"><b>PB</b></label>
+                </h6>
+                <div class="form-group-attached">
 
-                                    <input type="checkbox" value="" id="xemct-pr">
-                                    <label for="xemct-pr"><b>PR</b></label>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" id="xemct-po">
+                                <label for="xemct-po"><b> PO</b></label>
+                                <input type="checkbox" value="" id="xemct-pb">
+                                <label for="xemct-pb"><b>PB</b></label>
 
-                                    <input type="checkbox" value="" id="xemct-hd">
-                                    <label for="xemct-hd"><b>HD</b></label>
+                                <input type="checkbox" value="" id="xemct-pr">
+                                <label for="xemct-pr"><b>PR</b></label>
 
-                                    <input type="checkbox" value="" id="xemct-ad">
-                                    <label for="xemct-ad"><b>AD</b></label>
-                                </div>
+                                <input type="checkbox" value="" id="xemct-hd">
+                                <label for="xemct-hd"><b>HD</b></label>
 
+                                <input type="checkbox" value="" id="xemct-ad">
+                                <label for="xemct-ad"><b>AD</b></label>
                             </div>
 
-
                         </div>
+
+
                     </div>
-                </form>
+                </div>
+            </form>
 
 
-                <div class="row">
-                    <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-4">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
                                 <p class="bold font-montserrat text-uppercase">TOTAL</p>
@@ -507,7 +704,7 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
                     </div>
                 </div>
@@ -518,57 +715,57 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- END MODAL STICK UP  --
-<!-- MODAL STICK UP  -->
-<div class="modal fade stick-up" id="createGiaoDichTienVe" role="dialog" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header clearfix text-left">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+    <!-- MODAL STICK UP  -->
+    <div class="modal fade stick-up" id="createGiaoDichTienVe" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header clearfix text-left">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
                         class="pg-close fs-14"></i>
-                </button>
-                <h5>Tạo mới <span class="semi-bold">Giao dịch tiền về</span></h5>
-                <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
-            </div>
-            <div class="modal-body">
-                <form role="form">
+                    </button>
+                    <h5>Tạo mới <span class="semi-bold">Giao dịch tiền về</span></h5>
+                    <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
 
-                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                        <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
 
-                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+                        <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
 
-                    <div class="form-group form-group-attached">
-                        <label>Tên đối tác</label>
-                        <span class="help"> </span>
+                        <div class="form-group form-group-attached">
+                            <label>Tên đối tác</label>
+                            <span class="help"> </span>
 
-                        <select class="full-width " data-init-plugin="select2">
-                            <option value="AK" disabled selected>Chọn đối tác</option>
-                            <option value="AK">Nguyễn Văn B</option>
-                            <option value="HI">Nguyễn Văn A</option>
-
-
-                        </select>
+                            <select class="full-width " data-init-plugin="select2">
+                                <option value="AK" disabled selected>Chọn đối tác</option>
+                                <option value="AK">Nguyễn Văn B</option>
+                                <option value="HI">Nguyễn Văn A</option>
 
 
-                    </div>
+                            </select>
 
-                    <div class="form-group  form-group-attached">
-                        <label>ID đối tác</label>
 
-                        <div class="input-group date">
-                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
                         </div>
-                    </div>
+
+                        <div class="form-group  form-group-attached">
+                            <label>ID đối tác</label>
+
+                            <div class="input-group date">
+                                <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                            </div>
+                        </div>
 
 
-                    <h6 class="bold text-uppercase m-t-30">Hình thức chuyển tiền</h6>
+                        <h6 class="bold text-uppercase m-t-30">Hình thức chuyển tiền</h6>
 
 
-                    <div class="form-group-attached">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="radio radio-primary">
-                                    <input type="radio" value="yes" checked="checked" name="typeHopDong" id="">
-                                    <label for="">Trực tiếp</label>
+                        <div class="form-group-attached">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="radio radio-primary">
+                                        <input type="radio" value="yes" checked="checked" name="typeHopDong" id="">
+                                        <label for="">Trực tiếp</label>
                                     <!--<input type="radio" checked="checked" value="no" name="typeHopDong" id="typeHopdong-phuluc">
                                     <label for="typeHopdong-phuluc">Phụ lục</label>-->
                                 </div>
@@ -599,7 +796,7 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-warning  m-t-5">Lưu</button>
+                        
                         <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
@@ -618,7 +815,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Duyệt <span class="semi-bold">Giao dịch tiền về</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
@@ -635,7 +832,7 @@
                         <span class="help"> </span>
 
                         <input type="text" disabled class="form-control input-black" placeholder=""
-                               value="Nguyễn Văn A">
+                        value="Nguyễn Văn A">
 
 
                     </div>
@@ -676,14 +873,14 @@
                                 <div class="form-group form-group-default disabled">
                                     <label class="input-black">Loại tiền chuyển đến</label>
                                     <input type="text" disabled="" class="form-control input-black" placeholder=""
-                                           value="EUR">
+                                    value="EUR">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default disabled">
                                     <label class="input-black">Số tiền</label>
                                     <input type="text" disabled="" class="form-control input-black" placeholder=""
-                                           value="342 000">
+                                    value="342 000">
                                 </div>
                             </div>
                         </div>
@@ -693,14 +890,14 @@
                                 <div class="form-group form-group-default disabled">
                                     <label class="input-black">Loại tiền quy đổi</label>
                                     <input type="text" disabled="" class="form-control input-black" placeholder=""
-                                           value="VND">
+                                    value="VND">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default disabled">
                                     <label class="input-black">Tỷ giá</label>
                                     <input type="text" disabled="" class="form-control input-black" placeholder=""
-                                           value="Tỷ giá đối tác">
+                                    value="Tỷ giá đối tác">
                                 </div>
                             </div>
 
@@ -735,8 +932,8 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-warning  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-danger  m-t-5">Trả lại</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-warning  m-t-5">Trả lại</button>
                         <button type="button" class="btn btn-primary  m-t-5">Duyệt</button>
                     </div>
                 </div>
@@ -754,92 +951,92 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
             </div>
             <div class="modal-body">
                 <table class="table table-hover table-small" id="">
                     <thead>
-                    <tr>
+                        <tr>
 
-                        <th style="width:15%">Loại tiền thanh toán</th>
-                        <th style="width:15%">Phí xử lý</th>
-                        <th style="width:15%">Hạn mức</th>
-                        <th style="width:15%">Ngày hiệu lực</th>
-                        <th style="width:15%">Ngày hết hiệu lực</th>
+                            <th style="width:15%">Loại tiền thanh toán</th>
+                            <th style="width:15%">Phí xử lý</th>
+                            <th style="width:15%">Hạn mức</th>
+                            <th style="width:15%">Ngày hiệu lực</th>
+                            <th style="width:15%">Ngày hết hiệu lực</th>
 
-                        <th style="width:25%">Hành động</th>
-                    </tr>
+                            <th style="width:25%">Hành động</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td class="v-align-middle bold">USD</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">
+                        <tr>
+                            <td class="v-align-middle bold">USD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">
 
-                            <div class="btn-group btn-group-xs">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
+                                <div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
                                 </button>
                                 <button type="button" class="btn btn-warning" data-toggle="modal"
-                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
+                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                            </button>
+                        </div>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td class="v-align-middle bold">VND</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">
+                <tr>
+                    <td class="v-align-middle bold">VND</td>
+                    <td class="v-align-middle">0,2</td>
+                    <td class="v-align-middle">0,2</td>
+                    <td class="v-align-middle">18/07/2014</td>
+                    <td class="v-align-middle">18/07/2014</td>
+                    <td class="v-align-middle">
 
-                            <div class="btn-group btn-group-xs">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                </button>
-                                <button type="button" class="btn btn-warning" data-toggle="modal"
-                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
-                                </button>
-                            </div>
+                        <div class="btn-group btn-group-xs">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
+                        </button>
+                        <button type="button" class="btn btn-warning" data-toggle="modal"
+                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
+                    </button>
+                </div>
 
-                    </tr>
-
-
-                    <tr>
-                        <td class="v-align-middle bold">CAD</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">0,2</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">18/07/2014</td>
-                        <td class="v-align-middle">
-                            <div class="btn-group btn-group-xs">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                </button>
-                                <button type="button" class="btn btn-warning" data-toggle="modal"
-                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
+            </tr>
 
 
-                    </tbody>
-                </table>
-
-
+            <tr>
+                <td class="v-align-middle bold">CAD</td>
+                <td class="v-align-middle">0,2</td>
+                <td class="v-align-middle">0,2</td>
+                <td class="v-align-middle">18/07/2014</td>
+                <td class="v-align-middle">18/07/2014</td>
+                <td class="v-align-middle">
+                    <div class="btn-group btn-group-xs">
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
+                    </button>
+                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                    data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
+                </button>
             </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
+        </td>
+    </tr>
+
+
+</tbody>
+</table>
+
+
+</div>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
 </div>
 <!-- END MODAL STICK UP  -->
 
@@ -849,7 +1046,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Chi tiết <span class="semi-bold">hoa hồng</span></h5>
             </div>
@@ -878,127 +1075,127 @@
 
                 <table class="table table-hover table-small">
                     <thead>
-                    <tr>
+                        <tr>
 
 
-                        <th>STT</th>
-                        <th>Ngày</th>
-                        <th>Tên giao dịch</th>
+                            <th>STT</th>
+                            <th>Ngày</th>
+                            <th>Tên giao dịch</th>
 
-                        <th>ID đối tác</th>
-                        <th>CN/PGD</th>
-                        <th>Loại dịch vụ</th>
-                        <th>Hoa hồng</th>
-                        <th>Trạng thái</th>
+                            <th>ID đối tác</th>
+                            <th>CN/PGD</th>
+                            <th>Loại dịch vụ</th>
+                            <th>Hoa hồng</th>
+                            <th>Trạng thái</th>
 
-                        <th>Chi tiết</th>
-                    </tr>
+                            <th>Chi tiết</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                        <tr>
 
 
-                        <td class="v-align-middle">
-                            1
-                        </td>
+                            <td class="v-align-middle">
+                                1
+                            </td>
 
-                        <td class="v-align-middle">
-                            17/03/2017
-                        </td>
+                            <td class="v-align-middle">
+                                17/03/2017
+                            </td>
 
-                        <td class="v-align-middle">
-                            ABC
-                        </td>
+                            <td class="v-align-middle">
+                                ABC
+                            </td>
 
-                        <td class="v-align-middle">
-                            455
-                        </td>
+                            <td class="v-align-middle">
+                                455
+                            </td>
 
-                        <td class="v-align-middle">
-                            Tỉnh
-                        </td>
+                            <td class="v-align-middle">
+                                Tỉnh
+                            </td>
 
-                        <td class="v-align-middle">
-                            PB
-                        </td>
+                            <td class="v-align-middle">
+                                PB
+                            </td>
 
-                        <td class="v-align-middle">
-                            Hạn mức
-                        </td>
+                            <td class="v-align-middle">
+                                Hạn mức
+                            </td>
 
-                        <td class="v-align-middle">
-                            <span class="label label-success">Đã duyệt</span>
-                        </td>
-
-
-                        <td class="v-align-middle ">
-
-                            <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
-
-                                <button type="button" class="btn btn-default" data-toggle="modal"
-                                        data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
-
-                                <button type="button" class="btn btn-default" data-toggle="modal"
-                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
+                            <td class="v-align-middle">
+                                <span class="label label-success">Đã duyệt</span>
+                            </td>
 
 
-                            </div>
+                            <td class="v-align-middle ">
 
-                        </td>
+                                <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
 
-                    </tr>
+                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                    data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
 
-                    <tr>
-
-                        <td class="v-align-middle">
-                            1
-                        </td>
-
-                        <td class="v-align-middle">
-                            17/03/2017
-                        </td>
-
-                        <td class="v-align-middle">
-                            ABC
-                        </td>
-
-                        <td class="v-align-middle">
-                            455
-                        </td>
-
-                        <td class="v-align-middle">
-                            TP HCM
-                        </td>
-
-                        <td class="v-align-middle">
-                            PO
-                        </td>
-
-                        <td class="v-align-middle">
-                            Cố định
-                        </td>
-
-                        <td class="v-align-middle">
-                            <span class="label label-default">Chưa duyệt</span>
-                        </td>
+                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                    data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
 
 
-                        <td class="v-align-middle ">
+                                </div>
 
-                            <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+                            </td>
 
-                                <button type="button" class="btn btn-default" data-toggle="modal"
-                                        data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
+                        </tr>
 
-                                <button type="button" class="btn btn-default" data-toggle="modal"
-                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
+                        <tr>
+
+                            <td class="v-align-middle">
+                                1
+                            </td>
+
+                            <td class="v-align-middle">
+                                17/03/2017
+                            </td>
+
+                            <td class="v-align-middle">
+                                ABC
+                            </td>
+
+                            <td class="v-align-middle">
+                                455
+                            </td>
+
+                            <td class="v-align-middle">
+                                TP HCM
+                            </td>
+
+                            <td class="v-align-middle">
+                                PO
+                            </td>
+
+                            <td class="v-align-middle">
+                                Cố định
+                            </td>
+
+                            <td class="v-align-middle">
+                                <span class="label label-default">Chưa duyệt</span>
+                            </td>
 
 
-                            </div>
+                            <td class="v-align-middle ">
 
-                        </td>
+                                <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
 
-                    </tr>
+                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                    data-target="#createHoaHong"><i class="fa fa-edit"></i></button>
+
+                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                    data-target="#modalXoa"><i class="fa fa-trash-o"></i></button>
+
+
+                                </div>
+
+                            </td>
+
+                        </tr>
 
 
                     </tbody>
@@ -1019,7 +1216,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Tạo mới <span class="semi-bold">Hạn mức</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>
@@ -1065,7 +1262,7 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày hiệu lực</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component">
+                                    id="datepicker-component">
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -1080,7 +1277,7 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày kết thúc</label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component2">
+                                    id="datepicker-component2">
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -1133,7 +1330,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Tạo mới <span class="semi-bold">Địa bàn</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới địa bàn</p>
@@ -1153,7 +1350,7 @@
                                 <div class="form-group form-group-default input-group col-sm-10">
                                     <label>Ngày </label>
                                     <input type="email" class="form-control" placeholder="Pick a date"
-                                           id="datepicker-component">
+                                    id="datepicker-component">
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -1232,7 +1429,7 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
@@ -1248,7 +1445,7 @@
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-                        class="pg-close fs-14"></i>
+                    class="pg-close fs-14"></i>
                 </button>
                 <h5>Tạo mới <span class="semi-bold">Hoa hồng</span></h5>
                 <p>Các lưu ý cho nhân viên khi tạo mới hoa hồng</p>
@@ -1274,7 +1471,7 @@
                                 <label>ID đối tác</label>
                                 <div class="input-group date">
                                     <input type="text" disabled class="form-control input-black" placeholder=""
-                                           value="152">
+                                    value="152">
                                 </div>
                             </div>
                         </div>
@@ -1287,7 +1484,7 @@
                                         <input type="checkbox" value="yes" name="diaBan" id="diaBan-tinh">
                                         <label for="diaBan-tinh">Tỉnh</label>
                                         <input type="checkbox" checked="checked" value="no" name="diaBan"
-                                               id="diaBan-thanhpho">
+                                        id="diaBan-thanhpho">
                                         <label for="diaBan-thanhpho">Hồ Chí Minh</label>
                                     </div>
 
@@ -1297,20 +1494,20 @@
                         </div>
 
                         <div class="form-group   form-group-attached">
-                        <label>Tên đối tác</label>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="checkbox check-primary">
-                                    <input type="checkbox" value="yes" name="diaBan" id="diaBan-tinh">
-                                    <label for="diaBan-tinh">Tỉnh</label>
-                                    <input type="checkbox" checked="checked" value="no" name="diaBan"
-                                           id="diaBan-thanhpho">
-                                    <label for="diaBan-thanhpho">Thành phố</label>
+                            <label>Tên đối tác</label>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox check-primary">
+                                        <input type="checkbox" value="yes" name="diaBan" id="diaBan-tinh">
+                                        <label for="diaBan-tinh">Tỉnh</label>
+                                        <input type="checkbox" checked="checked" value="no" name="diaBan"
+                                        id="diaBan-thanhpho">
+                                        <label for="diaBan-thanhpho">Thành phố</label>
 
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
+                            </div>
                         </div>
                         <h6 class="bold text-uppercase m-t-20">Loại dịch vụ</h6>
 
@@ -1351,227 +1548,227 @@
                                         <input type="radio" value="yes" name="loaiHoaHong" id="loaiHoaHong-hanmuc">
                                         <label for="loaiHoaHong-hanmuc">Hạn mức</label>
                                         <input type="radio" checked="checked" value="no" name="loaiHoaHong"
-                                               id="loaiHoaHong-codinh">
+                                        id="loaiHoaHong-codinh">
                                         <label for="loaiHoaHong-codinh">Cố định</label>
 
                                         <input type="radio" checked="checked" value="no" name="loaiHoaHong"
-                                               id="loaiHoaHong-doanhsothang">
+                                        id="loaiHoaHong-doanhsothang">
                                         <label for="loaiHoaHong-doanhsothang">Doanh số tháng</label>
 
                                         <input type="radio" checked="checked" value="no" name="loaiHoaHong"
-                                               id="loaiHoaHong-phinguoigui">
+                                        id="loaiHoaHong-phinguoigui">
                                         <label for="loaiHoaHong-phinguoigui">Phí người gửi</label>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="form-group">
-                        <div class="panel panel-default">
-                                <div class="row">
+                        <div class="form-group ">
+                            <div class="panel panel-default" hidden="">
+                                <div class="row" >
                                     <div id="hanmuc">
                                         <div class="panel-body">
                                             <div class="col-sm-2">
                                                 <div class="form-group m-b-10">
                                                     <label>Từ</label>
                                                     <input type="text" placeholder="0.1"
-                                                           class="form-control input-sm">
+                                                    class="form-control input-sm">
                                                 </div>
                                             </div>
                                             <div class="col-sm-2">
                                                 <div class="form-group m-b-10">
                                                     <label>đến</label>
                                                     <input type="text" placeholder="3000"
-                                                           class="form-control input-sm">
+                                                    class="form-control input-sm">
                                                 </div>
                                             </div>
                                             <div class="col-sm-2">
                                                 <div class="form-group m-b-10">
                                                     <label>Mức phí</label>
                                                     <input type="text" placeholder="0.2"
-                                                           class="form-control input-sm">
+                                                    class="form-control input-sm">
                                                 </div>
                                             </div>
                                             <div class="col-sm-2">
                                                 <div class="form-group ">
                                                     <label>Phí</label>
                                                     <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">Phí Fix</option>
-                                                        <option value="HI">Phí ABC</option>
+                                                    data-init-plugin="select2" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="AK">Phí Fix</option>
+                                                    <option value="HI">Phí ABC</option>
 
-                                                    </select>
-                                                </div>
-
+                                                </select>
                                             </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group ">
-                                                    <label>Loại tiền</label>
-                                                    <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">USD</option>
-                                                        <option value="HI">VND</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
-                                                        class="fa fa-plus"></i> </a>
-                                            </div>
-
 
                                         </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group ">
+                                                <label>Loại tiền</label>
+                                                <select class="full-width select2-hidden-accessible"
+                                                data-init-plugin="select2" tabindex="-1"
+                                                aria-hidden="true">
+                                                <option value="AK">USD</option>
+                                                <option value="HI">VND</option>
+
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                               
+                                    <div class="col-sm-2">
+                                        <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
+                                            class="fa fa-plus"></i> </a>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="row">
-                                    <div id="codinh" class="">
-                                        <div class="panel-body">
-                                            <div class="col-sm-2">
-                                                <div class="form-group m-b-10">
-                                                    <label>Mức phí</label>
-                                                    <input type="text" placeholder="0.2"
-                                                           class="form-control input-sm">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group ">
-                                                    <label>Phí</label>
-                                                    <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">Phí Fix</option>
-                                                        <option value="HI">Phí ABC</option>
+                        </div>
+                    </div>
 
-                                                    </select>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group ">
-                                                    <label>Loại tiền</label>
-                                                    <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">USD</option>
-                                                        <option value="HI">VND</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
-                                                        class="fa fa-plus"></i> </a>
-                                            </div>
+                    <div class="panel panel-default" hidden="">
+                        <div class="row">
+                            <div id="codinh" class="">
+                                <div class="panel-body">
+                                    <div class="col-sm-2">
+                                        <div class="form-group m-b-10">
+                                            <label>Mức phí</label>
+                                            <input type="text" placeholder="0.2"
+                                            class="form-control input-sm">
                                         </div>
                                     </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group ">
+                                            <label>Phí</label>
+                                            <select class="full-width select2-hidden-accessible"
+                                            data-init-plugin="select2" tabindex="-1"
+                                            aria-hidden="true">
+                                            <option value="AK">Phí Fix</option>
+                                            <option value="HI">Phí ABC</option>
+
+                                        </select>
+                                    </div>
+
                                 </div>
-                              
+                                <div class="col-sm-2">
+                                    <div class="form-group ">
+                                        <label>Loại tiền</label>
+                                        <select class="full-width select2-hidden-accessible"
+                                        data-init-plugin="select2" tabindex="-1"
+                                        aria-hidden="true">
+                                        <option value="AK">USD</option>
+                                        <option value="HI">VND</option>
+
+                                    </select>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="row">
-                                    <div id="doanhthuthang" class="">
-                                        <div class="panel-body">
-                                            <div class="col-sm-2">
-                                                <div class="form-group m-b-10">
-                                                    <label>Từ</label>
-                                                    <input type="text" placeholder="0.1"
-                                                           class="form-control input-sm">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group m-b-10">
-                                                    <label>đến</label>
-                                                    <input type="text" placeholder="3000"
-                                                           class="form-control input-sm">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group m-b-10">
-                                                    <label>Mức phí</label>
-                                                    <input type="text" placeholder="0.2"
-                                                           class="form-control input-sm">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group ">
-                                                    <label>Phí</label>
-                                                    <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">Phí Fix</option>
-                                                        <option value="HI">Phí ABC</option>
-
-                                                    </select>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-group ">
-                                                    <label>Loại tiền</label>
-                                                    <select class="full-width select2-hidden-accessible"
-                                                            data-init-plugin="select2" tabindex="-1"
-                                                            aria-hidden="true">
-                                                        <option value="AK">USD</option>
-                                                        <option value="HI">VND</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-2">
-                                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
-                                                        class="fa fa-plus"></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-sm-2">
+                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
+                                    class="fa fa-plus"></i> </a>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <table class="table table-hover table-small" id="">
-                                            <thead>
-                                            <tr>
+                            </div>
+                        </div>
+                    </div>
 
-                                                <th>Tỉnh/Thành phố</th>
-                                                <th>Loại tiền thanh toán</th>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="row">
+                    <div id="doanhthuthang" class="">
+                        <div class="panel-body">
+                            <div class="col-sm-2">
+                                <div class="form-group m-b-10">
+                                    <label>Từ</label>
+                                    <input type="text" placeholder="0.1"
+                                    class="form-control input-sm">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group m-b-10">
+                                    <label>đến</label>
+                                    <input type="text" placeholder="3000"
+                                    class="form-control input-sm">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group m-b-10">
+                                    <label>Mức phí</label>
+                                    <input type="text" placeholder="0.2"
+                                    class="form-control input-sm">
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group ">
+                                    <label>Phí</label>
+                                    <select class="full-width select2-hidden-accessible"
+                                    data-init-plugin="select2" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="AK">Phí Fix</option>
+                                    <option value="HI">Phí ABC</option>
 
-                                                <th>PO</th>
-                                                <th>PB</th>
-                                                <th>PR</th>
-                                                <th>AD(OCB)</th>
-                                                <th>AD(Other)</th>
-                                                <th>HD</th>
+                                </select>
+                            </div>
 
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td class="v-align-middle bold">Hồ Chí Minh</td>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group ">
+                                <label>Loại tiền</label>
+                                <select class="full-width select2-hidden-accessible"
+                                data-init-plugin="select2" tabindex="-1"
+                                aria-hidden="true">
+                                <option value="AK">USD</option>
+                                <option value="HI">VND</option>
 
-                                                <td class="v-align-middle"> USD</td>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
+                            class="fa fa-plus"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-hover table-small" id="">
+                        <thead>
+                            <tr>
+
+                                <th>Tỉnh/Thành phố</th>
+                                <th>Loại tiền thanh toán</th>
+
+                                <th>PO</th>
+                                <th>PB</th>
+                                <th>PR</th>
+                                <th>AD(OCB)</th>
+                                <th>AD(Other)</th>
+                                <th>HD</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="v-align-middle bold">Hồ Chí Minh</td>
+
+                                <td class="v-align-middle"> USD</td>
 
 
-                                                <td class="v-align-middle">0.2%</td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"> 0.18%</td>
-                                                <td class="v-align-middle"> 0.20%</td>
-                                                <td class="v-align-middle"> 1-2000:0.50%</td>
-                                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle">0.2%</td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"> 0.18%</td>
+                                <td class="v-align-middle"> 0.20%</td>
+                                <td class="v-align-middle"> 1-2000:0.50%</td>
+                                <td class="v-align-middle"></td>
                                                 <!-- <td class="v-align-middle">
                                                       <a href="" class="text-danger " data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</a>
                                                   </td> -->
 
-                                            </tr>
+                                              </tr>
 
-                                            <tr>
+                                              <tr>
                                                 <td class="v-align-middle bold">Tỉnh</td>
                                                 <td class="v-align-middle"> USD</td>
 
@@ -1587,19 +1784,19 @@
                                                      <a href="" class="text-danger " data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</a>
                                                  </td -->
 
-                                            </tr>
+                                             </tr>
 
 
-                                            </tbody>
-                                        </table>
+                                         </tbody>
+                                     </table>
 
-                                    </div>
-                                </div>
-                            </div>
-                            
-                    <div class="form-group-attached">
-                        <div class="row">
-                            <div class="col-sm-4">
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="form-group-attached">
+                            <div class="row">
+                                <div class="col-sm-4">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
                                 <p class="bold font-montserrat text-uppercase">TOTAL</p>
@@ -1608,21 +1805,935 @@
                                 <p class="bold font-montserrat text-uppercase">$20.00</p>
                             </div>
                         </div>-->
-                            </div>
-                        <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                            <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
 
-                            <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
-                        </div>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                    </div>
                 </div>
-                </div>
-                    
-                </form>
             </div>
-        </div>
-            </div>
-        </div>
+
+        </form>
     </div>
+</div>
+</div>
 </div>
 
 <!-- MODAL STICK UP  -->
+<!--Doi tac chua duyet-->
+<div class="modal fade stick-up" id="xemChiTiet-DoiTac-chuaDuyet" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết <span class="semi-bold">Đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                    <h6 class="bold text-uppercase">Đơn vị ký hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="donViKy" id="xemct-ocb">
+                                    <label for="xemct-ocb">OCB</label>
+                                    <input type="radio" checked="checked" value="no" name="donViKy" id="xemct-congty">
+                                    <label for="xemct-congty">Công ty</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+                    
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>ID đối tác</label>
+                                    <input type="text" disabled="" placeholder="123" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên đầy đủ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên giao dịch</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên người đại diện</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Chức vụ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group form-group-default required">
+                                    <label>Mã số thuế</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default required">
+                                    <label>Số hợp đồng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </h6>
+                <div class="form-inline">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <label>Tiền chuyển trước</label>
+                                <input type="text " class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Loại tiền thanh toán</label>
+                                <select name="" class="form-control" >
+                                    <option value="">USD</option>
+                                    <option value="">GBP</option>
+                                    <option value="">EUR</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Loại tiền giao dịch</label>
+                                <input type="text " class="form-control" disabled value="USD">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Loại tiền chi</label>
+                                <select name="" class="form-control" >
+                                    <option value="">USD</option>
+                                    <option value="">VND</option>
+                                </select>
+                            </div>
+                            <a href="" class="btn btn-primary m-t-25 m-l-5"> <i class="fa fa-plus"></i> </a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group-attached">
+
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <table class="table table-hover table-small" id="">
+                                <thead>
+                                    <tr>
+                                        <th >Tiền chuyển trước</th>
+                                        <th>Loại tiền thanh toán</th>
+                                        <th>Loại tiền giao dịch</th>
+
+                                        <th >Loại tiền chi</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle bold">5000</td>
+                                        <td class="v-align-middle"> USD </td>
+                                        <td class="v-align-middle"> USD </td>
+                                        <td class="v-align-middle"> USD</td>
+                                        <td class="v-align-middle"> 
+
+                                        </td>  
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="v-align-middle bold">7000</td>
+                                        <td class="v-align-middle"> EUR </td>
+                                        <td class="v-align-middle"> EUR </td>
+                                        <td class="v-align-middle"> EUR</td>
+                                        <td class="v-align-middle"> 
+
+                                        </td>                            
+
+                                    </tr>
+
+
+
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
+                    <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
+                </div>
+
+
+
+
+                <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
+
+                </h6>
+                <div class="form-group-attached">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" id="xemct-po">
+                                <label for="xemct-po"><b> PO</b></label>
+                                <input type="checkbox" value="" id="xemct-pb">
+                                <label for="xemct-pb"><b>PB</b></label>
+
+                                <input type="checkbox" value="" id="xemct-pr">
+                                <label for="xemct-pr"><b>PR</b></label>
+
+                                <input type="checkbox" value="" id="xemct-hd">
+                                <label for="xemct-hd"><b>HD</b></label>
+
+                                <input type="checkbox" value="" id="xemct-ad">
+                                <label for="xemct-ad"><b>AD</b></label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!--doi tac da duyet-->
+<div class="modal fade stick-up" id="xemChiTiet-DoiTac-daDuyet" role="dialog" aria-hidden="true" data-backdrop="static">
+     <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+
+                <h5>Tạo mới <span class="semi-bold">Đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                    <h6 class="bold text-uppercase">Đơn vị ký hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                    <label for="donViKy-ocb">OCB</label>
+                                    <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                    <label for="donViKy-congty">Công ty</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên đầy đủ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên giao dịch</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên người đại diện</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Chức vụ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Mã số thuế</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Trụ sở chính</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                        <optgroup label="Châu Á">
+                                            <option value="AK">Thái Lan</option>
+                                            <option value="HI">Philippin</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Âu">
+                                            <option value="CA">Canada</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="WA">Washington</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Úc">
+                                            <option value="AZ">Arizona</option>
+                                            <option value="CO">Colorado</option>
+
+                                        </optgroup>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default required">
+                                    <label>Số hợp đồng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {{> loaitien}}
+
+                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
+
+                    </h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" id="po">
+                                    <label for="po"><b>PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox" value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!-- /.modal-dialog -->
+</div>
+</div>
+<!---doi tac tra về-->
+<div class="modal fade stick-up" id="xemChiTiet-Trave" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+
+                <h5>Tạo mới <span class="semi-bold">Đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                    <h6 class="bold text-uppercase">Đơn vị ký hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                    <label for="donViKy-ocb">OCB</label>
+                                    <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                    <label for="donViKy-congty">Công ty</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên đầy đủ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên giao dịch</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên người đại diện</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Chức vụ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Mã số thuế</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Trụ sở chính</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                        <optgroup label="Châu Á">
+                                            <option value="AK">Thái Lan</option>
+                                            <option value="HI">Philippin</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Âu">
+                                            <option value="CA">Canada</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="WA">Washington</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Úc">
+                                            <option value="AZ">Arizona</option>
+                                            <option value="CO">Colorado</option>
+
+                                        </optgroup>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default required">
+                                    <label>Số hợp đồng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                           id="datepicker-component">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                           id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {{> loaitien}}
+
+                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
+
+                    </h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" id="po">
+                                    <label for="po"><b>PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox" value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Điều chỉnh</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</div>
+<!--tab lanh dao-->
+<div class="modal fade stick-up" id="xemChiTiet-tabLanhDao" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+
+                <h5>Tạo mới <span class="semi-bold">Đối tác</span></h5>
+                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+                    <h6 class="bold text-uppercase">Đơn vị ký hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="radio radio-primary">
+                                    <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                    <label for="donViKy-ocb">OCB</label>
+                                    <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                    <label for="donViKy-congty">Công ty</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên đầy đủ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên giao dịch</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Tên người đại diện</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Chức vụ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Mã số thuế</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group form-group-default required select2-small">
+                                    <label>Trụ sở chính</label>
+
+                                    <select class="full-width " data-init-plugin="select2">
+                                        <optgroup label="Châu Á">
+                                            <option value="AK">Thái Lan</option>
+                                            <option value="HI">Philippin</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Âu">
+                                            <option value="CA">Canada</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="WA">Washington</option>
+                                        </optgroup>
+
+                                        <optgroup label="Châu Úc">
+                                            <option value="AZ">Arizona</option>
+                                            <option value="CO">Colorado</option>
+
+                                        </optgroup>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin hợp đồng</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="form-group form-group-default required">
+                                    <label>Số hợp đồng</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default  required">
+                                    <label>Tải lên hợp đồng</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                           id="datepicker-component">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-3">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                           id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {{> loaitien}}
+
+                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ
+
+                    </h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" checked="checked" value="" id="po">
+                                    <label for="po"><b>PO</b></label>
+                                    <input type="checkbox" value="" id="pb">
+                                    <label for="pb"><b>PB</b></label>
+
+                                    <input type="checkbox" value="" id="pr">
+                                    <label for="pr"><b>PR</b></label>
+
+                                    <input type="checkbox" value="" id="hd">
+                                    <label for="hd"><b>HD</b></label>
+
+                                    <input type="checkbox" value="" id="ad">
+                                    <label for="ad"><b>AD</b></label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Điều chỉnh</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</div>
