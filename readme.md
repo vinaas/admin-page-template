@@ -26,6 +26,7 @@ Zurb Foundation 6 - Metalsmith is a Gulp-powered build system with these feature
 To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (0.12 or greater)
 - [Git](https://git-scm.com/)
+- Bower  ```npm install -g bower```
 
 ### Using the CLI
 
