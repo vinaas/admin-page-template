@@ -43,15 +43,15 @@
                             {{> formSearch type="normal"}}
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất
-                                    danh sách
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                                </button>
+
 
                             </div>
                             <div class="pull-right m-b-10">
@@ -124,7 +124,15 @@
                                             </a>
                                         </td>
                                         <td class="v-align-middle">
-                                            {{> drop-edit-remove}}
+                                            <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#createDiaban"><i class="fa fa-edit"></i> Chỉnh sửa
+                                        </button>
+                                         <button type="button" class="btn btn-danger" data-toggle="modal"
+                                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+                                        </button>
+
+                                    </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -162,7 +170,15 @@
                                         </td>
                                         <td class="v-align-middle">
 
-                                            {{> drop-edit-remove}}
+                                             <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#createDiaban"><i class="fa fa-edit"></i> Chỉnh sửa
+                                        </button>
+                                         <button type="button" class="btn btn-danger" data-toggle="modal"
+                                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+                                        </button>
+
+                                    </div>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -187,16 +203,14 @@
                             {{> formSearch type="normal"}}
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất
+                                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất
                                     danh
                                     sách
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                                <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> Xóa
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                                </button>
 
                             </div>
                             <div class="pull-right m-b-10">
@@ -267,11 +281,11 @@
                                         <td class="v-align-middle">
 
                                             <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#createGiaoDichTienVe2"><i class="fa fa-edit"></i>
                                                     Xem
                                                 </button>
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-danger" data-toggle="modal"
                                                         data-target="#"><i class="fa fa-trash-o"></i> Xóa
                                                 </button>
                                             </div>
@@ -313,11 +327,11 @@
                                         <td class="v-align-middle">
 
                                             <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#createGiaoDichTienVe"><i class="fa fa-edit"></i>
                                                     Xem
                                                 </button>
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-danger" data-toggle="modal"
                                                         data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                                 </button>
                                             </div>
@@ -348,16 +362,16 @@
                             {{> formSearch type="normal"}}
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất
+                                <button type="button" class="btn btn-primary" ><i class="fa fa-file-excel-o"></i> Xuất
                                     danh
                                     sách
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                 </button>
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                                </button>
+                               
 
                             </div>
                             <div class="pull-right m-b-10">
@@ -428,11 +442,11 @@
                                         <td class="v-align-middle">
 
                                             <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#createGiaoDichTienVe2"><i class="fa fa-edit"></i>
                                                     Xem
                                                 </button>
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-danger" data-toggle="modal"
                                                         data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                                 </button>
                                             </div>
@@ -474,11 +488,11 @@
                                         <td class="v-align-middle">
 
                                             <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#createGiaoDichTienVe"><i class="fa fa-edit"></i>
                                                     Xem
                                                 </button>
-                                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                                <button type="button" class="btn btn-danger" data-toggle="modal"
                                                         data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                                 </button>
                                             </div>
