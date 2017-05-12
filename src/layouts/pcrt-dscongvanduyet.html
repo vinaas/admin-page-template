@@ -1,0 +1,104 @@
+{{#extend "default"}} {{#content "main"}}
+
+<br>
+<!--Danh sách công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default ">
+
+                <div class="tab-content">
+
+                    <div class="panel-body">
+
+                        {{>formSearch type="pcrt-1"}}
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="tabler-responsive">
+
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+
+                                    <th>Ngày</th>
+                                    <th>Mã công văn</th>
+                                    <th>Số công văn</th>
+                                    <th>Loại công văn</th>
+                                    <th>Đơn vị yêu cầu</th>
+                                    <th>Hiệu lực</th>
+                                    <th>Tài liệu</th>
+                                    <th>Chi tiết</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        13/03/2017
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        0001
+                                    </td>
+                                    <td class="v-align-middle">
+                                        abc
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Tra soát
+                                    </td>
+                                    <td class="v-align-middle">
+                                        abc
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        Còn hiệu lực
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        <a href="">anh-so-1.jpg</a>
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-default" data-toggle="modal-pcrt"
+                                           data-target="#">Xem</a>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

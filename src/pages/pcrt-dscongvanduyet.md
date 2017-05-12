@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Danh sách mức giá trị giao dịch",
+    "title": "Duyệt danh sách công văn",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-nhandiengiaodich-mucgiatrigiaodichlon.html",
+    "layout": "pcrt-dscongvanduyet.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }

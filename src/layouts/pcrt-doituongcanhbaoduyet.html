@@ -1,6 +1,6 @@
 {{#extend "default"}} {{#content "main"}}
 <br>
-<!--CẬP NHẬT DS ĐỐI TƯỢNG CẢNH BÁO-->
+<!--DUYỆT DANH SÁCH ĐỐI TƯỢNG CẢNH BÁO-->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -10,48 +10,27 @@
             <h3 class="page-title">{{title}}</h3>
 
         </div>
-
-        <div class="col-sm-5">
-            <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#taomoiDoiTuongCanhBao"><i class="pg-form"></i> Tạo mới Đối tượng cảnh báo
-                </button>
-
-
-
-            </div>
-        </div>
-
     </div>
 
-
-
     <div class="row">
-
-        <div class="col-md-12">
-
-
 
 
             <div class="panel panel-default">
 
-
-
                 <div class="panel-body">
 
                     {{>formSearch type="pcrt-2"}}
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
+                    <div class="col-md-12">
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
 
+                            </div>
                         </div>
-                    </div>
-
                         <table class="table">
                             <thead>
                             <tr><th>STT</th>

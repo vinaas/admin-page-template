@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Danh sách mức giá trị giao dịch",
+    "title": "Duyệt danh sách đối tượng cảnh báo",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-nhandiengiaodich-mucgiatrigiaodichlon.html",
+    "layout": "pcrt-doituongcanhbaoduyet.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }

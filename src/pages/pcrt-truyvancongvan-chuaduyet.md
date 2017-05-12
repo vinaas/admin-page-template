@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Truy vấn công văn",
+    "title": "Danh sách công văn",
     "slug": "",
     "description": "Index Page",
     "layout": "pcrt-truyvancongvan-chuaduyet.html",

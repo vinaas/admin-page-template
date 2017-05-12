@@ -1,0 +1,94 @@
+{{#extend "default"}} {{#content "main"}}
+
+<br>
+<!--Danh sách công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default ">
+
+                <div class="tab-content">
+
+                    <div class="panel-body">
+
+                        {{>formSearch type="pcrt-8"}}
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="tabler-responsive">
+
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th> Ngày đánh giá</th>
+                                    <th> Mã số nhận tiền</th>
+                                    <th> Đối tác</th>
+                                    <th> Tên người nhận</th>
+                                    <th> Dấu hiệu đáng ngờ</th>
+                                    <th> Lý do nghi ngờ</th>
+                                    <th> Chi tiết</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="v-align-middle">26/04/2017</td>
+                                    <td class="v-align-middle"> 0001</td>
+                                    <td class="v-align-middle">Money</td>
+                                    <td class="v-align-middle">Nguyen van A</td>
+                                    <td class="v-align-middle">dau hieu 1</td>
+                                    <td class="v-align-middle"> rua tien</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-default" data-toggle="modal-pcrt"
+                                           data-target="#">Xem</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">26/04/2017</td>
+                                    <td class="v-align-middle"> 0002</td>
+                                    <td class="v-align-middle">Money</td>
+                                    <td class="v-align-middle">Nguyen van B</td>
+                                    <td class="v-align-middle">dau hieu 2</td>
+                                    <td class="v-align-middle"> rua tien</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-default" data-toggle="modal-pcrt"
+                                           data-target="#">Xem</a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

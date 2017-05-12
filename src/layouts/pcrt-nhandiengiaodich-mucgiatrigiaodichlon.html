@@ -1,8 +1,5 @@
 {{#extend "default"}} {{#content "main"}}
 
-{{> navHori type="pcrt-nhandiengiaodich"}}
-
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -15,9 +12,8 @@
 
         <div class="col-sm-5">
             <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#taomoiMucGiaTriGiaoDich"><i class="pg-form"></i> Tạo mới
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal"
+                        data-target="#taomoiMucGiaTriGiaoDich"><i class="pg-form"></i> Tạo mới
                 </button>
 
             </div>
@@ -36,8 +32,8 @@
                     data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
-                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>
+                    <!--<li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>-->
 
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
@@ -49,7 +45,16 @@
                         <div class="panel-body">
 
                             {{>formSearch type="pcrt-1"}}
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                    </button>
 
+                                </div>
+                            </div>
                             <br>
 
                             <div class="row">
@@ -57,8 +62,9 @@
 
                                     <table class="table">
                                         <thead>
-                                        <tr><th>Ngày cập nhập</th>
-                                            <th>Loại tiền </th>
+                                        <tr>
+                                            <th>Ngày cập nhập</th>
+                                            <th>Loại tiền</th>
                                             <th> Số tiền</th>
 
 
@@ -68,7 +74,7 @@
                                         <tr>
                                             <td class="v-align-middle">12/03/2017</td>
                                             <td class="v-align-middle"> VND</td>
-                                            <td class="v-align-middle"> <strong>120 000 000</strong></td>
+                                            <td class="v-align-middle"><strong>120 000 000</strong></td>
                                         </tr>
 
 
@@ -77,8 +83,6 @@
 
                                 </div>
                             </div>
-
-
 
 
                             {{>pagination}}
@@ -94,7 +98,6 @@
                             {{>formSearch type="pcrt-1"}}
 
 
-
                             <br>
 
                             <div class="row">
@@ -102,8 +105,9 @@
 
                                     <table class="table">
                                         <thead>
-                                        <tr><th>Ngày cập nhập</th>
-                                            <th>Loại tiền </th>
+                                        <tr>
+                                            <th>Ngày cập nhập</th>
+                                            <th>Loại tiền</th>
                                             <th> Số tiền</th>
 
 
@@ -113,7 +117,7 @@
                                         <tr>
                                             <td class="v-align-middle">12/03/2017</td>
                                             <td class="v-align-middle"> VND</td>
-                                            <td class="v-align-middle"> <strong>120 000 000</strong></td>
+                                            <td class="v-align-middle"><strong>120 000 000</strong></td>
                                         </tr>
 
 
@@ -122,7 +126,6 @@
 
                                 </div>
                             </div>
-
 
 
                             {{>pagination}}
@@ -145,8 +148,9 @@
 
                                     <table class="table">
                                         <thead>
-                                        <tr><th>Ngày cập nhập</th>
-                                            <th>Loại tiền </th>
+                                        <tr>
+                                            <th>Ngày cập nhập</th>
+                                            <th>Loại tiền</th>
                                             <th> Số tiền</th>
 
                                             <th></th>
@@ -158,14 +162,16 @@
                                         <tr>
                                             <td class="v-align-middle">12/03/2017</td>
                                             <td class="v-align-middle"> VND</td>
-                                            <td class="v-align-middle"> <strong>120 000 000</strong></td>
+                                            <td class="v-align-middle"><strong>120 000 000</strong></td>
 
                                             <td class="v-align-middle">
 
                                                 <div class="btn-group btn-group-sm">
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addHoaHong"><i class="fa fa-edit"></i> Sửa
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                            data-target="#addHoaHong"><i class="fa fa-edit"></i> Sửa
                                                     </button>
-                                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+                                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                                            data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                                     </button>
                                                 </div>
 
@@ -178,8 +184,6 @@
 
                                 </div>
                             </div>
-
-
 
 
                             {{>pagination}}
@@ -200,4 +204,4 @@
 
 </div>
 
- {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

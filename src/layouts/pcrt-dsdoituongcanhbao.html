@@ -1,7 +1,7 @@
 {{#extend "default"}} {{#content "main"}}
 <br>
 
-
+<!--TRUY VẤN DANH SÁCH ĐỐI TƯỢNG CẢNH BÁO-->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -16,22 +16,17 @@
     </div>
 
 
-
     <div class="row">
 
         <div class="col-md-12">
 
 
-
-
             <div class="panel panel-default">
-
 
 
                 <div class="panel-body">
 
                     {{>formSearch type="pcrt-4"}}
-
                     <div class="pull-right m-b-10">
                         <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                         <div class="btn-group">
@@ -43,28 +38,35 @@
                         </div>
                     </div>
 
-
                     <table class="table table-hover">
                         <thead>
-                        <tr><th>STT</th>
-                            <th>Mã số nhận biết</th>
-                            <th>Đối tác</th>
-                            <th>Ngày đánh giá giao dịch</th>
-                            <th>Tên người nhận</th>
-                            <th>Số giấy tờ</th>
-                            <th>Địa chỉ</th>
-                            <th>Loại tiền chi</th>
-                            <th>Số tiền</th>
-                            <th>Dấu hiệu đáng ngờ</th>
-                            <th>Lý do nghi ngờ</th>
-                            <th>Diễn giải</th>
+                        <tr>
+                            <th>STT</th>
+                            <th>MÃ ĐỐI TƯỢNG</th>
+                            <th>HỌ TÊN</th>
+                            <th>SỐ GIẤY TỜ</th>
+                            <th>ĐỊA CHỈ</th>
+                            <th>ĐIỆN THOẠI</th>
+                            <th>DẤU HIỆU ĐÁNG NGỜ</th>
+                            <th>LOẠI TIÊU CHÍ</th>
+                            <th>HIỆU LỰC</th>
 
                         </tr>
                         </thead>
-                        <tbody> <tr><td class="v-align-middle">1</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
+                        <tbody>
+                        <tr>
+                            <td class="v-align-middle">1</td>
+                            <td class="v-align-middle">0001</td>
+                            <td class="v-align-middle">Nguyen Van A</td>
+                            <td class="v-align-middle">240813112</td>
+                            <td class="v-align-middle">CMND</td>
+                            <td class="v-align-middle">Tan Binh</td>
+                            <td class="v-align-middle"> Dau hieu dang ngo 1</td>
+                            <td class="v-align-middle">Nghi ngờ</td>
+                            <td class="v-align-middle">Còn hiệu lực</td>
+                        </tr>
+                        <tr>
+                            <td class="v-align-middle">2</td>
                             <td class="v-align-middle"></td>
                             <td class="v-align-middle"></td>
                             <td class="v-align-middle"></td>
@@ -74,23 +76,8 @@
                             <td class="v-align-middle"></td>
                             <td class="v-align-middle"></td>
                         </tr>
-                        <tr><td class="v-align-middle">2</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                        </tr>
-                        <tr><td class="v-align-middle">3</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
+                        <tr>
+                            <td class="v-align-middle">3</td>
                             <td class="v-align-middle"></td>
                             <td class="v-align-middle"></td>
                             <td class="v-align-middle"></td>
@@ -105,8 +92,7 @@
                     </table>
 
 
-
-                        {{>pagination}}
+                    {{>pagination}}
 
 
                 </div>
@@ -115,13 +101,9 @@
         </div>
 
 
-
-
     </div>
 
 </div>
-
-
 
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

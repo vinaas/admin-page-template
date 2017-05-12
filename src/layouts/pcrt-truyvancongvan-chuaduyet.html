@@ -35,8 +35,8 @@
                     data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
-                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>
+                    <!--<li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>-->
 
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
@@ -46,8 +46,18 @@
                     <div class="tab-pane active" id="tabChuaDuyet">
 
                         <div class="panel-body">
-
                             {{>formSearch type="pcrt-1"}}
+
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
 
                             <div class="tabler-responsive">
 
@@ -96,7 +106,6 @@
 
 
                                     </tr>
-
 
                                     </tbody>
                                 </table>
@@ -176,6 +185,17 @@
                         <div class="panel-body">
 
                             {{>formSearch type="pcrt-1"}}
+
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
 
                             <div class="tabler-responsive">
 
