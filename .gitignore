@@ -1,12 +1,23 @@
 .DS_Store
+<<<<<<< .mine
 .node_modules
+=======
+.node_modules/
+>>>>>>> .theirs
 npm-debug.log
 bower_components/
 .dist
 *.swp
 .vscode
 .idea
+<<<<<<< .mine
 ghpages
 
 .publish
 .node_modules/
+=======
+.ghpages
+.publish
+/node_modules
+/dist
+>>>>>>> .theirs
