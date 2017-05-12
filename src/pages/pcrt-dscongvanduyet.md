@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "pcrt-dscongvanduyet.html",
     "permalink" : false,
-    "activeLink" : "pcrt-dscongvanduyet"
+    "activeLink" : "pcrt"
 }
 ---
 
