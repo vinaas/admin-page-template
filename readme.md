@@ -79,3 +79,4 @@ Many thanks for ZURB Template.
 - Lazysizes - lazyloader for images - https://github.com/aFarkas/lazysizes
 - Sweetalert - http://t4t5.github.io/sweetalert/
 - Swiper - http://idangero.us/swiper/#.WKVXzvmLSUk
+ 
