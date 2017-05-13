@@ -99,6 +99,10 @@ Generated From SASS
   }
 }
 
+.brand{
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .table-small {
   margin-bottom: 0;
   &.table thead tr th {
