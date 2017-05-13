@@ -10,13 +10,7 @@
         <div class="col-sm-8">
 
             <h3 class="page-title">Quản lý danh sách đối tác</h3>
-                <!--<a href="doitac-choduyet.html" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Danh sách đối tác chờ duyệt <i class="fa fa-chevron-right"></i>
-                </a> -->
-                <!-- <a href="#" class="btn btn-tag   btn-tag-rounded btn-tag-light m-l-20"> Trả về <i class="fa fa-chevron-right"></i> </a>
-             </h3>-->
-
         </div>
-
         <div class="col-sm-4">
             <div class="text-right">
                 <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal"
@@ -29,589 +23,627 @@
             </div>
         </div>
 
-        <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist"
-            data-init-reponsive-tabs="collapse">
-            <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
-            </li>
-
-            <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-            </li>
-
-            <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
-            </li>
-            <li><a href="#tabLanhDao" data-toggle="tab" role="tab">Lãnh Đạo duyệt</a>
-            </li>
-
-        </ul>
-
-        <div class="tab-content">
-            <div class="tab-pane active" id="tabChuaDuyet">
-
-                <div class="panel-body">
-
-                    {{> formSearch type="normal"}}
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                    <div class="tabler-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
-
-                                </th>
-                                <th style="width: 15%">Ngày tạo</th>
-                                <th style="width: 15%">Mã đối tác</th>
-                                <th style="width: 25%">Tên đầy đủ</th>
-
-                                <th style="width: 15%">Số HĐ</th>
-
-                                <th style="width: 10%">Hợp đồng</th>
-                                <th style="width: 10%">Trạng thái</th>
-                                <th style="width: 5%">Chi tiết</th>
-                                
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default">Chưa duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
-                                    </a>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default">Chưa duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
-                                    </a>
-                                </td>
-                                
-                            </tr>
-                            </tbody>
-                        </table>
-
-
-                        {{>pagination}}
-
-                    </div>
-
-                    <div class="clearfix"></div>
-
-
-                </div>
-            </div>
-
-            <div class="tab-pane " id="tabTraVe">
-                <div class="panel-body">
-
-                    {{> formSearch type="normal"}}
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
-                        </button>
-
-                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                        </button>
-
-                    </div>
-
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
-
-                        </div>
-                    </div>
-
-                    <div class="tabler-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
-
-                                </th>
-                                <th style="width: 15%">Ngày tạo</th>
-                                <th style="width: 15%">Mã đối tác</th>
-                                <th style="width: 25%">Tên đầy đủ</th>
-
-                                <th style="width: 15%">Số HĐ</th>
-
-                                <th style="width: 10%">Hợp đồng</th>
-                                <th style="width: 10%">Trạng thái</th>
-                                <th style="width: 5%">Chi tiết</th>
-                               
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default"> Trả về</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-Trave">Xem
-                                </td>
-                               
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default"> Trả về</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-Trave">Xem
-                                    </a>
-                                </td>
-                              
-                            </tr>
-
-                            </tbody>
-                        </table>
-
-                        {{>pagination}}
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="tab-pane" id="tabDaDuyet">
-                <div class="panel-body">
-                    {{> formSearch type="normal"}}
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất
-                            danh sách
-                        </button>
-
-                        <button type="button" class="btn btn-danger"data-toggle="modal"
-                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-                        </button>
-
-                       
-
-                    </div>
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                    <div class="tabler-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
-
-                                </th>
-                                <th style="width: 15%">Ngày tạo</th>
-                                <th style="width: 15%">Mã đối tác</th>
-                                <th style="width: 25%">Tên đầy đủ</th>
-
-                                <th style="width: 15%">Số HĐ</th>
-
-                                <th style="width: 10%">Hợp đồng</th>
-                                <th style="width: 10%">Trạng thái</th>
-                                <th>Chi tiết</th>
-                                <th style="width:5%"></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-success"> duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-DoiTac-daDuyet">Xem
-                                    </a>
-                                </td>
-                                <td class="v-align-middle">
-                                    <div class="dropdown pull-right">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa fa-cog"></i>
-                                        </button>
-                                        <ul class="dropdown-menu profile-dropdown" role="menu">
-                                            <li class="bg-master-lighter">
-                                                <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
-                                                    <span class="pull-left">Xóa</span>
-                                                    <span class="pull-right"><i class="fa fa-trash-o"></i></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-success">duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-DoiTac-daDuyet">Xem
-                                    </a>
-                                </td>
-                                <td class="v-align-middle">
-
-                                    <div class="dropdown pull-right">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa fa-cog"></i>
-                                        </button>
-                                        <ul class="dropdown-menu profile-dropdown" role="menu">
-                                            <li class="bg-master-lighter">
-                                                <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
-                                                    <span class="pull-left">Xóa</span>
-                                                    <span class="pull-right"><i class="fa fa-trash-o"></i></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                </td>
-                            </tr>
-
-                            </tbody>
-                        </table>
-
-                        {{>pagination}}
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane " id="tabLanhDao">
-                <div class="panel-body">
-                    {{> formSearch type="normal"}}
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
-                        </button>
-
-                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                        </button>
-
-                    </div>
-
-
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
-
-                        </div>
-                    </div>
-
-
-                    <div class="tabler-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
-
-                                </th>
-                                <th style="width: 15%">Ngày tạo</th>
-                                <th style="width: 15%">Mã đối tác</th>
-                                <th style="width: 25%">Tên đầy đủ</th>
-
-                                <th style="width: 15%">Số HĐ</th>
-
-                                <th style="width: 10%">Hợp đồng</th>
-                                <th style="width: 10%">Trạng thái</th>
-                                <th style="width: 5%">Chi tiết</th>
-                                
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default">Chờ duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-tabLanhDao">Xem
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle ">
-                                    04/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    12
-                                </td>
-                                <td class="v-align-middle">
-                                    ABC
-                                </td>
-
-                                <td class="v-align-middle">
-                                    245
-                                </td>
-
-
-                                <td class="v-align-middle text-center">
-                                    <a href="doitac-hopdong.html"
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <span class="label label-default">Chờ duyệt</span>
-                                </td>
-                                <td class="v-align-middle text-center">
-                                    <a href=""
-                                       class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal"
-                                       data-target="#xemChiTiet-tabLanhDao">Xem
-                                    </a>
-                                </td>
-                               
-                            </tr>
-
-                            </tbody>
-                        </table>
-
-                        {{>pagination}}
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
 
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist"
+                    data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
+                    </li>
+
+                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>
+
+                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
+                    </li>
+                    <li><a href="#tabLanhDao" data-toggle="tab" role="tab">Lãnh Đạo duyệt</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabChuaDuyet">
+
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+
+                            <div class="panel-body">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 15%">Ngày tạo</th>
+                                            <th style="width: 15%">Mã đối tác</th>
+                                            <th style="width: 25%">Tên đầy đủ</th>
+
+                                            <th style="width: 15%">Số HĐ</th>
+
+                                            <th style="width: 10%">Hợp đồng</th>
+                                            <th style="width: 10%">Trạng thái</th>
+                                            <th style="width: 5%">Chi tiết</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default">Chưa duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default">Chưa duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                    {{>pagination}}
+
+                                </div>
+
+                                <div class="clearfix"></div>
+
+
+                            </div>
+
+
+                            <!--sds-->
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane " id="tabTraVe">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+
+
+                            <div class="panel-body">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 15%">Ngày tạo</th>
+                                            <th style="width: 15%">Mã đối tác</th>
+                                            <th style="width: 25%">Tên đầy đủ</th>
+
+                                            <th style="width: 15%">Số HĐ</th>
+
+                                            <th style="width: 10%">Hợp đồng</th>
+                                            <th style="width: 10%">Trạng thái</th>
+                                            <th style="width: 5%">Chi tiết</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default"> Trả về</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-Trave">Xem</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default"> Trả về</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-Trave">Xem
+                                                </a>
+                                            </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane" id="tabDaDuyet">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+
+                            <div class="panel-body">
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 15%">Ngày tạo</th>
+                                            <th style="width: 15%">Mã đối tác</th>
+                                            <th style="width: 25%">Tên đầy đủ</th>
+
+                                            <th style="width: 15%">Số HĐ</th>
+
+                                            <th style="width: 10%">Hợp đồng</th>
+                                            <th style="width: 10%">Trạng thái</th>
+                                            <th>Chi tiết</th>
+                                            <th style="width:5%"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-success"> duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-DoiTac-daDuyet">Xem
+                                                </a>
+                                            </td>
+                                            <td class="v-align-middle">
+                                                <div class="dropdown pull-right">
+                                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                        <i class="fa fa-cog"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu profile-dropdown" role="menu">
+                                                        <li class="bg-master-lighter">
+                                                            <a href="#" data-toggle="modal" data-target="#modalXoa"
+                                                               class="clearfix">
+                                                                <span class="pull-left">Xóa</span>
+                                                                <span class="pull-right"><i
+                                                                        class="fa fa-trash-o"></i></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-success">duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-DoiTac-daDuyet">Xem
+                                                </a>
+                                            </td>
+                                            <td class="v-align-middle">
+
+                                                <div class="dropdown pull-right">
+                                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                        <i class="fa fa-cog"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu profile-dropdown" role="menu">
+                                                        <li class="bg-master-lighter">
+                                                            <a href="#" data-toggle="modal" data-target="#modalXoa"
+                                                               class="clearfix">
+                                                                <span class="pull-left">Xóa</span>
+                                                                <span class="pull-right"><i
+                                                                        class="fa fa-trash-o"></i></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane " id="tabLanhDao">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
+                                    </button>
+
+                                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                                            data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                                    </button>
+
+                                </div>
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 15%">Ngày tạo</th>
+                                            <th style="width: 15%">Mã đối tác</th>
+                                            <th style="width: 25%">Tên đầy đủ</th>
+
+                                            <th style="width: 15%">Số HĐ</th>
+
+                                            <th style="width: 10%">Hợp đồng</th>
+                                            <th style="width: 10%">Trạng thái</th>
+                                            <th style="width: 5%">Chi tiết</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default">Chờ duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-tabLanhDao">Xem
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                04/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12
+                                            </td>
+                                            <td class="v-align-middle">
+                                                ABC
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                245
+                                            </td>
+
+
+                                            <td class="v-align-middle text-center">
+                                                <a href="doitac-hopdong.html"
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <span class="label label-default">Chờ duyệt</span>
+                                            </td>
+                                            <td class="v-align-middle text-center">
+                                                <a href=""
+                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded "
+                                                   data-toggle="modal"
+                                                   data-target="#xemChiTiet-tabLanhDao">Xem
+                                                </a>
+                                            </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
 </div>
 
-</div>
 
 
 {{/content}} {{#content "script" mode="append"}}
