@@ -103,6 +103,14 @@ Generated From SASS
   image-rendering: -webkit-optimize-contrast;
 }
 
+.sub-menu{
+  .Sub ,.sub{
+    padding: 0 15px 0 10px;
+    list-style: none;
+    // list-style: none;
+  }
+}
+
 .table-small {
   margin-bottom: 0;
   &.table thead tr th {

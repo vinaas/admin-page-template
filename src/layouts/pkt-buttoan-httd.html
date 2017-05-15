@@ -1,0 +1,111 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+<!--DUYỆT DANH SÁCH ĐỐI TƯỢNG CẢNH BÁO-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+
+                    {{>formSearch type="pkt-1"}}
+                    <div class="col-md-12">
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr><th>STT</th>
+                                <th>NGÀY </th>
+                                <th>NGHIỆP VỤ</th>
+                                <th>SỐ GIAO DỊCH</th>
+                                <th>TÊN ĐỐI TÁC</th>
+                                <th>ID ĐỐI TÁC</th>
+                                <th>CHI NHÁNH NGÂN HÀNG</th>
+                                <th>HÌNH THỨC THANH TOÁN</th>
+                                <th>LOẠI TIỀN THANH TOÁN</th>
+                                <th>SỐ TIỀN</th>
+                                <th>TỶ GIÁ</th>
+                                <th>PHÍ HOA HỒNG</th>
+                                <th>CHI TIẾT</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+
+
+                            <tr><td class="v-align-middle">1</td>
+                                <td class="v-align-middle">13/03/2017</td>
+                                <td class="v-align-middle">Nhan tien chuyen ve tu doi tac</td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle">ABC</td>
+                                <td class="v-align-middle"> </td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle">  <a href="" class="text-primary" >Xem</a> </td>
+                            </tr>
+
+                             <tr><td class="v-align-middle">2</td>
+                                <td class="v-align-middle">13/03/2017</td>
+                                <td class="v-align-middle">Nhan tien chuyen ve tu doi tac</td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle">DEF</td>
+                                <td class="v-align-middle"> </td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle">  <a href="" class="text-primary" >Xem</a> </td>
+                            </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+
+                        {{>pagination}}
+
+
+                </div>
+            </div>
+/
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
