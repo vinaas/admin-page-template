@@ -1,0 +1,131 @@
+{{#extend "default"}} {{#content "main"}}
+
+<!--Tạo mới Công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="panel panel-default">
+        <div class="modal-header clearfix text-left">
+
+            <h5>Tạo mới <span class="semi-bold">Công văn</span></h5>
+            <p>Các lưu ý cho nhân viên khi tạo mới công văn</p>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+                <div class="form-group-attached">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="form-group form-group-default input-group col-sm-10">
+                                <label>Ngày</label>
+                                <input type="email" class="form-control" placeholder="30/4/2017"
+                                       id="datepicker-component">
+                                <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required">
+                                <label>Mã công văn</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required">
+                                <label>Số công văn</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required select2-small">
+                                <label>Loại công văn</label>
+
+                                <select class="full-width " data-init-plugin="select2">
+
+
+                                    <option value="cb">Cảnh báo</option>
+                                    <option value="hc">Hủy chi</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required">
+                                <label>Đơn vị yêu cầu</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required select2-small">
+                                <label>Hiệu lực</label>
+
+                                <select class="full-width " data-init-plugin="select2">
+
+
+                                    <option value="chl">Còn hiệu lực</option>
+                                    <option value="hhl">Hết hiệu lực</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default required">
+                                <label>Upload</label>
+                                <input class="form-control" type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                    <div class="pull-left">
+                        <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                    </div>
+                    <div class="pull-right">
+                        <p class="bold font-montserrat text-uppercase">$20.00</p>
+                    </div>
+                </div>-->
+            </div>
+            <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                <button type="button" class="btn btn-danger  " data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i>Lưu & Yêu cầu duyệt
+                                    </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

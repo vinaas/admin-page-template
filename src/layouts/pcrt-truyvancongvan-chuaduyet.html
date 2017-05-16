@@ -1,323 +1,246 @@
-{{#extend "default"}} {{#content "main"}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 
-<br>
-
+<!-- START CONTAINER FLUID -->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-8">
 
-            <h3 class="page-title">{{title}}</h3>
-
+            <h3 class="page-title">Danh sách công văn</h3>
         </div>
+        
 
-        <!--<div class="col-sm-5">
-            <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-
-            </div>
-        </div>-->
 
     </div>
-
     <div class="row">
-
         <div class="col-md-12">
-
-
-            <div class="panel panel-default ">
-
-                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist"
-                    data-init-reponsive-tabs="collapse">
+            <div class="panel panel-default">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
-                    <!--<li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>-->
+
 
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
+                  
 
                 </ul>
+
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaDuyet">
 
-                        <div class="panel-body">
-                            {{>formSearch type="pcrt-1"}}
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
 
-                            <div class="pull-right m-b-10">
-                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                    </button>
+                            <div class="panel-body">
 
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="tabler-responsive">
+
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width: 15%">Ngày</th>
+                                                <th style="width: 15%">Mã công văn</th>
+                                                <th style="width: 15%">Số công văn</th>
+
+                                                <th style="width: 15%">Loại công văn</th>
+
+                                                <th style="width: 10%">Đợn vị yêu cầu</th>
+                                                <th style="width: 25%">Hiệu lực</th>
+                                                <th style="width: 5%">Tài liệu</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    12
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    Tra soát
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                   Còn hiệu lực
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    anh-so-1.jpg
+                                                </a>
+                                                </td>
+
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
 
 
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
+                                    {{>pagination}}
 
-                                        <th>Ngày</th>
-                                        <th>Mã công văn</th>
-                                        <th>Số công văn</th>
-                                        <th>Loại công văn</th>
-                                        <th>Đơn vị yêu cầu</th>
-                                        <th>Hiệu lực</th>
-                                        <th>Tài liệu</th>
+                                </div>
 
-
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            13/03/2017
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            0001
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Tra soát
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            Còn hiệu lực
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="">anh-so-1.jpg</a>
-                                        </td>
-
-
-                                    </tr>
-
-                                    </tbody>
-                                </table>
-
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="tab-pane " id="tabDaDuyet">
-                        <div class="panel-body">
-
-                            {{>formSearch type="pcrt-1"}}
-
-                            <div class="tabler-responsive">
-
-
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-
-                                        <th>Ngày</th>
-                                        <th>Mã công văn</th>
-                                        <th>Số công văn</th>
-                                        <th>Loại công văn</th>
-                                        <th>Đơn vị yêu cầu</th>
-                                        <th>Hiệu lực</th>
-                                        <th>Tài liệu</th>
-
-
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            13/03/2017
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            0001
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Tra soát
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            Còn hiệu lực
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="">anh-so-1.jpg</a>
-                                        </td>
-
-
-                                    </tr>
-
-
-                                    </tbody>
-                                </table>
+                                <div class="clearfix"></div>
 
 
                             </div>
 
 
+                            <!--sds-->
+
                         </div>
+
                     </div>
+
 
                     <div class="tab-pane " id="tabTraVe">
-                        <div class="panel-body">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
 
-                            {{>formSearch type="pcrt-1"}}
 
-                            <div class="pull-right m-b-10">
-                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                    </button>
+                            <div class="panel-body">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width: 15%">Ngày</th>
+                                                <th style="width: 15%">Mã công văn</th>
+                                                <th style="width: 15%">Số công văn</th>
+
+                                                <th style="width: 15%">Loại công văn</th>
+
+                                                <th style="width: 10%">Đơn vị yêu cầu</th>
+                                                <th style="width: 10%">Hiệu lực</th>
+                                                <th style="width: 5%">Tài liệu</th>
+                                                 <th style="width: 10%">Hành động</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
+                                                <td class="v-align-middle">
+                                                   001
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    tra soát
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                   abc
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                   Còn hiệu lực
+                                                </td>
+                                                <td class="v-align-middle r">
+                                                    anh-so-1.jpg
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#danhsachcongvan-trave"> <i class="fa fa-edit"></i> Sửa</button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                    </div>
+                                                </td>
+
+                                            </tr>
+                                          
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
 
                                 </div>
                             </div>
 
-                            <div class="tabler-responsive">
-
-
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-
-                                        <th>Ngày</th>
-                                        <th>Mã công văn</th>
-                                        <th>Số công văn</th>
-                                        <th>Loại công văn</th>
-                                        <th>Đơn vị yêu cầu</th>
-                                        <th>Hiệu lực</th>
-                                        <th>Tài liệu</th>
-                                        <th>Lý do</th>
-                                        <th>Hành động</th>
-                                    </tr>
-                                    </thead>
-
-                                    <tbody>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            13/03/2017
-                                        </td>
-                                        <td class="v-align-middle">
-                                            0001
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Tra soát
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            Còn hiệu lực
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="">anh-so-1.jpg</a>
-
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Lý do 1
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#addHoaHong"><i class="fa fa-edit"></i> Sửa
-                                                </button>
-                                                <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-                                                </button>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            13/03/2017
-                                        </td>
-                                        <td class="v-align-middle">
-                                            0003
-                                        </td>
-                                        <td class="v-align-middle">
-                                            cde
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Tra soát
-                                        </td>
-                                        <td class="v-align-middle">
-                                            abc
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            Hết hiệu lực
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="">anh-so-2.jpg</a>
-
-                                        </td>
-                                        <td class="v-align-middle">
-                                            Lý do 2
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <div class="btn-group btn-group-sm">
-                                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#addHoaHong"><i class="fa fa-edit"></i> Sửa
-                                                </button>
-                                                <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                        data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-                                                </button>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-
-                                    </tbody>
-                                </table>
-
-
-                            </div>
 
                         </div>
                     </div>
+
+
+
+                   
                 </div>
 
 
             </div>
-
         </div>
-
-
     </div>
 
+
 </div>
+
+
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

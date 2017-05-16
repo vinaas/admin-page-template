@@ -1,16 +1,17 @@
 {{#extend "default"}} {{#content "main"}}
 
-<br>
-<!--Danh sách công văn-->
+{{> navHori type=activeLink}}
+
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">{{title}}</h3>
+            <h3 class="page-title">Duyệt công văn</h3>
 
         </div>
+
 
     </div>
 
@@ -18,87 +19,201 @@
 
         <div class="col-md-12">
 
-            <div class="panel panel-default ">
+            <div class="panel panel-default">
+                <!--<div class="panel-heading">-->
+                <!--<div class="panel-title">-->
+                <!--Option #two-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="panel-body">
+                    <h5 class="m-t-0">
+                        Tìm kiếm
+                    </h5>
+                    <form role="form" lpformnum="2" class="form-filter">
+                        <div class="form-group">
+                            <label>Từ khóa</label>
+                            <span class="help">e.g. </span>
+                            <input type="email" class="form-control">
+                        </div>
+                        <!--<div class="form-group">
+                            <label>Thuộc danh mục</label>
 
-                <div class="tab-content">
-
-                    <div class="panel-body">
-
-                        {{>formSearch type="pcrt-1"}}
-                        <div class="pull-right m-b-10">
-                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                </button>
-
+                            <select class="full-width" data-init-plugin="select2">
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                                </optgroup>
+                                <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                              
+                                </optgroup>
+                              
+                                </select>
+                        </div>-->
+                        <div class="form-group long">
+                            <label>THEO NGÀY</label>
+                            <div class="input-daterange input-group" id="datepicker-range">
+                                <input type="text" class="input-sm form-control" name="start" />
+                                <span class="input-group-addon">đến</span>
+                                <input type="text" class="input-sm form-control" name="end" />
                             </div>
                         </div>
-                        <div class="tabler-responsive">
 
-                            <table class="table table-hover">
-                                <thead>
-                                <tr>
+                        <!--<div class="form-group">-->
+                        <!--<label>Disabled</label>-->
+                        <!--<span class="help">e.g. </span>-->
+                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
+                        <!--</div>-->
 
-                                    <th>Ngày</th>
-                                    <th>Mã công văn</th>
-                                    <th>Số công văn</th>
-                                    <th>Loại công văn</th>
-                                    <th>Đơn vị yêu cầu</th>
-                                    <th>Hiệu lực</th>
-                                    <th>Tài liệu</th>
-                                    <th>Chi tiết</th>
+                        <div class="form-group">
 
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="v-align-middle">
-                                        13/03/2017
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        0001
-                                    </td>
-                                    <td class="v-align-middle">
-                                        abc
-                                    </td>
-                                    <td class="v-align-middle">
-                                        Tra soát
-                                    </td>
-                                    <td class="v-align-middle">
-                                        abc
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Còn hiệu lực
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <a href="">anh-so-1.jpg</a>
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <a href="" class="btn btn-default" data-toggle="modal-pcrt"
-                                           data-target="#">Xem</a>
-                                    </td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                            </button>
 
                         </div>
+                    </form>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                    </div>
+
+
+
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+
+                    <div class="tabler-responsive">
+
+
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="width: 15%">Ngày</th>
+                                    <th style="width: 10%">Mã công văn</th>
+                                    <th style="width: 10%">Số công văn</th>
+                                    <th style="width: 15%">Loại công văn</th>
+                                    <th style="width: 10%">Đơn vị yêu cầu</th>
+                                    <th style="width: 15%">Hiệu lực </th>
+                                    <th style="width: 15%">Tài liệu </th>
+                                    <th style="width: 10%">Chi tiết</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                       30/3/2015
+                                    </td>
+                                    <td class="v-align-middle">
+                                        1
+                                    </td>
+                                    <td class="v-align-middle">
+                                      abc
+                                    </td>
+                                    <td class="v-align-middle">
+                                       Tra soát
+                                    </td>
+                                    <td class="v-align-middle">
+                                      xyz
+                                    </td>
+                                    <td class="v-align-middle">
+                                         Hết hiệu lực
+                                    </td>
+                                    <td class="v-align-middle">
+                                       anh-s0-1.jpg
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <a href="#" class="btn btn-default " data-toggle="modal" data-target="#duyetdanhsachcongvan">Xem</a>
+
+                                    </td>
+                                    
+                                 
+                                  
+                                </tr>
+
+                                
+
+                            </tbody>
+                        </table>
+
+
+                         {{>pagination}}
+
 
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+
 
     </div>
 
 </div>
 
-{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
+ {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

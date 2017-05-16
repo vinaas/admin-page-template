@@ -3,7 +3,7 @@
     "title": "Tạo mới công văn",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-congvan.html",
+    "layout": "pcrt-taomoicongvan.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }
