@@ -1,81 +1,80 @@
-{{#extend "default"}} {{#content "main"}}
-{{> navHori type=activeLink}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 
 
 <div class="container-fluid container-fixed-lg">
-	<div class="panel panel-default"></div>
-	<div class="row">
-		<div class="col-sm-12">
+    <div class="panel panel-default"></div>
+    <div class="row">
+        <div class="col-sm-12">
 
-			<h3 class="page-title">Tạo mới đối tượng cảnh báo</h3>
+            <h3 class="page-title">Tạo mới đối tượng cảnh báo</h3>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
-	
-		<div class="row">
 
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Mã đối tượng</label>
+    <div class="row">
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Loại tiêu chuẩn</label>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Mã đối tượng</label>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group ">
-				<label>Dấu hiệu đáng ngờ</label>
-				<select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Loại tiêu chuẩn</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label>Dấu hiệu đáng ngờ</label>
+                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
 
 					<option value="dhdn1">Dấu hiệu đáng ngờ 1</option>
 					<option value="dhdn2">Dấu hiệu đáng ngờ 2</option>
 
 
 				</select>
-			</div> 
+            </div>
 
-		</div>
-	</div>
-	
-	
-	<h6 class="bold text-uppercase m-t-20">Đối tượng</h6>
+        </div>
+    </div>
 
-	<div class="row">
 
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Họ tên</label>
+    <h6 class="bold text-uppercase m-t-20">Đối tượng</h6>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group ">
-				<label>Ngày tháng năm sinh</label>
-				<div id="datepicker-component" class="input-group date ">
-					<input class="form-control" type="text"><span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
-				</div>
-			</div>
+    <div class="row">
 
-		</div>
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Số giấy tờ</label>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Họ tên</label>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group ">
-				<label>Loại giấy tờ</label>
-				<select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label>Ngày tháng năm sinh</label>
+                <div id="datepicker-component" class="input-group date ">
+                    <input class="form-control" type="text"><span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Số giấy tờ</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label>Loại giấy tờ</label>
+                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
 
 					<option value="cmnd">Chứng minh nhân dân</option>
 					<option value="tcc">Thẻ căn cước</option>
@@ -84,69 +83,69 @@
 
 
 				</select>
-			</div> 
+            </div>
 
-		</div>
+        </div>
 
 
-	</div>
-<div class="row">
+    </div>
+    <div class="row">
 
-		<div class="col-md-3">
-			<div class="form-group ">
-				<label>Ngày cấp</label>
-				<div id="datepicker-component" class="input-group date ">
-					<input class="form-control" type="text"><span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
-				</div>
-			</div>
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label>Ngày cấp</label>
+                <div id="datepicker-component" class="input-group date ">
+                    <input class="form-control" type="text"><span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
 
-		</div>
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Địa chỉ</label>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Địa chỉ</label>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Số tài khoản</label>
+                <input class="form-control" type="email">
+            </div>
+        </div>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Điện thoại</label>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Số tài khoản</label>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		
-		
-	</div>
-<div class="row">
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Điện thoại</label>
 
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Số công văn</label>
+                <input class="form-control" type="email">
+            </div>
+        </div>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="form-group">
-				<label>Đơn vị yêu cầu</label>
 
-				<input class="form-control" type="email">
-			</div>
-		</div>
-		
-		<div class="col-md-3">
-			<div class="form-group ">
-				<label> hiệu lực</label>
-				<select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+    </div>
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Số công văn</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Đơn vị yêu cầu</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group ">
+                <label> hiệu lực</label>
+                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
 
 					<option value="chl">Còn hiệu lực</option>
 					<option value="hhl">Hết hiệu lực</option>
@@ -155,16 +154,16 @@
 
 
 				</select>
-			</div> 
+            </div>
 
-		</div>
+        </div>
 
-		
-		
-	</div>
-	<div class="row">
-                          <div class="col-sm-4">
-                              <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                                   <div class="pull-left">
                                       <p class="bold font-montserrat text-uppercase">TOTAL</p>
                                   </div>
@@ -172,13 +171,20 @@
                                       <p class="bold font-montserrat text-uppercase">$20.00</p>
                                   </div>
                               </div>-->
+<<<<<<< .mine
                           </div>
                           <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                               <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                               <button type="button" class="btn btn-primary m-t-5" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Lưu & Yêu cầu duyệt
+=======
+        </div>
+        <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+            <button type="button" class="btn btn-danger  sm-t-5" data-dismiss="modal">Hủy</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Lưu & Yêu cầu duyệt
+>>>>>>> .theirs
                                     </button>
-                          </div>
-                      </div>
+        </div>
+    </div>
 
 </div>
 </div>
