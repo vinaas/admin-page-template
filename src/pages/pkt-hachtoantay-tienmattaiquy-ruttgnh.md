@@ -1,13 +1,14 @@
 ---json
 {
-    "title": "Tiền mặt tại quỹ",
+    "title": "Tiền mặt tại quỹ - Rút TGNH",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-buttoan-httd.html",
+    "layout": "pkt-hachtoantay-tienmattaiquy-ruttgnh.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
 ---
+
 
 ### Danh sách các link trong file
 - [Click Here](./blog-list.html)
