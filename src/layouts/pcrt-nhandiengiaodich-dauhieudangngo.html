@@ -58,16 +58,29 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>STT</th>
-                                    <th>Mã tiêu chí</th>
-                                    <th> Dấu hiệu đáng ngờ</th>
-                                    <th> Nội dung</th>
-                                    <th> Loại tiêu chí</th>
+                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                    <th style="width: 20%">STT</th>
+                                    <th style="width: 20%">Mã tiêu chí</th>
+                                    <th style="width: 20%"> Dấu hiệu đáng ngờ</th>
+                                    <th style="width: 20%"> Nội dung</th>
+                                    <th style="width: 20%"> Loại tiêu chí</th>
 
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
+                                 <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
                                     <td class="v-align-middle">1</td>
                                     <td class="v-align-middle"> 001</td>
                                     <td class="v-align-middle">nhan tien phan dong</td>
@@ -84,45 +97,7 @@
                         </div>
 
                     </div>
-                    <div class="tab-pane " id="tabDaDuyet">
-
-                        <div class="panel-body">
-
-                            {{>formSearch type="pcrt-1"}}
-
-
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>STT</th>
-                                    <th>Mã tiêu chí</th>
-                                    <th> Dấu hiệu đáng ngờ</th>
-                                    <th> Nội dung</th>
-                                    <th> Loại tiêu chí</th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="v-align-middle">1</td>
-                                    <td class="v-align-middle"> 001</td>
-                                    <td class="v-align-middle">nhan tien phan dong</td>
-                                    <td class="v-align-middle"> cong van lanh dao ngan hang</td>
-                                    <td class="v-align-middle"> huy chi</td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-
-
-                            {{>pagination}}
-
-
-                        </div>
-
-                    </div>
-
+                   
                     <div class="tab-pane " id="tabTraVe">
 
                         <div class="panel-body">
@@ -133,29 +108,40 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>STT</th>
-                                    <th>Mã tiêu chí</th>
-                                    <th> Dấu hiệu đáng ngờ</th>
-                                    <th> Nội dung</th>
-                                    <th> Loại tiêu chí</th>
-                                    <th>Lý do </th>
-                                    <th>Hành động</th>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="width: 10%">STT</th>
+                                    <th style="width: 20%">Mã tiêu chí</th>
+                                    <th style="width: 20%"> Dấu hiệu đáng ngờ</th>
+                                    <th style="width:20%"> Nội dung</th>
+                                    <th style="width: 20%"> Loại tiêu chí</th>
+                                    <th style="width: 10%"> Hành động</th>
 
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
+                                 <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
                                     <td class="v-align-middle">1</td>
                                     <td class="v-align-middle"> 001</td>
                                     <td class="v-align-middle">nhan tien phan dong</td>
                                     <td class="v-align-middle"> cong van lanh dao ngan hang</td>
                                     <td class="v-align-middle"> huy chi</td>
-                                    <td class="v-align-middle">Lý do 1</td>
-                                    <td class="v-align-middle">
+                                    <td>
 
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#addHoaHong"><i class="fa fa-edit"></i> Sửa
+                                                    data-target="#chinhsuaDauHieuDangNgo"><i class="fa fa-edit"></i> Sửa
                                             </button>
                                             <button type="button" class="btn btn-danger" data-toggle="modal"
                                                     data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
