@@ -1,0 +1,91 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+  <!-- BEGIN PlACE PAGE CONTENT HERE -->
+  <!-- END PLACE PAGE CONTENT HERE -->
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h3 class="page-title">Truy vấn danh sách hoa hồng chi tiết</h3>
+
+    </div>
+
+    
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="form-group">
+        <label>ID đối tác</label>
+
+        <input class="form-control" type="email">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label>Tên đối tác</label>
+
+        <input class="form-control" type="email">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group ">
+        <label>Chi nhánh</label>
+        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+
+          <option value="usd">HCM</option>
+          <option value="euro">Hà Nội</option>
+          
+          
+        </select></div>
+      </div> 
+      
+    </div>
+    <div class="row">
+
+      <div class="col-md-3">
+       <div class="form-group long">
+        <label>THEO NGÀY</label>
+        <div class="input-daterange input-group" id="datepicker-range">
+          <input class="input form-control" name="start" type="text">
+          <span class="input-group-addon">đến</span>
+          <input class="input form-control" name="end" type="text">
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary m-t-25"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+          </button>
+          <button class="btn btn-success btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --> Làm mới
+          </button>         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+{{/content}} {{/extend}}

@@ -1,0 +1,216 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">Truy vấn liệt kê các giao dịch nhận tiền chuyển về</h3>
+
+        </div>
+
+        
+
+    </div>
+
+    
+    <div class="row">
+       <div class="col-md-3">
+        <div class="form-group">
+            <label>ID đối tác</label>
+
+            <input class="form-control" type="email">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Tên đối tác</label>
+
+            <input class="form-control" type="email">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group ">
+            <label>Loại tiền thanh toán</label>
+            <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+
+                <option value="usd">USD</option>
+                <option value="euro">EURO</option>
+                <option value="vnd">VND</option>
+                
+            </select>
+        </div>
+    </div>
+    
+    
+    
+</div>
+<div class="row">
+ 
+    <div class="col-md-3">
+       <div class="form-group long">
+        <label>THEO NGÀY</label>
+        <div class="input-daterange input-group" id="datepicker-range">
+            <input type="text" class="input form-control" name="start"/>
+            <span class="input-group-addon">đến</span>
+            <input type="text" class="input form-control" name="end"/>
+        </div>
+    </div>
+
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --></i> Truy vấn
+        </button>         
+    </div>
+</div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h6 class="bold text-uppercase m-t-20 text-center" >Liệt kê giao dịch nhận tiền về</h6>
+        <h6 class=" m-t-20 text-center">Từ ngày : <b>30/04/2015</b> đến ngày :<b>30/04/2017</b></h6>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+               <div class="btn-group">
+                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                </button>
+            </div>
+            <div class="pull-right m-b-10">
+                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+
+            <div class="tabler-responsive">
+
+
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+
+                            <th style="width: 50px;padding: 10px 11px !important;">
+                                <div class="checkbox ">
+                                    <input value="3" id="checkbox1" type="checkbox">
+                                    <label for="checkbox1" class="m-r-0"></label>
+                                </div>
+
+                            </th>
+                            <th style="width: 20%">Ngày chuyển tiền về</th>
+                            <th style="width: 10%">ID đối tác</th>
+
+                            <th style="width: 20%">Tên giao dịch</th>
+                            <th style="width: 10%">Tru sở chính</th>
+
+                            <th style="width: 10%">Loại tiền thanh toán</th>
+
+                            <th style="width: 10%">Số tiền thanh toán</th>
+
+                            <th style="width: 10%">Số tiền quy đổi</th>
+                            <th style="width: 10%">Tỷ giá</th>
+                            
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="v-align-middle">
+                                <div class="checkbox ">
+                                    <input value="3" id="checkbox2" type="checkbox">
+                                    <label for="checkbox2" class="m-r-0"></label>
+                                </div>
+                            </td>
+                            <td class="v-align-middle">
+                             12/03/2017
+                         </td>
+
+
+
+                         <td class="v-align-middle">
+                            123
+
+                        </td>
+                        <td class="v-align-middle">
+                           abc
+                       </td>
+                       <td class="v-align-middle">
+                           HCM
+                       </td>
+                       <td class="v-align-middle">
+                        USD
+                    </td>
+                    <td class="v-align-middle">
+                       2000
+                   </td>
+                   <td class="v-align-middle">
+                    3000
+                </td>
+                <td class="v-align-middle">
+                   pdf
+               </td>
+               
+           </tr>
+
+
+
+
+       </tbody>
+   </table>
+
+
+   <nav aria-label="Page navigation" class="text-center">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+        </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+    </a>
+</li>
+</ul>
+</nav>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+{{/content}} {{/extend}}

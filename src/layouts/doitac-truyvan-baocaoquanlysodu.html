@@ -1,0 +1,227 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">Truy vấn các giao dịch đã chi</h3>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>ID đối tác</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Tên đối tác</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+         <div class="form-group long">
+            <label>THEO NGÀY</label>
+            <div class="input-daterange input-group" id="datepicker-range">
+                <input type="text" class="input form-control" name="start"/>
+                <span class="input-group-addon">đến</span>
+                <input type="text" class="input form-control" name="end"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+
+            <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --></i> Truy vấn
+            </button>         
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        
+        <div class="panel panel-default">
+        <div class="panel-body">
+                   
+                   
+                    <div class="row static-info">
+                        <div class="col-md-2 name"> ID đối tác: </div>
+                        <div class="col-md-10 value"> 1231
+                        </div>
+                    </div>
+                    <div class="row static-info">
+                        <div class="col-md-2 name"> Tên đối tác: </div>
+                        <div class="col-md-10 value"> ABC
+                        </div>
+                    </div>
+                    <div class="row static-info">
+                        <div class="col-md-2 name"> Ngày: </div>
+                        <div class="col-md-10 value"> 30/4/2015
+                        </div>
+                        <div class="col-md-2 name"> đến ngày: </div>
+                        <div class="col-md-10 value"> 30/4/2015
+                        </div>
+                    </div>
+
+               </div>
+            <div class="panel-heading">
+               <div class="btn-group">
+                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                </button>
+            </div>
+            <div class="pull-right m-b-10">
+                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+
+            <div class="tabler-responsive">
+
+
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+
+                            <th style="width: 50px;padding: 10px 11px !important;">
+                                <div class="checkbox ">
+                                    <input value="3" id="checkbox1" type="checkbox">
+                                    <label for="checkbox1" class="m-r-0"></label>
+                                </div>
+
+                            </th>
+                            <th style="width: 20%">Ngày</th>
+                            <th style="width: 10%">Tiền chuyển về</th>
+
+                            <th style="width: 10%">Tiền quy đổi</th>
+                            <th style="width: 10%">Danh sách gửi về</th>
+
+                            <th style="width: 10%">Chi trả</th>
+
+                            <th style="width: 10%">Điều chỉnh giảm chi trả</th>
+
+                            <th style="width: 10%">Hoa hồng</th>
+                            <th style="width: 10%">Điều chỉnh hoa hồng</th>
+                            <th style="width: 10%">Chi tiết</th>
+
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="v-align-middle">
+                                <div class="checkbox ">
+                                    <input value="3" id="checkbox2" type="checkbox">
+                                    <label for="checkbox2" class="m-r-0"></label>
+                                </div>
+                            </td>
+                            <td class="v-align-middle">
+                                12/03/2017
+                            </td>
+
+                            <td class="v-align-middle">
+                                5000
+
+                            </td>
+                            <td class="v-align-middle">
+                              3000
+                          </td>
+                          <td class="v-align-middle">
+                             pdf
+                         </td>
+                         <td class="v-align-middle">
+
+                         </td>
+                         <td class="v-align-middle">
+                            0.05
+                         </td>
+                         <td class="v-align-middle">
+                         0.1
+                         </td>
+                         <td class="v-align-middle">
+                             0.2
+                         </td>
+                         <td class="v-align-middle">
+                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#">xem</a>
+                         </td>
+
+
+                     </tr>
+
+
+
+
+                 </tbody>
+             </table>
+
+
+<nav aria-label="Page navigation" class="text-center">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+    </a>
+</li>
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li>
+  <a href="#" aria-label="Next">
+    <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+</a>
+</li>
+</ul>
+</nav>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+{{/content}} {{/extend}}

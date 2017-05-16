@@ -1,0 +1,184 @@
+{{#extend "default"}} {{#content "main"}}
+
+{{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">Truy vấn hạn mức</h3>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="row">
+      
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>ID đối tác</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Tên đối tác</label>
+
+                <input class="form-control" type="email">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+
+                <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --></i> Truy vấn
+                </button>
+
+
+          
+        </div>
+    </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   <div class="btn-group">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+                          </div>
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+
+                    <div class="tabler-responsive">
+
+
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input value="3" id="checkbox1" type="checkbox">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="">ID</th>
+                                    <th style="">Tên giao dịch</th>
+                                    
+                                    <th style="">Ngày cấp HM</th>
+                                    <th style="">Loại tiền thanh toán</th>
+
+                                    <th style="">Hạn mức</th>
+
+                                    <th style="">Phí xử lý hồ sơ</th>
+
+                                    <th style="">Hiệu lực hạn mức</th>
+                                    
+                                    
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input value="3" id="checkbox2" type="checkbox">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                       123
+                                    </td>
+
+                                     
+
+                                    <td class="v-align-middle">
+                                        ABC
+                                        
+                                    </td>
+                                     <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
+                                     <td class="v-align-middle">
+                                       USD
+                                    </td>
+                                     <td class="v-align-middle">
+                                        
+                                    </td>
+                                     <td class="v-align-middle">
+                                       0.2
+                                    </td>
+                                      <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
+
+                                </tr>
+
+                            
+
+
+                            </tbody>
+                        </table>
+
+
+                        <nav aria-label="Page navigation" class="text-center">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}}
+
+
+{{/content}} {{/extend}}
