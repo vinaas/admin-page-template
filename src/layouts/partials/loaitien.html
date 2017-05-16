@@ -1,52 +1,52 @@
-<div class="form-inline">
+<div class="form-group-attached">
 
-      <div class="row">
-        <div class="col-md-12">
-            <div class="col-md-2">
-                <div class="form-group">
+  <div class="row">
+    <div class="col-md-12">
+        <div class="col-md-2">
+            <div class="form-group">
                 <label>Tiền chuyển trước</label>
                 <input type="text " class="form-control">
             </div>
-            </div>
-              <div class="col-md-2">
-                  
-                   <div class="form-group">
-                <label>Loại tiền thanh toán</label>
-                <select name="" class="form-control" >
-                    <option value="">USD</option>
-                    <option value="">GBP</option>
-                    <option value="">EUR</option>
-                </select>
-            </div>
-              </div>
-        
-           
-              <div class="col-md-2">
-                  <div class="form-group">
-                <label>Loại tiền giao dịch</label>
-                <input type="text " class="form-control" disabled value="USD">
-            </div>
-              </div>
-               <div class="col-md-4">
-                   <div class="form-group" style=" width: 250px " >
-                <label>Loại tiền chi</label>
-                <select class=" full-width" data-init-plugin="select2" aria-expanded="false" multiple>
-                    <option value="usd">USD</option>
-                    <option value="VND">VND</option>
-                     <option value="euro">EURO</option>
-                   
-                </select>
-            </div>
-               </div>
-               <div class="col-md-2">
-                    <a href="" class="btn btn-primary m-t-25 m-l-5"> <i class="fa fa-plus"></i> </a>
-
-
-               </div>
-            
-           
         </div>
+        <div class="col-md-3">
+
+         <div class="form-group">
+            <label>Loại tiền thanh toán</label>
+            <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+               <option value="">USD</option>
+               <option value="">VNĐ</option>
+               <option value="">EUR</option>
+
+           </select>
+       </div>
+   </div>
+
+
+   <div class="col-md-2">
+      <div class="form-group">
+        <label>Loại tiền giao dịch</label>
+        <input type="text " class="form-control" disabled value="USD">
     </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+    <label>Loại tiền chi</label>
+    <select id="multi" class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+        <option value="usd">USD</option>
+        <option value="vnd">VNĐ</option>
+        <option value="eruo">EURO</option>
+    </select>
+    </div>
+</div>
+<div class="col-md-1">
+    <a href="" class="btn btn-primary m-t-25 m-l-5"> <i class="fa fa-plus"></i> </a>
+
+
+</div>
+
+
+</div>
+</div>
 
 
 </div>
@@ -76,11 +76,11 @@
                         <td class="v-align-middle"> USD</td>
                         <td class="v-align-middle"> 
                             <a href="" class="text-danger " data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</a>
-                            </td>  
+                        </td>  
 
                     </tr>
 
-                       <tr>
+                    <tr>
                         <td class="v-align-middle bold">7000</td>
                         <td class="v-align-middle"> EUR </td>
                         <td class="v-align-middle"> EUR </td>
@@ -92,7 +92,7 @@
                     </tr>
 
 
-                 
+
 
 
                 </tbody>
