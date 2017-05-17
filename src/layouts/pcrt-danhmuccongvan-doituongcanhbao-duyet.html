@@ -1,0 +1,110 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+
+<!--Truy vấn công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{>formSearch type="pcrt-5"}}
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i
+                                class="fa fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                   <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px;padding: 10px 11px !important;">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox1" type="checkbox">
+                                        <label for="checkbox1" class="m-r-0"></label>
+                                    </div>
+
+                                </th>
+                                <th style="width:5% ">STT</th>
+                                <th style="width: 10%">Ngày</th>
+                                <th style="width: 10%">Mã số công văn</th>
+                                <th style="width: 10%">Số công văn</th>
+                                <th style="width: 20%">Loại công văn</th>
+                                <th style="width: 20%">Đơn vị yêu cầu</th>
+                                <th style="width: 10%">Hiệu lực</th>
+                                <th style="width: 10%">Tài liệu</th>
+                                <th style="width: 5%">Hành động</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div></td>
+                                    <td class="v-align-middle">1</td>
+                                    <td class="v-align-middle">13/03/2016</td>
+                                    <td class="v-align-middle">001</td>
+                                    <td class="v-align-middle">abc</td>
+                                    <td class="v-align-middle">Tra soát</td>
+                                    <td class="v-align-middle">abc </td>
+                                    <td class="v-align-middle">Còn hiệu lực</td>
+                                    <td class="v-align-middle">anh-so-1.pnj</td>
+                                    
+                                    <td class="v-align-middle">
+                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#chitietTruyVanCongVan">Xem</a>
+                                    </td>
+                                    
+
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                      {{>pagination}}
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

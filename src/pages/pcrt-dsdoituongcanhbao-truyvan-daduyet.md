@@ -3,7 +3,7 @@
     "title": "Danh sách đối tượng cảnh báo",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-dsdoituongcanhbao.html",
+    "layout": "pcrt-dsdoituongcanhbao-truyvan-daduyet.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }

@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Truy vấn công văn",
+    "title": "Danh sách giao dịch đáng ngờ",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-truyvancongvan-daduyet.html",
+    "layout": "pcrt-danhmuccongvan-giaodichdangngo.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }

@@ -341,6 +341,37 @@
 <!--Báo cáo-->
 {{#ifEqual type "pkt-baocao"}}
 
+{{#ifEqual type "pkt-chiluong"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'pkt-hachtoantay-chiluong-chiluong'}} active {{/ifEqual}}">
+                <a href="pkt-hachtoantay-chiluong-chiluong.html">
+                    <span class="">Chi lương</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'pkt-hachtoantay-chiluong-nopkhac'}} active {{/ifEqual}}">
+                <a href="pkt-hachtoantay-chiluong-nopkhac.html">
+                    <span class="">Nộp các khoản khác</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
+
+
+
+
 <div class="bar">
     <div class="pull-right">
         <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">

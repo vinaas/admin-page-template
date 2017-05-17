@@ -1,0 +1,101 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Danh mục công văn</h3>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+
+
+                <div class="panel-body">
+
+                    {{>formSearch type="pcrt-7"}}
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                   <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </th>
+                                <th style="width: 10%">STT</th>
+                                <th style="width: 10%">Mã đối tượng </th>
+                                <th style="width: 10%">Họ tên</th>
+                                <th style="width: 10%">Số giấy tờ</th>
+                                <th style="width: 10%">Địa chỉ</th>
+                                <th style="width: 10%">Điện thoại</th>
+                                <th style="width: 10%">Dấu hiệu đáng ngờ</th>
+                                <th style="width: 10%">Loại tiêu chí</th>
+                                <th style="width: 10%">Hiệu lực</th>
+                                <th style="width: 10%">Hành động</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr>
+                               
+                                <td class="v-align-middle">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </td>
+                                
+                                <td class="v-align-middle">1</td>
+                                <td class="v-align-middle">0001</td>
+                                <td class="v-align-middle">Nguyen Van A</td>
+                                <td class="v-align-middle">240813112</td>
+                                <td class="v-align-middle">CMND</td>
+                                <td class="v-align-middle">Tan Binh </td>
+                                <td class="v-align-middle"> Dau hieu dang ngo 1</td>
+                                <td class="v-align-middle">Nghi ngờ</td>
+                                <td class="v-align-middle">Còn hiệu lực</td>
+                                <td class="v-align-middle">
+                                  
+                                  <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#chitietTruyVanCongVan">Xem
+                                  </a>
+
+                                  
+                              </td>
+                          </tr>  
+                      </tbody>
+                  </table>
+
+                    {{>pagination}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
