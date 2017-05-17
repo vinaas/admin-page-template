@@ -59,7 +59,7 @@
     <div class="bar-inner">
         <ul>
 
-            
+
 
             <li class="{{#ifEqual path.name 'phongkinhdoanh'}} active {{/ifEqual}}">
                 <a href="phongkinhdoanh.html">
@@ -83,10 +83,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-{{#ifEqual type "banlanhdao"}}
+{{/ifEqual}} {{#ifEqual type "banlanhdao"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -113,11 +110,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "phongvanhanh"}}
+{{/ifEqual}} {{#ifEqual type "phongvanhanh"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -148,11 +141,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "phongvanhanh-quanlygiaodich"}}
+{{/ifEqual}} {{#ifEqual type "phongvanhanh-quanlygiaodich"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -190,11 +179,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pcrt-nhandiengiaodich"}}
+{{/ifEqual}} {{#ifEqual type "pcrt-nhandiengiaodich"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -220,11 +205,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pkt-hachtoantay-tienmattaiquy"}}
+{{/ifEqual}} {{#ifEqual type "pkt-hachtoantay-tienmattaiquy"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -250,11 +231,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pkt-hachtoantay-tamung"}}
+{{/ifEqual}} {{#ifEqual type "pkt-hachtoantay-tamung"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -280,11 +257,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pkt-congcudungcu"}}
+{{/ifEqual}} {{#ifEqual type "pkt-congcudungcu"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -310,11 +283,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pkt-taisancodinh"}}
+{{/ifEqual}} {{#ifEqual type "pkt-taisancodinh"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -340,11 +309,7 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}}
-
-
-
-{{#ifEqual type "pkt-tienthuevp"}}
+{{/ifEqual}} {{#ifEqual type "pkt-tienthuevp"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -373,4 +338,53 @@
 {{/ifEqual}}
 
 
+<!--Báo cáo-->
+{{#ifEqual type "pkt-baocao"}}
 
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'pkt-baocao-bctc'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-bctc.html">
+                    <span class="">BCTC</span>
+                    <!--Mockup KT_BC_1.1-BCTC-->
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-baocao-bangkechungtu'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-bangkechungtu.html">
+                    <span class="">Bảng kê chứng từ</span>
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-baocao-doichieusodudoitac'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-doichieusodudoitac.html">
+                    <span class="">Đối chiếu số dư đối tác</span>
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-baocao-tamungnhanvien'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-tamungnhanvien.html">
+                    <span class="">Tạm ứng nhân viên</span>
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-baocao-xemsodutaikhoan'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-xemsodutaikhoan.html">
+                    <span class="">Xem số dư tài khoản</span>
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-baocao-xemtonquy'}} active {{/ifEqual}}">
+                <a href="pkt-baocao-xemtonquy.html">
+                    <span class="">Xem tồn quỹ TM</span>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
+<!--End Báo cáo-->
