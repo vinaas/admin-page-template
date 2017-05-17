@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Công cụ dụng cụ - Chi mua Công cụ dụng cụ",
+    "title": "Tài sản cố định - Chi mua TSCĐ",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-congcudungcu-chimua.html",
+    "layout": "pkt-hachtoantay-taisancodinh-chimua.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }

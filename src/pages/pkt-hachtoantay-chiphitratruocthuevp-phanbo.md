@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Tạm ứng nhân viên - Tạm ứng",
+    "title": "Phân bổ tiền thuê VP",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tamung.html",
+    "layout": "pkt-hachtoantay-chiphitratruocthuevp-phanbo.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }

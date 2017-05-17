@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Tạm ứng nhân viên - Tạm ứng",
+    "title": "Nhập tỷ giá",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tamung.html",
+    "layout": "pkt-nhaptygia.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }

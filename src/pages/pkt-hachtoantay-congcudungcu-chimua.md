@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Tạm ứng nhân viên - Tạm ứng",
+    "title": "Công cụ dụng cụ - Chi mua Công cụ dụng cụ",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tamung.html",
+    "layout": "pkt-hachtoantay-congcudungcu-chimua.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }

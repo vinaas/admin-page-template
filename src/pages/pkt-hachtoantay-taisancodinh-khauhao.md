@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Tạm ứng nhân viên - Tạm ứng",
+    "title": "Tài sản cố định - Khấu hao TSCĐ",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tamung.html",
+    "layout": "pkt-hachtoantay-taisancodinh-khauhao.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
