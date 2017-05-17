@@ -1,0 +1,69 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
+
+<div class="container-fluid container-fixed-lg">
+    <div class="panel panel-default">
+        <div class="panel panel-heading">
+         <div class="modal-header clearfix text-left">
+             <div class="panel-title">Tạo mới dấu hiệu đáng ngờ
+             </div>
+             <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <form id="form-work" class="form-horizontal" role="form" autocomplete="off" novalidate="novalidate">
+                            <div class="form-group">
+                                <label for="fname" class="col-sm-3 control-label">Mã tiêu chí</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" placeholder="001" name="name" disabled="" type="text">
+                                </div>
+                            </div>
+                           <div class="form-group">
+                                    <label for="position" class="col-sm-3 control-label">Dấu hiệu đáng ngờ</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" placeholder="Dấu hiệu đáng ngờ 1" name="name" type="text">
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Nội dung</label>
+                                <div class="col-sm-9">
+                                   <textarea class="form-control" placeholer="Message">
+                                      </textarea>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-3 control-label">Description</label>
+                                    <div class="col-sm-9">
+                                         <select class="full-width " data-init-plugin="select2">
+                                       
+                                            <option value="dhdn1">Hủy chi</option>
+                                            <option value="dhdn2">Nghi ngờ</option>
+                                            <option value="dhdn2">Nhận biết</option>
+
+
+                                       
+
+                                    </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3 pull-right ">
+                                       
+                                  
+                                        <button class="btn btn-primary" type="submit">Lưu & Yêu cầu duyệt</button>
+                                        <button class="btn btn-danger"> Hủy</button>
+                                     </div>
+                                   
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

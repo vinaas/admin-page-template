@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Danh sách giao dịch có giá trị lớn",
+    "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-dsgiaodichcogtlon.html",
+    "layout": "doitac-lanhdaoduyet.html",
     "permalink" : false,
-    "activeLink" : "pcrt"
+    "activeLink" : "doitac"
 }
 ---
 

@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Danh sách giao dịch đáng ngờ",
+    "title": "Danh sách giao dịch có giá trị lớn",
     "slug": "",
     "description": "Index Page",
-    "layout": "pcrt-dsgiaodichdangngo.html",
+    "layout": "pcrt-dsgiaodichmucgiatrilon.html",
     "permalink" : false,
     "activeLink" : "pcrt"
 }
