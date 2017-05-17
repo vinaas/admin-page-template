@@ -15,24 +15,24 @@
     <div class="row">
 
 
-            <div class="panel panel-default">
+        <div class="panel panel-default">
 
-                <div class="panel-body">
+            <div class="panel-body">
 
-                    {{>formSearch type="pcrt-2"}}
-                    <div class="col-md-12">
-                        <div class="pull-right m-b-10">
-                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                </button>
+                {{>formSearch type="pcrt-2"}}
+                <div class="col-md-12">
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
 
-                            </div>
                         </div>
-                        <table class="table">
-                            <thead>
+                    </div>
+                    <table class="table">
+                        <thead>
                             <tr><th style="width: 10%">STT</th>
                                 <th style="width: 10%">Mã đối tượng </th>
                                 <th style="width: 10%">Họ tên</th>
@@ -45,8 +45,8 @@
                                 <th style="width: 10%">Hành động</th>
 
                             </tr>
-                            </thead>
-                            <tbody>
+                        </thead>
+                        <tbody>
 
 
                             <tr><td class="v-align-middle">1</td>
@@ -59,37 +59,28 @@
                                 <td class="v-align-middle">Nghi ngờ</td>
                                 <td class="v-align-middle">Còn hiệu lực</td>
                                 <td class="v-align-middle">
-                                     <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                        </button>
-                                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                                        </button>
+                                 <div class="btn-group btn-group-sm">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
+                                    </button>
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                                    </button>
 
-                                    </div>
-                                </td>
-                            </tr>
-
-
-
-
-                            
-                            </tbody>
-                        </table>
+                                </div>
+                            </td>
+                        </tr>  
+                    </tbody>
+                </table>
 
 
 
-                        {{>pagination}}
+                {{>pagination}}
 
 
-                </div>
             </div>
-
         </div>
 
-
-
-
     </div>
+</div>
 
 </div>
 
