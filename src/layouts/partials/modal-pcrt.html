@@ -7,7 +7,7 @@
                     class="pg-close fs-14"></i>
                 </button>
                 <h5>Tạo mới <span class="semi-bold">Đối tượng cảnh báo</span></h5>
-                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
+                <p>Các lưu ý cho nhân viên khi tạo mới cảnh báo</p>
             </div>
             <div class="modal-body">
                 <form role="form">
@@ -154,11 +154,174 @@
 
                     </div>
 
-
                 </form>
+    
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 
-                <div class="row">
+<div class="modal fade stick-up" id="dieuchinhTuongCanhBao" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Điều chỉnh <span class="semi-bold">Đối tượng cảnh báo</span></h5>
+               
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <h6 class=" m-t-20">Mã đối tượng : <b>0001</b></h6>
+
+                    <div class="form-group form-group-attached">
+                        <label>Dấu hiệu đáng ngờ</label>
+                        <select class="form-control">
+                            <option value="">Dấu hiệu đáng ngờ 1</option>
+                            <option value="">Dấu hiệu đáng ngờ 2</option>
+                            <option value="">Dấu hiệu đáng ngờ 3</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group form-group-attached">
+                        <label>Loại tiêu chí</label>
+                        <input type="text" class="form-control">
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase">Đối tượng</h6>
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default required">
+                                    <label>Họ tên</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày tháng năm sinh</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Địa chỉ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Số tài khoản</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Điện thoại</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Số giấy tờ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Loại giấy tờ</label>
+                                    <select class="form-control">
+                                        <option value="">Chứng minh nhân dân</option>
+                                        <option value="">Thẻ căn cước</option>
+                                        <option value="">Hộ chiếu</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày cấp</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date"
+                                    id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group-attached">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Số công văn</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Đơn vị yêu cầu</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                    <label>Hiệu lực</label>
+                                    <select class="form-control">
+                                        <option value="">Còn hiệu lực</option>
+                                        <option value="">Hết hiệu lực</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+               
+
+                    </div>
+                        <div class="form-group-attached">
+                     <div class="row">
                     <div class="col-sm-4">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
@@ -170,10 +333,16 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
+                </div>  
+
+
+                </form>
+
+
             </div>
         </div>
         <!-- /.modal-content -->
@@ -304,10 +473,6 @@
 
                     </div>
 
-
-                </form>
-
-
                 <div class="row">
                     <div class="col-sm-4">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
@@ -324,6 +489,10 @@
                         <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
                     </div>
                 </div>
+
+                </form>
+
+
             </div>
         </div>
         <!-- /.modal-content -->
@@ -431,11 +600,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
+                        </div>
+                            <div class="form-group-attached">
+                         <div class="row">
                     <div class="col-sm-4">
                     <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                         <div class="pull-left">
@@ -452,6 +619,12 @@
                     </button>
                 </div>
             </div>
+            </div>
+                    </div>
+
+                </div>
+
+               
         </div>
 
 
@@ -533,21 +706,9 @@
                            <td class="v-align-middle">
                              anh-s0-1.jpg
                          </td>
-
-
-
-
                      </tr>
-
-
-
                  </tbody>
              </table>
-
-
-
-
-
          </div>
      </div>
      <h6 class="bold text-uppercase">Thông điều chỉnh</h6>
@@ -569,9 +730,10 @@
 
 
                     </div>
-
+                    </div>
 
                 </div>
+                   <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default required">
@@ -580,7 +742,8 @@
                         </div>
                     </div>
                 </div>
-
+                </div>
+                   <div class="form-group-attached">
                 <div class="row">
 
                     <div class="col-sm-12">
@@ -592,6 +755,8 @@
 
 
                 </div>
+                </div>
+                   <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default required select2-small">
@@ -608,6 +773,8 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                   <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default required">
@@ -617,6 +784,8 @@
                     </div>
 
                 </div>
+                </div>
+                   <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default required select2-small">
@@ -633,6 +802,8 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                   <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default required">
@@ -641,11 +812,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
+                </div>
+                <div class="form-group-attached">
+                <div class="row">
+                    <div class="col-sm-4">
                     <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                         <div class="pull-left">
                             <p class="bold font-montserrat text-uppercase">TOTAL</p>
@@ -656,23 +826,26 @@
                     </div>-->
                 </div>
                 <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                 
+                 <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
                  </button>
                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-remove"></i> Từ chối
                  </button>
              </div>
          </div>
+         </div>     
      </div>
 
  </div>
 
 </div>
 
-
-
 </form>
 
 
+</div>
+</div>
 </div>
 </div>
 <!--END MODAL STICK UP-->
@@ -712,7 +885,7 @@
                              </div>
 
                              <div class="form-group">
-                                <label for="name" class="col-sm-3 control-label">Description</label>
+                                <label for="name" class="col-sm-3 control-label">Loại tiêu chí</label>
                                 <div class="col-sm-9">
                                    <select class="full-width " data-init-plugin="select2">
 
@@ -728,20 +901,24 @@
                         </div>
 
                     </form>
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-8 pull-right ">
+                   
+               
+                   </div>
+               </div>
 
-                           <button class="btn btn-danger"> Hủy</button>
+                     <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6 m-t-10 sm-m-t-10 ">
+
+                           <button class="btn btn-danger" data-dismiss="modal"> Hủy</button>
 
                            <button class="btn btn-primary" type="submit">Lưu & Yêu cầu duyệt</
                            </div>
 
 
                        </div>
-
-                   </div>
-               </div>
+               
+               
            </div>
        </div>
    </div>
@@ -754,7 +931,7 @@
 
 
 <div class="modal fade stick-up" id="chinhsuaMucGiaTriGDL" role="dialog" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog modal-md">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
@@ -796,13 +973,12 @@
                         </div>
 
                     </div>
+                    
 
+        </form>
 
-                </form>
-
-
-                <div class="row">
-                    <div class="col-sm-4">
+                     <div class="row">
+                        <div class="col-sm-8">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
                                 <p class="bold font-montserrat text-uppercase">TOTAL</p>
@@ -812,11 +988,14 @@
                             </div>
                         </div>-->
                     </div>
-                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                    <div class="col-sm-4 m-t-10 sm-m-t-10 ">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
-                    </div>
+                 
                 </div>
+            </div>
+
+             
             </div>
         </div>
         <!-- /.modal-content -->
@@ -949,7 +1128,7 @@
                     </div>
                 </form>
 
-
+                  <div class="form-group-attached">
                 <div class="row">
                     <div class="col-sm-4">
                         <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
@@ -963,10 +1142,13 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Lưu </button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu </button>
                     </div>
+                </div>
                 </div>
             </div>
 
         </div>
     </div>
+    </div>
+    </div>  
