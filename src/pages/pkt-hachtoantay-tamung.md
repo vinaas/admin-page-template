@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Tiền ứng nhân viên - Tạm ứng",
+    "title": "Tạm ứng nhân viên - Tạm ứng",
     "slug": "",
     "description": "Index Page",
     "layout": "pkt-hachtoantay-tamung.html",
