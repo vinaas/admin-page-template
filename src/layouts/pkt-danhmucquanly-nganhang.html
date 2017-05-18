@@ -1,0 +1,121 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-danhmucquanly"}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default ">
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h5 class="m-t-0">
+                                Tạo mới nghiệp vụ
+                            </h5>
+
+                            <div class="row m-b-15">
+                                <div class="col-md-4 name"> Ngày : </div>
+                                <div class="col-md-8 value"><b>13/03/2017</b>
+                                </div>
+                            </div>
+
+                            <div class="row m-b-15">
+                                <div class="col-md-4 name"> Mã ngiệp vụ : </div>
+                                <div class="col-md-8 value"><b>0001</b>
+                                </div>
+                            </div>
+
+                            <div class="row m-b-15">
+                                <div class="col-md-4 name m-t-5"> Tên nghiệp vụ : </div>
+                                <div class="col-md-8 value">
+                                    <input type="" class="form-control" name="" value="">
+                                </div>
+                            </div>
+
+                            <div class="text-right">
+                                <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Tạo lại</button>
+                                <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <h4>Danh mục nghiệp vụ kế toán</h4>
+
+            {{>formSearch type="pkt-3"}}
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+
+                                <th> STT</th>
+                                <th> Tên nghiệp vụ</th>
+                                <th> Mã NV</th>
+                                <th> Hành động</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td class="v-align-middle"> 1</td>
+                                <td class="v-align-middle"> RUT TIEN GUI NGAN HANG</td>
+                                <td class="v-align-middle"> 001</td>
+
+
+                                <td class="v-align-middle">
+
+                                    {{> drop-edit-remove}}
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
