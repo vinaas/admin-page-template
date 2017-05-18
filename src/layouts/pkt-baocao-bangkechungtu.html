@@ -1,195 +1,93 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-baocao"}}
 
-
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
-    <div class="row">
-        <div class="col-sm-7">
 
-            <h3 class="page-title">{{title}}</h3>
+    <!-- MODAL STICK UP  -->
+
+    <div class="panel panel-default">
+        <div class="modal-header clearfix text-left">
+
+            <h5><span class="semi-bold">{{title}}</span></h5>
+            <!--<p>Nhập tỷ giá ngày và tỷ giá tháng</p>-->
 
         </div>
 
+        <div class="modal-body">
+            <form role="form">
 
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-12">
-
-
-
-            <!--<h5>N <span class="semi-bold">giao dịch</span></h5>-->
-
-            <div class="panel panel-default">
-
-                <div class="panel-heading ">
-                    <div class="panel-title">Tạo mới
-                    </div>
-
-                </div>
-
-
-                <div class="panel-body">
-
-
-                    <h5 class="m-t-0 m-b-15">Tạo mới</h5>
-
-
+                <div class="form-group-attached">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-sm-6">
 
-                            <div class="row m-b-15">
-                                <div class="col-md-4 name"> Ngày <span class="text-danger">(*)</span> : </div>
-                                <div class="col-md-8 value"><b>13/03/2017</b>
+                            <div class="form-group long">
+                                <label>THEO NGÀY</label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input-sm form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input-sm form-control" name="end" />
                                 </div>
                             </div>
-
-                            <div class="row  m-b-15">
-                                <div class="col-md-4  name"> Nghiệp vụ <span class="text-danger">(*)</span> : </div>
-                                <div class="col-md-8 value"><b>NỘP TIỀN MẶT VÀO TK TGNH</b>
-                                </div>
-                            </div>
-
-                            <div class="row  m-b-15">
-
-                                <div class="col-md-4 name m-t-5"> Chi nhánh <span class="text-danger">(*)</span>: </div>
-                                <div class="col-md-8 value">
-                                    <input type="" class="form-control" name="" value="">
-
-                                </div>
-
-                            </div>
-
-                            <div class="row  m-b-15">
-                                <div class="col-md-4  name"> Hình thức thanh toán <span class="text-danger">(*)</span> : </div>
-                                <div class="col-md-8 value"><b>Tiền mặt</b>
-                                </div>
-                            </div>
-
-                            <div class="row  m-b-15">
-
-                                <div class="col-md-4 name m-t-5"> Ngân hàng <span class="text-danger">(*)</span>: </div>
-                                <div class="col-md-8 value">
-                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
-                                                    <option value=""></option>
-                                                    <option value="AK">Ngân hàng A</option>
-                                                    <option value="AK">Ngân hàng B</option>
-                                                    <option value="AK">Ngân hàng C</option>
-                                                </select>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row  m-b-15">
-
-                                <div class="col-md-4 name m-t-5"> Tên NV/KH <span class="text-danger">(*)</span>: </div>
-                                <div class="col-md-8 value">
-                                    <input type="" class="form-control" name="" value="">
-
-                                </div>
-
-                            </div>
-
-                            <div class="row  m-b-15">
-
-                                <div class="col-md-4 name m-t-5"> Loại tiền (CCY/VND) : </div>
-                                <div class="col-md-8 value">
-
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <label>DS Loại tiền</label>
-                                                <select class="form-control">
-                                                    <option value="">USD</option>
-                                                    <option value="">CAD</option>
-                                                    <option value="">VND</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <label>Số tiền</label>
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <table class="table table-hover table-small" id="">
-                                        <thead>
-                                            <tr>
-                                                <th>Loại tiền</th>
-                                                <th>Số tiền</th>
-                                                <th>Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle"> USD </td>
-
-                                                <td class="v-align-middle bold">5000</td>
-                                                <td><a href="" class="text-danger">Xóa</a></td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="row  m-b-15">
-
-                                <div class="col-md-4 name"> Tỷ giá : </div>
-                                <div class="col-md-8 value">Theo bảng tỷ giá tháng
-                                </div>
-
-                            </div>
-
-                            <div class="row  m-b-30">
-
-                                <div class="col-md-4 name">Thành tiền : </div>
-                                <div class="col-md-8 value"><b class="text-primary"> Số tiền X Tỷ giá </b>
-                                </div>
-
-                            </div>
-
-                            <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                                <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                                <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
-                            </div>
-
-
-
                         </div>
 
 
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group form-group-default required">
+                                <label>Chi nhánh</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default required">
+                                <label>Loại chứng từ</label>
+                                <select class="form-control">
+                                    <option value="">Phiếu Thu</option>    
+                                    <option value="">Phiếu Chi</option>                           
+                                    <option value="">Phiếu Chuyển khoản</option>                                                                                  
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group form-group-default required">
+                                <label>Nghiệp vụ</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default required">
+                                <label>Đơn vị hạch toán</label>
+                                <select class="form-control">
+                                    <option value="">Công ty - Công ty</option>    
+                                    <option value="">Công ty – CN Ngân hàng</option>                           
+                                                                                                       
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+
+                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button"><i class="fa  fa-file-pdf-o"></i> Xuất file pdf
+                            </button>
 
                     </div>
-
-
                 </div>
 
-            </div>
+
+            </form>
 
 
         </div>
-
-
-
-
-
     </div>
 
 </div>
-
-</div>
-
-
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
