@@ -205,7 +205,25 @@
                 </li>
 
                 <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich' layout }} active {{/ifContain}}">
-                    <a href="phongvanhanh-thuchiengiaodich.html">Thực hiện Giao dịch</a>
+                    <a href="javascript:;">
+                        <span class="title">Thực hiện giao dịch</span>
+                        <span class="arrow"></span></a>
+                    <ul class="sub-menu">
+                        <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichtaiquay' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-thuchiengiaodich-giaodichtaiquay.html">Giao dịch tại quầy</a>
+                        </li>
+
+                        <li class="{{#ifContain '' layout }} active {{/ifContain}}">
+                            <a href="">Duyệt giao dịch tại quầy</a>
+                        </li>
+
+                        <li class="{{#ifContain '' layout }} active {{/ifContain}}">
+                            <a href="">Giao dịch mã số</a>
+                        </li>
+                        <li class="{{#ifContain '' layout }} active {{/ifContain}}">
+                            <a href="">Duyệt GD Mã Số</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="{{#ifContain 'phongvanhanh-hoibao' layout }} active {{/ifContain}}">
@@ -379,7 +397,7 @@
 
         <li class="{{#ifContain 'pkt' layout }} active {{/ifContain}}">
             <a href="javascript:;"><span class="title">Phòng kế toán</span>
-<span class="arrow"></span></a>
+        <span class="arrow"></span></a>
             <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>
 
             <ul class="sub-menu">

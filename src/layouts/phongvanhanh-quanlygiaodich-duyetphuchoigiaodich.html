@@ -1,6 +1,6 @@
 {{#extend "default"}} {{#content "main"}}
 
-{{> navHori type="phongvanhanh-quanlygiaodich"}}
+
 
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
@@ -33,142 +33,66 @@
 
 
 
-                        <div class="panel-body">
+                <div class="panel-body">
 
-                            <h5>Danh sách  <span class="semi-bold">cần duyệt</span></h5>
+                    <h5>Danh sách <span class="semi-bold">cần duyệt</span></h5>
 
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr><th>STT</th>
-                                            <th> Mã Biên nhận</th>
-                                            <th>Ngày* </th>
-                                            <th>Mã số*</th>
-                                            <th>Mã DS</th>
-                                            <th> Hành động</th>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox1" type="checkbox">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
+                                        </th>
+                                        <th>STT</th>
+                                        <th> Mã Biên nhận</th>
+                                        <th>Ngày* </th>
+                                        <th>Mã số*</th>
+                                        <th>Mã DS</th>
+                                        <th> Hành động</th>
 
-                                        <tr class="active"><td class="v-align-middle">1</td>
-                                            <td class="v-align-middle"> 120317-0001</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">970</td>
-                                            <td class="v-align-middle">1-2000-120317-830</td>
-                                            <td class="v-align-middle">
-                                                <a href="#"
-                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                                            </td>
-                                        </tr>
+                                    <tr class="active">
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox2" type="checkbox">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle"> 120317-0001</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">970</td>
+                                        <td class="v-align-middle">1-2000-120317-830</td>
+                                        <td class="v-align-middle">
+                                            <a href="#" class="btn btn-tag  btn-tag-light btn-tag-rounded m-r-20" data-toggle="modal" data-target="#xemDuyetPhucHoiGiaoDich">Xem</a>
 
-
-                                        <tr><td class="v-align-middle">2</td>
-                                            <td class="v-align-middle"> 120317-0002</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">970</td>
-                                            <td class="v-align-middle">1-2000-120317-830</td>
-                                            <td class="v-align-middle">
-                                                <a href="#"
-                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr><td class="v-align-middle">3</td>
-                                            <td class="v-align-middle"> 120317-0022</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">970</td>
-                                            <td class="v-align-middle">1-2000-120317-830</td>
-                                            <td class="v-align-middle">
-                                                <a href="#"
-                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-
-                                            </td>
-                                        </tr>
+                                        </td>
+                                    </tr>
 
 
 
+                                </tbody>
 
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                            </div>
-
-
-
-
-                            <h5>Chi tiết <span class="semi-bold">giao dịch</span></h5>
-
-                            <div class="panel panel-default">
-
-
-                                <div class="panel-body">
-
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr><th>Mã Biên nhận</th>
-                                            <th>Ngày* </th>
-                                            <th>Mã số*</th>
-                                            <th>Mã DS</th>
-                                            <th>Người nhận*</th>
-                                            <th>Số tiền gửi*</th>
-                                            <th>Loại tiền gửi* </th>
-                                            <th>Loại tiền chi* </th>
-                                            <th>Tỉnh thành*</th>
-                                            <th>Điểm giao dịch*</th>
-                                            <th>Loại dịch vụ* </th>
-                                            <th> Hành động</th>
-
-                                        </tr>
-                                        </thead>
-                                        <tbody> <tr><td class="v-align-middle">120317-1</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">970</td>
-                                            <td class="v-align-middle">1-2000-120317-830</td>
-                                            <td class="v-align-middle">PHAM THI NGON</td>
-                                            <td class="v-align-middle">44;000;000</td>
-                                            <td class="v-align-middle">VND</td>
-                                            <td class="v-align-middle">VND</td>
-                                            <td class="v-align-middle">HATINH</td>
-                                            <td class="v-align-middle">HEAD</td>
-                                            <td class="v-align-middle">AD</td>
-                                            <td class="v-align-middle">
-                                                <div class="btn-group btn-group-sm">
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                                        yêu cầu
-                                                    </button>
-                                                    <button type="button" class="btn btn-warning" data-toggle="modal"
-                                                            data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
-                                                        chối
-                                                    </button>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-
-
-
-
-                                </div>
-
-                            </div>
-
-
-
-
-
-
-
+                            </table>
+                            {{>pagination}}
 
                         </div>
+                    </div>
+
+
+
+
+
+                </div>
 
 
 
@@ -181,4 +105,4 @@
 
 </div>
 
- {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
