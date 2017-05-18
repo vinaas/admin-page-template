@@ -205,7 +205,6 @@
         </ul>
     </div>
 </div>
-{{/ifEqual}} {{#ifEqual type "pkt-hachtoantay-tienmattaiquy"}}
 
 <div class="bar">
     <div class="pull-right">
@@ -402,10 +401,7 @@
 {{/ifEqual}}
 
 
-
-<!--Báo cáo-->
 {{#ifEqual type "pkt-baocao"}}
-
 
 <div class="bar">
     <div class="pull-right">
@@ -418,7 +414,7 @@
             <li class="{{#ifEqual path.name 'pkt-baocao-bctc'}} active {{/ifEqual}}">
                 <a href="pkt-baocao-bctc.html">
                     <span class="">BCTC</span>
-                    <!--Mockup KT_BC_1.1-BCTC-->
+
                 </a>
             </li>
             <li class="{{#ifEqual path.name 'pkt-baocao-bangkechungtu'}} active {{/ifEqual}}">
@@ -446,11 +442,39 @@
                     <span class="">Xem tồn quỹ TM</span>
                 </a>
             </li>
+        </ul>
+    </div>
+</div>
+{{/ifEqual}} {{#ifEqual type "pkt-hoadon"}}
 
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'pkt-hoadon-danhsach'}} active {{/ifEqual}}">
+                <a href="pkt-hoadon-danhsach.html">
+                    <span class="">Danh sách hóa đơn</span>
 
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-hoadon-inhoadon'}} active {{/ifEqual}}">
+                <a href="pkt-hoadon-inhoadon.html">
+                    <span class="">In hóa đơn</span>
+
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-hoadon-baocao'}} active {{/ifEqual}}">
+                <a href="pkt-hoadon-baocao.html">
+                    <span class="">Báo cáo tình hình sử dụng hóa đơn</span>
+
+                </a>
+            </li>
 
         </ul>
     </div>
 </div>
 {{/ifEqual}}
-<!--End Báo cáo-->

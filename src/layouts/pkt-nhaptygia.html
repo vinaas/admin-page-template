@@ -23,10 +23,17 @@
 
                 <div class="form-group-attached">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
 
                             <div class="form-group form-group-default  required">
-                                <label>Import</label>
+                                <label>File excel mẫu</label>
+                                <button type="button" onclick="fnAction('excel');" class="btn btn-primary">Tải xuống</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <div class="form-group form-group-default  required">
+                                <label>Import file excel</label>
                                 <input type="file" class="form-control">
                             </div>
                         </div>
@@ -69,10 +76,7 @@
                 <div class="row">
                     <div class="container">
                         <div class="col-sm-6">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất danh sách
-                          </button>
-                            </div>
+
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -146,8 +150,7 @@
     </div>
 
 </div>
-<!-- /.modal-dialog -->
-</div>
-<!-- END MODAL STICK UP  -->
+
+
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

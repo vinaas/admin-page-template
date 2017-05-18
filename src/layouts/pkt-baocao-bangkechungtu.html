@@ -1,0 +1,92 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-baocao"}}
+
+<div class="container-fluid container-fixed-lg">
+
+    <!-- MODAL STICK UP  -->
+
+    <div class="panel panel-default">
+        <div class="modal-header clearfix text-left">
+
+            <h5><span class="semi-bold">{{title}}</span></h5>
+            <!--<p>Nhập tỷ giá ngày và tỷ giá tháng</p>-->
+
+        </div>
+        <div class="modal-body">
+            <form role="form">
+
+                <div class="form-group-attached">
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group long">
+                                <label>THEO NGÀY</label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input-sm form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input-sm form-control" name="end" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group form-group-default required">
+                                <label>Chi nhánh</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default required">
+                                <label>Loại chứng từ</label>
+                                <select class="form-control">
+                                    <option value="">Phiếu Thu</option>    
+                                    <option value="">Phiếu Chi</option>                           
+                                    <option value="">Phiếu Chuyển khoản</option>                                                                                  
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group form-group-default required">
+                                <label>Nghiệp vụ</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default required">
+                                <label>Đơn vị hạch toán</label>
+                                <select class="form-control">
+                                    <option value="">Công ty - Công ty</option>    
+                                    <option value="">Công ty – CN Ngân hàng</option>                           
+                                                                                                       
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+
+                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button"><i class="fa  fa-file-pdf-o"></i> Xuất file pdf
+                            </button>
+
+                    </div>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
