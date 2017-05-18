@@ -161,14 +161,47 @@
             <span class="icon-thumbnail"><i class="pg-grid"></i></span>
 
             <ul class="sub-menu">
+                <li class="{{#ifContain 'dsgd' layout }} active {{/ifContain}}">
+                    <a href="javascript:;">
+                        <span class="title">Danh sách giao dịch</span>
+                        <span class=" arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="{{#ifContain 'phongvanhanh-danhsachgiaodich' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-danhsachgiaodich.html">Nhập danh sách tổng</a>
+                        </li>
 
+                        <li class="{{#ifContain 'phongvanhanh-danhsachgiaodich-nhapdanhsachchitiet' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-danhsachgiaodich-nhapdanhsachchitiet.html">Nhập danh sách chi tiết</a>
+                        </li>
 
-                <li class="{{#ifContain 'phongvanhanh-danhsachgiaodich' layout }} active {{/ifContain}}">
-                    <a href="phongvanhanh-danhsachgiaodich.html">Danh sách giao dịch</a>
+                        <li class="{{#ifContain 'phongvanhanh-danhsachgiaodich-duyetdanhsach' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-danhsachgiaodich-duyetdanhsach.html">Duyệt danh sách</a>
+                        </li>
+                    </ul>
                 </li>
 
-                <li class="{{#ifContain 'phongvanhanh-quanlygiaodich' layout }} active {{/ifContain}}">
-                    <a href="phongvanhanh-quanlygiaodich.html">Quản lý Giao dịch</a>
+                <li class="{{#ifContain 'dsgd' layout }} active {{/ifContain}}">
+                    <a href="javascript:;">
+                        <span class="title">Quản lý giao dịch</span>
+                        <span class=" arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="{{#ifContain 'phongvanhanh-quanlygiaodich' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-quanlygiaodich.html">Điều chỉnh giao dịch</a>
+                        </li>
+
+                        <li class="{{#ifContain 'phongvanhanh-quanlygiaodich-huygiaodich' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-quanlygiaodich-huygiaodich.html">Hủy giao dịch</a>
+                        </li>
+
+                        <li class="{{#ifContain 'phongvanhanh-quanlygiaodich-phuchoigiaodich' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-quanlygiaodich-phuchoigiaodich.html">Phục hồi giao dịch</a>
+                        </li>
+                        <li class="{{#ifContain 'phongvanhanh-quanlygiaodich-duyetphuchoigiaodich' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-quanlygiaodich-duyetphuchoigiaodich.html">Duyệt Phục hồi giao dịch</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich' layout }} active {{/ifContain}}">
@@ -249,42 +282,42 @@
                         <li class="{{#ifContain 'pcrt-nhandiengiaodich-dauhieudangngo' layout }} active {{/ifContain}}">
                             <a href="javascript:;">
                                 <span class="title">Dấu hiệu đáng ngờ </span><span class=" arrow"></span></a>
-                                
 
-                                <ul class="sub-menu">
-                                    <li class="{{#ifContain 'pcrt-nhandiengiaodich-taomoidauhieudangngo' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-nhandiengiaodich-taomoidauhieudangngo.html">Tạo mới dấu hiệu đáng ngờ</a>
-                                        <!--  <span class="icon-thumbnail">1</span> -->
-                                    </li>
-                                    <li class="{{#ifContain 'pcrt-nhandiengiaodich-dauhieudangngo' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-nhandiengiaodich-dauhieudangngo.html">Danh sách dấu hiệu đáng ngờ</a>
-                                        <!--  <span class="icon-thumbnail">1</span> -->
-                                    </li>
-                                    <li class="{{#ifContain 'pcrt-dsgiaodichdangngo-duyet' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-dsgiaodichdangngo-duyet.html">Duyệt dấu hiệu đáng ngờ</a>
-                                        <!--  <span class="icon-thumbnail">1</span> -->
-                                    </li>
-                                </ul>
-                                <!--  <span class="icon-thumbnail">1</span> -->
+
+                            <ul class="sub-menu">
+                                <li class="{{#ifContain 'pcrt-nhandiengiaodich-taomoidauhieudangngo' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-nhandiengiaodich-taomoidauhieudangngo.html">Tạo mới dấu hiệu đáng ngờ</a>
+                                    <!--  <span class="icon-thumbnail">1</span> -->
+                                </li>
+                                <li class="{{#ifContain 'pcrt-nhandiengiaodich-dauhieudangngo' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-nhandiengiaodich-dauhieudangngo.html">Danh sách dấu hiệu đáng ngờ</a>
+                                    <!--  <span class="icon-thumbnail">1</span> -->
+                                </li>
+                                <li class="{{#ifContain 'pcrt-dsgiaodichdangngo-duyet' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-dsgiaodichdangngo-duyet.html">Duyệt dấu hiệu đáng ngờ</a>
+                                    <!--  <span class="icon-thumbnail">1</span> -->
+                                </li>
+                            </ul>
+                            <!--  <span class="icon-thumbnail">1</span> -->
                         </li>
                         <li class="{{#ifContain 'pcrt-nhandiengiaodich-mucgiatrigiaodichlon' layout }} active {{/ifContain}}">
                             <a href="javascript:;">
                                 <span>Mức giá trị giao dịch lớn</span>
                                 <span class=" arrow"></span></a>
 
-                                <ul class="sub-menu">
-                                    <li class="{{#ifContain 'pcrt-mucgiatrigiaodichlon-taomoi' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-mucgiatrigiaodichlon-taomoi.html">Tạo mới mức giá trị giao dịch lớn</a>
-                                    </li>
-                                    <li class="{{#ifContain 'pcrt-dsgiaodichmucgiatrilon' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-dsgiaodichmucgiatrilon.html">Danh sách mức giá trị giao dịch lớn</a>
-                                    </li>
-                                    <li class="{{#ifContain 'pcrt-mucgiatrigiaodichlon-duyet' layout }} active {{/ifContain}}">
-                                        <a href="pcrt-mucgiatrigiaodichlon-duyet.html">Duyệt mức giá trị giao dịch lớn</a>
-                                    </li>
-                                </ul>
+                            <ul class="sub-menu">
+                                <li class="{{#ifContain 'pcrt-mucgiatrigiaodichlon-taomoi' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-mucgiatrigiaodichlon-taomoi.html">Tạo mới mức giá trị giao dịch lớn</a>
+                                </li>
+                                <li class="{{#ifContain 'pcrt-dsgiaodichmucgiatrilon' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-dsgiaodichmucgiatrilon.html">Danh sách mức giá trị giao dịch lớn</a>
+                                </li>
+                                <li class="{{#ifContain 'pcrt-mucgiatrigiaodichlon-duyet' layout }} active {{/ifContain}}">
+                                    <a href="pcrt-mucgiatrigiaodichlon-duyet.html">Duyệt mức giá trị giao dịch lớn</a>
+                                </li>
+                            </ul>
 
-                                <!--  <span class="icon-thumbnail">1</span> -->
+                            <!--  <span class="icon-thumbnail">1</span> -->
                         </li>
                         <li class="{{#ifContain 'pcrt-nhandiengiaodich-danhgiagiaodich' layout }} active {{/ifContain}}">
                             <a href="pcrt-nhandiengiaodich-danhgiagiaodich.html">Đánh giá giao dịch</a>
@@ -344,16 +377,16 @@
         </li>
 
 
-       <li class="{{#ifContain 'pkt' layout }} active {{/ifContain}}">
+        <li class="{{#ifContain 'pkt' layout }} active {{/ifContain}}">
             <a href="javascript:;"><span class="title">Phòng kế toán</span>
 <span class="arrow"></span></a>
             <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>
 
             <ul class="sub-menu">
 
-                 <li class="{{#ifContain 'pkt-nhaptygia' layout }} active {{/ifContain}}">
+                <li class="{{#ifContain 'pkt-nhaptygia' layout }} active {{/ifContain}}">
                     <a href="pkt-nhaptygia.html">Nhập tỷ giá</a>
-                 </li>
+                </li>
 
                 <li>
                     <a href="javascript:;"><span class="title">Hạch toán tự động</span>
@@ -400,7 +433,7 @@
                         </li>
 
 
-                       <li class="{{#ifContain 'pkt-hachtoantay-taisancodinh-chimua' layout }} active {{/ifContain}}">
+                        <li class="{{#ifContain 'pkt-hachtoantay-taisancodinh-chimua' layout }} active {{/ifContain}}">
                             <a href="pkt-hachtoantay-taisancodinh-chimua.html">Tài sản cố định</a>
 
                         </li>
@@ -415,7 +448,7 @@
 
                         </li>
                         <li class="{{#ifContain 'pkt-hachtoantay-cpvatlieuquanly' layout }} active {{/ifContain}}">
-                        <a href="pkt-hachtoantay-cpvatlieuquanly.html">Chi phí vật liệu quản lý</a>
+                            <a href="pkt-hachtoantay-cpvatlieuquanly.html">Chi phí vật liệu quản lý</a>
                         </li>
 
                         <li class="{{#ifContain 'pkt-hachtoantay-cpdichvumuangoai' layout }} active {{/ifContain}}">
@@ -442,9 +475,9 @@
                 </li>
                 <li><a href="#;">Hóa đơn GTGT</a></li>
                 <li><a href="#;">Số dư kế toán cuối ngày</a></li>
-                
 
-                 <li class="{{#ifContain 'pkt-danhmucquanly' layout }} active {{/ifContain}}">
+
+                <li class="{{#ifContain 'pkt-danhmucquanly' layout }} active {{/ifContain}}">
                     <a href="pkt-danhmucquanly-taikhoan.html">Danh mục quản lý</a></li>
 
 

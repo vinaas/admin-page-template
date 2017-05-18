@@ -79,7 +79,7 @@
                                 <div class="form-group form-group-default required select2-small">
                                     <label>Tỉnh thành</label>
 
-                                    <select class="full-width" data-init-plugin="select2" >
+                                    <select class="full-width" data-init-plugin="select2">
                                         <option value="">HA TINH</option>
                                         <option value="AK">Australia</option>
                                         <option value="AK">Việt Nam</option>
@@ -105,7 +105,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group form-group-default required select2-small">
                                     <label>Ngân hàng</label>
-                                    <select class="full-width" data-init-plugin="select2" >
+                                    <select class="full-width" data-init-plugin="select2">
                                         <option value="">Citi bank</option>
                                         <option value="AK">Australia</option>
                                         <option value="AK">Việt Nam</option>
@@ -210,7 +210,7 @@
                         </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
@@ -324,3 +324,233 @@
 </div>
 <!-- END MODAL STICK UP  -->
 
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="editDanhSachTongChuaDuyet" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h5>Chỉnh sửa <span class="semi-bold"> danh sách tổng</span></h5>
+                <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+            </div>
+            <div class="modal-body">
+
+
+                <form role="form">
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+
+                            <div class="form-group m-l-10">
+                                <label>Tên đối tác</label>
+
+                                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                        <option value=""></option>
+                                                        <option value="AK">Nguyễn Văn A</option>
+                                                        <option value="AK">Nguyễn Văn B</option>
+                                                        <option value="AK">Nguyễn Văn C</option>
+                                                    </select>
+                            </div>
+
+
+                            <div class="form-group m-l-10">
+                                <label>Số hồ sơ</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group m-l-10">
+                                <label>Tổng hồ sơ</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <h6 class="bold text-uppercase">Loại tiền</h6>
+
+                            <div class="row ">
+                                <div class="col-sm-6">
+                                    <div class="form-group m-l-10">
+                                        <label>AUD</label>
+                                        <!--<span class="help">e.g. </span>-->
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+
+                                    <div class="form-group m-l-10">
+                                        <label>USD</label>
+                                        <!--<span class="help">e.g. </span>-->
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+
+                                    <div class="form-group m-l-10">
+                                        <label>CAD</label>
+                                        <!--<span class="help">e.g. </span>-->
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+
+                                    <div class="form-group m-l-10">
+                                        <label>GBP</label>
+                                        <!--<span class="help">e.g. </span>-->
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+
+                                    <div class="form-group m-l-10">
+                                        <label>EUR</label>
+                                        <!--<span class="help">e.g. </span>-->
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-8 m-t-10 sm-m-t-10 text-right">
+                            <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
+                            <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet"> Lưu & yêu cầu
+                                                    duyệt
+                                                </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="xemDanhSachTongDaDuyet" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                        class="pg-close fs-14"></i>
+                    </button>
+                <h5>Chi tiết <span class="semi-bold">Danh sách tổng đã duyệt</span></h5>
+            </div>
+            <div class="modal-body">
+
+                <div class="panel panel-default">
+
+
+                    <div class="panel-body">
+
+                        <div class="row static-info">
+                            <div class="col-md-5 name"> ID đối tác:</div>
+                            <div class="col-md-7 value"> 1231
+                            </div>
+                        </div>
+                        <div class="row static-info">
+                            <div class="col-md-5 name"> Tên giao dịch:</div>
+                            <div class="col-md-7 value"> ABC
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <table class="table table-hover table-small">
+                    <thead>
+                        <tr>
+
+
+
+                            <th>Ngày</th>
+                            <th>Mã danh sách</th>
+
+                            <th>Tổng hồ sơ</th>
+                            <th>Đối tác</th>
+                            <th>AUD</th>
+                            <th>CAD</th>
+                            <th>EUR</th>
+                            <th>GBP</th>
+                            <th>USD</th>
+                            <th>VND</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+
+                            <td class="v-align-middle">
+                                17/03/2017
+                            </td>
+
+                            <td class="v-align-middle">
+                                1
+                            </td>
+
+                            <td class="v-align-middle">
+                                100
+                            </td>
+
+                            <td class="v-align-middle">
+                                MayZus
+                            </td>
+
+                            <td class="v-align-middle">
+                                200
+                            </td>
+
+                            <td class="v-align-middle">
+                                300
+                            </td>
+
+                            <td class="v-align-middle">
+                                400
+                            </td>
+                            <td class="v-align-middle">
+                                300
+                            </td>
+
+                            <td class="v-align-middle">
+                                400
+                            </td>
+
+
+                            <td class="v-align-middle">
+                                400
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
