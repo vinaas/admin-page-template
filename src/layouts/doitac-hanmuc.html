@@ -1,6 +1,4 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type=activeLink}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 
 
 <div class="container-fluid container-fixed-lg">
@@ -13,14 +11,12 @@
         </div>
         <div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal"
-                        data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
                 </button>
             </div>
         </div>
 
-        <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary nav-tab" role="tablist"
-            data-init-reponsive-tabs="collapse">
+        <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary nav-tab" role="tablist" data-init-reponsive-tabs="collapse">
             <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
             </li>
             <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
@@ -37,103 +33,103 @@
 
                     {{> formSearch type="normal"}}
 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i>
                             Xuất
                             danh sách
                         </button>
 
-                        <button type="button" class="btn btn-danger"data-toggle="modal"
-                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                         </button>
 
-                        <!-- <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                                <!-- <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
                          </button>-->
 
-                    </div>
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                             </button>
-                            <button type="button" class="btn btn-default"><i
+                                    <button type="button" class="btn btn-default"><i
                                     class="fa fa-chevron-right"></i>
                             </button>
 
+                                </div>
+                            </div>
+
+
                         </div>
-                    </div>
-                    <div class="tabler-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
 
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox1">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
 
-                                </th>
-                                <th style="width: 150px">STT</th>
-                                <th style="width: 150px">Mã đối tác</th>
-                                <th style="width: 150px">Tên đối tác</th>
-                                <th style="width: 300px">Hạn mức tín dụng</th>
+                                        </th>
+                                        <th style="width: 10%">STT</th>
+                                        <th style="width: 20%">Mã đối tác</th>
+                                        <th style="width: 20%">Tên đối tác</th>
+                                        <th style="width: 20%">Hạn mức tín dụng</th>
 
-                                <th style=""></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle">
-                                    12/03/2017
-                                </td>
+                                        <th style="width:30%">Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">
+                                            12/03/2017
+                                        </td>
 
-                                <td class="v-align-middle">
-                                    17/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    Nguyễn Văn B
-                                </td>
-                                <td class="v-align-middle ">
-                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal"
-                                       data-target="#modalListHanMuc">Chi tiết</a>
-                                </td>
+                                        <td class="v-align-middle">
+                                            17/03/2017
+                                        </td>
+                                        <td class="v-align-middle">
+                                            Nguyễn Văn B
+                                        </td>
+                                        <td class="v-align-middle ">
+                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHanMuc">Chi tiết</a>
+                                        </td>
 
+                                        <td class="v-align-middle">
 
-                                <td class="v-align-middle">
-
-                                    <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
                                             yêu cầu
                                         </button>
-                                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ
                                             chối
                                         </button>
-                                    </div>
+                                            </div>
 
 
-                                </td>
-                            </tr>
+                                        </td>
+                                    </tr>
 
 
-                            </tbody>
-                        </table>
-                        {{>pagination}}
+                                </tbody>
+                            </table>
+                            {{>pagination}}
+                        </div>
+
+                        <div class="clearfix"></div>
+
                     </div>
-
-                    <div class="clearfix"></div>
-
-
                 </div>
-
             </div>
 
             <div class="tab-pane" id="tabDaDuyet">
@@ -166,63 +162,60 @@
                     <div class="tabler-responsive">
                         <table class="table table-hover">
                             <thead>
-                            <tr>
+                                <tr>
 
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
 
-                                </th>
-                                <th style="width: 150px">STT</th>
-                                <th style="width: 150px">Mã đối tác</th>
-                                <th style="width: 150px">Tên đối tác</th>
-                                <th style="width: 300px">Hạn mức tín dụng</th>
+                                    </th>
+                                    <th style="width: 150px">STT</th>
+                                    <th style="width: 150px">Mã đối tác</th>
+                                    <th style="width: 150px">Tên đối tác</th>
+                                    <th style="width: 300px">Hạn mức tín dụng</th>
 
-                                <th style=""></th>
-                            </tr>
+                                    <th style=""></th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle">
-                                    12/03/2017
-                                </td>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
 
-                                <td class="v-align-middle">
-                                    17/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    Nguyễn Văn B
-                                </td>
-                                <td class="v-align-middle ">
-                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal"
-                                       data-target="#modalListHanMuc">Chi tiết</a>
-                                </td>
+                                    <td class="v-align-middle">
+                                        17/03/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Nguyễn Văn B
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHanMuc">Chi tiết</a>
+                                    </td>
 
 
-                                <td class="v-align-middle">
+                                    <td class="v-align-middle">
 
-                                    <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
                                             yêu cầu
                                         </button>
-                                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ
                                             chối
                                         </button>
-                                    </div>
+                                        </div>
 
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
 
                             </tbody>
@@ -238,12 +231,10 @@
                     {{> formSearch type="normal"}}
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
                         </button>
 
-                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
                         </button>
 
                     </div>
@@ -265,63 +256,60 @@
                     <div class="tabler-responsive">
                         <table class="table table-hover">
                             <thead>
-                            <tr>
+                                <tr>
 
-                                <th style="width: 50px;padding: 10px 11px !important;">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox1">
-                                        <label for="checkbox1" class="m-r-0"></label>
-                                    </div>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
 
-                                </th>
-                                <th style="width: 150px">STT</th>
-                                <th style="width: 150px">Mã đối tác</th>
-                                <th style="width: 150px">Tên đối tác</th>
-                                <th style="width: 300px">Hạn mức tín dụng</th>
+                                    </th>
+                                    <th style="width: 150px">STT</th>
+                                    <th style="width: 150px">Mã đối tác</th>
+                                    <th style="width: 150px">Tên đối tác</th>
+                                    <th style="width: 300px">Hạn mức tín dụng</th>
 
-                                <th style=""></th>
-                            </tr>
+                                    <th style=""></th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input type="checkbox" value="3" id="checkbox2">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-                                <td class="v-align-middle">
-                                    12/03/2017
-                                </td>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12/03/2017
+                                    </td>
 
-                                <td class="v-align-middle">
-                                    17/03/2017
-                                </td>
-                                <td class="v-align-middle">
-                                    Nguyễn Văn B
-                                </td>
-                                <td class="v-align-middle ">
-                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal"
-                                       data-target="#modalListHanMuc">Chi tiết</a>
-                                </td>
+                                    <td class="v-align-middle">
+                                        17/03/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Nguyễn Văn B
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHanMuc">Chi tiết</a>
+                                    </td>
 
 
-                                <td class="v-align-middle">
+                                    <td class="v-align-middle">
 
-                                    <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
                                             yêu cầu
                                         </button>
-                                        <button type="button" class="btn btn-warning" data-toggle="modal"
-                                                data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
                                             chối
                                         </button>
-                                    </div>
+                                        </div>
 
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
 
                             </tbody>
@@ -340,7 +328,4 @@
 
 
 
-{{/content}} {{#content "script" mode="append"}}
-
-
-{{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
