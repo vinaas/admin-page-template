@@ -50,77 +50,135 @@
 
 
                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
 
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
 
                             <div class="panel-body">
+                                <div class="table table-responsive">
+                                    <table class="table table-hover ">
+                                        <thead>
+                                            <tr class="active">
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:5%">STT</th>
+                                                <th style="width:15%">Ngày</th>
+                                                <th style="width:10%">Mã danh sách</th>
+                                                <th style="width:10%">Tổng hồ sơ</th>
+                                                <th style="width:15%">Đối tác</th>
+                                                <th style="width:5%">AUD</th>
+                                                <th style="width:5%">CAD</th>
+                                                <th style="width:5%">EUR</th>
+                                                <th style="width:5%">GBP</th>
+                                                <th style="width:5%">USD</th>
+                                                <th style="width:5%">VND</th>
+                                                <th style="width:10%">Chi tiết</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle"> 12/03/2017</td>
+                                                <td class="v-align-middle"> 1-2000-120317-830</td>
+                                                <td class="v-align-middle"> 100</td>
+                                                <td class="v-align-middle"> MAYZUS</td>
+                                                <td class="v-align-middle">200</td>
+                                                <td class="v-align-middle">300</td>
+                                                <td class="v-align-middle">400</td>
+                                                <td class="v-align-middle">500</td>
+                                                <td class="v-align-middle">400</td>
+                                                <td class="v-align-middle">44,000,000</td>
+                                                <td class="v-align-middle">
+
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="">Xem</a>
 
 
-                                <table class="table table-hover ">
-                                    <thead>
-                                        <tr class="active">
-
-                                            <th>Ngày</th>
-                                            <th>Mã danh sách</th>
-                                            <th>Tổng hồ sơ</th>
-                                            <th>Đối tác</th>
-
-                                            <th style="">AUD</th>
-                                            <th style="">CAD</th>
-                                            <th style="">EUR</th>
-                                            <th style="">GBP</th>
-                                            <th style="">USD</th>
-                                            <th style="">VND</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="v-align-middle"> 12/03/2017</td>
-                                            <td class="v-align-middle"> 1-2000-120317-830</td>
-                                            <td class="v-align-middle"> 100</td>
-                                            <td class="v-align-middle"> MAYZUS</td>
-                                            <td class="v-align-middle">200</td>
-                                            <td class="v-align-middle">300</td>
-                                            <td class="v-align-middle">400</td>
-                                            <td class="v-align-middle">500</td>
-                                            <td class="v-align-middle">400</td>
-                                            <td class="v-align-middle">44,000,000</td>
+                                                </td>
 
 
+                                            </tr>
 
-                                        </tr>
 
+                                        </tbody>
+                                    </table>
 
-                                    </tbody>
-                                </table>
+                                    {{>pagination}}
+
+                                </div>
+
 
                             </div>
 
-                        </div>
 
+
+
+                        </div>
 
                         <h5>Danh sách<span class="semi-bold"> chi tiết</span></h5>
 
                         <div class="panel panel-default">
-
-
-                            <div class="panel-body">
-
+                            <div class="panel-heading">
                                 <form role="form">
 
                                     <div class="row">
                                         <div class="col-sm-4">
-
+                                            <label>File danh sách</label>
                                             <div class="form-group">
-                                                <label>File danh sách</label>
-
                                                 <input type="file" class="form-control" required="">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-8 text-left">
+                                            <div class="form-group">
+
+                                                <button type="button" class="btn btn-primary  m-t-25">Lưu</button>
                                             </div>
 
                                         </div>
                                     </div>
 
                                 </form>
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="panel-body">
+
+
 
 
                                 <table class="table table-hover ">
@@ -272,11 +330,11 @@
                                     </tbody>
                                 </table>
 
+                                {{>pagination}}
+
 
                             </div>
-
                         </div>
-
 
                     </div>
 
