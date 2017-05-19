@@ -5,19 +5,18 @@
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-8">
-
             <h3 class="page-title">{{title}}</h3>
         </div>
-
     </div>
+
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Điều chỉnh bút toán</a>
+                    <li class="active"><a href="#tabDieuChinhButToan" data-toggle="tab" role="tab">Điều chỉnh bút toán</a>
                     </li>
 
-                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Duyệt</a>
+                    <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
                     </li>
 
                 </ul>
@@ -166,7 +165,75 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane active" id="tabDuyet">
+                        <div class="panel-body">
+                            {{>formSearch type="pkt-7"}}
+
+                            <div class="tabler-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th> Mã nghiệp vụ</th>
+                                            <th>Tên chứng từ</th>
+                                            <th>Số giao dịch</th>
+                                            <th>Số chứng từ</th>
+                                            <th> Thông tin điều chỉnh</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-duyetdieuchinhbuttoan">Xem</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
