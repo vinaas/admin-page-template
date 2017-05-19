@@ -489,8 +489,6 @@
 
 
 {{/ifEqual}} {{#ifEqual type "pcrt-4"}}
-
-
 <form role="form" lpformnum="2" class="form-filter">
     <div class="form-group long">
         <label>THEO NGÀY</label>
@@ -708,4 +706,87 @@
 
     </div>
 </form>
+
+
+{{/ifEqual}}{{#ifEqual type "pkt-5"}}
+<!--pkt-hoadon-inhoadon-->
+<form role="form" lpformnum="3" class="form-filter">
+
+    <div class="form-group ">
+        <label>THEO NGÀY</label>
+        <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+    </div>
+
+    <div class="form-group">
+        <label>Chi nhánh</label>
+        <input type="text" class="form-control" required="">
+    </div>
+    <br>
+    <div class="form-group">
+        <button class="btn btn-primary btn-cons " type="button"><i class="fa fa-search"></i> Tìm kiếm
+        </button>
+    </div>
+
+</form>
+{{/ifEqual}} {{#ifEqual type "pkt-6"}}
+<!--pkt-hoadon-danh sach hoa don-->
+<form role="form" lpformnum="4" class="form-filter">
+
+    <div class="form-group long">
+        <label>THEO NGÀY</label>
+        <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+    </div>
+
+    <div class="form-group">
+        <label>Chi nhánh</label>
+        <input type="text" class="form-control" required="">
+    </div>
+
+    <div class="form-group">
+        <label>Trạng thái</label>
+        <select class="form-control">
+            <option value="">Mới</option>
+            <option value="">Hủy</option>
+        </select>
+
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary btn-cons " type="button"><i class="fa fa-search"></i> Tìm kiếm
+        </button>
+    </div>
+
+</form>
+
+{{/ifEqual}}{{#ifEqual type "pkt-7"}}
+<!--pkt-hoadon-danh sach hoa don-->
+<form role="form" lpformnum="3" class="form-filter">
+
+    <div class="form-group">
+        <label>NGÀY</label>
+        <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+    </div>
+
+    <div class="form-group">
+        <label>Chi nhánh</label>
+        <select class="form-control">
+            <option value="">Chi nhánh 1</option>
+            <option value="">Chi nhánh 2</option>
+            <option value="">Chi nhánh 3</option>
+            <option value="">Chi nhánh 4</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Số giao dịch</label>
+        <input type="text" class="form-control" required="">
+    </div>
+    <br>
+    <div class="form-group">
+
+        <button class="btn btn-primary btn-cons " type="button"><i class="fa fa-search"></i> Tìm kiếm
+        </button>
+    </div>
+
+</form>
+
 {{/ifEqual}}

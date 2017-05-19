@@ -11,13 +11,101 @@
             <!--<p>Nhập tỷ giá ngày và tỷ giá tháng</p>-->
 
         </div>
-
         <div class="modal-body">
+            <form role="form">
 
+                <div class="form-group-attached">
+                    <div class="row">
+                        <div class="col-sm-3">
 
+                            <div class="form-group long">
+                                <label>THEO NGÀY</label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input-sm form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input-sm form-control" name="end" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+
+                            <div class="form-group form-group-default ">
+                                <label>Chi nhánh</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="form-group form-group-default">
+                                <label>Trạng thái</label>
+                                <select class="form-control">
+                                    <option value="">Mới</option>    
+                                    <option value="">Hủy</option>                           
+                   
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group form-group-default">
+                                <label>Mẫu số</label>
+                                <select class="form-control">
+                                    <option value="">Mẫu số 1</option>    
+                                    <option value="">Mẫu số 2</option>    
+                                    <option value="">Mẫu số 3</option>    
+                                                      
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group form-group-default">
+                                <label>Ký hiệu</label>
+                                <select class="form-control">
+                                    <option value="">Ký hiệu a</option>    
+                                    <option value="">Ký hiệu b</option>    
+                                    <option value="">Ký hiệu c</option>    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-4">
+
+                            <div class="form-group form-group-default ">
+                                <label>Từ số</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+
+                            <div class="form-group form-group-default ">
+                                <label>đến số</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group form-group-default ">
+                                <label>Số lượng</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-cons m-t-25" type="button">
+                                    <i class="pg-form"></i>Submit
+                                </button>
+                        <button class="btn btn-danger btn-cons m-t-25" type="button">
+                                    <i class="pg-trash"></i>Hủy
+                                </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-
 </div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
