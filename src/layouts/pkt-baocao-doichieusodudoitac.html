@@ -1,92 +1,92 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-baocao"}}
-<br>
-<!--Danh sách công văn-->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">{{title}}</h3>
+            <h3 class="page-title">Danh mục công văn</h3>
 
         </div>
 
+
     </div>
+
 
     <div class="row">
 
         <div class="col-md-12">
 
-            {{>formSearch type="pkt-4"}}
-            <div class="panel panel-default ">
 
-                <div class="tab-content">
-
-                    <div class="panel-body">
+            <div class="panel panel-default">
 
 
-                        <div class="pull-right m-b-10">
-                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                </button>
+                <div class="panel-body">
+                    <div class="row">
 
-                            </div>
-                        </div>
-                        <div class="tabler-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>ID_ đối tác</th>
-                                        <th>Tên đối tác</th>
-                                        <th>Loại tiền</th>
-                                        <th>Tồn cuối kỳ kế toán</th>
-                                        <th>Số dư cuối ngày</th>
-                                        <th>Kiểm tra</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>12345</td>
-                                        <td>ABC</td>
-                                        <td>VND</td>
-                                        <td>Số dư cuối kỳ tài khoản 3388100x và 3388200x chi tiết từng loại tiền</td>
-                                        <td>Lấy dữ liệu trên QL số dư đối tác chi tiết theo từng loại tiền thanh toán</td>
-                                        <td> <button type="button" class="btn btn-default"><i class="fa fa-check"></i>
-                                                </button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>12343</td>
-                                        <td>CED</td>
-                                        <td>USD</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <button type="button" class="btn btn-default"><i class="fa fa-check"></i>
-                                                </button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>12346</td>
-                                        <td>DEF</td>
-                                        <td>CAD</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <button type="button" class="btn btn-danger">SAI</i>
-                                                </button></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-
+                        {{>formSearch type="pkt-4"}}
                     </div>
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID_ đối tác</th>
+                                <th>Tên đối tác</th>
+                                <th>Loại tiền</th>
+                                <th>Tồn cuối kỳ kế toán</th>
+                                <th>Số dư cuối ngày</th>
+                                <th>Kiểm tra</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12345</td>
+                                <td>ABC</td>
+                                <td>VND</td>
+                                <td>Số dư cuối kỳ tài khoản 3388100x và 3388200x chi tiết từng loại tiền</td>
+                                <td>Lấy dữ liệu trên QL số dư đối tác chi tiết theo từng loại tiền thanh toán</td>
+                                <td><button type="button" class="btn btn-default"><i class="fa fa-check"></i>
+                                                </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12343</td>
+                                <td>CED</td>
+                                <td>USD</td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="btn btn-default"><i class="fa fa-check"></i>
+                                                </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12346</td>
+                                <td>DEF</td>
+                                <td>CAD</td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="btn btn-danger">SAI
+                                                </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    {{>pagination}}
                 </div>
             </div>
         </div>
-
     </div>
-
 </div>
+
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
