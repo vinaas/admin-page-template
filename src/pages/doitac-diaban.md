@@ -2,7 +2,10 @@
 {
     "title": "Danh sách địa bàn",
     "slug": "",
+    "title": "Danh sách địa bàn",
+    "slug": "",
     "description": "Index Page",
+    permalink" : false,
     "layout": "doitac-diaban.html",
     "permalink" : false,
     "activeLink" : "doitac"
