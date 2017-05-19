@@ -1,58 +1,58 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 <div class="container-fluid container-fixed-lg">
-	<div class="panel panel-default">
+    <div class="panel panel-default">
         <div class="panel panel-heading">
-           <div class="modal-header clearfix text-left">
-               <div class="panel-title">Tạo mới mức giá trị giao dịch
-               </div>
-               <div class="panel-body">
-                <div class="row">
-                    <div class="col-sm-10">
-                        <form id="form-work" class="form-horizontal" role="form" autocomplete="off" novalidate="novalidate">
-                            <div class="form-group">
-                                <label for="fname" class="col-sm-3 control-label">Ngày</label>
-                                <div class="col-sm-9">
-                                    <div id="datepicker-component" class="input-group date ">
-                                        <input class="form-control" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            <div class="modal-header clearfix text-left">
+                <div class="panel-title">Tạo mới mức giá trị giao dịch
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <form id="form-work" class="form-horizontal" role="form" autocomplete="off" novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="fname" class="col-sm-3 control-label">Ngày</label>
+                                    <div class="col-sm-9">
+                                        <div id="datepicker-component" class="input-group date ">
+                                            <input class="form-control" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="position" class="col-sm-3 control-label">Số tiền</label>
-                                <div class="col-sm-6">
-                                    <input class="form-control" placeholder="5000" name="name" type="text">
-                                </div>
-                                <div class="col-sm-3">
-                                    <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                <div class="form-group">
+                                    <label for="position" class="col-sm-3 control-label">Số tiền</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="5000" name="name" type="text">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
 
                                        <option value="usd">USD</option>
                                        <option value="euro">EURO</option>
                                        <option value="vnd">VND</option>
                                        
                                    </select>
-                               </div>
-                           </div>
-                           
-                           
-                           <br>
-                           
-                       </form>
-                   </div>
-               </div>
-               <div class="row">
-                                    <div class="col-sm-8"></div>
-                                    <div class="col-sm-4  ">    
-                                       
-                                          <button class="btn btn-danger"> Hủy</button>
-                                        <button class="btn btn-primary" type="submit">Lưu &amp; Yêu cầu duyệt</button>
-                                      
-                                     </div>
-                                   
+                                    </div>
                                 </div>
-           </div>
-       </div>
-   </div>
-</div>
+
+
+                                <br>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8"></div>
+                        <div class="col-sm-4  ">
+
+                            <button class="btn btn-danger"> Hủy</button>
+                            <button class="btn btn-primary" type="submit">Lưu &amp; Yêu cầu duyệt</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
