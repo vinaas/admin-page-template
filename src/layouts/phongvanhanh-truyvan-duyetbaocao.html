@@ -1,0 +1,331 @@
+{{#extend "default"}} {{#content "main"}}
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-8">
+
+            <h3 class="page-title">Duyệt báo cáo</h3>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-right">
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createYeuCau"><i class="pg-form"></i> Tạo mới yêu cầu
+                </button>
+                <!--
+                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
+                </button>-->
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
+                    </li>
+                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabDuyet">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:10%">STT</th>
+                                                <th style="width:45%">Loại báo cáo</th>
+                                                <th style="width:20%">Số lượng cần duyệt</th>
+
+                                                <th style="width:25%">Danh sách</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">Báo cáo giao dịch hoàn thành</td>
+                                                <td class="v-align-middle">1</td>
+
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="">Xem</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
+                                </div>
+
+                            </div>
+                        </div>
+                        <h5><span class="semi-bold"> Danh sách</span></h5>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:10%">STT</th>
+                                                <th style="width:20%">Ngày</th>
+                                                <th style="width:10%">Mã số</th>
+
+                                                <th style="width:10%">Người gửi</th>
+                                                <th style="width:10%">Người nhận</th>
+                                                <th style="width:10%">Số tiền gửi</th>
+                                                <th style="width:10%">Loại tiền gửi</th>
+
+                                                <th style="width:10%">Loại tiền chi</th>
+                                                <th style="width:10%">Chi tiết</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">10/03/2016</td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">Nguyễn văn b</td>
+                                                <td class="v-align-middle">Nguyễn văn a</td>
+                                                <td class="v-align-middle">100</td>
+                                                <td class="v-align-middle">USD</td>
+                                                <td class="v-align-middle">VNĐ</td>
+
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#xemtruyvanLDDuyet">Xem</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane" id="tabTraVe">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:10%">STT</th>
+                                                <th style="width:45%">Loại báo cáo</th>
+                                                <th style="width:20%">Số lượng cần duyệt</th>
+
+                                                <th style="width:25%">Danh sách</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">Báo cáo giao dịch hoàn thành</td>
+                                                <td class="v-align-middle">1</td>
+
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="">Xem</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
+                                </div>
+
+                            </div>
+                        </div>
+                        <h5><span class="semi-bold"> Danh sách</span></h5>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:10%">STT</th>
+                                                <th style="width:20%">Ngày</th>
+                                                <th style="width:10%">Mã số</th>
+
+                                                <th style="width:10%">Người gửi</th>
+                                                <th style="width:10%">Người nhận</th>
+                                                <th style="width:10%">Số tiền gửi</th>
+                                                <th style="width:10%">Loại tiền gửi</th>
+
+                                                <th style="width:10%">Loại tiền chi</th>
+                                                <th style="width:10%">Chi tiết</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">10/03/2016</td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">Nguyễn văn b</td>
+                                                <td class="v-align-middle">Nguyễn văn a</td>
+                                                <td class="v-align-middle">100</td>
+                                                <td class="v-align-middle">USD</td>
+                                                <td class="v-align-middle">VNĐ</td>
+
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#xemtruyvanTraVe">Xem</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
