@@ -1,0 +1,60 @@
+{{#extend "default"}} {{#content "main"}}
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="page-title">{{title}}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="tab-content">
+                    <div class="panel-body">
+                        {{>formSearch type="pkt-7"}}
+                        <div class="tabler-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Ngày</th>
+                                        <th> Chi nhánh</th>
+                                        <th> Số giao dịch</th>
+                                        <th> Chi tiết</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle ">12/03/2017</td>
+                                        <td class="v-align-middle "></td>
+                                        <td class="v-align-middle "></td>
+                                        <td class="v-align-middle "> <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-duyetchungtuketoan">Xem</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle ">13/03/2017</td>
+                                        <td class="v-align-middle "></td>
+                                        <td class="v-align-middle "></td>
+                                        <td class="v-align-middle "></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
