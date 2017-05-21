@@ -3,6 +3,7 @@
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
+
     <div class="row">
         <div class="col-sm-8">
 
@@ -21,6 +22,8 @@
 
 
     </div>
+
+
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
@@ -39,11 +42,83 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaDuyet">
 
-                        {{> formSearch type="phongvanhanh2"}}<br>
+
                         <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h6 class="bold text-uppercase">Thông tin đối tác</h6>
+                                <div class="form-group-attached">
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group form-group-default">
+                                                <label>Tên đối tác</label>
+                                                <input type="text" class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group form-group-default">
+                                                <label>Mã danh sách</label>
+                                                <input type="text" class="form-control" disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group form-group-default">
+                                                <label>Tổng hồ sơ</label>
+                                                <input type="text " class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="panel-body">
+                                <h6 class="bold text-uppercase">Loại tiền giao dịch</h6>
+                                <div class="form-group-attached">
 
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>AUD</label>
+                                                <input type="text" class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>USD</label>
+                                                <input type="text" class="form-control" disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>CAD</label>
+                                                <input type="text " class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>EUR</label>
+                                                <input type="text " class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>GBP</label>
+                                                <input type="text " class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group form-group-default">
+                                                <label>HKD</label>
+                                                <input type="text " class="form-control " disabled="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+                                {{> formSearch type="phongvanhanh2"}}<br>
                                 <div class="pull-right m-b-10">
                                     <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                                     <div class="btn-group">
