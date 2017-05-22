@@ -1,6 +1,5 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-danhmucquanly"}}
 
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -8,19 +7,15 @@
         <div class="col-sm-7">
 
             <h3 class="page-title">{{title}}</h3>
-
-
         </div>
 
         <div class="col-sm-5">
             <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan"><i class="pg-form"></i> Tạo mới 
+                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-taomoi"><i class="pg-form"></i> Tạo mới
                 </button>
             </div>
 
         </div>
-
-
 
     </div>
 
@@ -32,27 +27,19 @@
             <div class="panel panel-default ">
 
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
+                    <li class="active"><a href="#tabDanhmuc" data-toggle="tab" role="tab">Danh mục</a>
                     </li>
 
-                    <li class=""><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>
-                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
-                    </li>
-
-                    <li><a href="#tabLanhDaoDuet" data-toggle="tab" role="tab">Duyệt</a>
+                    <li><a href="#tabLanhDaoDuyet" data-toggle="tab" role="tab">Duyệt</a>
                     </li>
 
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane active" id="tabChuaDuyet">
+                    <div class="tab-pane active" id="tabDanhmuc">
 
                         <div class="panel-body">
-
                             <!--<h5>Danh sách <span class="semi-bold">chưa duyệt</span></h5>-->
-
-
                             {{>formSearch type="pkt-2"}}
 
                             <table class="table table-hover">
@@ -65,17 +52,13 @@
                                         <th style="">Tên TK cấp 1</th>
                                         <th style="">TK cấp 2</th>
                                         <th style="">Tên TK cấp 2</th>
-
-
-
                                         <th>Chi tiết</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
 
-
-                                        <td class="v-align-middle text-center">
+                                        <td class="v-align-middle ">
                                             12/05/2017
                                         </td>
 
@@ -95,10 +78,9 @@
                                         </td>
 
                                         <td class="v-align-middle">
-                                            <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan">Xem</a>
+                                            <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-chitiet">Xem</a>
                                         </td>
                                     </tr>
-
 
                                 </tbody>
                             </table>
@@ -106,31 +88,54 @@
                         </div>
 
                     </div>
-                    <div class="tab-pane " id="tabDaDuyet">
+
+                    <div class="tab-pane " id="tabLanhDaoDuyet">
                         <div class="panel-body">
 
-                            <h5>Danh sách <span class="semi-bold">đã duyệt</span></h5>
+                            {{>formSearch type="pkt-2"}}
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
 
+                                        <th style="">Ngày</th>
+                                        <th style="">Loại TK</th>
+                                        <th style="">TK cấp 1</th>
+                                        <th style="">Tên TK cấp 1</th>
+                                        <th style="">TK cấp 2</th>
+                                        <th style="">Tên TK cấp 2</th>
 
-                        </div>
+                                        <th>Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
 
-                    </div>
+                                        <td class="v-align-middle">
+                                            12/05/2017
+                                        </td>
 
-                    <div class="tab-pane " id="tabTraVe">
-                        <div class="panel-body">
+                                        <td class="v-align-middle ">
+                                        </td>
 
-                            <h5>Danh sách <span class="semi-bold">trả về</span></h5>
+                                        <td class="v-align-middle ">
+                                        </td>
+                                        <td class="v-align-middle ">
 
+                                        </td>
 
-                        </div>
+                                        <td class="v-align-middle ">
+                                        </td>
 
-                    </div>
+                                        <td class="v-align-middle ">
+                                        </td>
 
-                    <div class="tab-pane " id="tabLanhDaoDuet">
-                        <div class="panel-body">
+                                        <td class="v-align-middle">
+                                            <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-duyet">Xem</a>
+                                        </td>
+                                    </tr>
 
-                            <h5>Danh sách <span class="semi-bold">lãnh đạo duyệt</span></h5>
-
+                                </tbody>
+                            </table>
 
                         </div>
 
@@ -140,21 +145,10 @@
 
             </div>
 
-
-
-
-
         </div>
-
-
-
-
 
     </div>
 
-
 </div>
-
-
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
