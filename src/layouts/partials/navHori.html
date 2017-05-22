@@ -179,6 +179,32 @@
         </ul>
     </div>
 </div>
+
+{{/ifEqual}} {{#ifEqual type "phongvanhanh-danhsachgiaodich"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'phongvanhanh-danhsachgiaodich-duyet'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-danhsachgiaodich-duyet-danhsachtong.html">
+                    <span class="">Duyệt danh sách tổng</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongvanhanh-danhsachgiaodich-duyet'}} active {{/ifEqual}}">
+                <a href="phongvanhanh-danhsachgiaodich-duyet-danhsachchitiet.html">
+                    <span class="">Duyệt danh sách chi tiết</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
 {{/ifEqual}} {{#ifEqual type "pcrt-nhandiengiaodich"}}
 
 <div class="bar">
