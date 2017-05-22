@@ -5,7 +5,7 @@
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-12">
 
             <h3 class="page-title">{{title}}</h3>
 
@@ -43,15 +43,9 @@
 
                         <div class="col-md-3">
                             <div class="form-group ">
-                                <label>Ngân hàng</label>
-                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-
-                          <option value="usd">Ngân hàng 1</option>
-                          <option value="euro">Ngân hàng 2</option>
-                          <option value="cad">Ngân hàng 3</option>
-
-
-                      </select>
+                                <label>Tên đối tác</label>
+                              
+                                <input type="text" class="form-control" name="" value="">
                             </div>
                         </div>
 
@@ -97,6 +91,7 @@
 
                                 </th>
                                 <th>STT</th>
+                                <th>Tên đối tác</th>
                                 <th>USD</th>
                                 <th>EUR</th>
                                 <th>AUD</th>
@@ -122,6 +117,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>
                                     <a href="" class="text-primary" data-target="#pkt-tiendoitacchuyenve" data-toggle="modal">Xem</a>
                                 </td>
@@ -139,6 +135,7 @@
                                 <td>150,000</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>
                                     <a href="" class="text-primary" data-target="" data-toggle="modal">Xem</a>
                                 </td>
@@ -148,21 +145,38 @@
                         </tbody>
                     </table>
 
+                    <div class="row">
 
-                    <div class="clearfix text-right">
-
-                        <div class="btn-group ">
-
-
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalTuChoi"> Hủy
-                                            </button>
-
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Thực hiện
-                                            </button>
-
+                        <div class="col-md-12">
+                            <h5>Chọn ngân hàng sử dụng</h5>
                         </div>
 
+             
+
+                        <div class="col-md-3">
+                            <div class="form-group ">
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+
+                          <option value="usd">Ngân hàng 1</option>
+                          <option value="euro">Ngân hàng 2</option>
+                          <option value="cad">Ngân hàng 3</option>
+
+
+                      </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Thực hiện
+                                            </button>
+
+                            </div>
+                        </div>
                     </div>
+
 
 
 
