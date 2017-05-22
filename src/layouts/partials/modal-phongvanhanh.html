@@ -7,7 +7,6 @@
                         class="pg-close fs-14"></i>
                 </button>
                 <h5>Chi tiết <span class="semi-bold">yêu cầu</span></h5>
-                <p>Các lưu ý cho nhân viên khi tạo mới đối tác</p>
             </div>
             <div class="modal-body">
                 <form role="form">
@@ -305,7 +304,7 @@
                                 <div class="form-group form-group-default required select2-small">
                                     <label>Loại tiền gửi</label>
                                     <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-            
+
                                             <option value="AZ">USD</option>
                                             <option value="CO">VNĐ</option>
                                     </select>
@@ -350,7 +349,7 @@
                                 <div class="form-group form-group-default required select2-small">
                                     <label>Tỉnh thành</label>
                                     <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                     
+
                                             <option value="AZ">TPHCM</option>
                                             <option value="CO">Hà tĩnh</option>
                                     </select>
@@ -364,7 +363,7 @@
                                         <option value="">Chi nhánh 1</option>
                                         <option value="AK">Chi nhánh 2</option>
                                         <option value="AK">Chi nhánh 3</option>
-                             
+
                                     </select>
                                 </div>
                             </div>
@@ -433,6 +432,7 @@
 
                     </div>
 
+
                 </form>
 
 
@@ -447,10 +447,9 @@
                             </div>
                         </div>-->
                     </div>
-                    <div class="col-sm-6 m-t-10 sm-m-t-10 text-right">
+                    <div class="col-sm-6 m-t-10 sm-m-t-10 text-center">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu và Yêu cầu duyệt</button>
-
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu </button>
                     </div>
                 </div>
             </div>
@@ -876,117 +875,96 @@
                 <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
             </div>
             <div class="modal-body">
-
-
                 <form role="form">
-
-                    <div class="row">
-                        <div class="col-md-8">
-
+                    <div class="form-group-attached">
+                        <div class="row">
                             <h6 class="bold text-uppercase">Thông tin đối tác</h6>
-
-                            <div class="form-group m-l-10">
+                            <div class="col-md-6">
                                 <label>Tên đối tác</label>
-
                                 <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                                         <option value=""></option>
                                                         <option value="AK">Nguyễn Văn A</option>
                                                         <option value="AK">Nguyễn Văn B</option>
                                                         <option value="AK">Nguyễn Văn C</option>
-                                                    </select>
+                                    </select>
                             </div>
+                            <div class="col-md-6">
 
-
-                            <div class="form-group m-l-10">
-                                <label>Số hồ sơ</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="form-group m-l-10">
                                 <label>Tổng hồ sơ</label>
                                 <input type="text" class="form-control">
-                            </div>
 
+                            </div>
                         </div>
-                        <div class="col-md-4">
+                    </div>
 
-                            <h6 class="bold text-uppercase">Loại tiền</h6>
-
-                            <div class="row ">
-                                <div class="col-sm-6">
-                                    <div class="form-group m-l-10">
-                                        <label>AUD</label>
-                                        <!--<span class="help">e.g. </span>-->
-                                        <input type="text" class="form-control">
-                                    </div>
-
+                    <div class="form-group-attached">
+                        <h6 class="bold text-uppercase">Danh sách loại tiền</h6>
+                        <div class="row ">
+                            <div class="col-sm-3">
+                                <div class="form-group m-l-10">
+                                    <label>AUD</label>
+                                    <!--<span class="help">e.g. </span>-->
+                                    <input type="text" class="form-control">
                                 </div>
-                                <div class="col-sm-6">
 
-                                    <div class="form-group m-l-10">
-                                        <label>USD</label>
-                                        <!--<span class="help">e.g. </span>-->
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                </div>
                             </div>
+                            <div class="col-sm-3">
 
-                            <div class="row">
-                                <div class="col-sm-6">
-
-                                    <div class="form-group m-l-10">
-                                        <label>CAD</label>
-                                        <!--<span class="help">e.g. </span>-->
-                                        <input type="text" class="form-control">
-                                    </div>
-
+                                <div class="form-group m-l-10">
+                                    <label>USD</label>
+                                    <!--<span class="help">e.g. </span>-->
+                                    <input type="text" class="form-control">
                                 </div>
-                                <div class="col-sm-6">
 
-                                    <div class="form-group m-l-10">
-                                        <label>GBP</label>
-                                        <!--<span class="help">e.g. </span>-->
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                </div>
                             </div>
+                            <div class="col-sm-3">
 
-                            <div class="row">
-                                <div class="col-sm-6">
-
-                                    <div class="form-group m-l-10">
-                                        <label>EUR</label>
-                                        <!--<span class="help">e.g. </span>-->
-                                        <input type="text" class="form-control">
-                                    </div>
-
+                                <div class="form-group m-l-10">
+                                    <label>CAD</label>
+                                    <!--<span class="help">e.g. </span>-->
+                                    <input type="text" class="form-control">
                                 </div>
+
                             </div>
-                            <div class="row">
-                                <div class="col-md-8"></div>
-                                <div class="col-md-4 m-t-10 sm-m-t-10 text-right">
-                                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                                    <!--<button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet"> Lưu & yêu cầu
+                            <div class="col-sm-3">
+
+                                <div class="form-group m-l-10">
+                                    <label>GBP</label>
+                                    <!--<span class="help">e.g. </span>-->
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+
+                                <div class="form-group m-l-10">
+                                    <label>EUR</label>
+                                    <!--<span class="help">e.g. </span>-->
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4 m-t-10 sm-m-t-10 text-right">
+                            <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                            <!--<button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet"> Lưu & yêu cầu
                                                     duyệt
                                                 </button>-->
-                                </div>
-                            </div>
-
                         </div>
-
-
-
+                    </div>
                 </form>
-
-                </div>
-
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal-dialog -->
 </div>
 <!-- END MODAL STICK UP  -->
 
@@ -1491,7 +1469,7 @@
                                 <div class="col-md-4 text-right ">
                                     <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
                                     <button type="button" class="btn btn-danger btn-cons  m-t-25 " data-dismiss="modal"> Hủy
-                                                   
+
                                                 </button>
 
                                 </div>
@@ -1726,7 +1704,7 @@
                                            <option value="">TP Hồ chí minh</option>
                                           <option value="">Hà nội</option>
                                           <option value="">Đà nẵng</option>
-      
+
                                       </select>
                                     </div>
                                 </div>
@@ -1738,7 +1716,7 @@
                                            <option value="">Thủ đức</option>
                                           <option value="">Quận 9</option>
                                           <option value="">Quận 10</option>
-      
+
                                       </select>
                                     </div>
                                 </div>
@@ -1759,7 +1737,7 @@
                                            <option value="">Chi nhánh 1</option>
                                           <option value="">Chi nhánh 2</option>
                                           <option value="">Chi nhánh 3</option>
-      
+
                                       </select>
                                     </div>
                                 </div>
@@ -1791,7 +1769,7 @@
                                 <div class="col-md-6  "></div>
                                 <div class="col-md-6 text-right ">
                                     <button type="button" class="btn btn-danger btn-cons  m-t-5 " data-dismiss="modal"> Hủy
-                                                   
+
                                                 </button>
                                     <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
 
@@ -2715,7 +2693,7 @@
                         <div class="col-md-6 text-right ">
                             <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
                             <button type="button" class="btn btn-danger btn-cons  m-t-25" data-dismiss="" data-toggle="modal" data-target="#modalHuy">Yêu cầu hủy giao dịch
-                                                   
+
                                                 </button>
                             <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet"> Xác nhận giao dịch
                                                 </button>
@@ -3063,7 +3041,7 @@
                         <div class="col-md-4 text-right ">
                             <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
                             <button type="button" class="btn btn-danger btn-cons  m-t-25" data-dismiss="modal">Hủy
-                           
+
                         </div>
 
                     </div>
@@ -3410,7 +3388,7 @@
                                         <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet"> Duyệt
                                                 </button>
                                         <button type="button" class="btn btn-warning btn-cons  m-t-25" data-dismiss="" data-toggle="modal" data-target="#modalTuChoi">Từ chối
-                                                   
+
                                                 </button>
 
                                     </div>
@@ -3612,7 +3590,7 @@
                         </div>
                         <div class="col-md-6 text-right ">
                             <button type="button" class="btn btn-danger btn-cons  m-t-25" data-dismiss="modal">Hủy
-                                                   
+
                                                 </button>
 
                             <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt
@@ -4651,7 +4629,7 @@
                         </div>
                         <div class="col-md-6 text-right ">
                             <button type="button" class="btn btn-warning btn-cons  m-t-25" data-toggle="modal" data-target="#modalTuChoi">Từ chối
-                                                         
+
                                                       </button>
 
                             <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet">Duyệt
@@ -5000,7 +4978,7 @@
                         </div>
                         <div class="col-md-6 text-right ">
                             <button type="button" class="btn btn-danger m-t-25" data-dismiss="modal">Hủy
-                                                         
+
                                                       </button>
                             <button type="button" class="btn btn-warning  m-t-25" data-toggle="modal" data-target="#modalTuChoi">Từ chối
                                                       </button>
@@ -5351,7 +5329,7 @@
                         </div>
                         <div class="col-md-6 text-right ">
                             <button type="button" class="btn btn-danger m-t-25" data-dismiss="modal">Hủy
-                                                         
+
                                                       </button>
 
                             <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet">Lưu &amp; Yêu cầu duyệt
@@ -5704,7 +5682,7 @@
                             <button type="button" class="btn btn-warning btn-cons  m-t-25" data-toggle="modal">Cảnh báo giao dịch rửa tiền
                                  <button type="button" class="btn btn-warning btn-cons  m-t-25" data-toggle="modal" data-target="#modalTuChoi">Từ chối
                                       <button type="button" class="btn btn-primary btn-cons  m-t-25" data-toggle="modal" data-target="">Cập nhật
-                           
+
                         </div>
 
                     </div>
@@ -6050,9 +6028,9 @@
                                     <div class="col-md-8 text-right ">
                                         <!--<button type="button" class="btn btn-warning  m-t-5">Lưu</button>-->
                                         <button type="button" class="btn btn-warning btn-cons  m-t-25" data-toggle="modal">Cảnh báo giao dịch rửa tiền
-                              
+
                                       <button type="button" class="btn btn-primary btn-cons  m-t-25" data-toggle="modal" data-target="">Cập nhật
-                           
+
                         </div>
 
                     </div>
