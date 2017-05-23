@@ -1,3 +1,167 @@
-{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-danhmucquanly"}}
+{{#extend "default"}} {{#content "main"}}
+
+<br>
+<!--Danh sách công văn-->
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Danh sách chứng từ</h3>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="panel panel-default ">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>NGÀY</label>
+                                <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Chi nhánh</label>
+                                <select class="form-control">
+                                    <option value="">Chi nhánh 1</option>
+                                    <option value="">Chi nhánh 2</option>
+                                    <option value="">Chi nhánh 3</option>
+                                    <option value="">Chi nhánh 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Số giao dịch</label>
+                                <input type="text" class="form-control" required="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Trạng thái</label>
+                                <select class="form-control">
+                                    <option value="">Chưa duyệt</option>
+                                    <option value="">Đã duyệt</option>
+                                    <option value="">Trả về</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group text-left">
+                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default ">
+                    <div class="tab-content">
+                        <div class="panel-body">
+                            <div class="panel panel-heading">
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input value="3" id="checkbox1" type="checkbox">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width:7%">Mã nghiệp vụ</th>
+                                            <th style="width:7%">Tên chứng từ</th>
+                                            <th style="width:7%">Số giao dịch </th>
+                                            <th style="width:7%">Số chứng từ</th>
+                                            <th style="width:5%">STT</th>
+                                            <th style="width:7%">CN (TK nợ)</th>
+                                            <th style="width:7%">Loại tiền (TK nợ)</th>
+                                            <th style="width:7%">Số tài khoản (TK nợ)</th>
+                                            <th style="width:7%">CN (TK có)</th>
+                                            <th style="width:7%">Loại tiền (TK có)</th>
+                                            <th style="width:7%">Số tài khoản (TK có)</th>
+                                            <th style="width:7%">Số tiền</th>
+                                            <th style="width:7%">Tỷ giá</th>
+                                            <th style="width:7%">Thành tiền</th>
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="active">
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input value="3" id="checkbox2" type="checkbox">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                            <td class="v-align-middle"></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+
+                                {{>pagination}}
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group text-right">
+
+                                    <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-print"></i> In</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
