@@ -15,7 +15,17 @@
                         <span class=" arrow"></span>
                     </a>
                     <!-- <span class="icon-thumbnail"><i class="pg-grid"></i></span> -->
+                    <li class="{{#ifContain 'doitac-truyvan' layout }} active {{/ifContain}}">
+                        <a href="javascript:;">
+                            <span class="title">Truy vấn đối tác</span> <span class=" arrow"></span> </a>
 
+                        <ul class="sub-menu">
+                            <li class="{{#ifContain 'doitac-truyvan-hanmuc' layout }} active {{/ifContain}}">
+                                <a href="doitac-truyvan-hanmuc.html">Hạn mức</a>
+                                <!--  <span class="icon-thumbnail">1</span> -->
+                            </li>
+                        </ul>
+                    </li>
                     <ul class="sub-menu">
 
                         <li class="{{#ifContain 'doitac-taomoidoitac' layout }} active {{/ifContain}}">
