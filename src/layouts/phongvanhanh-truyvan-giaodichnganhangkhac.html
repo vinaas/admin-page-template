@@ -7,11 +7,8 @@
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
-
             <h3 class="page-title">Báo cáo giao dịch ngân hàng khác</h3>
-
         </div>
-
         <!--<div class="col-sm-5">
             <div class="text-right">
 
@@ -21,14 +18,12 @@
 
             </div>
         </div>-->
-
     </div>
+
     <div class="row">
-
         <div class="panel panel-default ">
-
             <div class="panel-body">
-                <div class="col-md-12">
+                <div class="row">
                     <div class="col-md-4">
                         <div class="form-group ">
                             <label>Tên đối tác</label>
@@ -52,13 +47,12 @@
                                                  <option value="">Hà nội</option>
                                                 <option value="">Hải phòng</option>
                                                 <option value="">Nam định </option>
-                                </select>
-
+                            </select>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Dịch vụ</label>
@@ -66,7 +60,7 @@
                                                  <option value="">PB</option>
                                                 <option value="">PR</option>
                                                 <option value="">AD </option>
-                                </select>
+                            </select>
                         </div>
                     </div>
 
@@ -77,141 +71,129 @@
                                                  <option value="">USD</option>
                                                 <option value="">EURO</option>
                                                 <option value="">VNĐ </option>
-                                </select>
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-
-                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-        </button>
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                         </div>
                     </div>
-
-
-
                 </div>
-
 
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default ">
-                <div class="panel-heading">
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
+                          </button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
+                          </button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
+                          </button>
+                </div>
+                <div class="pull-right m-b-10">
+                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
-                          </button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
-                          </button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
-                          </button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
                     </div>
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
+                </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox1" type="checkbox">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
+
+                                        </th>
+                                        <th style="width:10%">STT</th>
+                                        <th style="width:10%"> Người nhận</th>
+                                        <th style="width:10%">Số tiền </th>
+                                        <th style="width:5%">Loại tiền</th>
+                                        <th style="width:5%">Tỷ giá</th>
+                                        <th style="width:10%">Thành tiền</th>
+
+                                        <th style="width:10%">CMND</th>
+                                        <th style="width:10%">Ngày cấp</th>
+                                        <th style="width:10%">Nơi cấp</th>
+                                        <th style="width:10%"> Mã ngân hàng</th>
+                                        <th style="width:10%"> Ghi chú</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class="active">
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox2" type="checkbox">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle"> Nguyễn văn a</td>
+                                        <td class="v-align-middle"> 300</td>
+                                        <td class="v-align-middle">usd</td>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">300</td>
+                                        <td class="v-align-middle">300</td>
+                                        <td class="v-align-middle">
+                                            12/11/2016
+                                        </td>
+                                        <td class="v-align-middle">
+                                            Lâm đồng
+                                        </td>
+                                        <td class="v-align-middle">
+                                            asv
+                                        </td>
+                                        <td class="v-align-middle">
+                                            giao dịch
+                                        </td>
+
+                                    </tr>
+
+
+
+                                </tbody>
+
+                            </table>
+
+                            {{>pagination}}
 
                         </div>
                     </div>
-
-
-                    <div class="clearfix"></div>
                 </div>
-                <div class="panel-body">
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="table table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th style="width: 50px;padding: 10px 11px !important;">
-                                                <div class="checkbox ">
-                                                    <input value="3" id="checkbox1" type="checkbox">
-                                                    <label for="checkbox1" class="m-r-0"></label>
-                                                </div>
-
-                                            </th>
-                                            <th style="width:10%">STT</th>
-                                            <th style="width:10%"> Người nhận</th>
-                                            <th style="width:10%">Số tiền </th>
-                                            <th style="width:5%">Loại tiền</th>
-                                            <th style="width:5%">Tỷ giá</th>
-                                            <th style="width:10%">Thành tiền</th>
-
-                                            <th style="width:10%">CMND</th>
-                                            <th style="width:10%">Ngày cấp</th>
-                                            <th style="width:10%">Nơi cấp</th>
-                                            <th style="width:10%"> Mã ngân hàng</th>
-                                            <th style="width:10%"> Ghi chú</th>
 
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <tr class="active">
-                                            <td class="v-align-middle">
-                                                <div class="checkbox ">
-                                                    <input value="3" id="checkbox2" type="checkbox">
-                                                    <label for="checkbox2" class="m-r-0"></label>
-                                                </div>
-                                            </td>
-                                            <td class="v-align-middle">1</td>
-                                            <td class="v-align-middle"> Nguyễn văn a</td>
-                                            <td class="v-align-middle"> 300</td>
-                                            <td class="v-align-middle">usd</td>
-                                            <td class="v-align-middle">1</td>
-                                            <td class="v-align-middle">300</td>
-                                            <td class="v-align-middle">300</td>
-                                            <td class="v-align-middle">
-                                                12/11/2016
-                                            </td>
-                                            <td class="v-align-middle">
-                                                Lâm đồng
-                                            </td>
-                                            <td class="v-align-middle">
-                                                asv
-                                            </td>
-                                            <td class="v-align-middle">
-                                                giao dịch
-                                            </td>
-
-                                        </tr>
-
-
-
-                                    </tbody>
-
-                                </table>
-
-                                {{>pagination}}
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
 
 
 
             </div>
 
+
+
         </div>
-
-
     </div>
-
 </div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
