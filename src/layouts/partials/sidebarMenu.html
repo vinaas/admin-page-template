@@ -20,7 +20,7 @@
 
                         <li class="{{#ifContain 'doitac-ID' layout }} active {{/ifContain}}">
                             <a href="javascript:;">
-                        <span class="title">ID đối tác</span> <span class=" arrow"></span></a>
+                                <span class="title">ID đối tác</span> <span class=" arrow"></span></a>
 
                             <ul class="sub-menu">
 
@@ -134,7 +134,7 @@
 
                     <li class="{{#ifContain 'doitac-danhsachdiaban' layout }} active {{/ifContain}}">
                         <a href="javascript:;">
-                        <span class="title">Danh mục địa bàn</span> <span class=" arrow"></span></a>
+                            <span class="title">Danh mục địa bàn</span> <span class=" arrow"></span></a>
 
                         <ul class="sub-menu">
                             <li class="{{#ifContain 'doitac-diaban' layout }} active {{/ifContain}}">
@@ -504,8 +504,21 @@
                     <!--<span class="icon-thumbnail"></span>-->
                     <ul class="sub-menu">
                         <li class="{{#ifContain 'pkt-hachtoantay-tienmattaiquy-ruttgnh' layout }} active {{/ifContain}}">
-                            <a href="pkt-hachtoantay-tienmattaiquy-ruttgnh.html">Tiền mặt tại quỹ</a>
+                            <a href="javascript:;">
+                                <span>Tiền mặt tại quỹ</span>
+                                <span class=" arrow"></span></a>
 
+                            <ul class="sub-menu">
+                                <li class="{{#ifContain 'pkt-hachtoantay-tienmattaiquy-taomoi' layout }} active {{/ifContain}}">
+                                    <a href="pkt-hachtoantay-tienmattaiquy-taomoi.html">Tạo mới tiền mặt tại quỹ</a>
+                                </li>
+                                <li class="{{#ifContain 'pkt-hachtoantay-tienmattaiquy-ruttknh' layout }} active {{/ifContain}}">
+                                    <a href="pkt-hachtoantay-tienmattaiquy-ruttknh.html">Tiền mặt tại quỹ</a>
+                                </li>
+                                <!--<li class="{{#ifContain 'pkt-hachtoantay-tienmattaiquy-noptknh' layout }} active {{/ifContain}}">
+                                    <a href="pkt-hachtoantay-tienmattaiquy-noptknh.html">Nộp tiền mặt</a>
+                                </li>-->
+                            </ul>
                         </li>
 
                         <li class="{{#ifContain 'pkt-hachtoantay-tamung' layout }} active {{/ifContain}}">
