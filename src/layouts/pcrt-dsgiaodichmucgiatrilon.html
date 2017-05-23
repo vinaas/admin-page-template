@@ -9,7 +9,7 @@
 
             <h3 class="page-title">Danh sách mức giá trị giao dịch lớn</h3>
         </div>
-        
+
 
 
     </div>
@@ -20,20 +20,21 @@
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
 
+                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>
+
 
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
-                  
+
 
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane active" id="tabChuaDuyet">
-
+                    <div class="tab-pane active " id="tabChuaDuyet">
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-
-                            <div class="panel-body">
+                            <div class="panel-heading">
 
                                 <div class="pull-right m-b-10">
                                     <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
@@ -47,8 +48,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="panel-body">
                                 <div class="tabler-responsive">
                                     <table class="table table-hover">
@@ -62,8 +61,8 @@
                                                     </div>
 
                                                 </th>
-                                                <th style="width: 15%">STT</th>
-                                                <th style="width: 35%">Ngày cập nhật</th>
+                                                <th style="width: 10%">STT</th>
+                                                <th style="width: 25%">Ngày cập nhật</th>
                                                 <th style="width: 25%">Loại tiền</th>
                                                 <th style="width: 25%">Số tiền</th>
 
@@ -78,50 +77,41 @@
                                                         <label for="checkbox2" class="m-r-0"></label>
                                                     </div>
                                                 </td>
-                                                 <td class="v-align-middle ">
+                                                <td class="v-align-middle ">
                                                     1
                                                 </td>
                                                 <td class="v-align-middle ">
                                                     04/03/2017
                                                 </td>
                                                 <td class="v-align-middle">
-                                                   USD
+                                                    USD
                                                 </td>
                                                 <td class="v-align-middle">
                                                     120000
                                                 </td>
 
-                                                
+
 
                                             </tr>
-                                           
+
+
                                         </tbody>
                                     </table>
-
 
                                     {{>pagination}}
 
                                 </div>
-
-                                <div class="clearfix"></div>
-
-
                             </div>
 
 
-                            <!--sds-->
-
                         </div>
-
                     </div>
 
 
-                    <div class="tab-pane " id="tabTraVe">
+                    <div class="tab-pane " id="tabDaDuyet">
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-
-
-                            <div class="panel-body">
+                            <div class="panel-heading">
 
                                 <div class="pull-right m-b-10">
                                     <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
@@ -148,7 +138,7 @@
                                                     </div>
 
                                                 </th>
-                                                 <th style="width: 10%">STT</th>
+                                                <th style="width: 10%">STT</th>
                                                 <th style="width: 25%">Ngày cập nhật</th>
                                                 <th style="width: 25%">Loại tiền</th>
                                                 <th style="width: 25%">Số tiền</th>
@@ -164,28 +154,107 @@
                                                         <label for="checkbox2" class="m-r-0"></label>
                                                     </div>
                                                 </td>
-                                               <td class="v-align-middle ">
+                                                <td class="v-align-middle ">
                                                     1
                                                 </td>
                                                 <td class="v-align-middle ">
                                                     04/03/2017
                                                 </td>
                                                 <td class="v-align-middle">
-                                                   USD
+                                                    USD
                                                 </td>
                                                 <td class="v-align-middle">
                                                     120000
                                                 </td>
-                                               
+
                                                 <td class="v-align-middle ">
-                                                    <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chinhsuaMucGiaTriGDL"> <i class="fa fa-edit"></i> Sửa</button>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#daduyetMucGiaTriGDL">Xem</a>
                                                 </td>
 
                                             </tr>
-                                          
+
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane " id="tabTraVe">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width: 10%">STT</th>
+                                                <th style="width: 25%">Ngày cập nhật</th>
+                                                <th style="width: 25%">Loại tiền</th>
+                                                <th style="width: 25%">Số tiền</th>
+                                                <th style="width: 10%">Hành động</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    USD
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    120000
+                                                </td>
+
+                                                <td class="v-align-middle ">
+                                                    <div class="btn-group btn-group-sm">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chinhsuaMucGiaTriGDL"> <i class="fa fa-edit"></i> Sửa</button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
 
                                         </tbody>
                                     </table>
@@ -201,7 +270,7 @@
 
 
 
-                   
+
                 </div>
 
 
