@@ -9,7 +9,7 @@
 
             <h3 class="page-title">Danh sách đối tượng cảnh báo</h3>
         </div>
-        
+
 
 
     </div>
@@ -20,10 +20,11 @@
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
 
-
+                    <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã Duyệt</a>
+                    </li>
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
-                  
+
 
                 </ul>
 
@@ -101,22 +102,22 @@
                                                 <td class="v-align-middle ">
                                                     abc
                                                 </td>
-                                                 <td class="v-align-middle ">
+                                                <td class="v-align-middle ">
                                                     09822337
                                                 </td>
-                                                 <td class="v-align-middle ">
+                                                <td class="v-align-middle ">
                                                     Dấu hiệu đáng ngờ 1
                                                 </td>
                                                 <td class="v-align-middle ">
-                                                  Nghi ngờ
+                                                    Nghi ngờ
                                                 </td>
                                                 <td class="v-align-middle ">
-                                                     Còn hiệu lực
-                                                </a>
+                                                    Còn hiệu lực
+                                                    </a>
                                                 </td>
 
                                             </tr>
-                                           
+
                                         </tbody>
                                     </table>
 
@@ -179,9 +180,9 @@
                                                 <th style="width: 10%">Địa chỉ</th>
                                                 <th style="width: 10%">Điện thoại</th>
                                                 <th style="width: 15%">Dấu hiệu đáng ngờ</th>
-                                                 <th style="width: 10%">Loại tiêu chí</th>
-                                                  <th style="width: 10%">Hiệu lực</th>
-                                                    <th style="width: 5%">Hành động</th>
+                                                <th style="width: 10%">Loại tiêu chí</th>
+                                                <th style="width: 10%">Hiệu lực</th>
+                                                <th style="width: 5%">Hành động</th>
 
                                             </tr>
                                         </thead>
@@ -197,7 +198,7 @@
                                                     04/03/2017
                                                 </td>
                                                 <td class="v-align-middle">
-                                                   001
+                                                    001
                                                 </td>
                                                 <td class="v-align-middle">
                                                     ABC
@@ -208,30 +209,133 @@
                                                 </td>
 
                                                 <td class="v-align-middle">
-                                                   abc
+                                                    abc
                                                 </td>
                                                 <td class="v-align-middle">
-                                                   abc
+                                                    abc
                                                 </td>
                                                 <td class="v-align-middle ">
-                                                   Dấu hiệu đáng ngờ 1
+                                                    Dấu hiệu đáng ngờ 1
                                                 </td>
                                                 <td class="v-align-middle r">
-                                                    
+
                                                     Nghi ngờ
                                                 </td>
                                                 <td class="v-align-middle">
-                                                   Còn hiệu lực
+                                                    Còn hiệu lực
                                                 </td>
                                                 <td class="v-align-middle ">
                                                     <div class="btn-group btn-group-sm">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dieuchinhTuongCanhBao"> <i class="fa fa-edit"></i> Sửa</button>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dieuchinhTuongCanhBao"> <i class="fa fa-edit"></i> Sửa</button>
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                    </div>
                                                 </td>
 
                                             </tr>
-                                          
+
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="tabDaDuyet">
+                        {{> formSearch type="normal"}}
+                        <div class="panel panel-default">
+
+
+                            <div class="panel-body">
+
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default"><i
+                                                class="fa fa-chevron-right"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabler-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width: 10%">STT</th>
+                                                <th style="width: 10%">Mã đối tượng</th>
+                                                <th style="width: 10%">Họ tên</th>
+
+                                                <th style="width: 10%">Số giấy tờ</th>
+
+                                                <th style="width: 10%">Địa chỉ</th>
+                                                <th style="width: 10%">Điện thoại</th>
+                                                <th style="width: 15%">Dấu hiệu đáng ngờ</th>
+                                                <th style="width: 10%">Loại tiêu chí</th>
+                                                <th style="width: 10%">Hiệu lực</th>
+                                                <th style="width: 5%">Hành động</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    001
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    tra soát
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    Dấu hiệu đáng ngờ 1
+                                                </td>
+                                                <td class="v-align-middle r">
+
+                                                    Nghi ngờ
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    Còn hiệu lực
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#doituongCanhBao-DaDuyet">Xem</a>
+                                                </td>
+
+                                            </tr>
+
 
                                         </tbody>
                                     </table>
@@ -247,7 +351,7 @@
 
 
 
-                   
+
                 </div>
 
 

@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Danh sách giao dịch đáng ngờ</h3>
+            <h3 class="page-title">Danh sách giao dịch mức giá trị lớn</h3>
 
         </div>
 
@@ -20,15 +20,15 @@
     <div class="row">
 
         <div class="col-md-12">
-
-
             <div class="panel panel-default">
-
-
-
                 <div class="panel-body">
-                     {{>formSearch type="pcrt-3"}}
-         
+                    {{>formSearch type="pcrt-3"}}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+
                     <div class="pull-right m-b-10">
                         <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                         <div class="btn-group">
@@ -44,55 +44,56 @@
 
                     <table class="table table-hover">
                         <thead>
-                        <tr>
-                        <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input value="3" id="checkbox1" type="checkbox">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
+                            <tr>
+                                <th style="width: 50px;padding: 10px 11px !important;">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox1" type="checkbox">
+                                        <label for="checkbox1" class="m-r-0"></label>
+                                    </div>
 
-                                                </th>
-                        <th>STT</th>
-                            <th>Ngày chi trả</th>
-                            <th>Mã số nhận tiền</th>
-                            <th>Đối tác</th>
-                            <th>Tên người nhận</th>
-                            <th>Số giấy tờ</th>
-                           
-                            <th>Loại tiền chi</th>
-                            <th>Số tiền</th>
-                         
+                                </th>
+                                <th style="width:10%">STT</th>
+                                <th style="width:20%">Ngày chi trả</th>
+                                <th style="width:20%">Mã số nhận tiền</th>
+                                <th style="width:20%">Đối tác</th>
+                                <th style="width:10%">Tên người nhận</th>
+                                <th style="width:10%">Số giấy tờ</th>
 
-                        </tr>
+                                <th style="width:10%">Loại tiền chi</th>
+                                <th style="width:10%">Số tiền</th>
+
+
+                            </tr>
                         </thead>
-                        <tbody> <tr>
-                        <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input value="3" id="checkbox2" type="checkbox">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
+                        <tbody>
+                            <tr>
+                                <td class="v-align-middle">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </td>
 
-                            <td class="v-align-middle">1</td>
-                          
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                           
-                        </tr>
-                        
+                                <td class="v-align-middle">1</td>
+
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+                                <td class="v-align-middle"></td>
+
+                            </tr>
+
 
                         </tbody>
                     </table>
 
 
 
-                        {{>pagination}}
+                    {{>pagination}}
 
 
                 </div>

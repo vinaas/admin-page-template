@@ -1,0 +1,659 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-hoahongthuhuong"}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default">
+
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabNhap" data-toggle="tab" role="tab">Nhập dữ liệu</a>
+                    </li>
+
+                    <li class=""><a href="#tabXuLy" data-toggle="tab" role="tab">Xử lý dữ liệu</a>
+                    </li>
+
+
+                    <li class=""><a href="#tabLanhDaoDuyet" data-toggle="tab" role="tab">Lãnh đạo duyệt</a>
+                    </li>
+
+                    <li><a href="#tabDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
+                    </li>
+
+
+                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabNhap">
+
+                        <div class="panel-body">
+
+
+
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <div class="row m-b-15">
+                                        <div class="col-md-4 name "> Ngày : </div>
+                                        <div class="col-md-8 value">
+
+                                            <b>12/03/2017</b>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row  m-b-15">
+
+                                        <div class="col-md-4 name m-t-5">Các loại tiền chi : </div>
+                                        <div class="col-md-8 value">
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>DS Loại tiền</label>
+                                                        <select class="form-control">
+                                                    <option value="">USA</option>
+                                                    <option value="">CAD</option>
+                                                    <option value="">VND</option>
+                                                </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Mức phí chi trả ngoại tệ (%)</label>
+                                                        <input type="text " class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-2 text-right">
+                                                    <a href="" class="btn btn-primary m-b-20 m-t-25"> <i class="fa fa-plus"></i> </a>
+                                                </div>
+
+                                            </div>
+
+                                            <table class="table table-hover table-small" id="">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Loại tiền chi</th>
+                                                        <th>Mức phí chi trả ngoại tệ</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="v-align-middle"> USD </td>
+
+                                                        <td class="v-align-middle bold">5000</td>
+                                                        <td><a href="" class="text-danger">xóa</a></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td class="v-align-middle"> EUR </td>
+
+                                                        <td class="v-align-middle bold">7000</td>
+
+                                                        <td><a href="" class="text-danger">xóa</a></td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row  m-b-15">
+
+                                        <div class="col-md-4 name m-t-5">Tên chi nhánh : </div>
+                                        <div class="col-md-8 value">
+
+                                            <div class="row">
+
+                                                <div class="col-sm-10">
+                                                    <div class="form-group">
+                                                        <label>Danh sách địa bàn</label>
+
+                                                        <select class="full-width " data-init-plugin="select2">
+                                                            <optgroup label="Châu Á">
+                                                                <option value="AK">Thái Lan</option>
+                                                                <option value="HI">Philippin</option>
+                                                            </optgroup>
+
+                                                            <optgroup label="Châu Âu">
+                                                                <option value="CA">Canada</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+
+                                                            <optgroup label="Châu Úc">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+
+                                                            </optgroup>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-2 text-right">
+                                                    <a href="" class="btn btn-primary m-b-20 m-t-25"> <i class="fa fa-plus"></i> </a>
+                                                </div>
+
+                                            </div>
+
+                                            <table class="table table-hover table-small" id="">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên chi nhánh</th>
+                                                        <th>Mã chi nhánh</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="v-align-middle"> Chi nhanh 1 </td>
+
+                                                        <td class="v-align-middle bold">abc</td>
+                                                        <td><a href="" class="text-danger">xóa</a></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td class="v-align-middle"> Chi nhanh 2 </td>
+
+                                                        <td class="v-align-middle bold">xyz</td>
+
+                                                        <td><a href="" class="text-danger">xóa</a></td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
+                                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary  m-t-5">Áp dụng</button>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+                                <div class="col-sm-12">
+                                    <hr>
+
+                                    <h5>Danh sách áp dụng</h5>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+
+                                            <div class="table-responsive">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+
+
+                                                            <th>Tên chi nhánh </th>
+                                                            <th>Mã chi nhánh</th>
+                                                            <th>USD</th>
+                                                            <th>EUR</th>
+                                                            <th>CAD </th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td class="v-align-middle ">
+                                                                Chi nhanh 1
+                                                            </td>
+
+                                                            <td class="v-align-middle "> abc
+                                                            </td>
+
+                                                            <td class="v-align-middle ">10
+                                                            </td>
+
+                                                            <td class="v-align-middle ">20
+                                                            </td>
+
+                                                            <td class="v-align-middle ">30
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td class="v-align-middle ">
+                                                                Chi nhanh 2
+                                                            </td>
+
+                                                            <td class="v-align-middle "> xyz
+                                                            </td>
+
+                                                            <td class="v-align-middle ">10
+                                                            </td>
+
+                                                            <td class="v-align-middle ">20
+                                                            </td>
+
+                                                            <td class="v-align-middle ">30
+                                                            </td>
+
+                                                        </tr>
+
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-12 text-center">
+                                    <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                                    <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tab-pane " id="tabXuLy">
+
+                        <form role="form" lpformnum="2" class="form-filter">
+
+                            <div class="form-group long">
+                                <label>THEO NGÀY</label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input-sm form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input-sm form-control" name="end" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn
+                            </button>
+
+                            </div>
+                        </form>
+
+                        <br>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                            <!--<button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>-->
+
+                        </div>
+
+
+
+
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                          </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                          </button>
+
+                            </div>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+
+                                    <th>Tên chi nhánh</th>
+                                    <th>USD</th>
+                                    <th>EUR</th>
+                                    <th>CAD</th>
+                                    <th>Phí chi trả</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ha Noi</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Thanh hoa</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+
+                    <div class="tab-pane " id="tabLanhDaoDuyet">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+
+                                    <th>Tên chi nhánh </th>
+                                    <th>Mã chi nhánh</th>
+                                    <th>USD</th>
+                                    <th>EUR</th>
+                                    <th>CAD </th>
+                                    <th>Hành động </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 1
+                                    </td>
+
+                                    <td class="v-align-middle "> abc
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+                                    <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 2
+                                    </td>
+
+                                    <td class="v-align-middle "> xyz
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+
+                                     <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="tab-pane " id="tabDuyet">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+
+                                    <th>Tên chi nhánh </th>
+                                    <th>Mã chi nhánh</th>
+                                    <th>USD</th>
+                                    <th>EUR</th>
+                                    <th>CAD </th>
+                                    <th>Hành động </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 1
+                                    </td>
+
+                                    <td class="v-align-middle "> abc
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+                                    <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 2
+                                    </td>
+
+                                    <td class="v-align-middle "> xyz
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+
+                                     <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="tab-pane " id="tabTraVe">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+
+                                    <th>Tên chi nhánh </th>
+                                    <th>Mã chi nhánh</th>
+                                    <th>USD</th>
+                                    <th>EUR</th>
+                                    <th>CAD </th>
+                                    <th>Hành động </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 1
+                                    </td>
+
+                                    <td class="v-align-middle "> abc
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+                                    <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td class="v-align-middle ">
+                                        Chi nhanh 2
+                                    </td>
+
+                                    <td class="v-align-middle "> xyz
+                                    </td>
+
+                                    <td class="v-align-middle ">10
+                                    </td>
+
+                                    <td class="v-align-middle ">20
+                                    </td>
+
+                                    <td class="v-align-middle ">30
+                                    </td>
+
+                                     <td>
+
+                                        <div class="btn-group btn-group-sm">
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

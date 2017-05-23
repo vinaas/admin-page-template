@@ -1,15 +1,13 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Đối xuất",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chuyendoingoaite.html",
+    "layout": "doitac-doixuat.html",
     "permalink" : false,
-    "activeLink" : "pkt"
+    "activeLink" : "doitac"
 }
 ---
-
-
 
 ### Danh sách các link trong file
 - [Click Here](./blog-list.html)

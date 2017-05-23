@@ -13,75 +13,93 @@
     </div>
 
     <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{>formSearch type="pcrt-2"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                <div class="pull-right m-b-10">
+                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
 
-
-        <div class="panel panel-default">
-
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
             <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%">STT</th>
+                                        <th style="width: 10%">Mã đối tượng </th>
+                                        <th style="width: 10%">Họ tên</th>
+                                        <th style="width: 10%">Số giấy tờ</th>
+                                        <th style="width: 10%">Địa chỉ</th>
+                                        <th style="width: 10%">Điện thoại</th>
+                                        <th style="width: 10%">Dấu hiệu đáng ngờ</th>
+                                        <th style="width: 10%">Loại tiêu chí</th>
+                                        <th style="width: 10%">Hiệu lực</th>
+                                        <th style="width: 5%">Công văn liên quan</th>
+                                        <th style="width: 10%">Hành động</th>
 
-                {{>formSearch type="pcrt-2"}}
-                <div class="col-md-12">
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <tr>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">0001</td>
+                                        <td class="v-align-middle">Nguyen Van A</td>
+                                        <td class="v-align-middle">240813112</td>
+                                        <td class="v-align-middle">CMND</td>
+                                        <td class="v-align-middle">Tan Binh </td>
+                                        <td class="v-align-middle"> Dau hieu dang ngo 1</td>
+                                        <td class="v-align-middle">Nghi ngờ</td>
+                                        <td class="v-align-middle">Còn hiệu lực</td>
+                                        <td class="v-align-middle">
+                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#danhsachcongvan-lienquan">Xem</a>
+                                        </td>
+                                        <td class="v-align-middle">
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
+                                    </button>
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                                    </button>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+                            {{>pagination}}
 
                         </div>
                     </div>
-                    <table class="table">
-                        <thead>
-                            <tr><th style="width: 10%">STT</th>
-                                <th style="width: 10%">Mã đối tượng </th>
-                                <th style="width: 10%">Họ tên</th>
-                                <th style="width: 10%">Số giấy tờ</th>
-                                <th style="width: 10%">Địa chỉ</th>
-                                <th style="width: 10%">Điện thoại</th>
-                                <th style="width: 10%">Dấu hiệu đáng ngờ</th>
-                                <th style="width: 10%">Loại tiêu chí</th>
-                                <th style="width: 10%">Hiệu lực</th>
-                                <th style="width: 10%">Hành động</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr><td class="v-align-middle">1</td>
-                                <td class="v-align-middle">0001</td>
-                                <td class="v-align-middle">Nguyen Van A</td>
-                                <td class="v-align-middle">240813112</td>
-                                <td class="v-align-middle">CMND</td>
-                                <td class="v-align-middle">Tan Binh </td>
-                                <td class="v-align-middle"> Dau hieu dang ngo 1</td>
-                                <td class="v-align-middle">Nghi ngờ</td>
-                                <td class="v-align-middle">Còn hiệu lực</td>
-                                <td class="v-align-middle">
-                                 <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                                    </button>
-
-                                </div>
-                            </td>
-                        </tr>  
-                    </tbody>
-                </table>
 
 
 
-                {{>pagination}}
-
-
+                </div>
             </div>
+
         </div>
-
     </div>
-</div>
-
 </div>
 
 

@@ -1,14 +1,13 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Chi phí lương",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chuyendoingoaite.html",
+    "layout": "pkt-httd-chiphiluong.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
 ---
-
 
 
 ### Danh sách các link trong file
