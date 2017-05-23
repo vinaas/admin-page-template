@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Xác nhận giao dịch chuyển khoản",
     "slug": "",
     "description": "Index Page",
     "layout": "pkt-httd-chitrangoaite-xacnhangiaodich.html",

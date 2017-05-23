@@ -1,0 +1,203 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-chitrangoaite"}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">{{title}}</h3>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+            <div class="panel panel-default ">
+
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabDanhsach" data-toggle="tab" role="tab">Danh sách giao dịch</a>
+                    </li>
+
+                    <li class=""><a href="#tabHistory" data-toggle="tab" role="tab">Lịch sử</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabDanhsach">
+
+                        <div class="panel-body">
+
+                            <div class="row">
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label>Tên đối tác</label>
+
+                                        <input type="text" class="form-control" name="" value="">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+
+                                        <button class="btn btn-default btn-cons m-t-25" type="button"><i class="fa fa-filter"></i> Lọc
+        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                                </div>
+                            </div>
+
+
+
+                            <h5>Danh sách <span class="semi-bold">đối tác</span></h5>
+
+
+
+
+
+
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox1">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
+
+                                        </th>
+                                        <th>STT</th>
+                                        <th>Ngày xuất</th>
+                                        <th>Tên đối tác</th>
+                                        <th>Đợt</th>
+                                        <th>Số hồ sơ</th>
+                                    
+                                        <th>Chi tiết</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">16/03/2017</td>
+                                        <td class="v-align-middle">Mayzus</td>
+                                        <td class="v-align-middle">15032160-AD-01</td>
+                                        <td class="v-align-middle">100</td>
+                                       
+                                        <td class="v-align-middle">
+                                            <a href="" class="text-primary" data-target="#pkt-chitrangoaite" data-toggle="modal">Xem</a>
+                                        </td>
+                                    </tr>
+                                
+
+
+                                </tbody>
+                            </table>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <h5>Chọn ngân hàng sử dụng</h5>
+                                </div>
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+
+                          <option value="usd">Ngân hàng 1</option>
+                          <option value="euro">Ngân hàng 2</option>
+                          <option value="cad">Ngân hàng 3</option>
+
+
+                      </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Thực hiện
+                                            </button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            {{>pagination}}
+                            
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane " id="tabHistory">
+                        <div class="panel-body">
+
+                            <h5>Lịch sử giao dịch</h5>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

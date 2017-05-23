@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Chi trả ngoại tệ",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chitrangoaite-xacnhangiaodich.html",
+    "layout": "pkt-httd-chitrangoaite-doitac.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
