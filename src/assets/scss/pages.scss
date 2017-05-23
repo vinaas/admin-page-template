@@ -51,166 +51,166 @@ Generated From SASS
 @import "aggrid";
 @import "auModal";
 .portlet-progress.large {
-  >.progress-circle-indeterminate {
-    width: 90px;
-    height: 90px;
-    margin-left: -45px;
-    margin-top: -45px;
-  }
-  .loading-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    font-weight: bold;
-  }
+    >.progress-circle-indeterminate {
+        width: 90px;
+        height: 90px;
+        margin-left: -45px;
+        margin-top: -45px;
+    }
+    .loading-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
 
 .form-filter {
-  margin: 0 -10px;
-  .form-group {
-    width: 20%;
-    padding: 0 10px;
-    float: left;
-    &.long {
-      width: 30%;
+    margin: 0 -10px;
+    .form-group {
+        width: 20%;
+        padding: 0 10px;
+        float: left;
+        &.long {
+            width: 30%;
+        }
     }
-  }
 }
 
 .modal,
 .modal.fade.in {
-  background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .select2-container--open {
-  z-index: 9999;
+    z-index: 9999;
 }
 
 .select2-small {
-  .select2-container .select2-selection.select2-selection--single {
-    height: 21px;
-    padding: 0;
-    .select2-selection__rendered {
-      line-height: 17px;
-      padding: 0;
+    .select2-container .select2-selection.select2-selection--single {
+        height: 21px;
+        padding: 0;
+        .select2-selection__rendered {
+            line-height: 17px;
+            padding: 0;
+        }
     }
-  }
 }
 
-.brand{
-  image-rendering: -webkit-optimize-contrast;
+.brand {
+    image-rendering: -webkit-optimize-contrast;
 }
 
-.sub-menu{
-  .Sub ,.sub{
-    padding: 0 15px 0 10px;
-    list-style: none;
-    // list-style: none;
-  }
+.sub-menu {
+    .Sub,
+    .sub {
+        padding: 0 15px 0 10px;
+        list-style: none;
+        // list-style: none;
+    }
 }
 
 .table-small {
-  margin-bottom: 0;
-  &.table thead tr th {
-    text-transform: capitalize;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
+    margin-bottom: 0;
+    &.table thead tr th {
+        text-transform: capitalize;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
 }
 
-.modal .form-group-attached, .modal .form-inline {
-  padding: 5px 15px;
+.modal .form-group-attached,
+.modal .form-inline {
+    padding: 5px 15px;
 }
-
 
 .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 // .modal{
 .select2-drop-active {
-  z-index: 1051;
+    z-index: 1051;
 }
 
 .datepicker.dropdown-menu {
-  z-index: 1051 !important;
+    z-index: 1051 !important;
 }
 
 .select2-drop-mask {
-  z-index: 1050;
+    z-index: 1050;
 }
 
 .cs-skin-slide.cs-active {
-  z-index: 1050;
+    z-index: 1050;
 }
 
 // }
 .table {
-  .radio label,
-  .checkbox label {
-    margin-right: 0
-  }
+    .radio label,
+    .checkbox label {
+        margin-right: 0
+    }
 }
 
 .static-info {
-  margin-bottom: 10px;
-  .name {}
-  .value {
-    font-weight: bold;
-  }
+    margin-bottom: 10px;
+    .name {}
+    .value {
+        font-weight: bold;
+    }
 }
 
-.panel-body .static-info:last-child{
-  margin-bottom: 0
+.panel-body .static-info:last-child {
+    margin-bottom: 0
 }
 
-.form-group .radio label,.form-group  .checkbox label {
+.form-group .radio label,
+.form-group .checkbox label {
     font-size: 13px;
     font-weight: normal;
     text-transform: initial;
 }
 
-.input-black{
-  color: black !important;
+.input-black {
+    color: black !important;
 }
 
 .form-group-default.disabled input {
     opacity: 1;
 }
 
-table .btn-group,table .btn-group-vertical {
-
-  min-width: 210px;
+table .btn-group,
+table .btn-group-vertical {
+    min-width: 210px;
 }
 
 .form-inline .form-group {
-  display: inline-block;
-  margin-bottom: 0;
-  vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
 }
 
 .form-inline .form-control {
-  display: block;
-  margin-bottom: 0;
-  min-width: 160px;
+    display: block;
+    margin-bottom: 0;
+    min-width: 160px;
 }
-
-
 
 // .page-sidebar{
 //       transform: translate3d(210px, 0px, 0px) !important;
 // }
-
-.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li > a{
-      width: 100%;
+.page-sidebar .sidebar-menu .menu-items>li ul.sub-menu>li>a {
+    width: 100%;
 }
 
-.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li > a {
+.page-sidebar .sidebar-menu .menu-items>li ul.sub-menu>li>a {
     padding: 0px 0px;
-  
 }
+
+//Thiet ke table nhập lieu mercel

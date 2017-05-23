@@ -60,8 +60,8 @@
                                     </div>
                                 </div>
 
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
+                                <div class="table table-responsive">
+                                    <table class="table ">
                                         <thead>
                                             <tr>
 
@@ -134,8 +134,8 @@
                                     </table>
 
                                     {{>pagination}}
-                                </div>
 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,107 +144,109 @@
                     <div class="tab-pane " id="tabDaDuyet">
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-body">
+                                <div class="panel-heading">
 
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
-                          </button>
-
-                                    <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
-                          </button>
-
-                                    <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                          </button>
-
-                                </div>
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                                    </div>
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                                         </button>
-                                        <button type="button" class="btn btn-default"><i
+                                            <button type="button" class="btn btn-default"><i
                                                 class="fa fa-chevron-right"></i>
                                         </button>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
+                                <div class="table table-responsive">
+                                    <table class="table ">
+                                        <thead>
+                                            <tr>
 
-                                            <th style="width: 50px;padding: 10px 11px !important;">
-                                                <div class="checkbox ">
-                                                    <input type="checkbox" value="3" id="checkbox1">
-                                                    <label for="checkbox1" class="m-r-0"></label>
-                                                </div>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
 
-                                            </th>
-                                            <th style="width: 10%">STT</th>
-                                            <th style="width: 10%">Nghiệp vụ</th>
-                                            <th style="width: 20%">Ngày</th>
-                                            <th style="width: 10%">Chi nhánh</th>
-                                            <th style="width: 10%">Hình thức thanh toán</th>
-                                            <th style="width: 10%">Ngân hàng</th>
-                                            <th style="width: 10%">Tên NV/KH</th>
-                                            <th style="width: 10%">Loại tiền</th>
+                                                </th>
+                                                <th style="width: 10%">STT</th>
+                                                <th style="width: 10%">Nghiệp vụ</th>
+                                                <th style="width: 20%">Ngày</th>
+                                                <th style="width: 10%">Chi nhánh</th>
+                                                <th style="width: 10%">Hình thức thanh toán</th>
+                                                <th style="width: 10%">Ngân hàng</th>
+                                                <th style="width: 10%">Tên NV/KH</th>
+                                                <th style="width: 10%">Loại tiền</th>
 
-                                            <th style="width: 10%">Chi tiết</th>
-
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="v-align-middle">
-                                                <div class="checkbox ">
-                                                    <input type="checkbox" value="3" id="checkbox2">
-                                                    <label for="checkbox2" class="m-r-0"></label>
-                                                </div>
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                1
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                Rut tiền gửi ngân hàng
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                04/03/2017
-                                            </td>
+                                                <th style="width: 10%">Chi tiết</th>
 
 
-
-                                            <td class="v-align-middle">
-                                                ABC
-                                            </td>
-                                            <td class="v-align-middle">
-                                                TG
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                abc
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                abc
-                                            </td>
-                                            <td class="v-align-middle">
-                                                USD,EURO
-                                            </td>
-                                            <td class="v-align-middle">
-                                                <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#pkt-ruttaikhoannganhang-daduyet">Xem</a>
-                                            </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    Rut tiền gửi ngân hàng
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
 
 
 
-                                        </tr>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    TG
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    USD,EURO
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#pkt-ruttaikhoannganhang-daduyet">Xem</a>
+                                                </td>
 
 
-                                    </tbody>
-                                </table>
 
-                                {{>pagination}}
+                                            </tr>
 
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
                             </div>
 
                         </div>
@@ -254,107 +256,109 @@
                     <div class="tab-pane " id="tabDuyet">
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-body">
+                                <div class="panel-heading">
 
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
-                          </button>
-
-                                    <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
-                          </button>
-
-                                    <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                          </button>
-
-                                </div>
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                                    </div>
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                                         </button>
-                                        <button type="button" class="btn btn-default"><i
+                                            <button type="button" class="btn btn-default"><i
                                                 class="fa fa-chevron-right"></i>
                                         </button>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
+                                <div class="table table-responsive">
+                                    <table class="table ">
+                                        <thead>
+                                            <tr>
 
-                                            <th style="width: 50px;padding: 10px 11px !important;">
-                                                <div class="checkbox ">
-                                                    <input type="checkbox" value="3" id="checkbox1">
-                                                    <label for="checkbox1" class="m-r-0"></label>
-                                                </div>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
 
-                                            </th>
-                                            <th style="width: 10%">STT</th>
-                                            <th style="width: 10%">Nghiệp vụ</th>
-                                            <th style="width: 20%">Ngày</th>
-                                            <th style="width: 10%">Chi nhánh</th>
-                                            <th style="width: 10%">Hình thức thanh toán</th>
-                                            <th style="width: 10%">Ngân hàng</th>
-                                            <th style="width: 10%">Tên NV/KH</th>
-                                            <th style="width: 10%">Loại tiền</th>
+                                                </th>
+                                                <th style="width: 10%">STT</th>
+                                                <th style="width: 10%">Nghiệp vụ</th>
+                                                <th style="width: 20%">Ngày</th>
+                                                <th style="width: 10%">Chi nhánh</th>
+                                                <th style="width: 10%">Hình thức thanh toán</th>
+                                                <th style="width: 10%">Ngân hàng</th>
+                                                <th style="width: 10%">Tên NV/KH</th>
+                                                <th style="width: 10%">Loại tiền</th>
 
-                                            <th style="width: 10%">Chi tiết</th>
-
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="v-align-middle">
-                                                <div class="checkbox ">
-                                                    <input type="checkbox" value="3" id="checkbox2">
-                                                    <label for="checkbox2" class="m-r-0"></label>
-                                                </div>
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                1
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                Rut tiền gửi ngân hàng
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                04/03/2017
-                                            </td>
+                                                <th style="width: 10%">Chi tiết</th>
 
 
-
-                                            <td class="v-align-middle">
-                                                ABC
-                                            </td>
-                                            <td class="v-align-middle">
-                                                TG
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                abc
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                abc
-                                            </td>
-                                            <td class="v-align-middle">
-                                                USD,EURO
-                                            </td>
-                                            <td class="v-align-middle">
-                                                <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#pkt-ruttaikhoannganhang-duyet">Xem</a>
-                                            </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    Rut tiền gửi ngân hàng
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
 
 
 
-                                        </tr>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    TG
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    abc
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    USD,EURO
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#pkt-ruttaikhoannganhang-duyet">Xem</a>
+                                                </td>
 
 
-                                    </tbody>
-                                </table>
 
-                                {{>pagination}}
+                                            </tr>
 
+
+                                        </tbody>
+                                    </table>
+
+                                    {{>pagination}}
+
+                                </div>
                             </div>
                         </div>
 
@@ -362,11 +366,6 @@
 
                 </div>
             </div>
-
-
-
-
-
 
         </div>
     </div>
