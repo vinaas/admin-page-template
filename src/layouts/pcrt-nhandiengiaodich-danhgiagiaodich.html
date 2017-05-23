@@ -15,80 +15,97 @@
 
     </div>
 
-
     <div class="row">
-
         <div class="col-md-12">
-
-
             <div class="panel panel-default">
-
-
                 <div class="panel-body">
 
                     {{>formSearch type="pcrt-7"}}
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel panel-heading">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                            <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                        </div>
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                             </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                             </button>
 
+                            </div>
                         </div>
                     </div>
                     <table class="table table-hover">
                         <thead>
-                        <tr>
-                             <th style="width: 50px;padding: 10px 11px !important;">
+                            <tr>
+                                <th style="width: 50px;padding: 10px 11px !important;">
                                     <div class="checkbox ">
                                         <input value="3" id="checkbox1" type="checkbox">
                                         <label for="checkbox1" class="m-r-0"></label>
                                     </div>
 
                                 </th>
-                             <th style="width: 10%">STT</th>
-                            <th style="width: 20%">Ngày</th>
-                            <th style="width: 20%"> Giao dịch</th>
-                            <th style="width: 25%"> Tình trạng</th>
-                            <th style="width: 25%"> Hành động</th>
-                        </tr>
+                                <th style="width: 10%">STT</th>
+                                <th style="width: 20%">Ngày</th>
+                                <th style="width: 20%"> Giao dịch</th>
+                                <th style="width: 25%"> Tình trạng</th>
+                                <th style="width: 25%"> Hành động</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                        <td class="v-align-middle">
-                                <div class="checkbox ">
-                                    <input value="3" id="checkbox2" type="checkbox">
-                                    <label for="checkbox2" class="m-r-0"></label>
-                                </div>
-                            </td>
-                             <td class="v-align-middle">1</td>
-                            <td class="v-align-middle">12/03/2017</td>
-                            <td class="v-align-middle"> 0001</td>
-                            <td class="v-align-middle"> Chưa chi</td>
-                            <td class="v-align-middle">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#chitietDanhGiaGiaoDich">Đánh giá PCRT
+                            <tr>
+                                <td class="v-align-middle">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </td>
+                                <td class="v-align-middle">1</td>
+                                <td class="v-align-middle">12/03/2017</td>
+                                <td class="v-align-middle"> 0001</td>
+                                <td class="v-align-middle"> Chưa chi</td>
+                                <td class="v-align-middle">
+                                    <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chitietDanhGiaGiaoDich">Đánh giá PCRT
                                 </button>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td class="v-align-middle">
-                                <div class="checkbox ">
-                                    <input value="3" id="checkbox2" type="checkbox">
-                                    <label for="checkbox2" class="m-r-0"></label>
-                                </div>
-                            </td>
-                            <td class="v-align-middle">2</td>
-                            <td class="v-align-middle">12/03/2017</td>
-                            <td class="v-align-middle"> 0002</td>
-                            <td class="v-align-middle"> Đã chi</td>
-                            <td class="v-align-middle">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#chitietDanhGiaGiaoDich">Đánh giá PCRT
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="v-align-middle">
+                                    <div class="checkbox ">
+                                        <input value="3" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="m-r-0"></label>
+                                    </div>
+                                </td>
+                                <td class="v-align-middle">2</td>
+                                <td class="v-align-middle">12/03/2017</td>
+                                <td class="v-align-middle"> 0002</td>
+                                <td class="v-align-middle"> Đã chi</td>
+                                <td class="v-align-middle">
+                                    <div class="btn-group btn-group-sm">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chitietDanhGiaGiaoDich">Đánh giá PCRT
                                 </button>
-                            </td>
-                        </tr>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     {{>pagination}}

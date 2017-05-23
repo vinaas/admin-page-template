@@ -7,118 +7,81 @@
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
-
             <h3 class="page-title">{{title}}</h3>
-
         </div>
-
-
     </div>
-
-
-
     <div class="row">
-
         <div class="col-md-12">
 
-
-
-
-            <div class="panel panel-default">
-
-
-
+            <div class="panel panel-default ">
                 <div class="panel-body">
-
                     {{>formSearch type="pcrt-3"}}
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel panel-heading">
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                             </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                             </button>
 
+                            </div>
                         </div>
                     </div>
+                    <div class="table table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width:5%">STT</th>
+                                    <th style="width:10%">Mã số nhận biết</th>
+                                    <th style="width:10%">Đối tác</th>
+                                    <th style="width:10%">Ngày đánh giá giao dịch</th>
+                                    <th style="width:10%">Tên người nhận</th>
+                                    <th style="width:10%">Số giấy tờ</th>
+                                    <th style="width:10%">Địa chỉ</th>
+                                    <th style="width:5%">Loại tiền chi</th>
+                                    <th style="width:5%">Số tiền</th>
+                                    <th style="width:10%">Dấu hiệu đáng ngờ</th>
+                                    <th style="width:5%">Lý do nghi ngờ</th>
+                                    <th style="width:10%">Diễn giải</th>
 
-
-
-                    <table class="table table-hover">
-                        <thead>
-                        <tr><th>STT</th>
-                            <th>Mã số nhận biết</th>
-                            <th>Đối tác</th>
-                            <th>Ngày đánh giá giao dịch</th>
-                            <th>Tên người nhận</th>
-                            <th>Số giấy tờ</th>
-                            <th>Địa chỉ</th>
-                            <th>Loại tiền chi</th>
-                            <th>Số tiền</th>
-                            <th>Dấu hiệu đáng ngờ</th>
-                            <th>Lý do nghi ngờ</th>
-                            <th>Diễn giải</th>
-
-                        </tr>
-                        </thead>
-                        <tbody> <tr><td class="v-align-middle">1</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                        </tr>
-                        <tr><td class="v-align-middle">2</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                        </tr>
-                        <tr><td class="v-align-middle">3</td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                            <td class="v-align-middle"></td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-
-
-
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">1</td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+                                </tr>
+                            </tbody>
+                        </table>
                         {{>pagination}}
-
-
+                    </div>
                 </div>
+
             </div>
 
         </div>
 
-
-
-
     </div>
-
 </div>
 
 

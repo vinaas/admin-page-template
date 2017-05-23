@@ -3,8 +3,9 @@
     "title": "Đối xuất",
     "slug": "",
     "description": "Index Page",
-    "layout": "doitac-doixuat.html",
+    "layout": "doitac-doisoat.html",
     "permalink" : false,
+    
     "activeLink" : "doitac"
 }
 ---
