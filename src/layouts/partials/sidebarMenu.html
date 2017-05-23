@@ -15,7 +15,17 @@
                         <span class=" arrow"></span>
                     </a>
                     <!-- <span class="icon-thumbnail"><i class="pg-grid"></i></span> -->
+                    <li class="{{#ifContain 'doitac-truyvan' layout }} active {{/ifContain}}">
+                        <a href="javascript:;">
+                            <span class="title">Truy vấn đối tác</span> <span class=" arrow"></span> </a>
 
+                        <ul class="sub-menu">
+                            <li class="{{#ifContain 'doitac-truyvan-hanmuc' layout }} active {{/ifContain}}">
+                                <a href="doitac-truyvan-hanmuc.html">Hạn mức</a>
+                                <!--  <span class="icon-thumbnail">1</span> -->
+                            </li>
+                        </ul>
+                    </li>
                     <ul class="sub-menu">
 
                         <li class="{{#ifContain 'doitac-ID' layout }} active {{/ifContain}}">
@@ -488,7 +498,7 @@
 
                         <li> <a href="pkt-httd-chitrangoaite-xacnhangiaodich.html">Chi trả ngoại tệ</a> </li>
 
-                        <li> <a href="">Hoa hồng thụ hưởng</a> </li>
+                        <li> <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">Hoa hồng thụ hưởng</a> </li>
 
                         <li> <a href="">Chi phí lương</a> </li>
 

@@ -564,3 +564,41 @@
 </div>
 
 {{/ifEqual}}
+
+
+ {{#ifEqual type "pkt-hoahongthuhuong"}}
+
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'pkt-httd-hoahongthuhuong-tonghopchitra'}} active {{/ifEqual}}">
+                <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">
+                    <span class="">Tổng hợp chi trả ngoại tệ của OCB</span>
+
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'pkt-httd-hoahongthuhuong-doitacnganhang'}} active {{/ifEqual}}">
+                <a href="pkt-httd-hoahongthuhuong-doitacnganhang.html">
+                    <span class="">Đối tác ngân hàng</span>
+
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'pkt-httd-hoahongthuhuong-doitaccongty'}} active {{/ifEqual}}">
+                <a href="pkt-httd-hoahongthuhuong-doitaccongty.html">
+                    <span class="">Đối tác công ty</span>
+
+                </a>
+            </li>
+    
+
+        </ul>
+    </div>
+</div>
+
+{{/ifEqual}}

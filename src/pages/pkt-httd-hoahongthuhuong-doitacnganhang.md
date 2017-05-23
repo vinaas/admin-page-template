@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Đối tác ngân hàng",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chuyendoingoaite.html",
+    "layout": "pkt-httd-hoahongthuhuong-doitacnganhang.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
