@@ -3,7 +3,7 @@
     "title": "Tiền mặt tại quỹ - Rút TGNH",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tienmattaiquy-ruttgnh.html",
+    "layout": "pkt-hachtoantay-tienmattaiquy-taomoi.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
