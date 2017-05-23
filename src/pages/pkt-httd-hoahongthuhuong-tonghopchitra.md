@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Chuyển đổi ngoại tệ",
+    "title": "Tổng hợp chi trả ngoại tệ của OCB",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chuyendoingoaite.html",
+    "layout": "pkt-httd-hoahongthuhuong-tonghopchitra.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
