@@ -222,9 +222,6 @@
                         <li class="{{#ifContain 'phongvanhanh-quanlygiaodich-phuchoigiaodich' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-quanlygiaodich-phuchoigiaodich.html">Phục hồi giao dịch</a>
                         </li>
-                        <li class="{{#ifContain 'phongvanhanh-quanlygiaodich-duyetphuchoigiaodich' layout }} active {{/ifContain}}">
-                            <a href="phongvanhanh-quanlygiaodich-duyetphuchoigiaodich.html">Duyệt Phục hồi giao dịch</a>
-                        </li>
                     </ul>
                 </li>
 
@@ -236,11 +233,6 @@
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichquay' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-giaodichtaiquay.html">Giao dịch tại quầy</a>
                         </li>
-
-                        <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-duyetgiaodichtaiquay' layout }} active {{/ifContain}}">
-                            <a href="phongvanhanh-thuchiengiaodich-duyetgiaodichquay.html">Duyệt giao dịch tại quầy</a>
-                        </li>
-
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichmaso' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-giaodichmaso.html">Giao dịch mã số</a>
                         </li>
@@ -474,25 +466,32 @@
                     <a href="pkt-nhaptygia.html">Nhập tỷ giá</a>
                 </li>
 
-                <li>
+                <li class="{{#ifContain 'pkt-httd' layout }} active {{/ifContain}}">
                     <a href="javascript:;"><span class="title">Hạch toán tự động</span>
 <span class="arrow"></span>
 </a>
                     <!--<span class="icon-thumbnail"></span>-->
                     <ul class="sub-menu">
-                        <li> <a href="#">Nhận tiền đối tác chuyển về</a> </li>
+                       <li class="{{#ifContain 'pkt-httd-nhantiendoitac-tructiep' layout }} active {{/ifContain}}">
+                            <a href="pkt-httd-nhantiendoitac-tructiep.html">Nhận tiền đối tác chuyển về</a> </li>
 
-                        <li> <a href="javascript:;">Chuyển đổi ngoại tệ chi trả</a> </li>
+                        <li class="{{#ifContain 'pkt-httd-chuyendoingoaite' layout }} active {{/ifContain}}">
+                         <a href="pkt-httd-chuyendoingoaite.html">Chuyển đổi ngoại tệ </a> </li>
 
-                        <li> <a href="">Chi trả ngoại tệ</a> </li>
+                        <li class="{{#ifContain 'pkt-httd-chitrangoaite' layout }} active {{/ifContain}}">
+                         <a href="pkt-httd-chitrangoaite-xacnhangiaodich.html">Chi trả ngoại tệ</a> </li>
 
-                        <li> <a href="">Hoa hồng thụ hưởng</a> </li>
+                        <li class="{{#ifContain 'pkt-httd-hoahongthuhuong' layout }} active {{/ifContain}}">
+                         <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">Hoa hồng thụ hưởng</a> </li>
 
-                        <li> <a href="">Chi phí lương</a> </li>
+                        <li class="{{#ifContain 'pkt-httd-chiphiluong' layout }} active {{/ifContain}}">
+                         <a href="pkt-httd-chiphiluong.html">Chi phí lương</a> </li>
 
-                        <li> <a href="">Chênh lệch tỷ giá</a> </li>
+                        <li class="{{#ifContain 'pkt-httd-chenhlechtygia' layout }} active {{/ifContain}}">
+                         <a href="pkt-httd-chenhlechtygia.html">Chênh lệch tỷ giá</a> </li>
 
-                        <li><a href="">Kết chuyển cuối tháng</a></li>
+                        <li class="{{#ifContain 'pkt-httd-ketquacuoithang' layout }} active {{/ifContain}}">
+                        <a href="pkt-httd-ketquacuoithang.html">Kết chuyển cuối tháng</a></li>
                     </ul>
                 </li>
 
@@ -571,6 +570,12 @@
                 <li class="{{#ifContain 'pkt-duyetchungtuketoan' layout }} active {{/ifContain}}">
                     <a href="pkt-duyetchungtuketoan.html">Duyệt chứng từ kế toán</a>
                 </li>
+
+                <li class="{{#ifContain 'pkt-duyethachtoantay' layout }} active {{/ifContain}}">
+                    <a href="pkt-duyethachtoantay.html">Duyệt hạch toán tay</a>
+                </li>
+
+
                 <li class="{{#ifContain 'pkt-danhsachchungtu' layout }} active {{/ifContain}}">
                     <a href="pkt-danhsachchungtu.html">Danh sách chứng từ</a>
                 </li>

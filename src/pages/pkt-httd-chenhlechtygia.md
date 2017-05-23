@@ -1,13 +1,15 @@
 ---json
 {
-    "title": "Duyệt phục hồi giao dịch",
+    "title": "Chênh lệch tỷ giá",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-quanlygiaodich-duyetphuchoigiaodich.html",
+    "layout": "pkt-httd-chenhlechtygia.html",
     "permalink" : false,
-    "activeLink" : "phongvanhanh"
+    "activeLink" : "pkt"
 }
 ---
+
+
 
 ### Danh sách các link trong file
 - [Click Here](./blog-list.html)
