@@ -14,21 +14,11 @@
 
 
     </div>
-
-
     <div class="row">
-
         <div class="col-md-12">
-
-
             <div class="panel panel-default">
-
-
                 <div class="panel-body">
-
                     <form role="form" lpformnum="4" class="form-filter">
-
-
                         <div class="form-group">
                             <label>Số công văn</label>
                             <input type="text" class="form-control">
@@ -51,65 +41,77 @@
 
                         </div>
                     </form>
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div class="checkbox ">
-                                        <input value="3" id="checkbox2" type="checkbox">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </th>
-                                <th style="width: 25%">STT</th>
-                                <th style="width: 25%">Số công văn </th>
-                                <th style="width: 25%">Hiệu lực</th>
-                                <th style="width: 25%">Chi tiết</th>
-
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-
-                                <td class="v-align-middle">
-                                    <div class="checkbox ">
-                                        <input value="3" id="checkbox2" type="checkbox">
-                                        <label for="checkbox2" class="m-r-0"></label>
-                                    </div>
-                                </td>
-
-                                <td class="v-align-middle">1</td>
-                                <td class="v-align-middle">abc</td>
-                                <td class="v-align-middle">Còn hiệu lực</td>
-
-                                <td class="v-align-middle">
-
-                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#chitietTruyVanCongVan">Xem
-                                  </a>
-
-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    {{>pagination}}
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="tab-content">
+                    <div class="panel-body">
+                        <div class="panel panel-heading">
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox2" type="checkbox">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </th>
+                                        <th style="width: 25%">STT</th>
+                                        <th style="width: 25%">Số công văn </th>
+                                        <th style="width: 25%">Hiệu lực</th>
+                                        <th style="width: 25%">Chi tiết</th>
 
-{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <tr>
+
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input value="3" id="checkbox2" type="checkbox">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">abc</td>
+                                        <td class="v-align-middle">Còn hiệu lực</td>
+
+                                        <td class="v-align-middle">
+
+                                            <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#chitietTruyVanCongVan">Xem
+                                  </a>
+
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            {{>pagination}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
