@@ -15,42 +15,22 @@
                         <span class=" arrow"></span>
                     </a>
                     <!-- <span class="icon-thumbnail"><i class="pg-grid"></i></span> -->
-                    <li class="{{#ifContain 'doitac-truyvan' layout }} active {{/ifContain}}">
-                        <a href="javascript:;">
-                            <span class="title">Truy vấn đối tác</span> <span class=" arrow"></span> </a>
 
-                        <ul class="sub-menu">
-                            <li class="{{#ifContain 'doitac-truyvan-hanmuc' layout }} active {{/ifContain}}">
-                                <a href="doitac-truyvan-hanmuc.html">Hạn mức</a>
-                                <!--  <span class="icon-thumbnail">1</span> -->
-                            </li>
-                        </ul>
-                    </li>
                     <ul class="sub-menu">
 
-                        <li class="{{#ifContain 'doitac-ID' layout }} active {{/ifContain}}">
-                            <a href="javascript:;">
-                        <span class="title">ID đối tác</span> <span class=" arrow"></span></a>
-
-                            <ul class="sub-menu">
-
-                                <li class="{{#ifContain 'doitac-taomoidoitac' layout }} active {{/ifContain}}">
-                                    <a href="doitac-taomoidoitac.html">Tạo mới đối tác</a>
-                                    <!--  <span class="icon-thumbnail">1</span> -->
-                                </li>
+                        <li class="{{#ifContain 'doitac-taomoidoitac' layout }} active {{/ifContain}}">
+                            <a href="doitac-taomoidoitac.html">Tạo mới đối tác</a>
+                            <!--  <span class="icon-thumbnail">1</span> -->
+                        </li>
 
 
-                                <li class="{{#ifContain 'doitac' layout }} active {{/ifContain}}">
-                                    <a href="doitac.html">Danh sách đối tác</a>
-                                    <!--  <span class="icon-thumbnail">2</span> -->
-                                </li>
-                                <li class="{{#ifContain 'doitac-hopdong' layout }} active {{/ifContain}}">
-                                    <a href="doitac-hopdong.html">Hợp đồng đối tác</a>
-                                    <!--  <span class="icon-thumbnail">2</span> -->
-                                </li>
-
-                            </ul>
-
+                        <li class="{{#ifContain 'doitac' layout }} active {{/ifContain}}">
+                            <a href="doitac.html">Danh sách đối tác</a>
+                            <!--  <span class="icon-thumbnail">2</span> -->
+                        </li>
+                        <li class="{{#ifContain 'doitac-hopdong' layout }} active {{/ifContain}}">
+                            <a href="doitac-hopdong.html">Hợp đồng đối tác</a>
+                            <!--  <span class="icon-thumbnail">2</span> -->
                         </li>
                         <li class="{{#ifContain 'doitac-truyvan' layout }} active {{/ifContain}}">
                             <a href="javascript:;">
@@ -142,31 +122,13 @@
                         <a href="doitac-tonghopgiaodichchitra.html">Tổng hợp giao dịch chi trả</a>
                     </li>
 
-                    
-
-                    <li class="{{#ifContain 'doitac-danhsachdiaban' layout }} active {{/ifContain}}">
-                            <a href="javascript:;">
-                        <span class="title">Danh mục địa bàn</span> <span class=" arrow"></span></a>
-
-                            <ul class="sub-menu">
-                                <li class="{{#ifContain 'doitac-diaban' layout }} active {{/ifContain}}">
-                                    <a href="doitac-diaban.html">Danh sách địa bàn</a>
-                                </li>
-
-                                <li class="{{#ifContain 'doitac-diabanduyet' layout }} active {{/ifContain}}">
-                                    <a href="doitac-diabanduyet.html">Duyệt danh mục địa bàn</a>
-                                </li>
-
-                            </ul>
+                    <li class="{{#ifContain 'doitac-diaban' layout }} active {{/ifContain}}">
+                        <a href="doitac-diaban.html">Danh sách địa bàn</a>
                     </li>
 
 
                     <li class="{{#ifContain 'doitac-khoasocuoingay' layout }} active {{/ifContain}}">
                         <a href="doitac-khoasocuoingay.html">Khóa sổ cuối ngày</a>
-                    </li>
-
-                    <li class="{{#ifContain 'doitac-doisoat' layout }} active {{/ifContain}}">
-                        <a href="doitac-doixuat.html">Đối soát</a>
                     </li>
 
 
@@ -251,14 +213,16 @@
                             <a href="phongvanhanh-thuchiengiaodich-giaodichtaiquay.html">Giao dịch tại quầy</a>
                         </li>
 
-                        <!--<li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-duyetgiaodichtaiquay' layout }} active {{/ifContain}}">
+                        <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-duyetgiaodichtaiquay' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-duyetgiaodichquay.html">Duyệt giao dịch tại quầy</a>
-                        </li>-->
+                        </li>
 
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichmaso' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-giaodichmaso.html">Giao dịch mã số</a>
                         </li>
-
+                        <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-duyetgiaodichmaso' layout }} active {{/ifContain}}">
+                            <a href="phongvanhanh-thuchiengiaodich-duyetgiaodichmaso.html">Duyệt GD Mã Số</a>
+                        </li>
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichchuyenkhoan' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-giaodichchuyenkhoan.html">Giao dịch chuyển khoản</a>
                         </li>
@@ -492,13 +456,13 @@
 </a>
                     <!--<span class="icon-thumbnail"></span>-->
                     <ul class="sub-menu">
-                        <li> <a href="pkt-httd-nhantiendoitac-tructiep.html">Nhận tiền đối tác chuyển về</a> </li>
+                        <li> <a href="#">Nhận tiền đối tác chuyển về</a> </li>
 
-                        <li> <a href="pkt-httd-chuyendoingoaite.html">Chuyển đổi ngoại tệ </a> </li>
+                        <li> <a href="javascript:;">Chuyển đổi ngoại tệ chi trả</a> </li>
 
-                        <li> <a href="pkt-httd-chitrangoaite-xacnhangiaodich.html">Chi trả ngoại tệ</a> </li>
+                        <li> <a href="">Chi trả ngoại tệ</a> </li>
 
-                        <li> <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">Hoa hồng thụ hưởng</a> </li>
+                        <li> <a href="">Hoa hồng thụ hưởng</a> </li>
 
                         <li> <a href="">Chi phí lương</a> </li>
 

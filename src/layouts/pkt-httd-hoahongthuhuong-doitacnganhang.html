@@ -1,6 +1,4 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type="pkt-hoahongthuhuong"}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-hoahongthuhuong"}}
 
 
 <div class="container-fluid container-fixed-lg">
@@ -41,26 +39,9 @@
                     <div class="row">
                         <div class="col-md-8">
 
-                            <div class="row m-b-15">
-                                <div class="col-md-4 name m-t-5"> Loại chuyển đổi ngoại tệ : </div>
-                                <div class="col-md-8 value">
-
-                                    <div class="radio radio-primary">
-                                        <input type="radio" value="yes" name="cdnt" id="cdnt-ocb">
-                                        <label for="cdnt-ocb">Chuyển đổi ngoại tệ chi trả</label>
-                                        <input type="radio" checked="checked" value="no" name="cdnt" id="cdnt-congty">
-                                        <label for="cdnt-congty">Chuyển đổi hoa hồng trực tiếp</label>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-
                             <div class="row  m-b-15">
 
-                                <div class="col-md-4 name m-t-5"> Loại tiền (CCY/VND) : </div>
+                                <div class="col-md-4 name m-t-5"> Loại tiền : </div>
                                 <div class="col-md-8 value">
 
                                     <div class="row">
@@ -75,16 +56,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label>Tổng cộng</label>
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-3">
-                                            <div class="form-group">
-                                                <label>Tỷ giá bán</label>
+                                                <label>Tỷ giá</label>
                                                 <input type="text " class="form-control">
                                             </div>
                                         </div>
@@ -98,15 +72,11 @@
                                     </div>
 
 
-
-
-
                                     <table class="table table-hover table-small" id="">
                                         <thead>
                                             <tr>
                                                 <th>Loại tiền</th>
-                                                <th>Tổng cộng</th>
-                                                <th>Tỷ giá bán</th>
+                                                <th>Tỷ giá </th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -114,7 +84,6 @@
                                             <tr>
                                                 <td class="v-align-middle"> USD </td>
 
-                                                <td class="v-align-middle bold">5000</td>
                                                 <td class="v-align-middle bold">1</td>
                                                 <td><a href="" class="text-danger">xóa</a></td>
                                             </tr>
@@ -122,7 +91,6 @@
 
                                                 <td class="v-align-middle"> EUR </td>
 
-                                                <td class="v-align-middle bold">7000</td>
                                                 <td class="v-align-middle bold">2</td>
 
                                                 <td><a href="" class="text-danger">xóa</a></td>
@@ -136,16 +104,50 @@
 
                             </div>
 
+                            <div class="row  m-b-15">
 
-
-                            <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
-                                <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                                <button type="button" class="btn btn-primary  m-t-5">Thực hiện</button>
+                                <div class="col-md-4 name m-t-5"> Điều chỉnh giảm hoa hồng : </div>
+                                <div class="col-md-6 value">
+                                    <input type="" name="" value="" class="form-control">
+                                </div>
                             </div>
 
+                            <div class="row  m-b-15">
 
+                                <div class="col-md-4 name m-t-5"> Thành tiền chưa thuế : </div>
+                                <div class="col-md-6 value">
+                                    <input type="" name="" value="" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5"> Thuế GTGT : </div>
+                                <div class="col-md-6 value">
+                                    <input type="" name="" value="" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5"> </div>
+                                <div class="col-md-8 value">
+                                    <div class=" m-t-10 sm-m-t-10 ">
+                                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary  m-t-5">Thực hiện</button>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+
+
+
+
+                        <div class="clearfix">
+
+                        </div>
+
 
 
 
@@ -156,100 +158,69 @@
                             <h5>Danh sách</h5>
                             <div class="panel panel-default">
                                 <div class="panel-body">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                                        </button>
+
+                                  
+
+                                    </div>
 
                                     <div class="table-responsive">
+
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
 
 
-                                                    <th>Ngày </th>
+                                                    <th>Ngày</th>
                                                     <th>Tên đối tác</th>
                                                     <th>ID đối tác</th>
-                                                    <th>LT thanh toán</th>
-                                                    <th>LT chi</th>
-                                                    <th>Số tiền </th>
-                                                    <th>Tỷ giá chuyển đổi</th>
-                                                    <th>TT chuyển đổi</th>
-                                                    <th>Tỷ giá bán</th>
-                                                    <th>TT bán</th>
-                                                    <th>Chênh lệch</th>
+                                                    <th>LT Thanh toán</th>
+                                                    <th>AD</th>
+                                                    <th>PO</th>
+                                                    <th>Phí xử lý hs</th>
+                                                    <th>Điều chỉnh hoa hồng</th>
+                                                    <th>TC</th>
+                                                    <th>Tỷ giá</th>
+                                                    <th>TT</th>
+                                           
 
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-
-                                                    <td class="v-align-middle ">
-                                                        12/03/2017
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        ABC
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
                                                 </tr>
 
-                                                 <tr>
-
-                                                    <td class="v-align-middle ">
-                                                        12/04/2017
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        XYZ
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-                                                    <td class="v-align-middle">
-                                                    </td>
-
-
+                                                <tr>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
+                                                      <td class="v-align-middle "> </td>
                                                 </tr>
+
 
                                             </tbody>
                                         </table>
+
 
                                     </div>
 
