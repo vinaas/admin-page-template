@@ -10,8 +10,6 @@
             <h3 class="page-title">Danh sách công văn</h3>
         </div>
 
-
-
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -19,41 +17,30 @@
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
-                    <li class=""><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
-                    <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
-                    </li>
-
-
-
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaDuyet">
-
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-
                             <div class="panel-body">
-
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                <div class="panel panel-heading">
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                                         </button>
-                                        <button type="button" class="btn btn-default"><i
+                                            <button type="button" class="btn btn-default"><i
                                             class="fa fa-chevron-right"></i>
                                         </button>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-
-                            <div class="panel-body">
-                                <div class="tabler-responsive">
+                                <div class="table table-responsive">
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
@@ -132,363 +119,41 @@
 
                     </div>
 
-                    <div class="tab-pane " id="tabDaDuyet">
-                        {{> formSearch type="normal"}}
-                        <div class="panel panel-default">
 
                     <div class="tab-pane " id="tabTraVe">
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
-
                             <div class="panel-body">
-
-<<<<<<< .mine
-                            <div class="panel-body">
-
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-=======
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-
-
->>>>>>> .theirs
+                                <div class="panel panel-heading">
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                                 </button>
-                                        <button type="button" class="btn btn-default"><i
+                                            <button type="button" class="btn btn-default"><i
                                     class="fa fa-chevron-right"></i>
                                 </button>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-<<<<<<< .mine
-                            <div class="panel-body">
-                                <div class="tabler-responsive">
+
+                                <div class="table table-responsive">
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-                            <div class="panel-body">
-                                <div class="tabler-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
                                                 <th style="width: 50px;padding: 10px 11px !important;">
                                                     <div class="checkbox ">
                                                         <input type="checkbox" value="3" id="checkbox1">
                                                         <label for="checkbox1" class="m-r-0"></label>
                                                     </div>
-                                                </th>
-                                                <th style="width: 10%">Ngày</th>
-                                                <th style="width: 15%">Mã công văn</th>
-                                                <th style="width: 15%">Số công văn</th>
-                                                <th style="width: 15%">Loại công văn</th>
-                                                <th style="width: 15%">Đơn vị yêu cầu</th>
-                                                <th style="width: 10%">Hiệu lực</th>
-                                                <th style="width: 15%">Tài liệu</th>
-                                                <th style="width: 5%">Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox2">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    04/03/2017
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    001
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    ABC
-                                                </td>
 
-                                                <td class="v-align-middle">
-                                                    tra soát
-                                                </td>
-
-                                                <td class="v-align-middle">
-                                                    abc
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    Còn hiệu lực
-                                                </td>
-                                                <td class="v-align-middle r">
-                                                    anh-so-1.jpg
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    <div class="btn-group btn-group-sm">
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#danhsachcongvan-dieuchinh"> 
-                                                            <i class="fa fa-edit"></i> Điều chỉnh
-                                                        </button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                        </tbody>
-                                    </table>
-
-                                    {{>pagination}}
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="tab-pane " id="tabTraVe">
-                        {{> formSearch type="normal"}}
-                        <div class="panel panel-default">
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox1">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
-=======
-
-
-
-
-
->>>>>>> .theirs
-
-<<<<<<< .mine
                                                 </th>
                                                 <th style="width: 15%">Ngày</th>
                                                 <th style="width: 15%">Mã công văn</th>
                                                 <th style="width: 15%">Số công văn</th>
-=======
-                            <div class="panel-body">
 
-
-
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <th style="width: 15%">Loại công văn</th>
-
-
-
-
-
-
-
-=======
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                        <button type="button" class="btn btn-default"><i
-                                    class="fa fa-chevron-right"></i>
-                                </button>
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <th style="width: 10%">Đơn vị yêu cầu</th>
-                                                <th style="width: 10%">Hiệu lực</th>
-                                                <th style="width: 5%">Tài liệu</th>
-                                                <th style="width: 10%">Hành động</th>
-
-
-
-
-=======
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div class="tabler-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox2">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    04/03/2017
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    001
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    ABC
-                                                </td>
-=======
-                                                <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox1">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <td class="v-align-middle">
-                                                    tra soát
-                                                </td>
-
-=======
-                                                </th>
-                                                <th style="width: 15%">Ngày</th>
-                                                <th style="width: 15%">Mã công văn</th>
-                                                <th style="width: 15%">Số công văn</th>
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <td class="v-align-middle">
-                                                    abc
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    Còn hiệu lực
-                                                </td>
-                                                <td class="v-align-middle r">
-                                                    anh-so-1.jpg
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    <div class="btn-group btn-group-sm">
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#danhsachcongvan-trave"> <i class="fa fa-edit"></i> Sửa</button>
-                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
                                                 <th style="width: 15%">Loại công văn</th>
 
                                                 <th style="width: 10%">Đơn vị yêu cầu</th>
@@ -533,9 +198,7 @@
                                                     <div class="btn-group btn-group-sm">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#danhsachcongvan-trave"> <i class="fa fa-edit"></i> Sửa</button>
                                                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
->>>>>>> .theirs
                                         </button>
-<<<<<<< .mine
                                                     </div>
                                                 </td>
 
@@ -550,216 +213,6 @@
                                 </div>
                             </div>
 
-
-                        </div>
-                    </div>
-
-                    <div class="tab-pane " id="tabDuyet">
-                        {{> formSearch type="normal"}}
-                        <div class="panel panel-default">
-
-
-                            <div class="panel-body">
-
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                        <button type="button" class="btn btn-default"><i
-                                    class="fa fa-chevron-right"></i>
-                                </button>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div class="tabler-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-=======
-                                                    </div>
-                                                </td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox1">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
-=======
-                                            </tr>
-
-
-
-
->>>>>>> .theirs
-
-                                                </th>
-                                                <th style="width: 15%">Ngày</th>
-                                                <th style="width: 15%">Mã công văn</th>
-                                                <th style="width: 15%">Số công văn</th>
-
-<<<<<<< .mine
-                                                <th style="width: 15%">Loại công văn</th>
-
-=======
-                                        </tbody>
-                                    </table>
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                                <th style="width: 10%">Đơn vị yêu cầu</th>
-                                                <th style="width: 10%">Hiệu lực</th>
-                                                <th style="width: 5%">Tài liệu</th>
-                                                <th style="width: 10%">Hành động</th>
-=======
-                                    {{>pagination}}
-
-
-
->>>>>>> .theirs
-
-<<<<<<< .mine
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox2">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    04/03/2017
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    001
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    ABC
-                                                </td>
-=======
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
-
-                                                <td class="v-align-middle">
-                                                    tra soát
-                                                </td>
-
-<<<<<<< .mine
-                                                <td class="v-align-middle">
-                                                    abc
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    Còn hiệu lực
-                                                </td>
-                                                <td class="v-align-middle r">
-                                                    anh-so-1.jpg
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#danhsachcongvan-duyet">Xem</a>
-                                                </td>
-=======
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
-
-                                            </tr>
-
-
-                                        </tbody>
-                                    </table>
-
-<<<<<<< .mine
-                                    {{>pagination}}
-=======
-                </div>
->>>>>>> .theirs
-
-                                </div>
-                            </div>
-
-<<<<<<< .mine
-
-
-
-=======
-            </div>
-        </div>
-    </div>
->>>>>>> .theirs
 
                         </div>
                     </div>
