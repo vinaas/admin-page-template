@@ -2018,29 +2018,22 @@
 
                             </div>
 
-
-
                             <div class="row">
-                                <div class="col-md-6  "></div>
-                                <div class="col-md-6 text-right ">
-                                    <button type="button" class="btn btn-danger btn-cons  m-t-5 " data-dismiss="modal"> Hủy
-
-                                                </button>
-                                    <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
-
-
+                                <div class="col-sm-12 m-t-10 sm-m-t-10 text-right">
+                                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">
+                                    <i class="fa fa-remove"></i>    Hủy
+                                    </button>
+                                    <button type="button" class="btn btn-warning  m-t-5" data-toggle="modal" data-target="#modalTuChoi">
+                                    <i class="fa fa-trash"></i>    Từ chối
+                                    </button>
+                                    <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">
+                                    <i class="fa fa-edit"></i>    Duyệt
+                                    </button>
                                 </div>
-
                             </div>
-
-
                         </form>
                     </div>
-
                 </div>
-
-
-
             </div>
         </div>
         <!-- /.modal-content -->
@@ -2601,7 +2594,7 @@
                             <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal">
                             Hủy
                             </button>
-                            <button type="button" class="btn btn-warning m-t-5" data-toggle="modal" data-target="#modalTuChoi">
+                            <button type="button" class="btn btn-warning m-t-5" data-toggle="modal" data-target="#modalTuChoi"> 
                             <i class="fa fa-remove"></i>    Từ chối
                             </button>
                             <button type="button" class="btn btn-primary  m-t-5">
@@ -4873,6 +4866,354 @@
 
                             <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet">Duyệt
                                                       </button>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+<div class="modal fade stick-up" id="chitiet-DuyetHuygiaodich" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết <span class="semi-bold"> Duyệt hủy giao dịch</span></h5>
+                <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h6 class="bold text-uppercase">Thông tin giao dịch</h6>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Mã Pin</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Mã số</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Mã biên nhận</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Người gửi</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Số tiền</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Loại tiền gửi</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">USD</option>
+                                          <option value="">VNĐ</option>
+                                          <option value="">EURO </option></select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Loại tiền chi</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">USD</option>
+                                          <option value="">VNĐ</option>
+                                          <option value="">EURO </option></select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Tỷ giá</label>
+
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Thành tiền</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Hình thức thanh toán</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">Trực tiếp</option>
+                                          <option value="">Gián tiếp</option>
+                                          </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Loại dịch vụ</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">PO</option>
+                                          <option value="">PR</option>
+                                          </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Loại tài khoản</label>
+
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">1</option>
+                                          <option value="">2</option>
+                                          </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Phí chuyển khoản</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Ngày tháng</label>
+
+                                <div id="datepicker-component" class="input-group date">
+                                    <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Tin nhắn</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Họ tên người nhận</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Ngân hàng mở tài khoản</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Chi nhánh</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">Chi nhánh 1</option>
+                                          <option value="">Chi nhánh 2</option>
+                                          </select>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Tài khoản</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Tên đối tác</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+            </div>
+
+            </form>
+        </div>
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+
+                <form role="form">
+                    <h6 class="bold text-uppercase">Thông tin khách hàng</h6>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Địa chỉ</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Số điện thoại</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Giấy tờ tùy thân</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Loại giấy tờ tùy thân</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                                        <option value="">A</option>
+                                                        <option value="">B</option>
+                                                        <option value="">C</option>
+                                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Ngày cấp</label>
+                                <div id="datepicker-component" class="input-group date ">
+                                    <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Ngày sinh</label>
+
+                                <div id="datepicker-component" class="input-group date">
+                                    <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Email</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Giới tính</label>
+
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">Nam</option>
+                                          <option value="">Nữ</option></select>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Thành tiền</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+                                <label>Quốc gia</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                           <option value="">Việt Nam</option>
+                                          <option value="">Mỹ</option></select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group m-l-10">
+
+                                <div class="checkbox check-primary m-t-40">
+                                    <input type="checkbox" value="yes" name="diaBan" id="tg3">
+                                    <label for="tg3">Tỷ giá</label>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6  ">
+
+                        </div>
+                        <div class="col-md-6 text-right ">
+                            <button type="button" class="btn btn-danger btn-cons  m-t-25" data-dismiss="modal" data-toggle="" data-target="#">
+                                <i class="fa fa-remove"></i> Hủy
+                            <button type="button" class="btn btn-warning btn-cons  m-t-25" data-toggle="modal" data-target="#modalTuChoi">
+                                <i class="fa fa-trash"></i> Từ chối
+                            </button>
+                            <button type="button" class="btn btn-primary  m-t-25" data-toggle="modal" data-target="#modalDuyet">
+                                <i class="fa fa-edit"></i> Duyệt
+                            </button>
 
                         </div>
 

@@ -1,0 +1,232 @@
+{{#extend "default"}} {{#content "main"}}
+
+<br>
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+
+            <!--<h5>N <span class="semi-bold">giao dịch</span></h5>-->
+
+            <div class="panel panel-default">
+
+                <!--<div class="panel-heading ">
+                    <div class="panel-title">Tạo mới
+                    </div>
+                  
+                </div>-->
+
+
+                <div class="panel-body">
+
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5"> Chọn ngày : </div>
+                                <div class="col-md-4 value">
+                                    <div id="datepicker-component" class="input-group date ">
+                                        <input type="text" class="form-control"><span class="input-group-addon"><i
+                                            class="fa fa-calendar"></i></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5">Loại Nghiệp vụ : </div>
+                                <div class="col-md-4 value">
+                                    <select name="" id="" class="form-control">
+                                       <option value="">Nghiệp vụ 1</option>
+                                       <option value="">Nghiệp vụ 2</option>
+                                       <option value="">Nghiệp vụ 3</option>
+                                       <option value="">Nghiệp vụ 4</option>
+                                   </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row m-b-15">
+                                <div class="col-md-4 name m-t-5"> Số giao dịch: </div>
+                                <div class="col-md-4 value">
+
+                                    <input type="text" class="form-control" name="" value="">
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
+                                <button type="button" class="btn btn-primary  m-t-5"> <i class="fa fa-table"></i> Truy vấn</button>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="col-sm-12">
+                            <hr>
+
+                            <h5>Danh sách cần duyệt</h5>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+
+                                    <div class="table-responsive">
+
+
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                                        <div class="checkbox ">
+                                                            <input type="checkbox" value="3" id="checkbox1">
+                                                            <label for="checkbox1" class="m-r-0"></label>
+                                                        </div>
+
+                                                    </th>
+                                                    <th>Ngày</th>
+                                                    <th>Loại nghiệp vụ</th>
+                                                    <th>Chi nhánh</th>
+                                                    <th>Số giao dịch</th>
+
+                                                    <th>Chi tiết</th>
+
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <div class="checkbox ">
+                                                            <input type="checkbox" value="3" id="checkbox2">
+                                                            <label for="checkbox2" class="m-r-0"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="v-align-middle">13/03/2017</td>
+                                                    <td class="v-align-middle">Danh sach chung tu</td>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle"></td>
+
+                                                    <td class="v-align-middle">
+                                                        <a href="" class="text-primary" data-target="#pkt-duyetdshtt" data-toggle="modal">Xem</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <div class="checkbox ">
+                                                            <input type="checkbox" value="3" id="checkbox2">
+                                                            <label for="checkbox2" class="m-r-0"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="v-align-middle">13/03/2017</td>
+                                                    <td class="v-align-middle">Tien mat tai quy</td>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle"></td>
+
+                                                    <td class="v-align-middle">
+                                                        <a href="" class="text-primary" data-target="#pkt-duyetdshtt" data-toggle="modal">Xem</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <div class="checkbox ">
+                                                            <input type="checkbox" value="3" id="checkbox2">
+                                                            <label for="checkbox2" class="m-r-0"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="v-align-middle">13/03/2017</td>
+                                                    <td class="v-align-middle">Chi nop thue</td>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle"></td>
+
+                                                    <td class="v-align-middle">
+                                                        <a href="" class="text-primary" data-target="#pkt-duyetdshtt" data-toggle="modal">Xem</a>
+                                                    </td>
+                                                </tr>
+
+
+
+
+                                            </tbody>
+                                        </table>
+
+                                        <div class="clearfix">
+
+                                            <div class="btn-group ">
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
+                                            </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt 
+                                            </button>
+
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

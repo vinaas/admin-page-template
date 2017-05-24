@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Điều chỉnh giao dịch",
+    "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-thuchiengiaodich-duyetgiaodichquay.html",
+    "layout": "doitac-truyvan-hopdonglienquan.html",
     "permalink" : false,
-    "activeLink" : "phongvanhanh"
+    "activeLink" : "doitac"
 }
 ---
 

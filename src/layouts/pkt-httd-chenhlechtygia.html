@@ -1,0 +1,180 @@
+{{#extend "default"}} {{#content "main"}}
+
+<br>
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h3 class="page-title">{{title}}</h3>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+
+            <!--<h5>N <span class="semi-bold">giao dịch</span></h5>-->
+
+            <div class="panel panel-default">
+
+                <!--<div class="panel-heading ">
+                    <div class="panel-title">Tạo mới
+                    </div>
+                  
+                </div>-->
+
+
+                <div class="panel-body">
+
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="row m-b-15">
+                                <div class="col-md-4 name m-t-5"> Loại chênh lệch: </div>
+                                <div class="col-md-8 value">
+
+                                    <div class="radio radio-primary">
+                                        <input type="radio" value="yes" name="cdnt" id="cdnt-ocb">
+                                        <label for="cdnt-ocb">Điều chỉnh chênh lệch tỷ giá</label>
+                                        <input type="radio" checked="checked" value="no" name="cdnt" id="cdnt-congty">
+                                        <label for="cdnt-congty">Kết chuyển chênh lệch tỷ giá</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5"> Chọn ngày : </div>
+                                <div class="col-md-4 value">
+                                    <div id="datepicker-component" class="input-group date ">
+                                        <input type="text" class="form-control"><span class="input-group-addon"><i
+                                            class="fa fa-calendar"></i></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row  m-b-15">
+
+                                <div class="col-md-4 name m-t-5"> Nghiệp vụ : </div>
+                                <div class="col-md-4 value">
+                                    <select name="" id="" class="form-control">
+                                       <option value="">Nghiệp vụ 1</option>
+                                       <option value="">Nghiệp vụ 2</option>
+                                       <option value="">Nghiệp vụ 3</option>
+                                       <option value="">Nghiệp vụ 4</option>
+                                   </select>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
+                                <button type="button" class="btn btn-primary  m-t-5"> <i class="fa fa-table"></i> Truy vấn</button>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class="col-sm-12">
+                            <hr>
+
+                            <h5>Danh sách chêch lệch</h5>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+
+                                    <div class="table-responsive">
+
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Chi nhánh*</th>
+                                                    <th>Tài khoản*</th>
+                                                    <th>Loại tiền*</th>
+                                                    <th>Số tiền*</th>
+                                                    <th>Thành tiền mới*</th>
+                                                    <th>Thành tiền cũ*</th>
+                                                    <th>Chênh lệch*</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="v-align-middle">ABC</td>
+                                                    <td class="v-align-middle">11121001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle">11221001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle">13682001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle">13882001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle">33682001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle"></td>
+                                                    <td class="v-align-middle">33882002</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

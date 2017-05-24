@@ -1,176 +1,185 @@
 {{#extend "default"}} {{#content "main"}}
 
 <div class="container-fluid container-fixed-lg">
-	<div class="row">
+    <div class="row">
         <div class="col-sm-7">
 
             <h3 class="page-title">Yêu cầu khóa sổ cuối ngày</h3>
 
         </div>
-    </div> 
-
-    <h6 class="bold text-uppercase text-center text-danger" >Hệ thống sẽ đóng giao dịch,tất cả các giao dịch không thể thực hiện sau khi đóng.</h6>
-   
-      
-    <div class="row">
-       <div class="col-md-12">
-        <h6 class="bold text-uppercase text-center text-primary" >Hệ thống tự động mở lại vào ngày hôm sau</h6>
     </div>
-    <div class="col-md-12">
-        <div class="onoffswitch  m-t-10 " style="margin: auto;">
-            <input type="checkbox" data-toggle="modal" data-target="#modaKhoaSo" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-            <label class="onoffswitch-label" for="myonoffswitch">
+
+    <h6 class="bold text-uppercase text-center text-danger">Hệ thống sẽ đóng giao dịch,tất cả các giao dịch không thể thực hiện sau khi đóng.</h6>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <h6 class="bold text-uppercase text-center text-primary">Hệ thống tự động mở lại vào ngày hôm sau</h6>
+        </div>
+        <div class="col-md-12">
+            <div class="onoffswitch  m-t-10 " style="margin: auto;">
+                <input type="checkbox" data-toggle="modal" data-target="#modaKhoaSo" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
                 <span class="onoffswitch-inner"></span>
                 <span class="onoffswitch-switch"></span>
             </label>
+            </div>
         </div>
     </div>
-</div>
-  
- 
-       <h4 class=" text-center" >Danh sách các chi nhánh vẫn giao dịch được khi hệ thống đóng . Khi gỡ bỏ thì không giao dịch được</h4>
-        
-        <div class="row">
-          
-           <form role="form" lpformnum="2" class="form-filter">
-              <div class="form-group"></div>
-              <div class="form-group">
-               <label>Từ khóa</label>
-               <span class="help">e.g. </span>
-               <input type="email" class="form-control">
-           </div>
-           
-           <div class="form-group-long">
-              <div class="btn-group btn-group-sm">
-                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-plus"></i> Thêm
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body"></div>
+                <h4 class=" text-center">Danh sách các chi nhánh vẫn giao dịch được khi hệ thống đóng . Khi gỡ bỏ thì không giao dịch được</h4>
+                <div class="row">
+                    <form role="form" lpformnum="2" class="form-filter">
+                        <div class="form-group"></div>
+                        <div class="form-group">
+                            <label>Từ khóa</label>
+                            <span class="help">e.g. </span>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="form-group-long">
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-plus"></i> Thêm
                 </button>
-                <button class="btn btn-warning btn-cons m-t-25" type="button"><i class="fa fa-minus"></i> Gỡ bỏ
+                                <button class="btn btn-warning btn-cons m-t-25" type="button"><i class="fa fa-minus"></i> Gỡ bỏ
                 </button>
+                            </div>
+
+
+                    </form>
+
+                    </div>
+                </div>
             </div>
-            
-            
-        </form>
-        
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <div class="pull-right m-b-10">
-                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <div class="panel-heading">
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                     </button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                     </button>
 
+                            </div>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class=" table table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="width: 10%">STT</th>
+                                    <th style="width: 20%">Mã chi nhánh</th>
+                                    <th style="width: 20%">Tên chi nhánh </th>
+                                    <th style="width: 25%">Địa chỉ</th>
+                                    <th style="width: 25%">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        1
+                                    </td>
+                                    <td class="v-align-middle">
+                                        OCB2
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        15
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        Company 1
+                                    </td>
+
+                                    <td class="v-align-middle">
+
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Gỡ bỏ</button>
+                                        </div>
+
+
+
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        2
+                                    </td>
+                                    <td class="v-align-middle">
+                                        OCB1
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        15
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        Company 1
+                                    </td>
+
+
+                                    <td class="v-align-middle">
+
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Gỡ bỏ</button>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                        {{>pagination}}
+
+
+                    </div>
                 </div>
             </div>
 
-
-            <div class="clearfix"></div>
         </div>
-        <div class="panel-body">
-
-            <div class="tabler-responsive">
 
 
-
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-
-                            <th style="width: 50px;padding: 10px 11px !important;">
-                                <div class="checkbox ">
-                                    <input type="checkbox" value="3" id="checkbox1">
-                                    <label for="checkbox1" class="m-r-0"></label>
-                                </div>
-
-                            </th>
-                            
-                            <th style="width: 25%">Mã chi nhánh</th>
-                            <th style="width: 25%">Tên chi nhánh </th>
-                            <th style="width: 25%">Địa chỉ</th>
-                            <th style="width: 25%">Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr >
-                            <td class="v-align-middle">
-                                <div class="checkbox ">
-                                    <input type="checkbox" value="3" id="checkbox2">
-                                    <label for="checkbox2" class="m-r-0"></label>
-                                </div>
-                            </td>
-                            <td class="v-align-middle">
-                                OCB2
-                            </td>
-                            <td class="v-align-middle ">
-                                15
-                            </td>
-
-                            <td class="v-align-middle">
-                                Company 1
-                            </td>
-
-                            <td class="v-align-middle">
-
-                                <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Gỡ bỏ</button>
-                                </div>
-
-
-
-                            </td>
-                        </tr>
-
-
-                        <tr >
-                            <td class="v-align-middle">
-                                <div class="checkbox ">
-                                    <input type="checkbox" value="3" id="checkbox2">
-                                    <label for="checkbox2" class="m-r-0"></label>
-                                </div>
-                            </td>
-                            <td class="v-align-middle">
-                                OCB1
-                            </td>
-                            <td class="v-align-middle ">
-                                15
-                            </td>
-
-                            <td class="v-align-middle">
-                                Company 1
-                            </td>
-
-                            
-                            <td class="v-align-middle">
-
-                               <div class="btn-group btn-group-sm">
-                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Gỡ bỏ</button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
-            {{>pagination}}
-
-
-        </div>
     </div>
 </div>
 
-</div>
 
-
-</div>
-
-
-{{/content}} {{#content "script" mode="append"}}
-
-{{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

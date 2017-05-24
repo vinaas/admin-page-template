@@ -1,6 +1,4 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type=activeLink}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 
 
 <div class="container-fluid container-fixed-lg">
@@ -14,324 +12,340 @@
         </div>
     </div>
     <div class="row">
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <label>ID đối tác</label>
-
-                <input class="form-control" type="email">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="form-group">
-                <label>Tên đối tác</label>
-
-                <input class="form-control" type="email">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="form-group">
-
-                <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --></i> Truy vấn
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>ID đối tác</label>
+                            <input class="form-control" type="email">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Tên đối tác</label>
+                            <input class="form-control" type="email">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --></i> Truy vấn
                 </button>
-
-
-
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
-     <div class="col-md-10"><h6 class="bold text-uppercase m-t-30">Chi tiết hoa hồng</h6></div>
-     <div class="col-md-2">
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary m-t-15"><i class="fa fa-file-excel-o"></i> Xuất danh sách
-            </button>
+        <div class="col-md-10">
+            <h6 class="bold text-uppercase m-t-30">Chi tiết hoa hồng</h6>
         </div>
+        <div class="col-md-2 text-right">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary m-t-15"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+            </button>
+            </div>
+        </div>
+
     </div>
 
-</div>
+    <div class="row">
 
-<div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
 
-    <div class="col-md-12">
-        <div class="panel panel-default">
+                <div class="modal-body">
+                    <form role="form">
 
-         <div class="modal-body">
-            <form role="form">
-
-                <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="form-group ">
-                            <label >Tên đối tác</label>
-                            <span class="help"> </span>
-
-                            <input type="text" disabled class="form-control input-black" placeholder=""
-                            value="ABC">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group  form-group-attached">
-                            <label>ID đối tác</label>
-                            <div class="input-group date">
-                                <input type="text" disabled class="form-control input-black" placeholder=""
-                                value="152">
-                            </div>
-                        </div>
-                    </div>
-
-                    <h6 class="bold text-uppercase m-t-30">Địa bàn</h6>
-                    <div class="form-group form-group-attached">
+                        <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="checkbox check-primary">
-                                    <input type="checkbox" value="yes" disabled="" name="diaBan" id="diaBan-tinh">
-                                    <label for="diaBan-tinh">Tỉnh</label>
-                                    <input type="checkbox" checked="checked" disabled="" value="no" name="diaBan"
-                                    id="diaBan-thanhpho">
-                                    <label for="diaBan-thanhpho">Hồ Chí Minh</label>
-                                </div>
+                            <div class="col-sm-8">
+                                <div class="form-group ">
+                                    <label>Tên đối tác</label>
+                                    <span class="help"> </span>
 
+                                    <input type="text" disabled class="form-control input-black" placeholder="" value="ABC">
 
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <h6 class="bold text-uppercase m-t-20">Loại dịch vụ</h6>
-
-                    <div class="form-group   form-group-attached">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="checkbox check-primary">
-                                    <input type="checkbox" value="" disabled="" checked="checked" name="" id="dv-po">
-                                    <label for="dv-po">PO</label>
-                                    <input type="checkbox" value="" disabled="" name="" id="dv-pr">
-                                    <label for="dv-pr">PR</label>
-
-                                    <input type="checkbox" value="" disabled="" name="" id="dv-ad">
-                                    <label for="dv-ad">AD (OCB)</label>
-
-                                    <br>
-                                    <br>
-
-                                    <input type="checkbox" value="" disabled="" name="" id="dv-pb">
-                                    <label for="dv-pb">PB</label>
-
-                                    <input type="checkbox" value="" disabled="" name="" id="dv-hd">
-                                    <label for="dv-hd">HD</label>
-
-                                    <input type="checkbox" value="" disabled="" name="" id="dv-ad2">
-                                    <label for="dv-ad2">AD (Other bank)</label>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-sm-4">
+                                <div class="form-group  form-group-attached">
+                                    <label>ID đối tác</label>
+                                    <div class="input-group date">
+                                        <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                                    </div>
+                                </div>
+                            </div>
 
-                    </div>
-
-                    <h6 class="bold text-uppercase m-t-20">Loại hoa hồng</h6>
-                    <div class="form-group   form-group-attached">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="checkbox check-primary">
-                                <input value="yes" name="loaiHoaHong" disabled="" id="loaiHoaHong-hanmuc" type="checkbox">
-                                  <label for="loaiHoaHong-hanmuc">Hạn mức</label>
-
-
-                                  <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-doanhsothang" type="checkbox">
-                                  <label for="loaiHoaHong-doanhsothang">Doanh số tháng</label>
-
-                                  <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-codinh" type="checkbox">
-                                  <label for="loaiHoaHong-codinh">Cố định</label>
+                            <h6 class="bold text-uppercase m-t-30">Địa bàn</h6>
+                            <div class="form-group form-group-attached">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="checkbox check-primary">
+                                            <input type="checkbox" value="yes" disabled="" name="diaBan" id="diaBan-tinh">
+                                            <label for="diaBan-tinh">Tỉnh</label>
+                                            <input type="checkbox" checked="checked" disabled="" value="no" name="diaBan" id="diaBan-thanhpho">
+                                            <label for="diaBan-thanhpho">Hồ Chí Minh</label>
+                                        </div>
 
 
-                                  <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-phinguoigui" type="checkbox">
-                                  <label for="loaiHoaHong-phinguoigui">Phí người gửi</label>
-                              </div>
-                          </div>
-                      </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                  </div>
-                  <div class="form-group ">
-                    <div class="panel panel-default" hidden="">
-                        <div class="row" >
-                            <div id="hanmuc">
-                                <div class="panel-body">
-                                    <div class="col-sm-2">
-                                        <div class="form-group m-b-10">
-                                            <label>Từ</label>
-                                            <input type="text" placeholder="0.1"
-                                            class="form-control input-sm">
+
+
+                            <h6 class="bold text-uppercase m-t-20">Loại dịch vụ</h6>
+
+                            <div class="form-group   form-group-attached">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="checkbox check-primary">
+                                            <input type="checkbox" value="" disabled="" checked="checked" name="" id="dv-po">
+                                            <label for="dv-po">PO</label>
+                                            <input type="checkbox" value="" disabled="" name="" id="dv-pr">
+                                            <label for="dv-pr">PR</label>
+
+                                            <input type="checkbox" value="" disabled="" name="" id="dv-ad">
+                                            <label for="dv-ad">AD (OCB)</label>
+
+                                            <br>
+                                            <br>
+
+                                            <input type="checkbox" value="" disabled="" name="" id="dv-pb">
+                                            <label for="dv-pb">PB</label>
+
+                                            <input type="checkbox" value="" disabled="" name="" id="dv-hd">
+                                            <label for="dv-hd">HD</label>
+
+                                            <input type="checkbox" value="" disabled="" name="" id="dv-ad2">
+                                            <label for="dv-ad2">AD (Other bank)</label>
                                         </div>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group m-b-10">
-                                            <label>đến</label>
-                                            <input type="text" placeholder="3000"
-                                            class="form-control input-sm">
+                                </div>
+
+                            </div>
+
+                            <h6 class="bold text-uppercase m-t-20">Loại hoa hồng</h6>
+                            <div class="form-group   form-group-attached">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="checkbox check-primary">
+                                            <input value="yes" name="loaiHoaHong" disabled="" id="loaiHoaHong-hanmuc" type="checkbox">
+                                            <label for="loaiHoaHong-hanmuc">Hạn mức</label>
+
+
+                                            <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-doanhsothang" type="checkbox">
+                                            <label for="loaiHoaHong-doanhsothang">Doanh số tháng</label>
+
+                                            <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-codinh" type="checkbox">
+                                            <label for="loaiHoaHong-codinh">Cố định</label>
+
+
+                                            <input checked="checked" value="no" disabled="" name="loaiHoaHong" id="loaiHoaHong-phinguoigui" type="checkbox">
+                                            <label for="loaiHoaHong-phinguoigui">Phí người gửi</label>
                                         </div>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group m-b-10">
-                                            <label>Mức phí</label>
-                                            <input type="text" placeholder="0.2"
-                                            class="form-control input-sm">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group ">
-                                            <label>Phí</label>
-                                            <select class="full-width select2-hidden-accessible"
-                                            data-init-plugin="select2" tabindex="-1"
-                                            aria-hidden="true">
+                                </div>
+
+                            </div>
+                            <div class="form-group ">
+                                <div class="panel panel-default" hidden="">
+                                    <div class="row">
+                                        <div id="hanmuc">
+                                            <div class="panel-body">
+                                                <div class="col-sm-2">
+                                                    <div class="form-group m-b-10">
+                                                        <label>Từ</label>
+                                                        <input type="text" placeholder="0.1" class="form-control input-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group m-b-10">
+                                                        <label>đến</label>
+                                                        <input type="text" placeholder="3000" class="form-control input-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group m-b-10">
+                                                        <label>Mức phí</label>
+                                                        <input type="text" placeholder="0.2" class="form-control input-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group ">
+                                                        <label>Phí</label>
+                                                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                             <option value="AK">Phí Fix</option>
                                             <option value="HI">Phí ABC</option>
 
                                         </select>
-                                    </div>
+                                                    </div>
 
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="form-group ">
-                                        <label>Loại tiền</label>
-                                        <select class="full-width select2-hidden-accessible"
-                                        data-init-plugin="select2" tabindex="-1"
-                                        aria-hidden="true">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group ">
+                                                        <label>Loại tiền</label>
+                                                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                         <option value="AK">USD</option>
                                         <option value="HI">VND</option>
 
                                     </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i class="fa fa-plus"></i> </a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-sm-2">
-                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
-                                    class="fa fa-plus"></i> </a>
-                                </div>
 
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="panel panel-default" hidden="">
-                <div class="row">
-                    <div id="codinh" class="">
-                        <div class="panel-body">
-                            <div class="col-sm-2">
-                                <div class="form-group m-b-10">
-                                    <label>Mức phí</label>
-                                    <input type="text" placeholder="0.2"
-                                    class="form-control input-sm">
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group ">
-                                    <label>Phí</label>
-                                    <select class="full-width select2-hidden-accessible"
-                                    data-init-plugin="select2" tabindex="-1"
-                                    aria-hidden="true">
+                            <div class="panel panel-default" hidden="">
+                                <div class="row">
+                                    <div id="codinh" class="">
+                                        <div class="panel-body">
+                                            <div class="col-sm-2">
+                                                <div class="form-group m-b-10">
+                                                    <label>Mức phí</label>
+                                                    <input type="text" placeholder="0.2" class="form-control input-sm">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="form-group ">
+                                                    <label>Phí</label>
+                                                    <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                     <option value="AK">Phí Fix</option>
                                     <option value="HI">Phí ABC</option>
 
                                 </select>
-                            </div>
+                                                </div>
 
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="form-group ">
-                                <label>Loại tiền</label>
-                                <select class="full-width select2-hidden-accessible"
-                                data-init-plugin="select2" tabindex="-1"
-                                aria-hidden="true">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="form-group ">
+                                                    <label>Loại tiền</label>
+                                                    <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                 <option value="AK">USD</option>
                                 <option value="HI">VND</option>
 
                             </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i class="fa fa-plus"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <a href="" class="btn btn-primary  m-t-25 m-l-5"> <i
-                            class="fa fa-plus"></i> </a>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="table table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2">Loại tiền/Dịch vụ</th>
+                                                <th colspan="6" class="text-center">Tỉnh</th>
+                                                <th colspan="6" class="text-center">Hồ chí minh</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="width:8%" class="text-center">PO</th>
+                                                <th style="width:8%" class="text-center">PB</th>
+                                                <th style="width:8%" class="text-center">PR</th>
+                                                <th style="width:8%" class="text-center">AD(OCB)</th>
+                                                <th style="width:8%" class="text-center">AD(Other)</th>
+                                                <th style="width:8%" class="text-center">HD</th>
+                                                <th style="width:8%" class="text-center">PO</th>
+                                                <th style="width:8%" class="text-center">PB</th>
+                                                <th style="width:8%" class="text-center">PR</th>
+                                                <th style="width:8%" class="text-center">AD(OCB)</th>
+                                                <th style="width:8%" class="text-center">AD(Other)</th>
+                                                <th style="width:8%" class="text-center">HD</th>
+                                            </tr>
+
+
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>USD</td>
+                                                <td>
+                                                    0.1 - 3000: 0.20% 3000.1 - 4500: 0.18%
+
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td></td>
+                                                <td>0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td>1 - 2000:0.50%
+                                                </td>
+                                                <td>0.1 - 3000: 0.20% 3000.1 - 4500: 0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td></td>
+                                                <td>0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td>"1 - 2000:0.50% 2000.1 - 10000: 0.45%"
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>EUR</td>
+                                                <td>
+                                                    0.1 - 3000: 0.20% 3000.1 - 4500: 0.18%
+
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td></td>
+                                                <td>0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td>1 - 2000:0.50%
+                                                </td>
+                                                <td>0.1 - 3000: 0.20% 3000.1 - 4500: 0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td></td>
+                                                <td>0.18%
+                                                </td>
+                                                <td>0.20%
+                                                </td>
+                                                <td>"1 - 2000:0.50% 2000.1 - 10000: 0.45%"
+                                                </td>
+
+                                            </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
                 </div>
-            </div>
 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <table class="table table-hover table-small" id="">
-                <thead>
-                    <tr>
-
-                        <th>Tỉnh/Thành phố</th>
-                        <th>Loại tiền thanh toán</th>
-
-                        <th>PO</th>
-                        <th>PB</th>
-                        <th>PR</th>
-                        <th>AD(OCB)</th>
-                        <th>AD(Other)</th>
-                        <th>HD</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="v-align-middle bold">Hồ Chí Minh</td>
-
-                        <td class="v-align-middle"> USD</td>
-
-
-                        <td class="v-align-middle">0.2%</td>
-                        <td class="v-align-middle"></td>
-                        <td class="v-align-middle"> 0.18%</td>
-                        <td class="v-align-middle"> 0.20%</td>
-                        <td class="v-align-middle"> 1-2000:0.50%</td>
-                        <td class="v-align-middle"></td>
-                                                <!-- <td class="v-align-middle">
-                                                      <a href="" class="text-danger " data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</a>
-                                                  </td> -->
-
-                                              </tr>
-
-                                              <tr>
-                                                <td class="v-align-middle bold">Tỉnh</td>
-                                                <td class="v-align-middle"> USD</td>
-
-
-                                                <td class="v-align-middle"> 0.1-3000:0.2%</td>
-                                                <td class="v-align-middle">0.2%</td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"> 0.18%</td>
-                                                <td class="v-align-middle"> 0.20%</td>
-                                                <td class="v-align-middle"> 1-2000:0.50%</td>
-                                                <td class="v-align-middle"></td>
-                                                <!--  <td class="v-align-middle">
-                                                     <a href="" class="text-danger " data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</a>
-                                                 </td -->
-
-                                             </tr>
-
-
-                                         </tbody>
-                                     </table>
-
-                                 </div>
-                             </div>
-                         </div>
-
-                         <div class="form-group-attached">
-                            <div class="row">
-                                <div class="col-sm-4">
-                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                <div class="form-group-attached">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
                                 <p class="bold font-montserrat text-uppercase">TOTAL</p>
                             </div>
@@ -339,20 +353,17 @@
                                 <p class="bold font-montserrat text-uppercase">$20.00</p>
                             </div>
                         </div>-->
-                    </div>
+                        </div>
 
+                    </div>
                 </div>
+
             </div>
 
         </div>
-
     </div>
-</div>
 
 </div>
 
 
-{{/content}} {{#content "script" mode="append"}}
-
-
-{{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
