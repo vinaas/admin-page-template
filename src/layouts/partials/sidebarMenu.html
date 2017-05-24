@@ -142,12 +142,23 @@
                             <a href="doitac-hoahong.html">Danh sách hoa hồng</a>
                             <!--  <span class="icon-thumbnail">5</span> -->
                         </li>
-                        <li class="{{#ifContain 'doitac-lanhdaoduyet' layout }} active {{/ifContain}}">
-                            <a href="doitac-lanhdaoduyet.html">Lãnh đạo duyệt</a>
-                            <!--  <span class="icon-thumbnail">5</span> -->
-                        </li>
 
                     </ul>
+                    <li class="{{#ifContain 'doitac-hoahong' layout }} active {{/ifContain}}">
+                        <a href="javascript:;">
+                            <span class="title">Danh mục Hoa hồng</span> <span class=" arrow"></span></a>
+
+                        <ul class="sub-menu">
+                            <li class="{{#ifContain 'doitac-hoahong' layout }} active {{/ifContain}}">
+                                <a href="doitac-hoahong.html">Danh sách Hoa hồng</a>
+                            </li>
+
+                            <li class="{{#ifContain 'doitac-hoahong-nguoigui' layout }} active {{/ifContain}}">
+                                <a href="doitac-hoahong-nguoigui.html">Hoa hồng theo người gửi</a>
+                            </li>
+
+                        </ul>
+                    </li>
                     <li class="{{#ifContain 'doitac-tonghopgiaodichchitra' layout }} active {{/ifContain}}">
                         <a href="doitac-tonghopgiaodichchitra.html">Tổng hợp giao dịch chi trả</a>
                     </li>
@@ -492,26 +503,26 @@
 </a>
                     <!--<span class="icon-thumbnail"></span>-->
                     <ul class="sub-menu">
-                       <li class="{{#ifContain 'pkt-httd-nhantiendoitac-tructiep' layout }} active {{/ifContain}}">
+                        <li class="{{#ifContain 'pkt-httd-nhantiendoitac-tructiep' layout }} active {{/ifContain}}">
                             <a href="pkt-httd-nhantiendoitac-tructiep.html">Nhận tiền đối tác chuyển về</a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-chuyendoingoaite' layout }} active {{/ifContain}}">
-                         <a href="pkt-httd-chuyendoingoaite.html">Chuyển đổi ngoại tệ </a> </li>
+                            <a href="pkt-httd-chuyendoingoaite.html">Chuyển đổi ngoại tệ </a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-chitrangoaite' layout }} active {{/ifContain}}">
-                         <a href="pkt-httd-chitrangoaite-xacnhangiaodich.html">Chi trả ngoại tệ</a> </li>
+                            <a href="pkt-httd-chitrangoaite-xacnhangiaodich.html">Chi trả ngoại tệ</a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-hoahongthuhuong' layout }} active {{/ifContain}}">
-                         <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">Hoa hồng thụ hưởng</a> </li>
+                            <a href="pkt-httd-hoahongthuhuong-tonghopchitra.html">Hoa hồng thụ hưởng</a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-chiphiluong' layout }} active {{/ifContain}}">
-                         <a href="pkt-httd-chiphiluong.html">Chi phí lương</a> </li>
+                            <a href="pkt-httd-chiphiluong.html">Chi phí lương</a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-chenhlechtygia' layout }} active {{/ifContain}}">
-                         <a href="pkt-httd-chenhlechtygia.html">Chênh lệch tỷ giá</a> </li>
+                            <a href="pkt-httd-chenhlechtygia.html">Chênh lệch tỷ giá</a> </li>
 
                         <li class="{{#ifContain 'pkt-httd-ketquacuoithang' layout }} active {{/ifContain}}">
-                        <a href="pkt-httd-ketquacuoithang.html">Kết chuyển cuối tháng</a></li>
+                            <a href="pkt-httd-ketquacuoithang.html">Kết chuyển cuối tháng</a></li>
                     </ul>
                 </li>
 

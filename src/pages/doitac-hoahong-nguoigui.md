@@ -1,14 +1,13 @@
 ---json
 {
-    "title": "Tiền mặt tại quỹ - Nộp tiền mặt",
+    "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-hachtoantay-tienmattaiquy-noptm.html",
+    "layout": "doitac-hoahong-nguoigui.html",
     "permalink" : false,
-    "activeLink" : "pkt"
+    "activeLink" : "doitac"
 }
 ---
-
 
 ### Danh sách các link trong file
 - [Click Here](./blog-list.html)

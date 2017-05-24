@@ -1,6 +1,4 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type=activeLink}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
 
 
 <div class="container-fluid container-fixed-lg">
@@ -13,98 +11,189 @@
 
         </div>
 
-        
+
 
     </div>
-
     <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Tên đối tác</label>
 
-        <div class="col-md-3">
-            <div class="form-group">
-                <label>Tên đối tác</label>
+                                <input class="form-control" type="email">
+                            </div>
+                        </div>
 
-                <input class="form-control" type="email">
-            </div>
-        </div>
-        
-        <div class="col-md-3">
-             <div class="form-group long">
-                <label>THEO NGÀY</label>
-                <div class="input-daterange input-group" id="datepicker-range">
-                    <input type="text" class="input form-control" name="start"/>
-                    <span class="input-group-addon">đến</span>
-                    <input type="text" class="input form-control" name="end"/>
+                        <div class="col-md-3">
+                            <div class="form-group long">
+                                <label>THEO NGÀY</label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input form-control" name="end" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group ">
+                                <label>Chi nhánh</label>
+                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                    <option value="hcm">HCM</option>
+                                    <option value="dn">ĐN</option>          
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group ">
+                                <div class="checkbox check-primary">
+                                    <input value="" checked="checked" name="" id="dv-po" type="checkbox">
+                                    <label for="dv-po">Giao dịch tại quầy theo danh sách</label>
+                                    <input value="" name="" id="dv-pr" type="checkbox">
+                                    <label for="dv-pr">Giao dịch tại quầy theo mã số</label>
+
+                                    <input value="" name="" id="dv-ad" type="checkbox">
+                                    <label for="dv-ad">Giao dịch tại quầy ngân hàng</label>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group ">
+                                <div class="checkbox check-primary">
+                                    <input value="" name="" id="dv-pb" type="checkbox">
+                                    <label for="dv-pb">Giao dịch tại nhà</label>
+
+                                    <input value="" name="" id="dv-hd" type="checkbox">
+                                    <label for="dv-hd">Giao dịch chuyển khoản</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --> Truy vấn
+            </button>
+                                    <button class="btn btn-success btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --> Làm mới
+            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <div class="col-md-3">
-            <div class="form-group ">
-            <label>Chi nhánh</label>
-                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
 
-                    <option value="hcm">HCM</option>
-                    <option value="dn">ĐN</option>
-                    
-                   
-                </select>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pane-body">
+                <div class="table table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Ngày</th>
+                                <th rowspan="2">Tên giao dịch</th>
+                                <th rowspan="2">ID đối tác</th>
+                                <th rowspan="2">CN/PGD</th>
+                                <th rowspan="2">Loại dịch vụ</th>
+
+                                <th colspan="4" class="text-center">Số tiền</th>
+                                <th colspan="4" class="text-center">Hoa hồng hưởng thụ</th>
+                            </tr>
+                            <tr>
+                                <th style="width:8%" class="text-center">USD</th>
+                                <th style="width:8%" class="text-center">EUR</th>
+                                <th style="width:8%" class="text-center">AUD</th>
+                                <th style="width:8%" class="text-center">VND</th>
+                                <th style="width:8%" class="text-center">USD</th>
+                                <th style="width:8%" class="text-center">EUR</th>
+                                <th style="width:8%" class="text-center">AUD</th>
+                                <th style="width:8%" class="text-center">VND</th>
+
+                            </tr>
+
+
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>20/03/2016</td>
+                                <td>ABC</td>
+                                <td>123</td>
+                                <td>TPHCM</td>
+                                <td>PB</td>
+                                <td>3000</td>
+                                <td>9000</td>
+                                <td>200</td>
+                                <td>1000000</td>
+                                <td>7.8</td>
+                                <td>6.9</td>
+                                <td>1.980</td>
+                                <td>150000</td>
+
+                            </tr>
+                            <tr>
+
+                                <td colspan="4" class="bold text-center">Tổng cộng hoa hồng</td>
+                                <td>PB</td>
+                                <td>3000</td>
+                                <td>9000</td>
+                                <td>200</td>
+                                <td>1000000</td>
+                                <td>7.8</td>
+                                <td>6.9</td>
+                                <td>1.980</td>
+                                <td>150000</td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="4" class="bold text-center">Điều chỉnh</td>
+                                <td>PB</td>
+                                <td>3000</td>
+                                <td>9000</td>
+                                <td>200</td>
+                                <td>1000000</td>
+                                <td>7.8</td>
+                                <td>6.9</td>
+                                <td>1.980</td>
+                                <td>150000</td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="4" class="bold text-uppercase text-center">Tổng cộng </td>
+                                <td>PB</td>
+                                <td>3000</td>
+                                <td>9000</td>
+                                <td>200</td>
+                                <td>1000000</td>
+                                <td>7.8</td>
+                                <td>6.9</td>
+                                <td>1.980</td>
+                                <td>150000</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-
-        <div class="col-md-3">
-           <div class="form-group ">
-            <div class="checkbox check-primary">
-              <input value="" checked="checked" name="" id="dv-po" type="checkbox">
-              <label for="dv-po">Giao dịch tại quầy theo danh sách</label>
-              <input value="" name="" id="dv-pr" type="checkbox">
-              <label for="dv-pr">Giao dịch tại quầy theo mã số</label>
-
-              <input value="" name="" id="dv-ad" type="checkbox">
-              <label for="dv-ad">Giao dịch tại quầy ngân hàng</label>
-              
-
-
-          </div>
-      </div>
-      </div>
-       <div class="col-md-3">
-       <div class="form-group ">
-            <div class="checkbox check-primary">
-           <input value="" name="" id="dv-pb" type="checkbox">
-              <label for="dv-pb">Giao dịch tại nhà</label>
-
-              <input value="" name="" id="dv-hd" type="checkbox">
-              <label for="dv-hd">Giao dịch chuyển khoản</label>
-              </div>
-              </div>
-       </div>
-       <div class="col-md-3">
-            <div class="form-group">
-    <div class="btn-group">
-            <button class="btn btn-primary btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --> Truy vấn
-            </button>   
-             <button class="btn btn-success btn-cons m-t-25" type="button"><!-- <i class="fa fa-search"> --> Làm mới
-            </button>         
-        </div>
-        </div>
-        </div>
-  </div>
-    
-</div>
-</div>
-</div>
 
 </div>
 
 
-</div>
-
-</div>
 
 
-{{/content}} {{#content "script" mode="append"}}
-
-
-{{/content}} {{/extend}}
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
