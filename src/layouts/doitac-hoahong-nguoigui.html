@@ -1,0 +1,157 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
+
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Danh sách hoa hồng người gửi</h3>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form role="form" lpformnum="2" class="form-filter">
+                        <div class="form-group">
+                            <label>Đối tác</label>
+                            <select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                                          <option value="NV">A</option>
+                                                          <option value="OR">B</option>
+                                                      </select>
+                        </div>
+                        <div class="form-group">
+                            <label>File</label>
+                            <input type="file" class="form-control">
+                        </div>
+
+                        <div class="form-group long">
+                            <label>THEO NGÀY</label>
+                            <div id="datepicker-component" class="input-group date col-sm-8">
+                                <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class=""></i> Thực hiện
+        </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel panel-heading">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất
+                                    danh sách
+                                </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                                </button>
+                        </div>
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                    </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                    </button>
+
+                            </div>
+                        </div>
+                        <div class="table table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+
+                                        <th style="width: 50px;padding: 10px 11px !important;">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox1">
+                                                <label for="checkbox1" class="m-r-0"></label>
+                                            </div>
+
+                                        </th>
+                                        <th style="width: 10%">STT</th>
+                                        <th style="width: 20%">Ngày giao dịch</th>
+                                        <th style="width: 10%">Mã nhận tiền</th>
+                                        <th style="width: 20%">Số tiền</th>
+                                        <th style="width: 20%">Loại tiền</th>
+                                        <th style="width: 20%">Phí thu đối tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle">
+                                            <div class="checkbox ">
+                                                <input type="checkbox" value="3" id="checkbox2">
+                                                <label for="checkbox2" class="m-r-0"></label>
+                                            </div>
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            1
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            17/03/2017
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            MP16475
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            500000
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            USD
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            5.0
+                                        </td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+
+                            {{>pagination}}
+
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
