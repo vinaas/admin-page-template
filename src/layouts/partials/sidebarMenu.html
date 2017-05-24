@@ -74,8 +74,22 @@
                     </li>
 
                     <li class="{{#ifContain 'doitac-nhantien' layout }} active {{/ifContain}}">
-                        <a href="doitac-nhantien.html">Nhận tiền đối tác chuyển về</a>
-                        <!--  <span class="icon-thumbnail">3</span> -->
+                        <a href="javascript:;">
+                            <span class="title">Nhận tiền đối tác chuyển về</span> <span class=" arrow"></span></a>
+
+                        <ul class="sub-menu">
+                            <li class="{{#ifContain 'doitac-nhantien-taomoi' layout }} active {{/ifContain}}">
+                                <a href="doitac-nhantien-taomoi.html">Tạo mới nhận tiền</a>
+                            </li>
+                            <li class="{{#ifContain 'doitac-nhantien' layout }} active {{/ifContain}}">
+                                <a href="doitac-nhantien.html">Danh sách nhận tiền đối tác</a>
+                            </li>
+
+                            <li class="{{#ifContain 'doitac-nhantien-duyetdanhsachnhantien' layout }} active {{/ifContain}}">
+                                <a href="doitac-nhantien-duyetdanhsachnhantien.html">Duyệt danh sách nhận tiền đối tác</a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li class="{{#ifContain 'doitac-tonghopgiaodichchitra' layout }} active {{/ifContain}}">
                         <a href="doitac-tonghopgiaodichchitra.html">Tổng hợp giao dịch chi trả</a>
@@ -85,17 +99,20 @@
                     <li class="{{#ifContain 'doitac-doisoat' layout }} active {{/ifContain}}">
                         <a href="doitac-doisoat.html">Đối soát</a>
                     </li>
-                    <li class="{{#ifContain 'doitac-danhsachdiaban' layout }} active {{/ifContain}}">
+                    <li class="{{#ifContain 'doitac' layout }} active {{/ifContain}}">
                         <a href="javascript:;">
-                            <span class="title">Danh mục địa bàn</span> <span class=" arrow"></span></a>
+                            <span class="title">Danh sách địa bàn</span> <span class=" arrow"></span></a>
 
                         <ul class="sub-menu">
+                            <li class="{{#ifContain 'doitac-diaban-taomoi' layout }} active {{/ifContain}}">
+                                <a href="doitac-diaban-taomoi.html">Tạo mới địa bàn</a>
+                            </li>
                             <li class="{{#ifContain 'doitac-diaban' layout }} active {{/ifContain}}">
                                 <a href="doitac-diaban.html">Danh sách địa bàn</a>
                             </li>
 
                             <li class="{{#ifContain 'doitac-diabanduyet' layout }} active {{/ifContain}}">
-                                <a href="doitac-diabanduyet.html">Duyệt danh mục địa bàn</a>
+                                <a href="doitac-diabanduyet.html">Duyệt danh sách địa bàn</a>
                             </li>
 
                         </ul>
