@@ -10,15 +10,6 @@
 
         </div>
 
-        <div class="col-sm-5">
-            <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createHanMuc"><i class="pg-form"></i> Tạo mới Hạn mức
-                </button>
-
-
-            </div>
-        </div>
-
     </div>
 
     <div class="row">
@@ -48,16 +39,10 @@
                             {{> formSearch type="normal"}}
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất
-                                    danh sách
-                                </button>
-
-                                <button type="button" class="btn btn-danger" data-toggle="modal"
-                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-                                </button>
-
-                               <!-- <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                                </button>-->
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
 
                             </div>
                             <div class="pull-right m-b-10">
@@ -84,12 +69,11 @@
                                                 </div>
 
                                             </th>
-                                            <th style="width: 15%">STT</th>
-                                            <th style="width: 15%">Mã đối tác</th>
-                                            <th style="width: 15%">Tên đối tác</th>
-                                            <th style="width: 15%">Hạn mức tín dụng</th>
-                                            <th style="width: 15%">Trại thái</th>
-                                            <th style="width: 30%">Hành động</th>
+                                            <th style="width: 20%">STT</th>
+                                            <th style="width: 20%">Mã đối tác</th>
+                                            <th style="width: 20%">Tên đối tác</th>
+                                            <th style="width: 20%">Hạn mức tín dụng</th>
+                                            <th style="width: 20%">Trại thái</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -117,20 +101,6 @@
                                             <td class="v-align-middle">
                                                 <span class="label label-default">Chưa duyệt</span>
                                             </td>
-
-                                            <td class="v-align-middle">
-
-                                                <div class="btn-group btn-group-sm">
-                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                            yêu cầu
-                                        </button>
-                                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ
-                                            chối
-                                        </button>
-                                                </div>
-
-
-                                            </td>
                                         </tr>
 
 
@@ -154,17 +124,11 @@
                         <div class="panel-body">
                             {{> formSearch type="normal"}}
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> Xuất
-                                    danh sách
-                                </button>
-
-                                <button type="button" class="btn btn-danger" data-toggle="modal"
-                                data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-                                </button>
-
-                             <!--   <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                                </button>-->
-
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+                          
                             </div>
                             <div class="pull-right m-b-10">
                                 <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
@@ -191,12 +155,11 @@
                                                             </div>
 
                                                         </th>
-                                                        <th style="width: 15%">STT</th>
-                                                        <th style="width: 15%">Mã đối tác</th>
-                                                        <th style="width: 15%">Tên đối tác</th>
-                                                        <th style="width: 15%">Hạn mức tín dụng</th>
-                                                        <th style="width: 15%">Trạng thái</th>
-                                                        <th style="width: 30%">Hành động</th>
+                                                        <th style="width: 20%">STT</th>
+                                                        <th style="width: 20%">Mã đối tác</th>
+                                                        <th style="width: 20%">Tên đối tác</th>
+                                                        <th style="width: 20%">Hạn mức tín dụng</th>
+                                                        <th style="width: 20%">Trạng thái</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -218,22 +181,12 @@
                                                             Nguyễn Văn B
                                                         </td>
                                                         <td class="v-align-middle ">
-                                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHanMuc">Chi tiết</a>
+                                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#modalListHanMucDaduyet">Chi tiết</a>
                                                         </td>
                                                         <td class="v-align-middle">
                                                             <span class="label label-success">Duyệt</span>
                                                         </td>
 
-
-                                                        <td class="v-align-middle">
-
-                                                            <div class="btn-group btn-group-sm">
-                                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu</button>
-                                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối</button>
-                                                            </div>
-
-
-                                                        </td>
                                                     </tr>
 
 
@@ -254,13 +207,14 @@
                             {{> formSearch type="normal"}}
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#modalDuyet"><i class="fa fa-file-excel-o"></i> Duyệt
-                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
 
-                                <button type="button" class="btn btn-warning" data-toggle="modal"
-                                        data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                                </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
+                          </button>
+
+                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
 
                             </div>
 
@@ -296,7 +250,7 @@
                                                         <th style="width: 15%">Mã đối tác</th>
                                                         <th style="width: 15%">Tên đối tác</th>
                                                         <th style="width: 15%">Hạn mức tín dụng</th>
-                                                        <th style="width: 15%">Trại thái</th>
+                                                        <th style="width: 10%">Trại thái</th>
                                                         <th style="width: 30%">Hành động</th>
                                                     </tr>
                                                 </thead>
@@ -328,12 +282,11 @@
                                                         <td class="v-align-middle">
 
                                                             <div class="btn-group btn-group-sm">
-                                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                            yêu cầu
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalListHanMucTraVe"><i class="fa fa-edit"></i> Chỉnh sửa
                                         </button>
-                                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ
-                                            chối
+                                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
                                         </button>
+
                                                             </div>
 
 

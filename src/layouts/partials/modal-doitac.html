@@ -1295,13 +1295,11 @@
                     <thead>
                         <tr>
 
-                            <th style="width:15%">Loại tiền thanh toán</th>
-                            <th style="width:15%">Phí xử lý</th>
-                            <th style="width:15%">Hạn mức</th>
-                            <th style="width:15%">Ngày hiệu lực</th>
-                            <th style="width:15%">Ngày hết hiệu lực</th>
-
-                            <th style="width:25%">Hành động</th>
+                            <th style="width:20%">Loại tiền thanh toán</th>
+                            <th style="width:20%">Phí xử lý</th>
+                            <th style="width:20%">Hạn mức</th>
+                            <th style="width:20%">Ngày hiệu lực</th>
+                            <th style="width:20%">Ngày hết hiệu lực</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1311,15 +1309,6 @@
                             <td class="v-align-middle">0,2</td>
                             <td class="v-align-middle">18/07/2014</td>
                             <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">
-
-                                <div class="btn-group btn-group-xs">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối
-                                    </button>
-                                </div>
-                            </td>
                         </tr>
 
                         <tr>
@@ -1328,14 +1317,7 @@
                             <td class="v-align-middle">0,2</td>
                             <td class="v-align-middle">18/07/2014</td>
                             <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">
 
-                                <div class="btn-group btn-group-xs">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
-                                    </button>
-                                </div>
 
                         </tr>
 
@@ -1346,19 +1328,19 @@
                             <td class="v-align-middle">0,2</td>
                             <td class="v-align-middle">18/07/2014</td>
                             <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">
-                                <div class="btn-group btn-group-xs">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt yêu cầu
-                                        </button>
-                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Từ chối
-                                        </button>
-                                </div>
-                            </td>
+
                         </tr>
 
 
                     </tbody>
                 </table>
+            <div class="row">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+
+                    </div>
+            </div>
 
 
             </div>
@@ -1368,6 +1350,148 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- END MODAL STICK UP  -->
+
+<div class="modal fade stick-up" id="modalListHanMucDaduyet" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table-small" id="">
+                    <thead>
+                        <tr>
+
+                            <th style="width:20%">Loại tiền thanh toán</th>
+                            <th style="width:20%">Phí xử lý</th>
+                            <th style="width:20%">Hạn mức</th>
+                            <th style="width:20%">Ngày hiệu lực</th>
+                            <th style="width:20%">Ngày hết hiệu lực</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="v-align-middle bold">USD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                        </tr>
+
+                        <tr>
+                            <td class="v-align-middle bold">VND</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+
+                        </tr>
+
+
+                        <tr>
+                            <td class="v-align-middle bold">CAD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Điều chỉnh</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade stick-up" id="modalListHanMucTraVe" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table-small" id="">
+                    <thead>
+                        <tr>
+
+                            <th style="width:20%">Loại tiền thanh toán</th>
+                            <th style="width:20%">Phí xử lý</th>
+                            <th style="width:20%">Hạn mức</th>
+                            <th style="width:20%">Ngày hiệu lực</th>
+                            <th style="width:20%">Ngày hết hiệu lực</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="v-align-middle bold">USD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                        </tr>
+
+                        <tr>
+                            <td class="v-align-middle bold">VND</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+
+                        </tr>
+
+
+                        <tr>
+                            <td class="v-align-middle bold">CAD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & yêu cầu duyệt</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="modalListHoaHong" role="dialog" aria-hidden="true" data-backdrop="static">
