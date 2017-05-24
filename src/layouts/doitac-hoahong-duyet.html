@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-sm-7">
 
-            <h3 class="page-title">Duyệt danh sách nhận tiền đối tác </h3>
+            <h3 class="page-title">Duyệt danh sách hoa hồng </h3>
 
         </div>
 
@@ -31,12 +31,12 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
                           </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
                             <!--<button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
                           </button>
                             <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
                           </button>-->
-                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
-                          </button>
                         </div>
                         <div class="pull-right m-b-10">
                             <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
@@ -52,7 +52,6 @@
 
                         <div class="clearfix"></div>
                     </div>
-
                     <div class="table table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -65,14 +64,16 @@
                                         </div>
 
                                     </th>
-                                    <th style="width: 5%">STT</th>
-                                    <th style="width: 10%">Ngày</th>
-                                    <th style="width: 10%">ID đối tác</th>
-                                    <th style="width: 10%">Tên đối tác</th>
-                                    <th style="width:25%">Hình thức chuyển tiền</th>
-                                    <th style="width: 20%">Loại tiền chuyển đến</th>
-                                    <th style="width: 15%">Lý do </th>
-                                    <th style="width: 5%">Chi tiết</th>
+                                    <th style="width: 50px">STT</th>
+                                    <th style="width: 150px">Ngày</th>
+                                    <th style="width: 200px">Tên giao dịch</th>
+
+                                    <th style="width: 100px">ID đối tác</th>
+                                    <th style="width: 200px">CN/PGD</th>
+                                    <th style="width: 200px">Loại dịch vụ</th>
+                                    <th style="">Hoa hồng</th>
+
+                                    <th style="width: 200px">Chi tiết</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -83,85 +84,42 @@
                                             <label for="checkbox2" class="m-r-0"></label>
                                         </div>
                                     </td>
+
                                     <td class="v-align-middle">
                                         1
                                     </td>
+
                                     <td class="v-align-middle">
-                                        12/03/2017
+                                        17/03/2017
                                     </td>
+
+                                    <td class="v-align-middle">
+                                        ABC
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        455
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        Tỉnh, TP HCM
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        PB, PO
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        Hạn mức, Cố định
+                                    </td>
+
+
                                     <td class="v-align-middle ">
-                                        15
+                                        <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#hoahongdoitac-duyet">Xem</a>
                                     </td>
 
-                                    <td class="v-align-middle">
-                                        Company 1
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Hoán đổi tiền tệ
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
-                                    </td>
-                                    <td class="v-align-middle">
-                                        abc
-                                    </td>
-                                    <td class="v-align-middle">
-
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#giaodichtienve-hoandoitiente">Xem</a>
-                                        </div>
-
-
-                                    </td>
                                 </tr>
-                                <tr>
-                                    <td class="v-align-middle">
-                                        <div class="checkbox ">
-                                            <input type="checkbox" value="3" id="checkbox2">
-                                            <label for="checkbox2" class="m-r-0"></label>
-                                        </div>
-                                    </td>
-                                    <td class="v-align-middle">
-                                        1
-                                    </td>
-                                    <td class="v-align-middle">
-                                        12/03/2017
-                                    </td>
-                                    <td class="v-align-middle ">
-                                        15
-                                    </td>
 
-                                    <td class="v-align-middle">
-                                        Company 1
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        Chuyển tiền trực tiếp
-                                    </td>
-
-                                    <td class="v-align-middle">
-                                        <span class="label label-default">USD</span>
-                                        <span class="label label-default">EUR</span>
-                                        <span class="label label-default">CAN</span>
-
-                                    </td>
-                                    <td class="v-align-middle">
-                                        abc
-                                    </td>
-                                    <td class="v-align-middle">
-
-                                        <div class="btn-group btn-group-sm">
-                                            <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#giaodichtienve-chuyentientructiep">Xem</a>
-                                        </div>
-
-
-                                    </td>
-                                </tr>
 
                             </tbody>
                         </table>
