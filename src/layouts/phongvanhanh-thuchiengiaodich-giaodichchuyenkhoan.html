@@ -31,6 +31,8 @@
                     <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
                     </li>
 
+                    <li><a href="#tabDotDS" data-toggle="tab" role="tab">Đợt danh sách</a>
+                    </li>
                     <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
                     </li>
 
@@ -179,6 +181,95 @@
                     </div>
 
 
+                    <div class="tab-pane " id="tabDotDS">
+                        <h5>
+                            <span class="semi-bold">Danh sách các đợt đã xuất</span>
+                        </h5>
+                        <div class="panel-body">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th style="width:10%">STT</th>
+                                                <th style="width:10%">Ngày xuất</th>
+                                                <th style="width:20%">Tên đối tác</th>
+
+                                                <th style="width:20%">Đợt</th>
+                                                <th style="width:20%">Tổng tiền</th>
+
+                                                <th style="width:20%"> Chi tiết</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">30/4/2016</td>
+                                                <td class="v-align-middle">Mayzus</td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">500</td>
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#xemDotDanhSach">Xem</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">2</td>
+                                                <td class="v-align-middle">30/4/2016</td>
+                                                <td class="v-align-middle">Mayzus-2</td>
+                                                <td class="v-align-middle">2</td>
+                                                <td class="v-align-middle">500</td>
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#xemDotDanhSach">Xem</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
                     <div class="tab-pane " id="tabDuyet">
                         <div class="panel-body">
                             <div class="row">
@@ -215,14 +306,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-
                                     <div class="form-group">
-
-                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
-                class="fa fa-search"></i> Tìm kiếm
-        </button>
-
-
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                                     </div>
                                 </div>
 
@@ -278,8 +363,25 @@
                                                 </td>
                                                 <td class="v-align-middle">1</td>
                                                 <td class="v-align-middle">30/4/2016</td>
-                                                <td class="v-align-middle">Nguyen Van A</td>
+                                                <td class="v-align-middle">Mayzus</td>
                                                 <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">500</td>
+
+                                                <td class="v-align-middle">
+                                                    <a href="#" class="btn btn-default m-r-20" data-toggle="modal" data-target="#xemChuyenKhoanDuyet">Xem</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">2</td>
+                                                <td class="v-align-middle">30/4/2016</td>
+                                                <td class="v-align-middle">Mayzus-2</td>
+                                                <td class="v-align-middle">2</td>
                                                 <td class="v-align-middle">500</td>
 
                                                 <td class="v-align-middle">
@@ -337,9 +439,7 @@
 
                                     <div class="form-group">
 
-                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i
-                class="fa fa-search"></i> Tìm kiếm
-        </button>
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
 
 
                                     </div>
@@ -409,6 +509,12 @@
                                         </tbody>
                                     </table>
                                     {{>pagination}}
+                                    <div class="form-group">
+                                        <!--Bấm vào sẽ chuyển tới tab Đợt danh sách-->
+                                        <button class="btn btn-primary btn-cons" type="button">
+                                            <i class="fa fa-list-alt"></i> Xuất danh sách
+                                        </button>
+                                    </div>
                                 </div>
 
                             </div>

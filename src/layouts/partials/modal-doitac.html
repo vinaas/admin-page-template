@@ -299,8 +299,155 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & yêu cầu duyệt</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade stick-up" id="xemChiTiet-DoiTac-HopDong" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết<span class="semi-bold"> Hợp đồng</span></h5>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+
+
+                        <div class="panel-body">
+
+                            <h5 class="m-t-0">
+                                Thông tin đối tác
+                            </h5>
+
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> ID đối tác: </div>
+                                <div class="col-md-10 value"> 1231
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> Tên giao dịch: </div>
+                                <div class="col-md-10 value"> ABC
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> Số hợp đồng: </div>
+                                <div class="col-md-10 value"> 234
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                        <div class="panel-heading">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
+                          </button>
+
+                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                            </div>
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="tabler-responsive">
+
+
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 5%">ID</th>
+                                            <th style="width: 15%">Mã hợp đồng</th>
+                                            <th style="width: 15%">Ngày ký hợp đồng</th>
+                                            <th style="width: 20%">Ngày hiệu lực hợp đồng</th>
+                                            <th style="width: 20%px">Ngày hết hiệu lực hợp đồng</th>
+                                            <th style="width: 15%">File</th>
+                                            <th style="width: 5%">Loại</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                1
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                125
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                hop-dong-so-1.jpg
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                Hợp đồng
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                                {{>pagination}}
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+
+                                </div>
+                                <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -1660,7 +1807,79 @@
                     <div class="col-sm-8"></div>
                     <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                        
+                    </div>
+                </div>
 
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalListHanMucDuyet" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table-small" id="">
+                    <thead>
+                        <tr>
+
+                            <th style="width:20%">Loại tiền thanh toán</th>
+                            <th style="width:20%">Phí xử lý</th>
+                            <th style="width:20%">Hạn mức</th>
+                            <th style="width:20%">Ngày hiệu lực</th>
+                            <th style="width:20%">Ngày hết hiệu lực</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="v-align-middle bold">USD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                        </tr>
+
+                        <tr>
+                            <td class="v-align-middle bold">VND</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+
+                        </tr>
+
+
+                        <tr>
+                            <td class="v-align-middle bold">CAD</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">0,2</td>
+                            <td class="v-align-middle">18/07/2014</td>
+                            <td class="v-align-middle">18/07/2014</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt</button>
                     </div>
                 </div>
 
@@ -1754,60 +1973,81 @@
                 <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
             </div>
             <div class="modal-body">
-                <table class="table table-hover table-small" id="">
-                    <thead>
-                        <tr>
+                <form role="form">
 
-                            <th style="width:20%">Loại tiền thanh toán</th>
-                            <th style="width:20%">Phí xử lý</th>
-                            <th style="width:20%">Hạn mức</th>
-                            <th style="width:20%">Ngày hiệu lực</th>
-                            <th style="width:20%">Ngày hết hiệu lực</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="form-group form-group-attached">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Tên đối tác</label>
+                                <span class="help"> </span>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control input-black" placeholder="" value="Nguyễn Văn A">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label>ID đối tác</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control input-black" placeholder="" value="152">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover table-small" id="">
+                        <thead>
+                            <tr>
+                                <th style="width:20%">Loại tiền thanh toán</th>
+                                <th style="width:20%">Phí xử lý</th>
+                                <th style="width:20%">Hạn mức</th>
+                                <th style="width:20%">Ngày hiệu lực</th>
+                                <th style="width:20%">Ngày kết thúc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
                             <td class="v-align-middle bold">USD</td>
                             <td class="v-align-middle">0,2</td>
                             <td class="v-align-middle">0,2</td>
                             <td class="v-align-middle">18/07/2014</td>
                             <td class="v-align-middle">18/07/2014</td>
-                        </tr>
+                            </tr>
 
-                        <tr>
-                            <td class="v-align-middle bold">VND</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
-
-
-                        </tr>
+                            <tr>
+                                <td class="v-align-middle bold">VND</td>
+                                <td class="v-align-middle">0,2</td>
+                                <td class="v-align-middle">0,2</td>
+                                <td class="v-align-middle">18/07/2014</td>
+                                <td class="v-align-middle">18/07/2014</td>
 
 
-                        <tr>
-                            <td class="v-align-middle bold">CAD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
-
-                        </tr>
+                            </tr>
 
 
-                    </tbody>
-                </table>
+                            <tr>
+                                <td class="v-align-middle bold">CAD</td>
+                                <td class="v-align-middle">0,2</td>
+                                <td class="v-align-middle">0,2</td>
+                                <td class="v-align-middle">18/07/2014</td>
+                                <td class="v-align-middle">18/07/2014</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </form>
                 <div class="row">
                     <div class="col-sm-4">
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
                         <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & yêu cầu duyệt</button>
-
                     </div>
                 </div>
-
-
             </div>
         </div>
         <!-- /.modal-content -->
@@ -5163,7 +5403,7 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Điều chỉnh</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Diều chỉnh</button>
                         <!-- <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button> -->
                     </div>
                 </div>
@@ -5370,7 +5610,7 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
             </div>
