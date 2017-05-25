@@ -1,6 +1,4 @@
-{{#extend "default"}} {{#content "main"}}
-
-{{> navHori type="pkt-tienthuevp"}}
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-tienthuevp"}}
 
 
 <div class="container-fluid container-fixed-lg">
@@ -13,122 +11,230 @@
 
         </div>
 
-         <div class="col-sm-5">
-            <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#pkt-thueVP-phanbo"><i class="pg-form"></i> Tạo mới 
-                </button>
-            </div>
 
-        </div>
 
 
 
     </div>
 
     <div class="row">
-
         <div class="col-md-12">
-
-
             <div class="panel panel-default ">
 
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
+                    <li class="active"><a href="#tabTaoMoi" data-toggle="tab" role="tab">Tạo mới</a>
                     </li>
 
-                    <li class=""><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
-                    </li>
-                    <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
-                    </li>
+
 
                 </ul>
 
                 <div class="tab-content">
-                    <div class="tab-pane active" id="tabChuaDuyet">
-
-                        <div class="panel-body">
-
-                            <h5>Danh sách <span class="semi-bold">chưa duyệt</span></h5>
-
-
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-
-                                        <th style="">Ngày</th>
-                                        <th style="">Nghiệp vụ</th>
-                                        <th style="">Chi nhánh</th>
-                                       
-
-                                        <th>Chi tiết</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                
-
-                                        <td class="v-align-middle text-center">
-                                            12/05/2017
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            PHAN BO TIEN THUE VAN PHONG
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                            TÊN CN
-                                        </td>
-                                      
-
-                                        <td class="v-align-middle">
-                                            <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-thueVP-phanbo">Xem</a>
-                                        </td>
-                                    </tr>
+                    <div class="tab-pane active" id="tabTaoMoi">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form role="form">
 
 
-                                </tbody>
-                            </table>
 
-                        </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
 
-                    </div>
-                    <div class="tab-pane " id="tabDaDuyet">
-                        <div class="panel-body">
+                                            <div class="row m-b-15">
+                                                <div class="col-md-4 name"> Ngày <span class="text-danger">(*)</span> : </div>
+                                                <div class="col-md-8 value"><b>13/03/2017</b>
+                                                </div>
+                                            </div>
 
-                            <h5>Danh sách <span class="semi-bold">đã duyệt</span></h5>
+                                            <div class="row  m-b-15">
+                                                <div class="col-md-4  name"> Nghiệp vụ <span class="text-danger">(*)</span> : </div>
+                                                <div class="col-md-8 value"><b>CHI TRUOC TIEN THUE VAN PHONG</b>
+                                                </div>
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Chi nhánh <span class="text-danger">(*)</span>: </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+                                                <div class="col-md-4  name"> Hình thức thanh toán <span class="text-danger">(*)</span> : </div>
+                                                <div class="col-md-8 value">
+                                                    <select class="form-control">
+                                                        <option value="">TG </option>
+                                                        <option value="">TG có phí</option>
+                                                        <option value="">TG không phí</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Ngân hàng <span class="text-danger">(*)</span>: </div>
+                                                <div class="col-md-8 value">
+                                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="AK">Ngân hàng A</option>
+                                                    <option value="AK">Ngân hàng B</option>
+                                                    <option value="AK">Ngân hàng C</option>
+                                                </select>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Tên NV/KH <span class="text-danger">(*)</span>: </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Số CMND : </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Địa chỉ : </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name m-t-5"> Mã số thuế : </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+                                                </div>
+
+                                            </div>
 
 
-                        </div>
 
-                    </div>
 
-                    <div class="tab-pane " id="tabTraVe">
-                        <div class="panel-body">
 
-                            <h5>Danh sách <span class="semi-bold">trả về</span></h5>
+                                        </div>
 
+                                        <div class="col-md-6">
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name"> Loại tiền : </div>
+                                                <div class="col-md-8 value">
+                                                    <b>VND</b>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name">Phí tiền chuyển : </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name">Số tiền : </div>
+                                                <div class="col-md-8 value">
+                                                    <input type="" class="form-control" name="" value="">
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                            <div class="row  m-b-15">
+
+                                                <div class="col-md-4 name"> Tỷ giá : </div>
+                                                <div class="col-md-8 value"> <b>1</b>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-30">
+
+                                                <div class="col-md-4 name">Thành tiền : </div>
+                                                <div class="col-md-8 value"><b class="text-primary"> Số tiền X Tỷ giá </b>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row  m-b-30">
+
+                                                <div class="col-md-4 name">Thuế GTGT : </div>
+                                                <div class="col-md-8 value">
+                                                    <select class="form-control">
+                                                        <option value="">10% </option>
+                                                        <option value="">0%</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="row  m-b-30">
+
+                                                <div class="col-md-4 name">Thời gian : </div>
+                                                <div class="col-md-8 value">
+
+                                                    <div class="radio radio-primary">
+                                                        <input type="radio" value="yes" name="donViKy" id="donViKy-ocb">
+                                                        <label for="donViKy-ocb">Ngắn hạn</label>
+                                                        <input type="radio" checked="checked" value="no" name="donViKy" id="donViKy-congty">
+                                                        <label for="donViKy-congty">Dài hạn</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+
+                                        <div class="col-sm-12 text-right">
+                                            <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                                            <button type="button" class="btn btn-primary  m-t-5">Lưu &Yêu cầu duyệt</button>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </form>
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
-
-
             </div>
-
-
-
-
-
         </div>
 
-
-
-
-
     </div>
-
-
 </div>
 
 
