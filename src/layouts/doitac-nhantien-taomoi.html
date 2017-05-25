@@ -12,34 +12,32 @@
         </div>
         <div class="panel-body">
             <form role="form">
-
                 <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
 
                 <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
 
                 <div class="form-group form-group-attached">
-                    <label>Tên đối tác</label>
-                    <span class="help"> </span>
-
-                    <select class="full-width " data-init-plugin="select2">
+                    <div class="row">
+                        <div class="col-sm-7 btn-cons">
+                            <label>Tên đối tác</label>
+                            <span class="help"> </span>
+                            <select class="full-width " data-init-plugin="select2">
                                 <option value="AK" disabled selected>Chọn đối tác</option>
                                 <option value="AK">Nguyễn Văn B</option>
                                 <option value="HI">Nguyễn Văn A</option>
-
-
                             </select>
 
+                        </div>
+                        <div class="col-sm-4">
+                            <label>ID đối tác</label>
 
-                </div>
-
-                <div class="form-group  form-group-attached">
-                    <label>ID đối tác</label>
-
-                    <div class="input-group date">
-                        <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                            <div class="input-group date">
+                                <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                            </div>
+                        </div>
                     </div>
-                </div>
 
+                </div>
 
                 <h6 class="bold text-uppercase m-t-30">Hình thức chuyển tiền</h6>
 
@@ -57,19 +55,85 @@
                     </div>
 
                 </div>
+                <h6 class="bold text-uppercase m-t-30">Loại tiền chuyển đến</h6>
 
+                <div class="form-group-attached">
 
-                <h6 class="bold text-uppercase m-t-20">Loại tiền chuyển đến</h6>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="col-sm-1 btn-cons  m-t-10">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" name="" id="can">
+                                    <label for="can">CAN</label>
 
-                {{> loaitien}}
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+
+                                    <input type="text " placeholder="20000" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-sm-1 btn-cons  m-t-10">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" name="" id="vnd">
+                                    <label for="vnd">VND</label>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <input type="text " placeholder="20000" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="col-sm-1 btn-cons  m-t-10">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" name="" id="usd">
+                                    <label for="usd">USD</label>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <input type="text " placeholder="20000" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="col-sm-1 btn-cons m-t-10">
+                                <div class="checkbox check-primary">
+                                    <input type="checkbox" value="" name="" id="eur">
+                                    <label for="eur">EUR</label>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+
+                                    <input type="text " placeholder="20000" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
             </form>
+        </div>
 
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+        <div class="row">
+            <div class="col-sm-4">
+                <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                             <div class="pull-left">
                                 <p class="bold font-montserrat text-uppercase">TOTAL</p>
                             </div>
@@ -77,17 +141,17 @@
                                 <p class="bold font-montserrat text-uppercase">$20.00</p>
                             </div>
                         </div>-->
-                </div>
-                <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+            </div>
+            <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
 
-                    <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
-                </div>
+                <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
             </div>
         </div>
-
     </div>
-    <!-- /.modal-dialog -->
+
+</div>
+<!-- /.modal-dialog -->
 </div>
 <!-- END MODAL STICK UP  -->
 
