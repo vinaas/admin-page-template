@@ -8,232 +8,148 @@
             <h3 class="page-title">{{title}}</h3>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class="active"><a href="#tabDieuChinhButToan" data-toggle="tab" role="tab">Điều chỉnh bút toán</a>
-                    </li>
+                <div class="panel-body">
+                    {{> formSearch type="pkt-7"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group-attached">
 
-                    <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
-                    </li>
-
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tabDieuChinhButToan">
-                        <div class="panel-body">
-                            {{> formSearch type="pkt-7"}}
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group m-l-10">
+                                    <label>Mã nghiệp vụ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group m-l-10">
+                                    <label>Tên chứng từ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group m-l-10">
+                                    <label>Số giao dịch</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group m-l-10">
+                                    <label>Số chứng từ</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group m-l-10">
+                                    <label>Số thứ tự</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
 
                         </div>
+                    </div>
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <h6 class="bold text-uppercase">TÀI KHOẢN CÓ</h6>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Chi nhánh</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Loại tiền</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Số tài khoản</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
 
-                        <div class="panel-body">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <div class="form-group-attached">
+                        </div>
+                        <div class="row">
+                            <h6 class="bold text-uppercase">TÀI KHOẢN NỢ</h6>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Chi nhánh</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Loại tiền</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Số tài khoản</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
 
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group m-l-10">
-                                                    <label>Mã nghiệp vụ</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group m-l-10">
-                                                    <label>Tên chứng từ</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số giao dịch</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số chứng từ</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số thứ tự</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Số tiền</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Tỷ giá</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Thành tiền</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
 
-                                        </div>
-                                    </div>
-                                    <div class="form-group-attached">
-                                        <div class="row">
-                                            <h6 class="bold text-uppercase">TÀI KHOẢN CÓ</h6>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Chi nhánh</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Loại tiền</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số tài khoản</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <h6 class="bold text-uppercase">TÀI KHOẢN NỢ</h6>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Chi nhánh</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Loại tiền</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số tài khoản</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Số tiền</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Tỷ giá</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Thành tiền</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group-attached">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group m-l-10">
-                                                    <label>Lý do</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group m-l-10">
-                                                    <label>Ngày điều chỉnh</label>
-                                                    <div id="datepicker-component" class="input-group date col-sm-8">
-                                                        <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8"></div>
-                                        <div class="col-sm-4  ">
-
-                                            <button class="btn btn-danger"> Hủy</button>
-                                            <button class="btn btn-primary" type="submit">Lưu &amp; Yêu cầu duyệt</button>
-
-                                        </div>
-
+                        </div>
+                    </div>
+                    <div class="form-group-attached">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group m-l-10">
+                                    <label>Lý do</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group m-l-10">
+                                    <label>Ngày điều chỉnh</label>
+                                    <div id="datepicker-component" class="input-group date col-sm-8">
+                                        <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-8"></div>
+                        <div class="col-sm-4 text-right ">
+                            <button class="btn btn-danger"> Hủy</button>
+                            <button class="btn btn-primary" type="submit">Lưu &amp; Yêu cầu duyệt</button>
 
-                    <div class="tab-pane" id="tabDuyet">
-                        <div class="panel-body">
-                            {{>formSearch type="pkt-7"}}
-                            <div class="clearfix"></div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th> Mã nghiệp vụ</th>
-                                            <th>Tên chứng từ</th>
-                                            <th>Số giao dịch</th>
-                                            <th>Số chứng từ</th>
-                                            <th> Thông tin điều chỉnh</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>
-                                                <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-duyetdieuchinhbuttoan">Xem</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
 
                     </div>
@@ -244,7 +160,6 @@
     </div>
 </div>
 
-
-
+</div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
