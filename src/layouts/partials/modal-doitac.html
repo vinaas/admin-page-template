@@ -299,8 +299,163 @@
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-primary  m-t-5">Hoàn tất</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade stick-up" id="xemChiTiet-DoiTac-HopDong" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Chi tiết<span class="semi-bold"> Hợp đồng</span></h5>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+
+
+                        <div class="panel-body">
+
+                            <h5 class="m-t-0">
+                                Thông tin đối tác
+                            </h5>
+
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> ID đối tác: </div>
+                                <div class="col-md-10 value"> 1231
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> Tên giao dịch: </div>
+                                <div class="col-md-10 value"> ABC
+                                </div>
+                            </div>
+                            <div class="row static-info">
+                                <div class="col-md-2 name"> Số hợp đồng: </div>
+                                <div class="col-md-10 value"> 234
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+
+                            {{>formSearch type="normal"}}
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
+                          </button>
+
+                                <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                            </div>
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="tabler-responsive">
+
+
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox1">
+                                                    <label for="checkbox1" class="m-r-0"></label>
+                                                </div>
+
+                                            </th>
+                                            <th style="width: 5%">ID</th>
+                                            <th style="width: 15%">Mã hợp đồng</th>
+                                            <th style="width: 15%">Ngày ký hợp đồng</th>
+                                            <th style="width: 20%">Ngày hiệu lực hợp đồng</th>
+                                            <th style="width: 20%px">Ngày hết hiệu lực hợp đồng</th>
+                                            <th style="width: 15%">File</th>
+                                            <th style="width: 5%">Loại</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">
+                                                <div class="checkbox ">
+                                                    <input type="checkbox" value="3" id="checkbox2">
+                                                    <label for="checkbox2" class="m-r-0"></label>
+                                                </div>
+                                            </td>
+                                            <td class="v-align-middle ">
+                                                1
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                125
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                12/03/2017
+                                            </td>
+                                            <td class="v-align-middle">
+                                                hop-dong-so-1.jpg
+                                            </td>
+
+                                            <td class="v-align-middle">
+                                                Hợp đồng
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+                                {{>pagination}}
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+
+                                </div>
+                                <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
