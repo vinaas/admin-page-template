@@ -1,0 +1,122 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
+
+<div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <!-- END PLACE PAGE CONTENT HERE -->
+    <div class="row">
+        <div class="col-sm-7">
+
+            <h3 class="page-title">Duyệt điều chỉnh đối tác </h3>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{>formSearch type="normal"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel-heading">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+                            <!--<button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> PDF
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-print"></i> In
+                          </button>-->
+                        </div>
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                            </button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                            </button>
+
+                            </div>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="table table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+
+                                    </th>
+                                    <th style="width: 10%">STT</th>
+                                    <th style="width: 15%">Ngày tạo</th>
+                                    <th style="width: 20%">Mã đối tác</th>
+                                    <th style="width: 20%">Tên đầy đủ</th>
+
+                                    <th style="width: 15%">Số HĐ</th>
+
+                                    <th style="width: 10%">Hợp đồng</th>
+                                    <th style="width: 10%">Chi tiết</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        1
+                                    </td>
+                                    <td class="v-align-middle ">
+                                        04/03/2017
+                                    </td>
+                                    <td class="v-align-middle">
+                                        12
+                                    </td>
+                                    <td class="v-align-middle">
+                                        ABC
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        245
+                                    </td>
+
+                                    <td class="v-align-middle">
+                                        <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-tabLanhDao">Xem
+                                    </td>
+
+                                        </tr>
+
+                                </tbody>
+                        </table>
+
+                        {{>pagination}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
