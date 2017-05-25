@@ -23,7 +23,11 @@
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabDieuChinhButToan">
-                        {{> formSearch type="pkt-7"}}<br>
+                        <div class="panel-body">
+                            {{> formSearch type="pkt-7"}}
+
+                        </div>
+
                         <div class="panel-body">
                             <div class="panel panel-default">
                                 <div class="panel-body">
@@ -166,11 +170,11 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane active" id="tabDuyet">
+                    <div class="tab-pane" id="tabDuyet">
                         <div class="panel-body">
                             {{>formSearch type="pkt-7"}}
-
-                            <div class="tabler-responsive">
+                            <div class="clearfix"></div>
+                            <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
