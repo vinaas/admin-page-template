@@ -9,16 +9,7 @@
 
             <h3 class="page-title">Quản lý danh sách đối tác</h3>
         </div>
-        <div class="col-sm-4">
-            <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-                <!--
-                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
-                </button>-->
 
-            </div>
-        </div>
 
 
     </div>
@@ -34,8 +25,6 @@
 
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
-                    <li><a href="#tabLanhDao" data-toggle="tab" role="tab">Duyệt</a>
-                    </li>
 
                 </ul>
 
@@ -46,6 +35,12 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <div class="panel-heading">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách</button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i></button>
+
+                                    </div>
                                     <div class="pull-right m-b-10">
                                         <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                                         <div class="btn-group">
@@ -76,9 +71,9 @@
 
                                                 <th style="width: 15%">Số HĐ</th>
 
-                                                <th style="width: 10%">Hợp đồng</th>
-                                                <th style="width: 10%">Trạng thái</th>
-                                                <th style="width: 5%">Chi tiết</th>
+                                                <th style="width: 15%">Hợp đồng</th>
+                                                <th style="width: 15%">Chi tiết</th>
+
 
                                             </tr>
                                         </thead>
@@ -104,13 +99,11 @@
                                                     245
                                                 </td>
 
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                                 </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default">Chưa duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
+
+                                                <td class="v-align-middle">
                                                     <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
                                                 </a>
                                                 </td>
@@ -136,13 +129,10 @@
                                                 <td class="v-align-middle">
                                                     245
                                                 </td>
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                                 </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default">Chưa duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-chuaDuyet">Xem
                                                 </a>
                                                 </td>
@@ -172,6 +162,13 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <div class="pane panel-heading">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách</button>
+
+                                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i></button>
+
+                                    </div>
+
                                     <div class="pull-right m-b-10">
                                         <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                                         <div class="btn-group">
@@ -203,9 +200,8 @@
 
                                                 <th style="width: 15%">Số HĐ</th>
 
-                                                <th style="width: 10%">Hợp đồng</th>
-                                                <th style="width: 10%">Trạng thái</th>
-                                                <th style="width: 5%">Chi tiết</th>
+                                                <th style="width: 15%">Hợp đồng</th>
+                                                <th style="width: 15%">Chi tiết</th>
 
                                             </tr>
                                         </thead>
@@ -231,13 +227,10 @@
                                                     245
                                                 </td>
 
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                                 </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default"> Trả về</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-Trave">Xem</a>
                                                 </td>
 
@@ -264,13 +257,11 @@
                                                 </td>
 
 
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                                 </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default"> Trả về</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
+
+                                                <td class="v-align-middle">
                                                     <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-Trave">Xem
                                                 </a>
                                                 </td>
@@ -292,172 +283,11 @@
                         {{> formSearch type="normal"}}
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <div class="panel panel-heading">
-                                    <div class="pull-right m-b-10">
-                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default"><i
-                                                class="fa fa-chevron-left"></i>
-                                        </button>
-                                            <button type="button" class="btn btn-default"><i
-                                                class="fa fa-chevron-right"></i>
-                                        </button>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="table table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-
-                                                <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox1">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
-
-                                                </th>
-                                                <th style="width: 15%">Ngày tạo</th>
-                                                <th style="width: 15%">Mã đối tác</th>
-                                                <th style="width: 25%">Tên đầy đủ</th>
-
-                                                <th style="width: 15%">Số HĐ</th>
-
-                                                <th style="width: 10%">Hợp đồng</th>
-                                                <th style="width: 10%">Trạng thái</th>
-                                                <th>Chi tiết</th>
-                                                <th style="width:5%"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox2">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    04/03/2017
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    12
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    ABC
-                                                </td>
-
-                                                <td class="v-align-middle">
-                                                    245
-                                                </td>
-
-                                                <td class="v-align-middle text-center">
-                                                    <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-success"> duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-daDuyet">Xem
-                                                </a>
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    <div class="dropdown pull-right">
-                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa fa-cog"></i>
-                                                    </button>
-                                                        <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                            <li class="bg-master-lighter">
-                                                                <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
-                                                                    <span class="pull-left">Xóa</span>
-                                                                    <span class="pull-right"><i
-                                                                        class="fa fa-trash-o"></i></span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input type="checkbox" value="3" id="checkbox2">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle ">
-                                                    04/03/2017
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    12
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    ABC
-                                                </td>
-
-                                                <td class="v-align-middle">
-                                                    245
-                                                </td>
-
-
-                                                <td class="v-align-middle text-center">
-                                                    <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-success">duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-daDuyet">Xem
-                                                </a>
-                                                </td>
-                                                <td class="v-align-middle">
-
-                                                    <div class="dropdown pull-right">
-                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa fa-cog"></i>
-                                                    </button>
-                                                        <ul class="dropdown-menu profile-dropdown" role="menu">
-                                                            <li class="bg-master-lighter">
-                                                                <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
-                                                                    <span class="pull-left">Xóa</span>
-                                                                    <span class="pull-right"><i
-                                                                        class="fa fa-trash-o"></i></span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
-                                    {{>pagination}}
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="tab-pane " id="tabLanhDao">
-                        {{> formSearch type="normal"}}
-                        <div class="panel panel-default">
-
-                            <div class="panel-body">
-                                <div class="panel panel-heading">
+                                <div class="panel-heading">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt
-                                    </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách</button>
 
-                                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-remove"></i> Từ chối
-                                    </button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i></button>
 
                                     </div>
                                     <div class="pull-right m-b-10">
@@ -472,7 +302,6 @@
 
                                         </div>
                                     </div>
-
 
                                 </div>
 
@@ -494,10 +323,8 @@
 
                                                 <th style="width: 15%">Số HĐ</th>
 
-                                                <th style="width: 10%">Hợp đồng</th>
-                                                <th style="width: 10%">Trạng thái</th>
-                                                <th style="width: 5%">Chi tiết</th>
-
+                                                <th style="width: 15%">Hợp đồng</th>
+                                                <th style="width: 15%">Chi tiết</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -522,51 +349,44 @@
                                                     245
                                                 </td>
 
-                                                <td class="v-align-middle text-center">
+                                                <td class="v-align-middle">
                                                     <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
                                                 </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default">Chờ duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-tabLanhDao">Xem
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="v-align-middle">
-                                                <div class="checkbox ">
-                                                    <input type="checkbox" value="3" id="checkbox2">
-                                                    <label for="checkbox2" class="m-r-0"></label>
-                                                </div>
-                                            </td>
-                                            <td class="v-align-middle ">
-                                                04/03/2017
-                                            </td>
-                                            <td class="v-align-middle">
-                                                12
-                                            </td>
-                                            <td class="v-align-middle">
-                                                ABC
-                                            </td>
-
-                                            <td class="v-align-middle">
-                                                245
-                                            </td>
-
-
-                                            <td class="v-align-middle text-center">
-                                                <a href="doitac-hopdong.html"
-                                                   class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <span class="label label-default">Chờ duyệt</span>
-                                                </td>
-                                                <td class="v-align-middle text-center">
-                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-tabLanhDao">Xem
+                                                <td class="v-align-middle">
+                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-daDuyet">Xem
                                                 </a>
                                                 </td>
 
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle ">
+                                                    04/03/2017
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    12
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    ABC
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    245
+                                                </td>
+
+
+                                                <td class="v-align-middle">
+                                                    <a href="doitac-hopdong.html" class="btn btn-tag   btn-tag-light btn-tag-rounded m-r-20">Xem</a>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-daDuyet">Xem
+                                                </a>
+                                                </td>
                                             </tr>
 
                                         </tbody>
@@ -577,10 +397,9 @@
                                 </div>
                             </div>
 
-
                         </div>
-
                     </div>
+                    
                 </div>
 
 
