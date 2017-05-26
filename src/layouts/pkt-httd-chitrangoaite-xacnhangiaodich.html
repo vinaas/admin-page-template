@@ -6,21 +6,12 @@
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-12">
-
             <h3 class="page-title">{{title}}</h3>
-
-
         </div>
-
-
-
     </div>
 
     <div class="row">
-
         <div class="col-md-12">
-
-
             <div class="panel panel-default ">
 
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
@@ -39,8 +30,6 @@
 
                             <div class="row">
 
-
-
                                 <div class="col-md-3">
                                     <div class="form-group ">
                                         <label>Tên đối tác</label>
@@ -53,78 +42,79 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
 
-                                        <button class="btn btn-default btn-cons m-t-25" type="button"><i class="fa fa-filter"></i> Lọc
-        </button>
+                                        <button class="btn btn-default btn-cons m-t-25" type="button"><i class="fa fa-filter"></i> Lọc</button>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="pull-right m-b-10">
-                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                            </button>
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                            </button>
+                            <h5>Danh sách <span class="semi-bold">đối tác</span></h5>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="clearfix">
+                                        <div class="pull-right m-b-10">
+                                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px;padding: 10px 11px !important;">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox1">
+                                                        <label for="checkbox1" class="m-r-0"></label>
+                                                    </div>
+
+                                                </th>
+                                                <th>STT</th>
+                                                <th>Ngày xuất</th>
+                                                <th>Tên đối tác</th>
+                                                <th>Đợt</th>
+                                                <th>Số hồ sơ</th>
+
+                                                <th>Chi tiết</th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" value="3" id="checkbox2">
+                                                        <label for="checkbox2" class="m-r-0"></label>
+                                                    </div>
+                                                </td>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">16/03/2017</td>
+                                                <td class="v-align-middle">Mayzus</td>
+                                                <td class="v-align-middle">15032160-AD-01</td>
+                                                <td class="v-align-middle">100</td>
+
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-target="#pkt-chitrangoaite" data-toggle="modal">Xem</a>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                    {{>pagination}}
                                 </div>
                             </div>
 
 
 
-                            <h5>Danh sách <span class="semi-bold">đối tác</span></h5>
 
 
-
-
-
-
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 50px;padding: 10px 11px !important;">
-                                            <div class="checkbox ">
-                                                <input type="checkbox" value="3" id="checkbox1">
-                                                <label for="checkbox1" class="m-r-0"></label>
-                                            </div>
-
-                                        </th>
-                                        <th>STT</th>
-                                        <th>Ngày xuất</th>
-                                        <th>Tên đối tác</th>
-                                        <th>Đợt</th>
-                                        <th>Số hồ sơ</th>
-                                    
-                                        <th>Chi tiết</th>
-
-
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            <div class="checkbox ">
-                                                <input type="checkbox" value="3" id="checkbox2">
-                                                <label for="checkbox2" class="m-r-0"></label>
-                                            </div>
-                                        </td>
-                                        <td class="v-align-middle">1</td>
-                                        <td class="v-align-middle">16/03/2017</td>
-                                        <td class="v-align-middle">Mayzus</td>
-                                        <td class="v-align-middle">15032160-AD-01</td>
-                                        <td class="v-align-middle">100</td>
-                                       
-                                        <td class="v-align-middle">
-                                            <a href="" class="text-primary" data-target="#pkt-chitrangoaite" data-toggle="modal">Xem</a>
-                                        </td>
-                                    </tr>
-                                
-
-
-                                </tbody>
-                            </table>
 
                             <div class="row">
 
@@ -161,8 +151,6 @@
 
 
 
-                            {{>pagination}}
-                            
 
                         </div>
 
