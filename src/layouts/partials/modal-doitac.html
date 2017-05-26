@@ -1760,58 +1760,151 @@
                 <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
             </div>
             <div class="modal-body">
-                <table class="table table-hover table-small" id="">
-                    <thead>
-                        <tr>
+                <form role="form">
 
-                            <th style="width:20%">Loại tiền thanh toán</th>
-                            <th style="width:20%">Phí xử lý</th>
-                            <th style="width:20%">Hạn mức</th>
-                            <th style="width:20%">Ngày hiệu lực</th>
-                            <th style="width:20%">Ngày hết hiệu lực</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="v-align-middle bold">USD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                        </tr>
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
 
-                        <tr>
-                            <td class="v-align-middle bold">VND</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="form-group form-group-attached">
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
+
+                        <select class="full-width " data-init-plugin="select2">
+                                <option value="AK" disabled selected>Chọn đối tác</option>
+                                <option value="AK">Nguyễn Văn B</option>
+                                <option value="HI">Nguyễn Văn A</option>
 
 
-                        </tr>
+                            </select>
 
 
-                        <tr>
-                            <td class="v-align-middle bold">CAD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    </div>
 
-                        </tr>
+                    <div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thời gian</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
 
 
-                    </tbody>
-                </table>
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                <label for="usd">USD</label>
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                <label for="vnd">VND</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="eur">
+                                <label for="eur">EUR</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="gpt">
+                                <label for="gpt">GBP</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="jpy">
+                                <label for="jpy">JPY</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <table class="table table-hover table-small" id="">
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Loại tiền</th>
+                                        <th style="width:35%">Phí xử lý</th>
+                                        <th style="width:35%">Hạn mức</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="v-align-middle bold">USD</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="v-align-middle bold">VND</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
+
                 <div class="row">
-                    <div class="col-sm-8"></div>
-                    <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
 
                     </div>
                 </div>
-
-
             </div>
         </div>
         <!-- /.modal-content -->
@@ -1831,59 +1924,151 @@
                 <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
             </div>
             <div class="modal-body">
-                <table class="table table-hover table-small" id="">
-                    <thead>
-                        <tr>
+                <form role="form">
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
 
-                            <th style="width:20%">Loại tiền thanh toán</th>
-                            <th style="width:20%">Phí xử lý</th>
-                            <th style="width:20%">Hạn mức</th>
-                            <th style="width:20%">Ngày hiệu lực</th>
-                            <th style="width:20%">Ngày hết hiệu lực</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="v-align-middle bold">USD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                        </tr>
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
 
-                        <tr>
-                            <td class="v-align-middle bold">VND</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    <div class="form-group form-group-attached">
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
+
+                        <select class="full-width " data-init-plugin="select2">
+                                <option value="AK" disabled selected>Chọn đối tác</option>
+                                <option value="AK">Nguyễn Văn B</option>
+                                <option value="HI">Nguyễn Văn A</option>
 
 
-                        </tr>
+                            </select>
 
 
-                        <tr>
-                            <td class="v-align-middle bold">CAD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    </div>
 
-                        </tr>
+                    <div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thời gian</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
 
 
-                    </tbody>
-                </table>
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                <label for="usd">USD</label>
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                <label for="vnd">VND</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="eur">
+                                <label for="eur">EUR</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="gpt">
+                                <label for="gpt">GBP</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="jpy">
+                                <label for="jpy">JPY</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <table class="table table-hover table-small" id="">
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Loại tiền</th>
+                                        <th style="width:35%">Phí xử lý</th>
+                                        <th style="width:35%">Hạn mức</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="v-align-middle bold">USD</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="v-align-middle bold">VND</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
+
                 <div class="row">
-                    <div class="col-sm-8"></div>
-                    <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt</button>
+                    <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-warning  m-t-5" data-toggle="modal" data-target="#modalTuChoi">Từ chối</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Duyệt</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <!-- /.modal-content -->
@@ -1902,60 +2087,151 @@
                 <h5>Thông tin <span class="semi-bold">Hạn mức</span></h5>
             </div>
             <div class="modal-body">
-                <table class="table table-hover table-small" id="">
-                    <thead>
-                        <tr>
+                <form role="form">
 
-                            <th style="width:20%">Loại tiền thanh toán</th>
-                            <th style="width:20%">Phí xử lý</th>
-                            <th style="width:20%">Hạn mức</th>
-                            <th style="width:20%">Ngày hiệu lực</th>
-                            <th style="width:20%">Ngày hết hiệu lực</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="v-align-middle bold">USD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                        </tr>
+                    <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
 
-                        <tr>
-                            <td class="v-align-middle bold">VND</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+
+                    <div class="form-group form-group-attached">
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
+
+                        <select class="full-width " data-init-plugin="select2">
+                                <option value="AK" disabled selected>Chọn đối tác</option>
+                                <option value="AK">Nguyễn Văn B</option>
+                                <option value="HI">Nguyễn Văn A</option>
 
 
-                        </tr>
+                            </select>
 
 
-                        <tr>
-                            <td class="v-align-middle bold">CAD</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">0,2</td>
-                            <td class="v-align-middle">18/07/2014</td>
-                            <td class="v-align-middle">18/07/2014</td>
+                    </div>
 
-                        </tr>
+                    <div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                        </div>
+                    </div>
+
+                    <h6 class="bold text-uppercase m-t-20">Thời gian</h6>
+
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
 
 
-                    </tbody>
-                </table>
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                <label for="usd">USD</label>
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                <label for="vnd">VND</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="eur">
+                                <label for="eur">EUR</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="gpt">
+                                <label for="gpt">GBP</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="jpy">
+                                <label for="jpy">JPY</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <table class="table table-hover table-small" id="">
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Loại tiền</th>
+                                        <th style="width:35%">Phí xử lý</th>
+                                        <th style="width:35%">Hạn mức</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="v-align-middle bold">USD</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="v-align-middle bold">VND</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
+
                 <div class="row">
                     <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Điều chỉnh</button>
-
+                        <button type="button" class="btn btn-primary  m-t-5">Điều chỉnh</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <!-- /.modal-content -->
@@ -1980,72 +2256,142 @@
                     <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
 
                     <div class="form-group form-group-attached">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label>Tên đối tác</label>
-                                <span class="help"> </span>
-                                <div class="input-group date">
-                                    <input type="text" class="form-control input-black" placeholder="" value="Nguyễn Văn A">
-                                </div>
-                            </div>
+                        <label>Tên đối tác</label>
+                        <span class="help"> </span>
 
-                            <div class="col-sm-6">
-                                <label>ID đối tác</label>
-                                <div class="input-group date">
-                                    <input type="text" class="form-control input-black" placeholder="" value="152">
-                                </div>
-                            </div>
+                        <select class="full-width " data-init-plugin="select2">
+                                <option value="AK" disabled selected>Chọn đối tác</option>
+                                <option value="AK">Nguyễn Văn B</option>
+                                <option value="HI">Nguyễn Văn A</option>
+
+
+                            </select>
+
+
+                    </div>
+
+                    <div class="form-group  form-group-attached">
+                        <label>ID đối tác</label>
+
+                        <div class="input-group date">
+                            <input type="text" disabled class="form-control input-black" placeholder="" value="152">
                         </div>
                     </div>
 
-                    <table class="table table-hover table-small" id="">
-                        <thead>
-                            <tr>
-                                <th style="width:20%">Loại tiền thanh toán</th>
-                                <th style="width:20%">Phí xử lý</th>
-                                <th style="width:20%">Hạn mức</th>
-                                <th style="width:20%">Ngày hiệu lực</th>
-                                <th style="width:20%">Ngày kết thúc</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="v-align-middle bold">USD</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">18/07/2014</td>
-                                <td class="v-align-middle">18/07/2014</td>
-                            </tr>
+                    <h6 class="bold text-uppercase m-t-20">Thời gian</h6>
 
-                            <tr>
-                                <td class="v-align-middle bold">VND</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">18/07/2014</td>
-                                <td class="v-align-middle">18/07/2014</td>
+                    <div class="form-group-attached">
+                        <div class="row">
+
+                            <div class="col-sm-6">
 
 
-                            </tr>
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày hiệu lực</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
 
 
-                            <tr>
-                                <td class="v-align-middle bold">CAD</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">0,2</td>
-                                <td class="v-align-middle">18/07/2014</td>
-                                <td class="v-align-middle">18/07/2014</td>
+                            </div>
 
-                            </tr>
-                        </tbody>
-                    </table>
+                            <div class="col-sm-6">
+
+
+                                <div class="form-group form-group-default input-group col-sm-10">
+                                    <label>Ngày kết thúc</label>
+                                    <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                    <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="checkbox check-primary">
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                <label for="usd">USD</label>
+                                <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                <label for="vnd">VND</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="eur">
+                                <label for="eur">EUR</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="gpt">
+                                <label for="gpt">GBP</label>
+
+                                <input type="checkbox" value="" name="optionyes" id="jpy">
+                                <label for="jpy">JPY</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <table class="table table-hover table-small" id="">
+                                <thead>
+                                    <tr>
+                                        <th style="width:30%">Loại tiền</th>
+                                        <th style="width:35%">Phí xử lý</th>
+                                        <th style="width:35%">Hạn mức</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td class="v-align-middle bold">USD</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="v-align-middle bold">VND</td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                        <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+
+
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+                    </div>
+
 
                 </form>
+
+
                 <div class="row">
                     <div class="col-sm-4">
+                        <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                            <div class="pull-left">
+                                <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                            </div>
+                            <div class="pull-right">
+                                <p class="bold font-montserrat text-uppercase">$20.00</p>
+                            </div>
+                        </div>-->
                     </div>
                     <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                         <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & yêu cầu duyệt</button>
+                        <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
                     </div>
                 </div>
             </div>
