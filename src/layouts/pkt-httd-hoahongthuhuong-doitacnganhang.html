@@ -28,7 +28,7 @@
                 <!--<div class="panel-heading ">
                     <div class="panel-title">Tạo mới
                     </div>
-                  
+
                 </div>-->
 
 
@@ -133,8 +133,8 @@
                                 <div class="col-md-4 name m-t-5"> </div>
                                 <div class="col-md-8 value">
                                     <div class=" m-t-10 sm-m-t-10 ">
-                                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                                        <button type="button" class="btn btn-primary  m-t-5">Thực hiện</button>
+                                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
+                                        <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                                     </div>
                                 </div>
                             </div>
@@ -162,8 +162,16 @@
                                         <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
                                         </button>
 
-                                  
+                                    </div>
 
+                                    <div class="clearfix">
+                                        <div class="pull-right m-b-10">
+                                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="table-responsive">
@@ -184,44 +192,44 @@
                                                     <th>TC</th>
                                                     <th>Tỷ giá</th>
                                                     <th>TT</th>
-                                           
+
 
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle ">12/03/2017</td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
                                                 </tr>
 
                                                 <tr>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
-                                                      <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle ">12/03/2017</td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
+                                                    <td class="v-align-middle "> </td>
                                                 </tr>
 
 
                                             </tbody>
                                         </table>
 
-
+                                        {{>pagination}}
                                     </div>
 
                                 </div>

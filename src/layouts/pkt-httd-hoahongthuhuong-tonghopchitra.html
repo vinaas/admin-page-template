@@ -201,8 +201,8 @@
 
 
                                     <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
-                                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                                        <button type="button" class="btn btn-primary  m-t-5">Áp dụng</button>
+                                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
+                                        <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Áp dụng</button>
                                     </div>
 
 
@@ -218,7 +218,15 @@
                                     <h5>Danh sách áp dụng</h5>
                                     <div class="panel panel-default">
                                         <div class="panel-body">
-
+                                            <div class="clearfix">
+                                                <div class="pull-right m-b-10">
+                                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="table-responsive">
                                                 <table class="table table-hover">
                                                     <thead>
@@ -278,7 +286,7 @@
 
                                                     </tbody>
                                                 </table>
-
+                                                {{>pagination}}
                                             </div>
 
                                         </div>
@@ -287,8 +295,8 @@
                                 </div>
 
                                 <div class="col-sm-12 text-center">
-                                    <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
-                                    <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
+                                    <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-remove"></i> Hủy</button>
+                                    <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Lưu & Yêu cầu duyệt</button>
                                 </div>
 
 
@@ -337,56 +345,55 @@
 
                         </div>
 
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="clearfix">
+                                    <div class="pull-right m-b-10">
+                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
 
 
+                                            <th>Tên chi nhánh</th>
+                                            <th>USD</th>
+                                            <th>EUR</th>
+                                            <th>CAD</th>
+                                            <th>Phí chi trả</th>
 
-                        <div class="pull-right m-b-10">
-                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                          </button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                          </button>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ha Noi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
 
+                                        <tr>
+                                            <td>Thanh hoa</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                                {{>pagination}}
                             </div>
                         </div>
 
-
-                        <div class="clearfix"></div>
-
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-
-
-                                    <th>Tên chi nhánh</th>
-                                    <th>USD</th>
-                                    <th>EUR</th>
-                                    <th>CAD</th>
-                                    <th>Phí chi trả</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ha Noi</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Thanh hoa</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
 
 
 
@@ -455,7 +462,7 @@
                                     <td class="v-align-middle ">30
                                     </td>
 
-                                     <td>
+                                    <td>
 
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
@@ -536,10 +543,10 @@
                                     <td class="v-align-middle ">30
                                     </td>
 
-                                     <td>
+                                    <td>
 
                                         <div class="btn-group btn-group-sm">
-                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
                                         </div>
 
                                     </td>
@@ -590,7 +597,7 @@
                                     <td>
 
                                         <div class="btn-group btn-group-sm">
-                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
                                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
                                         </div>
 
@@ -616,12 +623,12 @@
                                     <td class="v-align-middle ">30
                                     </td>
 
-                                     <td>
+                                    <td>
 
                                         <div class="btn-group btn-group-sm">
-                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
                                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                        
+
                                         </div>
 
                                     </td>

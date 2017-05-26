@@ -115,7 +115,7 @@
 
                                                 <td class="v-align-middle bold">5000</td>
                                                 <td class="v-align-middle bold">1</td>
-                                                <td><a href="" class="text-danger">xóa</a></td>
+                                                <td><a href="" class="text-danger">Xóa</a></td>
                                             </tr>
                                             <tr>
 
@@ -124,7 +124,7 @@
                                                 <td class="v-align-middle bold">7000</td>
                                                 <td class="v-align-middle bold">2</td>
 
-                                                <td><a href="" class="text-danger">xóa</a></td>
+                                                <td><a href="" class="text-danger">Xóa</a></td>
 
                                             </tr>
 
@@ -138,8 +138,8 @@
 
 
                             <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4 text-right">
-                                <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
-                                <button type="button" class="btn btn-primary  m-t-5">Thực hiện</button>
+                                <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-remove"></i> Hủy</button>
+                                <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                             </div>
 
 
@@ -155,7 +155,15 @@
                             <h5>Danh sách</h5>
                             <div class="panel panel-default">
                                 <div class="panel-body">
-
+                                    <div class="clearfix">
+                                        <div class="pull-right m-b-10">
+                                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <thead>
@@ -249,7 +257,7 @@
 
                                             </tbody>
                                         </table>
-
+                                        {{>pagination}}
                                     </div>
 
                                 </div>
