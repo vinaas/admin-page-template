@@ -1544,7 +1544,7 @@ $secondary-sidebar-width: 250px;
         position: fixed;
         display: table;
         z-index: 50;
-        background-color: $color-master-lighter;
+        background-color: darken($color-master-lighter,5%);
     }
     .bar-inner {
         display: table-cell;
