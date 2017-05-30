@@ -111,7 +111,7 @@ form legend {
     @include border-radius(2px);
     @include transition(background 0.2s linear 0s);
     &:focus{
-        border-color: rgba($color-black, .10);
+        border: 1px solid $form-control-border-color;
         background-color:$color-master-lighter;
         outline: 0 !important;
         @include box-shadow(none);
@@ -567,10 +567,10 @@ input[type=checkbox]:checked + label{
         }
     }
     &.focused {
-        border-color:rgba(0, 0, 0, 0.1) !important;
+        border: 1px solid $form-control-border-color;
         background-color:$color-master-lighter;
         label {
-            opacity: .4;
+            opacity: .5;
             @include backface-visibility(hidden);
         }
     }

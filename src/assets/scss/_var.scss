@@ -16,7 +16,7 @@ $color-master: #464646 !default;
 
 // Lighter Grey colors
 $color-master-light:mix($color-master, #fff, 16%) !default;
-$color-master-lighter:mix($color-master, #fff, 9.5%) !default;
+$color-master-lighter:mix($color-master, #fff, 3.5%) !default;
 $color-master-lightest:mix($color-master, #fff, 3%) !default;
 
 // Darker Grey colors
@@ -88,7 +88,7 @@ $panel-condensed-heading-min-height: 48px !default;
 
 //Forms
 $form-group-height: 54px !default;
-$form-control-border-color: rgba($color-black, .07) !default;
+$form-control-border-color: rgba($color-black, 0.3) !default;
 
 //Dashboard
 $dashboard-background : #f5f5f5 !default;
