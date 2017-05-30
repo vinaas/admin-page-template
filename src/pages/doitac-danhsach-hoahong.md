@@ -3,7 +3,7 @@
     "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "doitac-hoahong.html",
+    "layout": "doitac-danhsach-hoahong.html",
     "permalink" : false,
     "activeLink" : "doitac"
 }

@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Danh sách địa bàn",
+    "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "doitac-diaban.html",
+    "layout": "doitac-taomoi-danhsachduyet.html",
     "permalink" : false,
     "activeLink" : "doitac"
 }

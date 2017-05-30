@@ -3,7 +3,7 @@
     "title": "EasyWebHub Home",
     "slug": "",
     "description": "Index Page",
-    "layout": "doitac-nhantien.html",
+    "layout": "doitac-danhsach-nhantien.html",
     "permalink" : false,
     "activeLink" : "doitac"
 }
