@@ -9,16 +9,7 @@
 
             <h3 class="page-title">Thông tin ID</h3>
         </div>
-        <div class="col-sm-4">
-            <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-                <!--
-                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
-                </button>-->
 
-            </div>
-        </div>
 
 
     </div>
@@ -27,7 +18,6 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="row">
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>ID đối tác</label>
@@ -60,57 +50,147 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="table table-responsive">
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th rowspan="2">ID đối tác</th>
-                            <th rowspan="2">Tên đầy đủ</th>
-                            <th rowspan="2">Đơn vị ký HĐ</th>
-                            <th rowspan="2">Tên giao dịch</th>
-                            <th rowspan="2">Tên người đại diện</th>
-                            <th rowspan="2">Chức vụ</th>
-                            <th rowspan="2">Mã số thuế</th>
-                            <th rowspan="2">Số hợp đồng</th>
-                            <th rowspan="2">Ngày hiệu lực hợp đồng</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                            <th rowspan="2">Loại tiền/Dịch vụ</th>
-                        </tr>
-                        <tr>
-                            <th style="width:8%" class="text-center">PO</th>
-                            <th style="width:8%" class="text-center">PB</th>
-                            <th style="width:8%" class="text-center">PR</th>
-                            <th style="width:8%" class="text-center">AD(OCB)</th>
-                            <th style="width:8%" class="text-center">AD(Other)</th>
-                            <th style="width:8%" class="text-center">HD</th>
-                            <th style="width:8%" class="text-center">PO</th>
-                            <th style="width:8%" class="text-center">PB</th>
-                            <th style="width:8%" class="text-center">PR</th>
-                            <th style="width:8%" class="text-center">AD(OCB)</th>
-                            <th style="width:8%" class="text-center">AD(Other)</th>
-                            <th style="width:8%" class="text-center">HD</th>
-                        </tr>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel panel-heading">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Excel
+                          </button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
+                          </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="table table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">ID đối tác</th>
+                                    <th rowspan="2">Tên đầy đủ</th>
+                                    <th rowspan="2">Đơn vị ký HĐ</th>
+                                    <th rowspan="2">Tên giao dịch</th>
+                                    <th rowspan="2">Tên người đại diện</th>
+                                    <th rowspan="2">Chức vụ</th>
+                                    <th rowspan="2">Mã số thuế</th>
+                                    <th rowspan="2">Số hợp đồng</th>
+                                    <th rowspan="2">Ngày HL hợp đồng</th>
+                                    <th rowspan="2">Ngày hết HL hợp đồng</th>
+                                    <th colspan="2">GH hợp đồng</th>
+                                    <th rowspan="2">Loại tiền thanh toán</th>
+                                    <th rowspan="2">Số tiền chuyển trước</th>
+                                    <th rowspan="2">Loại tiền giao dịch</th>
+                                    <th rowspan="2">Loại dịch vụ</th>
+                                    <th rowspan="2">Chọn</th>
+                                </tr>
+                                <tr>
+                                    <th style="width:8%" class="text-center">Ngày HL</th>
+                                    <th style="width:8%" class="text-center">Ngày hết HL</th>
+
+                                </tr>
 
 
-                    </thead>
+                            </thead>
 
-                    <tbody>
-                        <tr>
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>ABC</td>
+                                    <td>công ty</td>
+                                    <td>AB</td>
+                                    <td>Man</td>
+                                    <td>A</td>
+                                    <td>123</td>
+                                    <td>234</td>
+                                    <td>12/3/2016</td>
+                                    <td>12/03/2018</td>
+                                    <td>12/03/2018</td>
+                                    <td>11/03/2020</td>
+                                    <td>USD</td>
+                                    <td>200000</td>
+                                    <td>USD</td>
+                                    <td>GD CK</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#xemChiTiet-DoiTac-HopDong">Xem
+                                    </a></td>
+                                </tr>
 
-                        </tr>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <h5><span class="semi-bold"> Hạn mức</span></h5>
+                    <div class="table table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width:10%">ID </th>
+                                    <th style="width:15%">Tên giao dịch</th>
+                                    <th style="width:15%">Ngày cấp hạn mức</th>
+                                    <th style="width:10%">Loại tiền thanh toán</th>
+                                    <th style="width:15%">Hạn mức</th>
+                                    <th style="width:15%">Phí xử lý hồ sơ</th>
+                                    <th style="width:20%">Hiệu lực hạn mức</th>
+
+                                </tr>
+
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>ABC</td>
+                                    <td>12/03/2015</td>
+                                    <td>USD</td>
+                                    <td></td>
+                                    <td>0.5</td>
+                                    <td>12/03/2015-12/03/2018</td>
+
+                                </tr>
 
 
 
-                    </tbody>
+                            </tbody>
 
-                </table>
+                        </table>
+                    </div>
+                    <h5>Hoa hồng theo <span class="semi-bold"> danh sách</span></h5>
+                    <div class="table table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width:10%">ID </th>
+                                    <th style="width:15%">Tên đầy đủ</th>
+                                    <th style="width:15%">Tên giao dịch</th>
+                                    <th style="width:10%">Loại hoa hồng</th>
+
+
+                                </tr>
+
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>ABC</td>
+                                    <td>AB</td>
+                                    <td>Cố định</td>
+
+                                </tr>
+
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 
