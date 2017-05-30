@@ -283,8 +283,18 @@
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichquay' layout }} active {{/ifContain}}">
                             <a href="phongvanhanh-thuchiengiaodich-giaodichtaiquay.html">Giao dịch tại quầy</a>
                         </li>
-                        <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichmaso' layout }} active {{/ifContain}}">
-                            <a href="phongvanhanh-thuchiengiaodich-giaodichmaso.html">Giao dịch mã số</a>
+                        <li class="{{#ifContain '' layout }} active {{/ifContain}}">
+                            <a href="javascript:;">
+                                <span class="title">Giao dịch mã số</span>
+                                <span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li class="{{#ifContain 'phongvanhanh-giaodichmaso-giaodichmasoHO' layout }} active {{/ifContain}}">
+                                    <a href="phongvanhanh-giaodichmaso-giaodichmasoHO.html">Giao dịch mã số HO</a>
+                                </li>
+                                <li class="{{#ifContain 'phongvanhanh-giaodichmasoduyet-capnhat' layout }} active {{/ifContain}}">
+                                    <a href="phongvanhanh-giaodichmasoduyet-capnhat.html">Duyệt giao dịch mã số HO</a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="{{#ifContain 'phongvanhanh-thuchiengiaodich-giaodichchuyenkhoan' layout }} active {{/ifContain}}">
