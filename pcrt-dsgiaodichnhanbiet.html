@@ -135,11 +135,11 @@
     
     
                             <li class="">
-                                <a href="doitac-hoahong.html">Danh sách Hoa hồng</a>
+                                <a href="doitac-danhsach-hoahong.html">Danh sách Hoa hồng</a>
                             </li>
     
                             <li class="">
-                                <a href="doitac-hoahong-duyet.html">Duyệt tạo mới hoa hồng</a>
+                                <a href="doitac-taomoi-danhsachduyet.html">Duyệt tạo mới hoa hồng</a>
                             </li>
                             <li class="">
                                 <a href="doitac-hoahong-duyet-dieuchinh.html">Duyệt điều chỉnh hoa hồng</a>
@@ -163,7 +163,7 @@
                                     <a href="doitac-nhantien-taomoi.html">Tạo mới nhận tiền</a>
                                 </li>
                                 <li class="">
-                                    <a href="doitac-nhantien.html">Danh sách nhận tiền đối tác</a>
+                                    <a href="doitac-danhsach-nhantien.html">Danh sách nhận tiền đối tác</a>
                                 </li>
     
                                 <li class="">
@@ -189,7 +189,7 @@
                                     <a href="doitac-diaban-taomoi.html">Tạo mới địa bàn</a>
                                 </li>
                                 <li class="">
-                                    <a href="doitac-diaban.html">Danh sách địa bàn</a>
+                                    <a href="doitac-danhsach-diaban.html">Danh sách địa bàn</a>
                                 </li>
     
                                 <li class="">
@@ -348,8 +348,18 @@
                             <li class="">
                                 <a href="phongvanhanh-thuchiengiaodich-giaodichtaiquay.html">Giao dịch tại quầy</a>
                             </li>
-                            <li class="">
-                                <a href="phongvanhanh-thuchiengiaodich-giaodichmaso.html">Giao dịch mã số</a>
+                            <li class=" active ">
+                                <a href="javascript:;">
+                                    <span class="title">Giao dịch mã số</span>
+                                    <span class="arrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li class="">
+                                        <a href="phongvanhanh-giaodichmaso-giaodichmasoHO.html">Giao dịch mã số </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="phongvanhanh-giaodichmasoduyet-capnhat.html">Duyệt giao dịch mã số </a>
+                                    </li>
+                                </ul>
                             </li>
     
                             <li class="">
@@ -1621,6 +1631,7 @@
                                   </div>
                                   <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
                                       <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
+                                      <button type="button" class="btn btn-primary  m-t-5" data-toogle="modal" data-target="">Điều chỉnh</button>
       
                                   </div>
                               </div>
@@ -2767,8 +2778,8 @@
       
       
                              </div>
-                     
-                     
+      
+      
                  </div>
              </div>
          </div>
@@ -3049,11 +3060,11 @@
                                               <label>Dấu hiệu đáng ngờ</label>
       
                                               <select class="full-width " data-init-plugin="select2">
-                                             
+      
                                                   <option value="dh1">Dấu hiệu 1</option>
                                                   <option value="dh2">Dấu hiệu 2</option>
       
-                                            
+      
       
                                           </select>
                                           </div>
@@ -3131,137 +3142,75 @@
       </div>
       
       <!--MODAL STICK-->
-      <div class="modal fade stick-up" id="chitietTruyVanCongVan" role="dialog" aria-hidden="true" data-backdrop="static">
+      <div class="modal fade stick-up" id="hanmucGiaoDichCu" role="dialog" aria-hidden="true" data-backdrop="static">
           <div class="modal-dialog modal-lg">
               <div class="modal-content">
                   <div class="modal-header clearfix text-left">
       
-                      <h5>Chi tiết <span class="semi-bold">công văn chưa xem</span></h5>
+                      <h5>Hạn mức <span class="semi-bold">Giá trị giao dịch củ</span></h5>
       
                   </div>
                   <div class="modal-body">
-                      <form role="form">
-                          <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+      
+                      <div class="table table-responsive">
+                          <table class="table table-hover">
+                              <thead>
+                                  <tr>
+                                      <th style="width: 50px;padding: 10px 11px !important;">
+                                          <div class="checkbox ">
+                                              <input value="3" id="checkbox1" type="checkbox">
+                                              <label for="checkbox1" class="m-r-0"></label>
+                                          </div>
+      
+                                      </th>
+                                      <th style="width: 20%">STT</th>
+                                      <th style="width: 20%">Ngày cập nhật</th>
+                                      <th style="width: 25%">Số tiền</th>
+                                      <th style="width: 25%">Loại tiền</th>
       
       
-                          <h6 class="bold text-uppercase">Chi tiết</h6>
-                          <div class="form-group-attached">
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td class="v-align-middle">
+                                          <div class="checkbox ">
+                                              <input value="3" id="checkbox2" type="checkbox">
+                                              <label for="checkbox2" class="m-r-0"></label>
+                                          </div>
+                                      </td>
+                                      <td class="v-align-middle">1</td>
+                                      <td class="v-align-middle">2/4/2017</td>
+                                      <td class="v-align-middle">120000</td>
+                                      <td class="v-align-middle">
+                                          USD
+                                      </td>
       
-                              <div class="row">
-                                  <div class="col-sm-6">
-                                      <div class="form-group form-group-default required">
-                                          <label>Mã công văn</label>
-                                          <input type="text" class="form-control">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <div class="form-group form-group-default required">
-                                          <label>Số công văn</label>
-                                          <input type="text" class="form-control">
-                                      </div>
-                                  </div>
-                              </div>
+                                  </tr>
       
-                              <div class="row">
-                                  <div class="col-sm-6">
-      
-                                      <div class="form-group form-group-default required select2-small">
-                                          <label>Loại công văn</label>
-      
-                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
-      
-                                             
-                                                  <option value="AZ">Tra soát</option>
-                                                  <option value="CO">Cảnh báo</option>
-                                                   <option value="C">Đóng chi</option>
-      
-                                         
-                                          </select></div>
-                                  </div>
-                                  <div class="col-sm-6">
-      
-                                      <div class="form-group form-group-default required select2-small">
-                                          <label>Hiệu lực</label>
-      
-                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
-      
-                                             
-                                                  <option value="AZ">Còn hiệu lực</option>
-                                                  <option value="CO">Hết hạn hiệu lực</option>
-      
-                                         
-                                          </select></div>
-                                  </div>
-      
-                              </div>
-                              <div class="row">
-                                  <div class="col-sm-6">
-                                      <div class="form-group form-group-default required">
-                                          <label>Đơn vị yêu cầu</label>
-                                          <input type="text" class="form-control">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <div class="form-group form-group-default required">
-                                          <label>Tài liệu</label>
-                                          <input type="text" class="form-control">
-                                      </div>
-                                  </div>
-      
-                              </div>
-                              <div class="row">
-                                  <div class="col-sm-12">
-                                      <div class="form-group form-group-default required">
-                                          <label>Tình trạng</label>
-                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
-      
-                                             
-                                                  <option value="AZ">Đã xem</option>
-                                                  <option value="CO">Chưa xem</option>
-      
-                                         
-                                          </select>
-                                      </div>
-                                  </div>
-      
-      
-                              </div>
-      
-      
-      
-                          </div>
-      
-                      </form>
-      
-                      <div class="form-group-attached">
-                          <div class="row">
-                              <div class="col-sm-4">
-                                  <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
-                                  <div class="pull-left">
-                                      <p class="bold font-montserrat text-uppercase">TOTAL</p>
-                                  </div>
-                                  <div class="pull-right">
-                                      <p class="bold font-montserrat text-uppercase">$20.00</p>
-                                  </div>
-                              </div>-->
-                              </div>
-                              <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                                  <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
-                                  <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt </button>
-                              </div>
-                          </div>
+                              </tbody>
+                          </table>
                       </div>
+      
+                      <div class="row">
+                          <div class="col-sm-8">
+      
+                          </div>
+                          <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                              <!--<button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt </button>-->
+                          </div>
+      
+                      </div>
+      
                   </div>
       
               </div>
           </div>
       </div>
-      </div>
       
       <!--END STICK-->
+      
       <!--MODAL STICK-->
       <div class="modal fade stick-up" id="chitietTruyVanCongVan-daxem" role="dialog" aria-hidden="true" data-backdrop="static">
           <div class="modal-dialog modal-lg">
@@ -3301,14 +3250,14 @@
                                           <label>Loại công văn</label>
       
                                           <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
       
-                                             
+      
+      
                                                   <option value="AZ">Tra soát</option>
                                                   <option value="CO">Cảnh báo</option>
                                                    <option value="C">Đóng chi</option>
       
-                                         
+      
                                           </select></div>
                                   </div>
                                   <div class="col-sm-6">
@@ -3317,13 +3266,13 @@
                                           <label>Hiệu lực</label>
       
                                           <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
       
-                                             
+      
+      
                                                   <option value="AZ">Còn hiệu lực</option>
                                                   <option value="CO">Hết hạn hiệu lực</option>
       
-                                         
+      
                                           </select></div>
                                   </div>
       
@@ -3348,13 +3297,13 @@
                                       <div class="form-group form-group-default required">
                                           <label>Tình trạng</label>
                                           <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                             
       
-                                             
+      
+      
                                                   <option value="AZ">Đã xem</option>
                                                   <option value="CO">Chưa xem</option>
       
-                                         
+      
                                           </select>
                                       </div>
                                   </div>
@@ -3370,7 +3319,7 @@
       
                       <div class="form-group-attached">
                           <div class="row">
-                              <div class="col-sm-4">
+                              <div class="col-sm-8">
                                   <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
                                   <div class="pull-left">
                                       <p class="bold font-montserrat text-uppercase">TOTAL</p>
@@ -3380,9 +3329,9 @@
                                   </div>
                               </div>-->
                               </div>
-                              <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
-                                  <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
-                                  <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt </button>
+                              <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                                  <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                                  <!--<button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt </button>-->
                               </div>
                           </div>
                       </div>
@@ -3391,8 +3340,138 @@
               </div>
           </div>
       </div>
-      </div>
+      <!--END STICK-->
       
+      
+      <!--MODAL STICK-->
+      <div class="modal fade stick-up" id="chitietTruyVanCongVan-daxem" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+      
+                      <h5>Chi tiết <span class="semi-bold">công văn đã xem</span></h5>
+      
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+                          <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+      
+      
+                          <h6 class="bold text-uppercase">Chi tiết</h6>
+                          <div class="form-group-attached">
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Mã công văn</label>
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Số công văn</label>
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="row">
+                                  <div class="col-sm-6">
+      
+                                      <div class="form-group form-group-default required select2-small">
+                                          <label>Loại công văn</label>
+      
+                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+      
+      
+      
+                                                  <option value="AZ">Tra soát</option>
+                                                  <option value="CO">Cảnh báo</option>
+                                                   <option value="C">Đóng chi</option>
+      
+      
+                                          </select></div>
+                                  </div>
+                                  <div class="col-sm-6">
+      
+                                      <div class="form-group form-group-default required select2-small">
+                                          <label>Hiệu lực</label>
+      
+                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+      
+      
+      
+                                                  <option value="AZ">Còn hiệu lực</option>
+                                                  <option value="CO">Hết hạn hiệu lực</option>
+      
+      
+                                          </select></div>
+                                  </div>
+      
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Đơn vị yêu cầu</label>
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                          <label>Tài liệu</label>
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+      
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="form-group form-group-default required">
+                                          <label>Tình trạng</label>
+                                          <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+      
+      
+      
+                                                  <option value="AZ">Đã xem</option>
+                                                  <option value="CO">Chưa xem</option>
+      
+      
+                                          </select>
+                                      </div>
+                                  </div>
+      
+      
+                              </div>
+      
+      
+      
+                          </div>
+      
+                      </form>
+      
+                      <div class="form-group-attached">
+                          <div class="row">
+                              <div class="col-sm-8">
+                                  <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                                  <div class="pull-left">
+                                      <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                                  </div>
+                                  <div class="pull-right">
+                                      <p class="bold font-montserrat text-uppercase">$20.00</p>
+                                  </div>
+                              </div>-->
+                              </div>
+                              <div class="col-sm-4 m-t-10 sm-m-t-10 text-right">
+                                  <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                                  <!--<button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalDuyet">Lưu & Yêu cầu duyệt </button>-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+      
+              </div>
+          </div>
+      </div>
       <!--END STICK-->
       
       <div class="modal fade stick-up" id="prtKiemDuyetGiaoDich" role="dialog" aria-hidden="true" data-backdrop="static">
@@ -3463,11 +3542,11 @@
                                           <label>Dấu hiệu đáng ngờ</label>
       
                                           <select class="full-width " data-init-plugin="select2">
-                                             
+      
                                                   <option value="dh1">Dấu hiệu 1</option>
                                                   <option value="dh2">Dấu hiệu 2</option>
       
-                                            
+      
       
                                           </select>
                                       </div>
