@@ -1,35 +1,16 @@
 {{#extend "default"}} {{#content "main"}}
-
-
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
-
             <h3 class="page-title">Kiểm tra biên nhận</h3>
-
         </div>
-
-        <!--<div class="col-sm-5">
-            <div class="text-right">
-
-
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#createDoiTac"><i class="pg-form"></i> Tạo mới đối tác
-                </button>
-
-            </div>
-        </div>-->
-
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default ">
-
                 <div class="panel-body">
-
-
                     <div class="col-md-3">
                         <div class="form-group ">
                             <label>Tên đối tác</label>
@@ -53,8 +34,7 @@
                                                  <option value="">Hà nội</option>
                                                 <option value="">Hải phòng</option>
                                                 <option value="">Nam định </option>
-                                </select>
-
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -64,26 +44,19 @@
                                                  <option value="">PB</option>
                                                 <option value="">PR</option>
                                                 <option value="">AD </option>
-                                </select>
+                            </select>
                         </div>
-
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-
                             <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-        </button>
+                            </button>
                         </div>
                     </div>
-
-                    </form>
                 </div>
-
-
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default ">
@@ -95,15 +68,11 @@
                             </button>
                             <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                             </button>
-
                         </div>
                     </div>
-
-
                     <div class="clearfix"></div>
                 </div>
                 <div class="panel-body">
-
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="table table-responsive">
@@ -115,7 +84,6 @@
                                                     <input value="3" id="checkbox1" type="checkbox">
                                                     <label for="checkbox1" class="m-r-0"></label>
                                                 </div>
-
                                             </th>
                                             <th style="width:5%">STT</th>
                                             <th style="width:10%"> Ngày</th>
@@ -123,17 +91,14 @@
                                             <th style="width:10%">Người gửi</th>
                                             <th style="width:10%">Người nhận</th>
                                             <th style="width:10%">Số tiền gửi</th>
-                                            <th style="width:10%">Loại tiền</th>
-                                            <th style="width:10%">Loai tiền chi</th>
-                                            <th style="width:5%"> Loại dịch vụ</th>
-                                            <th style="width:10%"> Tỉnh thành</th>
+                                            <th style="width:10%"> Loại dịch vụ</th>
+                                            <th style="width:5%"> Tỉnh thành</th>
                                             <th style="width:10%">Điểm giao dịch</th>
-
-
+                                            <th style="width:10%">Biên nhận</th>
+                                            <th style="width:10%">Chi tiết</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                         <tr class="active">
                                             <td class="v-align-middle">
                                                 <div class="checkbox ">
@@ -147,10 +112,6 @@
                                             <td class="v-align-middle">Nguyễn van a</td>
                                             <td class="v-align-middle">Nguyễn văn b</td>
                                             <td class="v-align-middle">300</td>
-                                            <td class="v-align-middle">USD</td>
-                                            <td class="v-align-middle">
-                                                VNĐ
-                                            </td>
                                             <td class="v-align-middle">
                                                 PO
                                             </td>
@@ -160,35 +121,22 @@
                                             <td class="v-align-middle">
                                                 CHi nhánh 1
                                             </td>
+                                            <td class="v-align-middle">
+                                                doitac-ddmmyy-maphieunhantien-magiaodich.jpg
+                                            </td>
+                                            <td class="v-align-middle">
+                                                <a href="" class="btn btn-link" data-toggle="modal" data-target="#ChiTietHoiBao">Xem</a>
+                                            </td>
                                         </tr>
-
-
-
                                     </tbody>
-
                                 </table>
-
                                 {{>pagination}}
-
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
-
-
-
             </div>
-
         </div>
-
-
     </div>
-
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
