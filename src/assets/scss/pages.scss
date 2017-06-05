@@ -222,10 +222,25 @@ table .btn-group-vertical {
         font-size: 13px;
     }
     .form-title{
-        text-transform: uppercase;
         font-size: 14px;
         margin-bottom: 20px;
         font-weight: bold;
-        color: gray;
     }
+
+    .row [class*='col-']{
+
+            &:not(:first-child),
+            &:not(:last-child) {
+                padding-right: 7px;
+                padding-left: 7px;
+            }
+
+            &:first-child{
+                padding-left:  7px;
+            }
+            &:last-child{
+                padding-right:  7px;
+            }
+        }  
 }
+
