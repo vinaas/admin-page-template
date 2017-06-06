@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Chi trả ngoại tệ",
+    "title": "Chi trả ngoại tệ : Đối tác - Ngân hàng",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-chitrangoaite-doitac.html",
+    "layout": "pkt-httd-chitrangoaite-doitac-nganhang.html",
     "permalink" : false,
     "activeLink" : "pkt"
 }
