@@ -1,0 +1,180 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+<div class="container-fluid container-fixed-lg">
+    <div class="row">
+        <div class="col-sm-7">
+            <h3 class="page-title">{{title}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default ">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabTaoMoi" data-toggle="tab" role="tab">Tạo mới</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabTaoMoi">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row m-b-15">
+                                    <div class="col-md-4 name m-t-5"> Ngày <span class="text-danger">(*)</span> : </div>
+                                    <div class="col-md-8 value"><b>13/03/2017</b>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Nghiệp vụ <span class="text-danger">(*)</span>: </div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="NV1">Nghiệp vụ 1</option>
+                                                    <option value="NV2">Nghiệp vụ 2</option>
+                                                    <option value="NV3">Nghiệp vụ 3</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name m-t-5"> Chi nhánh <span class="text-danger">(*)</span>: </div>
+                                    <div class="col-md-8 value">
+                                        <b>Tên CN</b>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Loại chứng từ <span class="text-danger">(*)</span>: </div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                <option value=""></option>
+                                                <option value="PT">Phiếu thu </option>
+                                                <option value="PC">Phiếu chi</option>
+                                                <option value="PCK">Phiếu chuyển khoản</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Ngân hàng : </div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="AK">Ngân hàng A</option>
+                                                    <option value="AK">Ngân hàng B</option>
+                                                    <option value="AK">Ngân hàng C</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Đối tác : </div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="DT">Đối tác 1</option>
+                                                    <option value="DT">Đối tác 2</option>
+                                                    <option value="DT">Đối tác 3</option>
+                                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Tên NV/KH : </div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                <option value=""></option>
+                                                <option value="a">Nguyễn Văn A</option>
+                                                <option value="a">Nguyễn Văn B</option>
+                                                <option value="a">Nguyễn Văn C</option>
+                                            </select>
+
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Số CMND : </div>
+                                    <div class="col-md-8 value">
+                                        <input type="" class="form-control" name="" value="">
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Địa chỉ : </div>
+                                    <div class="col-md-8 value">
+                                        <input type="" class="form-control" name="" value="">
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5"> Mã số thuế : </div>
+                                    <div class="col-md-8 value">
+                                        <input type="" class="form-control" name="" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name m-t-5"> Loại tiền : <span class="text-danger">(*)</span></div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                <option value=""></option>
+                                                <option value="a">USD</option>
+                                                <option value="a">EUR</option>
+                                                <option value="a">CAD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5">Nợ/Có <span class="text-danger">(*)</span></div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                <option value=""></option>
+                                                <option value="a">Nợ</option>
+                                                <option value="a">Có</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5">Tài khoản <span class="text-danger">(*)</span></div>
+                                    <div class="col-md-8 value">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <!-- Using data-init-plugin='select2' automatically initializes a basic Select2 -->
+                                                <select class="full-width" data-init-plugin="select2">
+                                                        <optgroup label="Tiền mặt">
+                                                            <option value="AK">11111001 - VND </option>
+                                                            <option value="HI">11121001 - Ngoại tệ </option>
+                                                        </optgroup>
+                                                        <optgroup label="Tiền gửi Ngân hàng">
+                                                             <option value="AK">11211001 - VND</option>
+                                                            <option value="HI">11221001 - Ngoại tệ</option>
+                                                        </optgroup>
+                                                    </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <!-- Element intended to use with advance options -->
+                                                <input type="hidden" id="mySelect2" class="full-width">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4 name  m-t-5">Thời hạn</div>
+                                    <div class="col-md-8 value">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                <option value=""></option>
+                                                <option value="a"> Dưới 3 tháng</option>
+                                                <option value="a"> Từ 3 đến dưới 12 tháng</option>
+                                                <option value="a"> Trên 12 tháng</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-right">
+                                <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Hủy</button>
+                                <button type="button" class="btn btn-primary  m-t-5">Lưu & Yêu cầu duyệt</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
