@@ -1,0 +1,76 @@
+{{#extend "default"}} {{#content "main"}}
+<br>
+<div class="container-fluid container-fixed-lg">
+    <div class="row">
+        <div class="col-sm-7">
+            <h3 class="page-title">{{title}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default ">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabTaoMoi" data-toggle="tab" role="tab">Tạo mới</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabTaoMoi">
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row m-b-15">
+                                        <div class="col-md-6 name"> Ngày <span class="text-danger">(*)</span> : </div>
+                                        <div class="col-md-6 value"><b>13/03/2017</b>
+                                        </div>
+                                    </div>
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-6  name"> Nghiệp vụ <span class="text-danger">(*)</span> : </div>
+                                        <div class="col-md-6 value"><b>KHẤU TRỪ THUẾ </b>
+                                        </div>
+                                    </div>
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-6 name "> Chi nhánh <span class="text-danger">(*)</span>: </div>
+                                        <div class="col-md-6 value">
+                                            <b>Tên CN</b>
+                                        </div>
+                                    </div>
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-6 name"> Loại tiền : </div>
+                                        <div class="col-md-6 value">
+                                            <b>VND</b>
+                                        </div>
+                                    </div>
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-6 name  m-t-5">Số tiền : </div>
+                                        <div class="col-md-6 value">
+                                            <input type="" class="form-control" name="" value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-6 name  m-t-5"> Thuế GTGT <span class="text-danger">(*)</span>: </div>
+                                        <div class="col-md-6 value">
+                                            <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="NV1">HH-DV</option>
+                                                    <option value="NV2">TSCĐ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6 text-right m-l-15 ">
+                                <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
+                                <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Lưu & Yêu cầu duyệt</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
