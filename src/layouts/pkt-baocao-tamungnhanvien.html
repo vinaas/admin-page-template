@@ -1,23 +1,16 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-baocao"}}
-
 <div class="container-fluid container-fixed-lg">
-
     <div class="row">
         <div class="col-md-12">
             <h5><span class="semi-bold">{{title}}</span></h5>
-            <!--<p>Nhập tỷ giá ngày và tỷ giá tháng</p>-->
         </div>
     </div>
-
     <div class="panel panel-default">
-
         <div class="panel-body">
             <form role="form">
-
                 <div class="form-group-attached">
                     <div class="row">
                         <div class="col-sm-6">
-
                             <div class="form-group long">
                                 <label>THEO NGÀY</label>
                                 <div class="input-daterange input-group" id="datepicker-range">
@@ -27,45 +20,30 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
-
                             <div class="form-group form-group-default required">
                                 <label>Chi nhánh</label>
                                 <input type="text" class="form-control" required="">
                             </div>
                         </div>
                         <div class="col-sm-6">
-
-                            <div class="form-group form-group-default required">
+                            <div class="form-group form-group-default">
                                 <label>Tên nhân viên</label>
                                 <input type="text" class="form-control" required="">
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="form-group">
-
-                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button"><i class="fa  fa-file-pdf-o"></i> Xuất file pdf
-                            </button>
-
+                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button"><i class="fa  fa-file-pdf-o"></i> Xuất file PDF
+                        </button>
                     </div>
                 </div>
-
-
             </form>
-
-
         </div>
     </div>
-
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
