@@ -1,23 +1,16 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-baocao"}}
-
 <div class="container-fluid container-fixed-lg">
-
     <div class="row">
         <div class="col-md-12">
             <h5><span class="semi-bold">{{title}}</span></h5>
-            <!--<p>Nhập tỷ giá ngày và tỷ giá tháng</p>-->
         </div>
     </div>
-
     <div class="panel panel-default">
-
         <div class="modal-body">
             <form role="form">
-
                 <div class="form-group-attached">
                     <div class="row">
                         <div class="col-sm-6">
-
                             <div class="form-group form-group-default input-group col-sm-10">
                                 <label>Ngày</label>
                                 <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
@@ -25,42 +18,24 @@
                                 </span>
                             </div>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
-
                             <div class="form-group form-group-default required">
                                 <label>Chi nhánh</label>
                                 <input type="text" class="form-control" required="">
                             </div>
                         </div>
-                        <div class="col-sm-6">
-
-                            <div class="form-group form-group-default required">
-                                <label>Tên nhân viên</label>
-                                <input type="text" class="form-control" required="">
-                            </div>
-                        </div>
                     </div>
-
                 </div>
                 <div class="row">
-                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                    <div class="col-sm-6 m-l-5 m-r-5 text-right">
                         <button class="btn btn-primary btn-large btn-cons m-t-25" type="button"> Xem chi tiết </button>
-                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button">Xem tổng hợp 
-                            </button>
-
+                        <button class="btn btn-primary btn-large btn-cons m-t-25" type="button">Xem tổng hợp </button>
                     </div>
                 </div>
-
-
             </form>
-
-
         </div>
     </div>
-
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
