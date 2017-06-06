@@ -1,56 +1,35 @@
 {{#extend "default"}} {{#content "main"}}
-
 <br>
-
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
+   
     <div class="row">
         <div class="col-sm-12">
-
             <h3 class="page-title">{{title}}</h3>
-
         </div>
-
-
-
     </div>
-
     <div class="row">
-
         <div class="col-md-12">
-
-
             <div class="panel panel-default">
-
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChiPhi" data-toggle="tab" role="tab">Kết chuyển chi phí</a>
                     </li>
-
                     <li class=""><a href="#tabDoanhThu" data-toggle="tab" role="tab">Kết chuyển doanh thu</a>
                     </li>
-
-
                     <li class=""><a href="#tabLaiLo" data-toggle="tab" role="tab">Kết chuyển lãi lỗ</a>
                     </li>
-
                 </ul>
-
                 <div class="tab-content">
-
-
                     <div class="tab-pane active" id="tabChiPhi">
-
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Ngày*</th>
-                                    <th>Chi nhánh*</th>
-                                    <th>Tài khoản*</th>
-                                    <th>Phát sinh nợ*</th>
-                                    <th>Phát sinh có*</th>
+                                    <th>Ngày</th>
+                                    <th>Chi nhánh</th>
+                                    <th>Tài khoản</th>
+                                    <th>Phát sinh nợ</th>
+                                    <th>Phát sinh có</th>
                                     <th>Chênh lệch</th>
-
+                                    <th>Chi tiết</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -61,11 +40,15 @@
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="text-primary"  data-toggle="modal" data-target="#KetChuyenChiPhi-ChiTiet" >Xem</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="v-align-middle">25/03/2017</td>
                                     <td class="v-align-middle">ABC</td>
                                     <td class="v-align-middle">642</td>
+                                    <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
@@ -77,37 +60,28 @@
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
                                 </tr>
-
                             </tbody>
                         </table>
-
                         <div class="row">
                             <div class="col-sm-12 m-t-10 sm-m-t-10 text-center">
                                 <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
                                 <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
-
                     <div class="tab-pane " id="tabDoanhThu">
-
-
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Ngày*</th>
-                                    <th>Chi nhánh*</th>
-                                    <th>Tài khoản*</th>
-                                    <th>Phát sinh nợ*</th>
-                                    <th>Phát sinh có*</th>
+                                    <th>Ngày</th>
+                                    <th>Chi nhánh</th>
+                                    <th>Tài khoản</th>
+                                    <th>Phát sinh nợ</th>
+                                    <th>Phát sinh có</th>
                                     <th>Chênh lệch</th>
-
+                                    <th>Chi tiết</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -118,11 +92,15 @@
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="text-primary"  data-toggle="modal" data-target="#KetChuyenDoanhThu-ChiTiet" >Xem</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="v-align-middle">25/03/2017</td>
                                     <td class="v-align-middle">ABC</td>
                                     <td class="v-align-middle">642</td>
+                                    <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
@@ -134,85 +112,47 @@
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
                                     <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
                                 </tr>
-
                             </tbody>
                         </table>
-
                         <div class="row">
                             <div class="col-sm-12 m-t-10 sm-m-t-10 text-center">
                                 <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
                                 <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                             </div>
                         </div>
-
-
-
                     </div>
-
-
                     <div class="tab-pane " id="tabLaiLo">
-
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-
-
                                     <th>Ngày </th>
                                     <th>Chi nhánh</th>
                                     <th>Tài khoản</th>
                                     <th>Chi tiết</th>
-
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-
                                     <td class="v-align-middle ">
                                         25/03/2017
                                     </td>
-
                                     <td class="v-align-middle "> ABC
                                     </td>
-
                                     <td class="v-align-middle ">9111101
                                     </td>
-
                                     <td class="v-align-middle ">
-                                        <a href="" class="text-primary" data-toggle="modal" data-target="#pkt-ketchuyencuoithang">Xem</a>
+                                        <a href="" class="text-primary" data-toggle="modal" data-target="#KetChuyenLaiLo-ChiTiet">Xem</a>
                                     </td>
-
-
                                 </tr>
-
-
-
-
                             </tbody>
                         </table>
-
-
                     </div>
-
-
                 </div>
-
-
             </div>
-
-
         </div>
-
-
-
-
-
     </div>
-
 </div>
-
 </div>
-
-
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

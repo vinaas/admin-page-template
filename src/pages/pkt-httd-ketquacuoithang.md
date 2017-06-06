@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Kết quả cuối tháng",
+    "title": "Kết chuyển cuối tháng",
     "slug": "",
     "description": "Index Page",
     "layout": "pkt-httd-ketquacuoithang.html",
