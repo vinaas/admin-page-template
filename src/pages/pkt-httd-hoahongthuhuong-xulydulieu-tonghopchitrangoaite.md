@@ -3,7 +3,7 @@
     "title": "Tổng hợp chi trả ngoại tệ của OCB",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-hoahongthuhuong-xulydulieu-tonghopchitrangoaite",
+    "layout": "pkt-httd-hoahongthuhuong-xulydulieu-tonghopchitrangoaite.html",
     "permalink" : false,
     "activeLink" : "pkt-httd-hoahongthuhuong-xulydulieu"
 }
