@@ -14,42 +14,53 @@
             <div class="panel panel-default ">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label>NGÀY</label>
                                 <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label>Chi nhánh</label>
-                                <select class="form-control">
-                                    <option value="">Chi nhánh 1</option>
-                                    <option value="">Chi nhánh 2</option>
-                                    <option value="">Chi nhánh 3</option>
-                                    <option value="">Chi nhánh 4</option>
+                                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                    <option value=""></option>
+                                    <option value="1">Chi nhánh 1</option>
+                                    <option value="2">Chi nhánh 2</option>
+                                    <option value="3">Chi nhánh 3</option>
+                                    <option value="4">Chi nhánh 4</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Loại chứng từ</label>
+                                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                    <option value=""></option>
+                                    <option value="1">Loại chứng từ 1</option>
+                                    <option value="2">Loại chứng từ 2</option>
+                                    <option value="3">Loại chứng từ 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label>Số giao dịch</label>
                                 <input type="text" class="form-control" required="">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label>Trạng thái</label>
-                                <select class="form-control">
-                                    <option value="">Chưa duyệt</option>
-                                    <option value="">Đã duyệt</option>
-                                    <option value="">Trả về</option>
+                                <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                    <option value=""></option>
+                                    <option value="1">Chưa duyệt</option>
+                                    <option value="2">Đã duyệt</option>
+                                    <option value="3">Trả về</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group text-left">
                                 <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn</button>
                             </div>
@@ -130,7 +141,7 @@
                                         <td class="v-align-middle "></td>
                                     </tr>
                                     <tr>
-                                         <td style="width: 50px;padding: 10px 11px !important;">
+                                        <td style="width: 50px;padding: 10px 11px !important;">
                                             <div class="checkbox check-primary">
                                                 <input value="3" id="checkbox3" type="checkbox">
                                                 <label for="checkbox3" class="m-r-0"></label>
