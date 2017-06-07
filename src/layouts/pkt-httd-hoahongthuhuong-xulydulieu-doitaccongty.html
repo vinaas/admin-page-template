@@ -1,144 +1,70 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-httd-hoahongthuhuong-xulydulieu"}}
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-12">
-
             <h3 class="page-title">{{title}}</h3>
-
         </div>
-
-
-
     </div>
-
     <div class="row">
-
         <div class="col-md-12">
-
-
-
             <!--<h5>N <span class="semi-bold">giao dịch</span></h5>-->
-
             <div class="panel panel-default">
-
                 <!--<div class="panel-heading ">
                     <div class="panel-title">Tạo mới
                     </div>
-
                 </div>-->
-
-
                 <div class="panel-body">
-
-
-
                     <div class="row">
                         <div class="col-md-8">
-
-                            <div class="row  m-b-15">
-
+                             <div class="row  m-b-15">
                                 <div class="col-md-4 name m-t-5"> Loại tiền : </div>
-                                <div class="col-md-8 value">
-
+                                <div class="col-md-6 value">
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-5">
                                             <div class="form-group">
-                                                <label>DS Loại tiền</label>
-                                                <select class="form-control">
-                                                    <option value="">USA</option>
-                                                    <option value="">CAD</option>
-                                                    <option value="">VND</option>
-                                                </select>
+                                                <label>Danh sách Loại tiền</label>
+                                                <input type="text" value="AUD" class="form-control m-b-5" disabled>
+                                                <input type="text" value="CAD" class="form-control m-b-5" disabled>
+                                                <input type="text" value="EUR" class="form-control m-b-5" disabled>
+                                                <input type="text" value="GBP" class="form-control m-b-5" disabled>
+                                                <input type="text" value="USD" class="form-control m-b-5" disabled>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-5">
                                             <div class="form-group">
                                                 <label>Tỷ giá</label>
-                                                <input type="text " class="form-control">
+                                                <input type="text" class="form-control m-b-5">
+                                                <input type="text" class="form-control m-b-5">
+                                                <input type="text" class="form-control m-b-5">
+                                                <input type="text" class="form-control m-b-5">
+                                                <input type="text" class="form-control m-b-5">
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-2 text-right">
-                                            <a href="" class="btn btn-primary m-b-20 m-t-25"> <i class="fa fa-plus"></i> </a>
-                                        </div>
-
-
-
                                     </div>
-
-
-                                    <table class="table table-hover table-small" id="">
-                                        <thead>
-                                            <tr>
-                                                <th>Loại tiền</th>
-                                                <th>Tỷ giá </th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle"> USD </td>
-
-                                                <td class="v-align-middle bold">1</td>
-                                                <td><a href="" class="text-danger">xóa</a></td>
-                                            </tr>
-                                            <tr>
-
-                                                <td class="v-align-middle"> EUR </td>
-
-                                                <td class="v-align-middle bold">2</td>
-
-                                                <td><a href="" class="text-danger">xóa</a></td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
                                 </div>
-
                             </div>
-
                             <div class="row  m-b-15">
-
                                 <div class="col-md-4 name m-t-5"> </div>
                                 <div class="col-md-8 value">
                                     <div class=" m-t-10 sm-m-t-10 ">
-                                        <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
                                         <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
-
-
-
                         <div class="clearfix">
-
                         </div>
-
-
-
-
-
                         <div class="col-sm-12">
                             <hr>
-
                             <h5>Danh sách</h5>
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
                                         </button>
-
                                     </div>
-
                                     <div class="table-responsive">
                                         <div class="clearfix">
                                             <div class="pull-right m-b-10">
@@ -152,8 +78,6 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-
-
                                                     <th>Ngày</th>
                                                     <th>Tên đối tác</th>
                                                     <th>ID đối tác</th>
@@ -165,8 +89,6 @@
                                                     <th>TC</th>
                                                     <th>Tỷ giá</th>
                                                     <th>TT</th>
-
-
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -183,7 +105,6 @@
                                                     <td class="v-align-middle "> </td>
                                                     <td class="v-align-middle "> </td>
                                                 </tr>
-
                                                 <tr>
                                                     <td class="v-align-middle "> </td>
                                                     <td class="v-align-middle "> </td>
@@ -197,40 +118,17 @@
                                                     <td class="v-align-middle "> </td>
                                                     <td class="v-align-middle "> </td>
                                                 </tr>
-
-
                                             </tbody>
                                         </table>
                                         {{>pagination}}
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-
-
-
                     </div>
-
-
                 </div>
-
             </div>
-
-
         </div>
-
-
-
-
-
     </div>
-
 </div>
-
-
-
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
