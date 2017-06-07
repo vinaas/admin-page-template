@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Đối tác công ty",
+    "title": "Tổng hợp Chi trả ngoại tệ OCB",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-hoahongthuhuong-doitaccongty.html",
+    "layout": "pkt-httd-hoahongthuhuong-duyet.html",
     "permalink" : false,
-    "activeLink" : "pkt"
+    "activeLink" : "pkt-httd-hoahongthuhuong-duyet"
 }
 ---
 

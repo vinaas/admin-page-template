@@ -1,0 +1,85 @@
+{{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-httd-hoahongthuhuong-xulydulieu"}}
+
+<div class="container-fluid container-fixed-lg">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="page-title">{{title}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form role="form" lpformnum="3" class="form-filter">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label><bold>THEO NGÀY</bold> </label>
+                                <div class="input-daterange input-group" id="datepicker-range">
+                                    <input type="text" class="input-sm form-control" name="start" />
+                                    <span class="input-group-addon">đến</span>
+                                    <input type="text" class="input-sm form-control" name="end" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Truy vấn</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tên chi nhánh</th>
+                                <th>USD</th>
+                                <th>EUR</th>
+                                <th>CAD</th>
+                                <th>Phí chi trả</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ha Noi</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Thanh hoa</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {{>pagination}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Đối tác ngân hàng",
+    "title": "Đối tác công ty",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-hoahongthuhuong-doitacnganhang.html",
+    "layout": "pkt-httd-hoahongthuhuong-xulydulieu-doitaccongty.html",
     "permalink" : false,
-    "activeLink" : "pkt"
+    "activeLink" : "pkt-httd-hoahongthuhuong-xulydulieu"
 }
 ---
 

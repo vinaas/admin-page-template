@@ -1,11 +1,11 @@
 ---json
 {
-    "title": "Tổng hợp chi trả ngoại tệ của OCB",
+    "title": "Tổng hợp Chi trả ngoại tệ OCB",
     "slug": "",
     "description": "Index Page",
-    "layout": "pkt-httd-hoahongthuhuong-tonghopchitra.html",
+    "layout": "pkt-httd-hoahongthuhuong-nhapdulieu.html",
     "permalink" : false,
-    "activeLink" : "pkt"
+    "activeLink" : "pkt-httd-hoahongthuhuong-nhapdulieu"
 }
 ---
 
