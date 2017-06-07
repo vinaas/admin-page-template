@@ -1,8 +1,5 @@
 {{#extend "default"}} {{#content "main"}}
-<!-- START CONTAINER FLUID -->
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-8">
             <h3 class="page-title">{{title}}</h3>
@@ -22,119 +19,134 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="form-group-attached">
-
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Mã nghiệp vụ</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Tên chứng từ</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số giao dịch</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số chứng từ</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số thứ tự</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="form-group-attached">
                         <div class="row">
                             <h6 class="bold text-uppercase">TÀI KHOẢN CÓ</h6>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Chi nhánh</label>
-                                    <input type="text" class="form-control">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="1">Chi nhánh 1</option>
+                                                    <option value="2">Chi nhánh 2</option>
+                                                    <option value="3">Chi nhánh 3</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Loại tiền</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số tài khoản</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-
                         </div>
                         <div class="row">
                             <h6 class="bold text-uppercase">TÀI KHOẢN NỢ</h6>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Chi nhánh</label>
-                                    <input type="text" class="form-control">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="1">Chi nhánh 1</option>
+                                                    <option value="2">Chi nhánh 2</option>
+                                                    <option value="3">Chi nhánh 3</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Loại tiền</label>
-                                    <input type="text" class="form-control">
+                                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value=""></option>
+                                                    <option value="1">AUD</option>
+                                                    <option value="2">CAD</option>
+                                                    <option value="3">EUR</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số tài khoản</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Số tiền</label>
-                                    <input type="text" class="form-control">
+                                    <<select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                        <option value=""></option>
+                                        <option value="1">AUD</option>
+                                        <option value="2">CAD</option>
+                                        <option value="3">EUR</option>
+                                        </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Tỷ giá</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 m-r-10">
                                 <div class="form-group m-l-10">
                                     <label>Thành tiền</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="form-group-attached">
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group m-l-10">
+                            <div class="col-md-12">
+                                <div class="form-group">
                                     <label>Lý do</label>
-                                    <input type="text" class="form-control">
+                                    <textarea name="" id="input1/(\w+)/\u\1/g" class="form-control" rows="3" required="required"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group m-l-10">
                                     <label>Ngày điều chỉnh</label>
                                     <div id="datepicker-component" class="input-group date col-sm-8">
@@ -147,19 +159,12 @@
                     <div class="row">
                         <div class="col-sm-8"></div>
                         <div class="col-sm-4 text-right ">
-                            <button class="btn btn-danger"> Hủy</button>
-                            <button class="btn btn-primary" type="submit">Lưu &amp; Yêu cầu duyệt</button>
-
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-edit"></i> Lưu & Yêu cầu duyệt</button>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
-</div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
