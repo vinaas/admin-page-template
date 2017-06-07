@@ -1,4 +1,4 @@
-{{#extend "default"}} {{#content "main"}} 
+{{#extend "default"}} {{#content "main"}}
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -245,12 +245,12 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Tên chi nhánh </th>
+                                    <th >Tên chi nhánh </th>
                                     <th>Mã chi nhánh</th>
                                     <th>USD</th>
                                     <th>EUR</th>
                                     <th>CAD </th>
-                                    <th>Lý do trả về</th>
+                                    <th style="width:20%">Lý do trả về</th>
                                     <th>Hành động </th>
                                 </tr>
                             </thead>
@@ -287,6 +287,7 @@
                                     </td>
                                     <td class="v-align-middle ">30
                                     </td>
+                                    <td class="v-align-middle"></td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
@@ -301,6 +302,5 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}

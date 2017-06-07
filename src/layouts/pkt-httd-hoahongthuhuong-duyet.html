@@ -1,7 +1,5 @@
 {{#extend "default"}} {{#content "main"}} 
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-12">
             <h3 class="page-title">{{title}}</h3>
@@ -11,14 +9,13 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class=""><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
+                    <li class=""><a href="#tabLanhDaoDuyet" data-toggle="tab" role="tab">Duyệt</a>
                     </li>
-                    
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane " id="tabChuaDuyet">
+                    <div class="tab-pane active " id="tabLanhDaoDuyet">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -33,7 +30,7 @@
                             <tbody>
                                 <tr>
                                     <td class="v-align-middle ">
-                                        Chi nhanh 1
+                                        Chi nhánh 1
                                     </td>
                                     <td class="v-align-middle "> abc
                                     </td>
@@ -52,7 +49,7 @@
                                 </tr>
                                 <tr>
                                     <td class="v-align-middle ">
-                                        Chi nhanh 2
+                                        Chi nhánh 2
                                     </td>
                                     <td class="v-align-middle "> xyz
                                     </td>
@@ -81,6 +78,7 @@
                                     <th>USD</th>
                                     <th>EUR</th>
                                     <th>CAD </th>
+                                    <th>Lý do </th>
                                     <th>Hành động </th>
                                 </tr>
                             </thead>
@@ -97,6 +95,8 @@
                                     </td>
                                     <td class="v-align-middle ">30
                                     </td>
+                                    <td class="v-align-middle ">Lý do 1
+                                    </td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pkt-hoahongthuhuong"> <i class="fa fa-edit"></i>  Điều chỉnh</button>
@@ -106,7 +106,7 @@
                                 </tr>
                                 <tr>
                                     <td class="v-align-middle ">
-                                        Chi nhanh 2
+                                        Chi nhánh 2
                                     </td>
                                     <td class="v-align-middle "> xyz
                                     </td>
@@ -115,6 +115,8 @@
                                     <td class="v-align-middle ">20
                                     </td>
                                     <td class="v-align-middle ">30
+                                    </td>
+                                    <td class="v-align-middle ">Lý do 2
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm">
@@ -130,6 +132,5 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
