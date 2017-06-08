@@ -222,6 +222,7 @@ table .btn-group-vertical {
         font-size: 13px;
     }
     .form-title{
+        color: $color-primary;
         font-size: 14px;
         margin-bottom: 20px;
         font-weight: bold;
@@ -244,3 +245,6 @@ table .btn-group-vertical {
         }  
 }
 
+.modal-full{
+    width: 98% !important;
+}
