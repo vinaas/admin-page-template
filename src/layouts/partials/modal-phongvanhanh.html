@@ -2563,19 +2563,23 @@
                                         <th> Số CMND</th>
                                         <th> Số Tài khoản</th>
                                         <th> Lý do</th>
+                                        <th> Chi tiết</th>
                                         <th> Hành động</th>
                                     </tr>
                                 </thead>
                                 <tr class="body">
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"> Nguyễn Văn B</td>
+                                    <td class="v-align-middle"> 0164565</td>
+                                    <td class="v-align-middle"> Tp.Hồ Chí minh</td>
+                                    <td class="v-align-middle"> Thủ Đức</td>
+                                    <td class="v-align-middle"> Thủ Đức</td>
+                                    <td class="v-align-middle"> Tp.Hồ Chí minh</td>
+                                    <td class="v-align-middle"> 04687465</td>
+                                    <td class="v-align-middle"> 31016844</td>
+                                    <td class="v-align-middle"> sai tên</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#Duyetdieuchinhgiaodich-chitiet">Xem</a>
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-ban"></i> Từ chối</button>
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"><i class="fa fa-edit"></i> Duyệt</button>
@@ -2587,6 +2591,34 @@
 
                         <form role="form" class="desModalForm">
                             <h6 class="text-uppercase form-title">Thông tin cũ</h6>
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th> Họ tên người nhận</th>
+                                        <th> Số điện thoại</th>
+                                        <th> Địa chỉ</th>
+                                        <th> Quận/Huyện</th>
+                                        <th> Tỉnh thành</th>
+                                        <th> Điểm giao dịch</th>
+                                        <th> Số CMND</th>
+                                        <th> Số Tài khoản</th>
+                                        <th> Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                <tr class="body">
+                                    <td class="v-align-middle"> Nguyễn Văn A</td>
+                                    <td class="v-align-middle"> 0164565</td>
+                                    <td class="v-align-middle"> Tp.Hồ Chí minh</td>
+                                    <td class="v-align-middle"> Thủ Đức</td>
+                                    <td class="v-align-middle"> Thủ Đức</td>
+                                    <td class="v-align-middle"> Tp.Hồ Chí minh</td>
+                                    <td class="v-align-middle"> 04687465</td>
+                                    <td class="v-align-middle"> 31016844</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="btn btn-tag   btn-tag-light btn-tag-rounded " data-toggle="modal" data-target="#Duyetdieuchinhgiaodich-chitiet">Xem</a>
+                                    </td>
+                                </tr>
+                            </table>
 
                         </form>
 
@@ -2607,7 +2639,7 @@
 
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="Duyetdieuchinhgiaodich-chitiet" role="dialog" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-full">
         <div class="modal-content">
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
