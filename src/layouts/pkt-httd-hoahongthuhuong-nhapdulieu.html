@@ -17,6 +17,8 @@
                     </li>
                     <li><a href="#tabTraVe" data-toggle="tab" role="tab">Trả về</a>
                     </li>
+                    <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
+                    </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabNhap">
@@ -53,6 +55,7 @@
                                                     <a href="" class="btn btn-primary m-b-20 m-t-25"> <i class="fa fa-plus"></i> </a>
                                                 </div>
                                             </div>
+
                                             <table class="table table-hover table-small" id="">
                                                 <thead>
                                                     <tr>
@@ -74,6 +77,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+
                                         </div>
                                     </div>
                                     <div class="row  m-b-15">
@@ -116,6 +120,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+
                                         </div>
                                     </div>
                                     <div class="col-sm-8 m-t-10 sm-m-t-10 col-sm-offset-4">
@@ -190,6 +195,15 @@
                         </div>
                     </div>
                     <div class="tab-pane " id="tabDaDuyet">
+                        <div class="clearfix">
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -240,12 +254,22 @@
                                 </tr>
                             </tbody>
                         </table>
+                        {{>pagination}}
                     </div>
                     <div class="tab-pane " id="tabTraVe">
+                        <div class="clearfix">
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th >Tên chi nhánh </th>
+                                    <th>Tên chi nhánh </th>
                                     <th>Mã chi nhánh</th>
                                     <th>USD</th>
                                     <th>EUR</th>
@@ -297,10 +321,76 @@
                                 </tr>
                             </tbody>
                         </table>
+                        {{>pagination}}
+                    </div>
+                    <div class="tab-pane" id="tabDuyet">
+                        <div class="clearfix">
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tên chi nhánh </th>
+                                    <th>Mã chi nhánh</th>
+                                    <th>USD</th>
+                                    <th>EUR</th>
+                                    <th>CAD </th>
+                                    <th>Hành động </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle ">
+                                        Chi nhánh 1
+                                    </td>
+                                    <td class="v-align-middle "> abc
+                                    </td>
+                                    <td class="v-align-middle ">10
+                                    </td>
+                                    <td class="v-align-middle ">20
+                                    </td>
+                                    <td class="v-align-middle ">30
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle ">
+                                        Chi nhánh 2
+                                    </td>
+                                    <td class="v-align-middle "> xyz
+                                    </td>
+                                    <td class="v-align-middle ">10
+                                    </td>
+                                    <td class="v-align-middle ">20
+                                    </td>
+                                    <td class="v-align-middle ">30
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDuyet"> <i class="fa fa-edit"></i> Duyệt yêu cầu</button>
+                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        {{>pagination}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
