@@ -1,5 +1,4 @@
 {{#extend "default"}} {{#content "main"}}
-
 <br>
 <!--Danh sách công văn-->
 <div class="container-fluid container-fixed-lg">
@@ -7,35 +6,25 @@
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
-
             <h3 class="page-title">Số dư kế toán cuối ngày</h3>
-
         </div>
-
     </div>
     <div class="row">
-
         <div class="col-md-12">
-
             <div class="panel panel-default ">
-
                 <div class="tab-content">
-
                     <div class="panel-body">
-                        <div class="panel panel-heading">
-                            <div class="pull-right m-b-10">
-                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                        <div class="pull-right m-b-10">
+                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
                                 </button>
-                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                                 </button>
-
-                                </div>
                             </div>
                         </div>
+                        <div class="clearfix"></div>
                         <div class="table-responsive">
-
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
@@ -48,31 +37,34 @@
                                         <th style="width: 15%">Tổng phát sinh có (TPSC)</th>
                                         <th style="width: 15%">Tồn cuối kỳ dư nợ (TCK)</th>
                                         <th style="width: 15%">Tồn cuối kỳ dư có (TCK)</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td class="v-align-middle">26/04/2017</td></tr>
+                                    <tr>
+                                        <td class="v-align-middle">26/04/2017</td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                    </tr>
                                 </tbody>
                             </table>
                             {{>pagination}}
-
                         </div>
-                        <div class="row">
-                            <div class="form-group text-right">
-
-                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="pg-form"></i>Submit</button>
-                                <button class="btn btn-danger btn-cons m-t-25" type="button"> <i class="pg-trash"></i>Hủy</button>
+                        <div class="row text-right">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="pg-form"></i>Thực hiện</button>
+                                
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
