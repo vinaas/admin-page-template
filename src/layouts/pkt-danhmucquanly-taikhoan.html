@@ -1,164 +1,123 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type="pkt-danhmucquanly"}}
-
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
-    <div class="row">
-        <div class="col-sm-7">
-
-            <h3 class="page-title">{{title}}</h3>
-        </div>
-
-        <div class="col-sm-5">
-            <div class="text-right">
-                <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-taomoi"><i class="pg-form"></i> Tạo mới
+  <div class="row">
+    <div class="col-sm-7">
+      <h3 class="page-title">{{title}}</h3>
+    </div>
+    <div class="col-sm-5">
+      <div class="text-right">
+        <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-taomoi"><i class="pg-form"></i> Tạo mới
                 </button>
-            </div>
-
-        </div>
-
+      </div>
     </div>
-
-    <div class="row">
-
+  </div>
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
         <div class="col-md-12">
+          {{>formSearch type="pkt-2"}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="table table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th rowspan="2" style="width:10%">Ngày</th>
+                    <th colspan="1" class="text-center" style="width:20%">Loại tài khoản tài sản</th>
+                    <th colspan="4" class="text-center" style="width:40%">Hệ thống TK</th>
+                    <th rowspan="2" style="width:20%">Số tài khoản</th>
+                    <th rowspan="2" style="width:10%">Hành động</th>
+                  </tr>
+                  <tr>
+                    <th class="text-center">1</th>
+                    <th class="text-center">Cấp 1</th>
+                    <th class="text-center">Cấp 2</th>
+                    <th class="text-center">Cấp 3</th>
+                    <th class="text-center">Mã Tiểu khoản</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="bold text-center">20/05/2017</td>
+                    <td class="bold">Tiền mặt</td>
+                    <td class="bold">111</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="3" class="bold text-center"> <button class="btn btn-primary  m-t-5" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-dieuchỉnh"><i class="fa fa-edit"></i> Điều chỉnh
+                </button></td>
+                  </tr>
+                  <tr>
+                    <td>VND</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>001</td>
+                    <td>11111001</td>
+                  </tr>
+                  <tr>
+                    <td>Ngoại tệ</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>001</td>
+                    <td>11121001</td>
+                  </tr>
 
+                  <tr>
+                    <td></td>
+                    <td class="bold text-center"> 2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
 
-            <div class="panel panel-default ">
-
-                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-                    <li class="active"><a href="#tabDanhmuc" data-toggle="tab" role="tab">Danh mục</a>
-                    </li>
-
-                    <li><a href="#tabLanhDaoDuyet" data-toggle="tab" role="tab">Duyệt</a>
-                    </li>
-
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tabDanhmuc">
-
-                        <div class="panel-body">
-                            <!--<h5>Danh sách <span class="semi-bold">chưa duyệt</span></h5>-->
-                            {{>formSearch type="pkt-2"}}
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="pane-body">
-                                        <div class="table table-responsive">
-                                            <table class="table table-bordered table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th rowspan="2" style="width:10%">Ngày</th>
-                                                        <th colspan="1" class="text-center" style="width:30%">LOẠI TÀI KHOẢN TÀI SẢN</th>
-                                                        <th colspan="4" class="text-center" style="width:40%">Hệ thống TK</th>
-                                                        <th rowspan="2" style="width:20%">SỐ TÀI KHOẢN</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="text-center">1</th>
-                                                        <th class="text-center">Cấp 1</th>
-                                                        <th class="text-center">Cấp 2</th>
-                                                        <th class="text-center">Cấp 3</th>
-                                                        <th class="text-center">Mã Tiểu khoản</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td rowspan="3" class="bold text-center">20/05/2017</td>
-                                                        <td class="bold text-center">Tiền mặt</td>
-                                                        <td class="bold text-center">111</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>VND</td>
-                                                        <td></td>
-                                                        <td>1</td>
-                                                        <td>1</td>
-                                                        <td>001</td>
-                                                        <td>11111001</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ngoại tệ</td>
-                                                        <td></td>
-                                                        <td>1</td>
-                                                        <td>1</td>
-                                                        <td>001</td>
-                                                        <td>11111001</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="tab-pane " id="tabLanhDaoDuyet">
-                        <div class="panel-body">
-
-                            {{>formSearch type="pkt-2"}}
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-
-                                        <th style="">Ngày</th>
-                                        <th style="">Loại TK</th>
-                                        <th style="">TK cấp 1</th>
-                                        <th style="">Tên TK cấp 1</th>
-                                        <th style="">TK cấp 2</th>
-                                        <th style="">Tên TK cấp 2</th>
-
-                                        <th>Chi tiết</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                        <td class="v-align-middle">
-                                            12/05/2017
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                        </td>
-                                        <td class="v-align-middle ">
-
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                        </td>
-
-                                        <td class="v-align-middle ">
-                                        </td>
-
-                                        <td class="v-align-middle">
-                                            <a href="#" class="text-primary" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-duyet">Xem</a>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-                        </div>
-
-                    </div>
-                </div>
-
+                  <tr>
+                    <td rowspan="3" class="bold text-center">21/05/2017</td>
+                    <td class="bold">Tiền gửi Ngân hàng</td>
+                    <td class="bold">112</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="3" class="bold text-center"> <button class="btn btn-primary  m-t-5" type="button" data-toggle="modal" data-target="#pkt-dmql-taikhoanketoan-dieuchỉnh"><i class="fa fa-edit"></i> Điều chỉnh
+                </button></td>
+                  </tr>
+                  <tr>
+                    <td>VND</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>001</td>
+                    <td>11211001</td>
+                  </tr>
+                  <tr>
+                    <td>Ngoại tệ</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>001</td>
+                    <td>11221001</td>
+                  </tr>
+                </tbody>
+              </table>
 
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-
+  </div>
 </div>
 
+</div>
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
