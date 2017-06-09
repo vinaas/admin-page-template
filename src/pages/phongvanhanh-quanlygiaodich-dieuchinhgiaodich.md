@@ -3,7 +3,7 @@
     "title": "Điều chỉnh giao dịch",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-quanlygiaodich.html",
+    "layout": "phongvanhanh-quanlygiaodich-dieuchinhgiaodich.html",
     "permalink" : false,
     "activeLink" : "phongvanhanh"
 }
