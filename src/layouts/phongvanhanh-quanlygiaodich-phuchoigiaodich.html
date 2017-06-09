@@ -1,5 +1,4 @@
 {{#extend "default"}} {{#content "main"}}
-
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
@@ -8,9 +7,7 @@
             <h3 class="page-title">Danh sách phục hồi giao dịch</h3>
         </div>
     </div>
-
     <div class="row">
-
         <div class="panel panel-default ">
             <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
                 <li class="active"><a href="#tabDanhsach" data-toggle="tab" role="tab">Danh sách giao dịch</a>
@@ -18,13 +15,10 @@
                 <li><a href="#tabDuyet" data-toggle="tab" role="tab">Duyệt</a>
                 </li>
             </ul>
-
             <div class="tab-content">
                 <div class="tab-pane active" id="tabDanhsach">
                     <div class="panel-body">
-
                         {{>formSearch type="phongvanhanh6"}}
-
                         <div class="pull-right m-b-10">
                             <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                             <div class="btn-group">
@@ -32,9 +26,7 @@
                                 <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
                             </div>
                         </div>
-
                         <div class="clearfix"></div>
-
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -44,13 +36,12 @@
                                     <th>Mã DS</th>
                                     <th>Người nhận*</th>
                                     <th>Số tiền gửi*</th>
-                                    <th>Loại tiền gửi*</th>
                                     <th>Loại tiền chi* </th>
                                     <th>Tỉnh thành*</th>
                                     <th>Điểm giao dịch*</th>
                                     <th>Loại dịch vụ*</th>
+                                    <th>Chi tiết</th>
                                     <th> Hành động</th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -62,14 +53,15 @@
                                     <td class="v-align-middle">PHAM THI NGON</td>
                                     <td class="v-align-middle">44,000,000</td>
                                     <td class="v-align-middle">VND</td>
-                                    <td class="v-align-middle">VND</td>
                                     <td class="v-align-middle">HATINH</td>
                                     <td class="v-align-middle">HEAD</td>
                                     <td class="v-align-middle">AD</td>
                                     <td class="v-align-middle">
+                                        <a href="" class="btn btn-default"  data-toggle="modal" data-target="#PhucHoiGiaoDich-ChiTiet" >Xem</a>
+                                    </td>
+                                    <td class="v-align-middle">
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPhucHoi">
-                                                <i class="fa fa-trash-o"></i> Yêu cầu phục hồi
-                                            </button>
+                                                <i class="fa fa-trash-o"></i> Yêu cầu phục hồi</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -77,11 +69,9 @@
                         {{>pagination}}
                     </div>
                 </div>
-
-                <div class="tab-pane active" id="tabDuyet">
+                <div class="tab-pane" id="tabDuyet">
                     <div class="panel-body">
                         {{>formSearch type="phongvanhanh6"}}
-
                         <div class="pull-right m-b-10">
                             <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                             <div class="btn-group">
@@ -89,9 +79,7 @@
                                 <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
                             </div>
                         </div>
-
                         <div class="clearfix"></div>
-
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -100,7 +88,6 @@
                                             <input value="3" id="checkbox1" type="checkbox">
                                             <label for="checkbox1" class="m-r-0"></label>
                                         </div>
-
                                     </th>
                                     <th>STT</th>
                                     <th> Mã Biên nhận</th>
@@ -108,7 +95,6 @@
                                     <th>Mã số*</th>
                                     <th>Mã DS</th>
                                     <th>Chi tiết</th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -135,8 +121,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
