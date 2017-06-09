@@ -3,7 +3,7 @@
     "title": "Danh sách tổng",
     "slug": "",
     "description": "Index Page",
-    "layout": "phongvanhanh-danhsachgiaodich.html",
+    "layout": "phongvanhanh-danhsachgiaodich-nhapdanhsachtong.html",
     "permalink" : false,
     "activeLink" : "phongvanhanh"
 }
