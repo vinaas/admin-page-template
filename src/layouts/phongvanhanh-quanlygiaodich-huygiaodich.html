@@ -14,85 +14,68 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabDanhsach">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        {{>formSearch type="phongvanhanh5"}}
-                                    </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    {{>formSearch type="phongvanhanh5"}}
                                 </div>
-    
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 50px;padding: 10px 11px !important;">
-                                                    <div class="checkbox ">
-                                                        <input value="3" id="checkbox1" type="checkbox">
-                                                        <label for="checkbox1" class="m-r-0"></label>
-                                                    </div>
-                                                </th>
-                                                <th>STT</th>
-                                                <th>Tên đối tác</th>
-                                                <th>Mã biên nhận</th>
-                                                <th>Mã số nhận tiền</th>
-                                                <th>Tên người nhận</th>
-                                                <th> P. Kế toán</th>
-                                                <th> Trạng thái</th>
-                                                <th> Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input value="3" id="checkbox2" type="checkbox">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle">1</td>
-                                                <td class="v-align-middle">MAYZUS</td>
-                                                <td class="v-align-middle">120317-0001</td>
-                                                <td class="v-align-middle">970</td>
-                                                <td class="v-align-middle">PHAM THI NGON</td>
-                                                <td class="v-align-middle"><span class="label">Chưa duyệt</span></td>
-                                                <td class="v-align-middle"><span class="label">Chưa chi</span></td>
-                                                <td class="v-align-middle">
-                                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalYeuCauHuy"><i class="fa fa-trash-o"></i> Yêu cầu hủy</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="v-align-middle">
-                                                    <div class="checkbox ">
-                                                        <input value="3" id="checkbox2" type="checkbox">
-                                                        <label for="checkbox2" class="m-r-0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="v-align-middle">1</td>
-                                                <td class="v-align-middle">MAYZUS</td>
-                                                <td class="v-align-middle">120317-0001</td>
-                                                <td class="v-align-middle">970</td>
-                                                <td class="v-align-middle">PHAM THI NGON</td>
-                                                <td class="v-align-middle"> <span class="label">Chưa duyệt</span></td>
-                                                <td class="v-align-middle"><span class="label">Đã chi</span></td>
-                                                <td class="v-align-middle">
-                                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalYeuCauHuy"><i class="fa fa-trash-o"></i> Yêu cầu hủy</button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                {{>pagination}}
                             </div>
+
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th>STT</th>
+                                            <th>Tên đối tác</th>
+                                            <th>Mã biên nhận</th>
+                                            <th>Mã số nhận tiền</th>
+                                            <th>Tên người nhận</th>
+                                            <th> P. Kế toán</th>
+                                            <th> Trạng thái</th>
+                                            <th> Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                         
+                                            <td class="v-align-middle">1</td>
+                                            <td class="v-align-middle">MAYZUS</td>
+                                            <td class="v-align-middle">120317-0001</td>
+                                            <td class="v-align-middle">970</td>
+                                            <td class="v-align-middle">PHAM THI NGON</td>
+                                            <td class="v-align-middle"><span class="label">Chưa duyệt</span></td>
+                                            <td class="v-align-middle"><span class="label">Chưa chi</span></td>
+                                            <td class="v-align-middle">
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalYeuCauHuy"><i class="fa fa-trash-o"></i> Yêu cầu hủy</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                         
+                                            <td class="v-align-middle">1</td>
+                                            <td class="v-align-middle">MAYZUS</td>
+                                            <td class="v-align-middle">120317-0001</td>
+                                            <td class="v-align-middle">970</td>
+                                            <td class="v-align-middle">PHAM THI NGON</td>
+                                            <td class="v-align-middle"> <span class="label">Chưa duyệt</span></td>
+                                            <td class="v-align-middle"><span class="label">Đã chi</span></td>
+                                            <td class="v-align-middle">
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalYeuCauHuy"><i class="fa fa-trash-o"></i> Yêu cầu hủy</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            {{>pagination}}
                         </div>
                     </div>
 
@@ -117,33 +100,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <br>
                             <div class="btn-group btn-group-sm">
-                                <button type="button" class="btn btn-primary m-r-5" data-toggle="modal" data-target="#modalDuyet">
-                                        <i class="fa fa-edit"></i> Xác nhận
-                                    </button>
                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTuChoi">
-                                        <i class="fa fa-trash-o"></i> Từ chối
-                                    </button>
+                                        <i class="fa fa-ban"></i> Từ chối</button>
+                                <button type="button" class="btn btn-primary m-r-5" data-toggle="modal" data-target="#modalDuyet">
+                                        <i class="fa fa-edit"></i> Duyệt</button>
+                            </div>
+                            <div class="pull-right m-b-10">
+                                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
+                                </button>
+                                </div>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="panel-heading">
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                                </button>
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                                </button>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="table table-responsive">
+                            <div class="table-responsive">
                                 <table class="table table-hover table-small">
                                     <thead>
                                         <tr>
                                             <th style="width: 50px;padding: 10px 11px !important;">
-                                                <div class="checkbox ">
+                                                <div class="checkbox check-primary ">
                                                     <input value="3" id="checkbox1" type="checkbox">
                                                     <label for="checkbox1" class="m-r-0"></label>
                                                 </div>
@@ -159,8 +138,8 @@
                                     </thead>
                                     <tbody>
                                         <tr class="active">
-                                            <td>
-                                                <div class="checkbox ">
+                                            <td style="width: 50px;padding: 10px 11px !important;">
+                                                <div class="checkbox check-primary">
                                                     <input value="3" id="checkbox2" type="checkbox">
                                                     <label for="checkbox2" class="m-r-0"></label>
                                                 </div>
