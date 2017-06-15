@@ -12,7 +12,7 @@
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
                     <li class="active"><a href="#tabChuaDuyet" data-toggle="tab" role="tab">Chưa duyệt</a>
                     </li>
-                    <li ><a href="#tabCapNhat" data-toggle="tab" role="tab">Cập nhật</a>
+                    <li><a href="#tabCapNhat" data-toggle="tab" role="tab">Cập nhật</a>
                     </li>
                     <li><a href="#tabDaDuyet" data-toggle="tab" role="tab">Đã duyệt</a>
                     </li>
@@ -25,6 +25,22 @@
                     <div class="tab-pane active" id="tabChuaDuyet">
                         <div class="panel-body">
                             <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tên đối tác</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>TRẠNG THÁI</label>
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value="1">Đã cập nhật</option>
+                                                    <option value="2">Chưa cập nhật</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="form-group long">
                                         <label>THEO NGÀY</label>
@@ -35,27 +51,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tên đối tác</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã số nhận tiền</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã Pin</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                                     </div>
@@ -124,7 +134,7 @@
                                         </tbody>
                                     </table>
                                     {{>pagination}}
-                                 
+
                                 </div>
                             </div>
                         </div>
@@ -133,6 +143,22 @@
                     <div class="tab-pane" id="tabCapNhat">
                         <div class="panel-body">
                             <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tên đối tác</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>TRẠNG THÁI</label>
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value="1">Đã cập nhật</option>
+                                                    <option value="2">Chưa cập nhật</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="form-group long">
                                         <label>THEO NGÀY</label>
@@ -143,27 +169,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tên đối tác</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã số nhận tiền</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã Pin</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                                     </div>
@@ -244,9 +264,41 @@
                     </div>
 
                     <div class="tab-pane " id="tabDotDS">
-                        <h5>
-                            <span class="semi-bold">Danh sách các đợt đã xuất</span>
-                        </h5>
+
+                        <div class="panel-body">
+                            <h5><span class="semi-bold">Danh sách các đợt đã xuất</span></h5>
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tên đối tác</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Đợt</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group long">
+                                        <label>THEO NGÀY</label>
+                                        <div class="input-daterange input-group" id="datepicker-range">
+                                            <input type="text" class="input form-control" name="start">
+                                            <span class="input-group-addon">đến</span>
+                                            <input type="text" class="input form-control" name="end">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         <div class="panel-body">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -320,6 +372,22 @@
                     <div class="tab-pane " id="tabDuyet">
                         <div class="panel-body">
                             <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tên đối tác</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>TRẠNG THÁI</label>
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value="1">Đã cập nhật</option>
+                                                    <option value="2">Chưa cập nhật</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="form-group long">
                                         <label>THEO NGÀY</label>
@@ -328,12 +396,6 @@
                                             <span class="input-group-addon">đến</span>
                                             <input type="text" class="input form-control" name="end">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tên đối tác</label>
-                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -430,6 +492,22 @@
                     <div class="tab-pane" id="tabDaDuyet">
                         <div class="panel-body">
                             <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Tên đối tác</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>TRẠNG THÁI</label>
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                    <option value="1">Đã cập nhật</option>
+                                                    <option value="2">Chưa cập nhật</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="form-group long">
                                         <label>THEO NGÀY</label>
@@ -440,27 +518,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tên đối tác</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã số nhận tiền</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Mã Pin</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                                     </div>
