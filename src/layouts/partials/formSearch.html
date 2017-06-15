@@ -58,38 +58,26 @@
 </div>
 
 {{/ifEqual}} {{#ifEqual type "banlanhdao"}}
-<div class="panel panel-default ">
-    <div class="panel-body">
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label>Tên đối tác</label>
-                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
-                            <option value=""></option>
-                            <option value="AK">Nguyễn Văn A</option>
-                            <option value="AK">Nguyễn Văn B</option>
-                            <option value="AK">Nguyễn Văn C</option>
-                        </select>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label>Mã danh sách</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="form-group">
-                    <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
-                </div>
-            </div>
-
-        </div>
+<form role="form" lpformnum="2" class="form-filter">
+    <div class="form-group">
+        <label>Tên đối tác</label>
+        <select class="full-width" data-init-plugin="select2" data-placeholder="">
+            <option value=""></option>
+            <option value="AK">Nguyễn Văn A</option>
+            <option value="AK">Nguyễn Văn B</option>
+            <option value="AK">Nguyễn Văn C</option>
+        </select>
     </div>
-</div>
+
+    <div class="form-group">
+        <label>Mã danh sách</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+    </div>
+</form>
 {{/ifEqual}} {{#ifEqual type "giaodichchitra"}}
 
 <div class="panel panel-default">
