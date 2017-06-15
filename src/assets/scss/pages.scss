@@ -70,12 +70,29 @@ Generated From SASS
 .form-filter {
     margin: 0 -10px;
     .form-group {
-        width: 20%;
+        // max-width: 200px;
         padding: 0 10px;
         float: left;
-        &.long {
-            width: 30%;
-        }
+        // &.long {
+        //     max-width: 20%;
+        // }
+        // flex: 1 1 100%;
+    }
+}
+
+.form-filter .form-group {
+    width: 20%;
+    @media (max-width: 1170px) {
+        width: 25%;
+    }
+    @media (max-width: 900px) {
+        width: 33.333%;
+    }
+    @media (max-width: 600px) {
+        width: 50%;
+    }
+    @media (max-width: 400px) {
+        width: 100%;
     }
 }
 
@@ -107,8 +124,7 @@ Generated From SASS
     .Sub,
     .sub {
         padding: 0 15px 0 10px;
-        list-style: none;
-        // list-style: none;
+        list-style: none; // list-style: none;
     }
 }
 
@@ -214,37 +230,31 @@ table .btn-group-vertical {
 }
 
 //Thiet ke table nhập lieu mercel
-
-
-
-.desModalForm{
-    .name{
+.desModalForm {
+    .name {
         font-size: 13px;
     }
-    .form-title{
+    .form-title {
         color: $color-primary;
         font-size: 14px;
         margin-bottom: 20px;
         font-weight: bold;
     }
-
-    .row [class*='col-']{
-
-            &:not(:first-child),
-            &:not(:last-child) {
-                padding-right: 7px;
-                padding-left: 7px;
-            }
-
-            &:first-child{
-                padding-left:  7px;
-            }
-            &:last-child{
-                padding-right:  7px;
-            }
-        }  
+    .row [class*='col-'] {
+        &:not(:first-child),
+        &:not(:last-child) {
+            padding-right: 7px;
+            padding-left: 7px;
+        }
+        &:first-child {
+            padding-left: 7px;
+        }
+        &:last-child {
+            padding-right: 7px;
+        }
+    }
 }
 
-.modal-full{
+.modal-full {
     width: 98% !important;
 }
