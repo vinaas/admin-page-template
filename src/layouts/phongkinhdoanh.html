@@ -1,74 +1,30 @@
 {{#extend "default"}} {{#content "main"}} {{> navHori type=activeLink}}
-
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
         <div class="col-sm-7">
-
             <h3 class="page-title">Danh sách nhập liệu</h3>
-
         </div>
-
         <div class="col-sm-5">
             <div class="text-right">
-
-
                 <button class="btn btn-info btn-cons m-b-10" type="button" data-toggle="modal" data-target="#modalKinhDoanhTyGia"><i class="pg-form"></i> Tạo mới nhập liệu
                 </button>
-
-                <!--
-                <button class="btn btn-default btn-cons m-b-10" type="button"><i class="fa fa-file-excel-o"></i> Xuất báo cáo
-                </button>-->
-
             </div>
         </div>
-
     </div>
-
     <div class="row">
-
         <div class="col-md-12">
-
             <div class="panel panel-default">
-                <!--<div class="panel-heading">-->
-                <!--<div class="panel-title">-->
-                <!--Option #two-->
-                <!--</div>-->
-                <!--</div>-->
                 <div class="panel-body">
                     <h5 class="m-t-0">
                         Tìm kiếm
                     </h5>
-                    <form role="form" lpformnum="2" class="form-filter">
-                        <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
                             <label>Từ khóa</label>
                             <span class="help">e.g. </span>
                             <input type="email" class="form-control">
                         </div>
-                        <!--<div class="form-group">
-                            <label>Thuộc danh mục</label>
-
-                            <select class="full-width" data-init-plugin="select2">
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                <option value="AK">Alaska</option>
-                                <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                <option value="CA">California</option>
-                                <option value="NV">Nevada</option>
-                                <option value="OR">Oregon</option>
-                                <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                <option value="AZ">Arizona</option>
-                                <option value="CO">Colorado</option>
-                              
-                                </optgroup>
-                              
-                                </select>
-                        </div>-->
-                        <div class="form-group long">
+                        <div class="col-md-4">
                             <label>THEO NGÀY</label>
                             <div class="input-daterange input-group" id="datepicker-range">
                                 <input type="text" class="input-sm form-control" name="start" />
@@ -76,47 +32,22 @@
                                 <input type="text" class="input-sm form-control" name="end" />
                             </div>
                         </div>
-
-                        <!--<div class="form-group">-->
-                        <!--<label>Disabled</label>-->
-                        <!--<span class="help">e.g. </span>-->
-                        <!--<input type="email" class="form-control" value="You can put anything here" disabled="">-->
-                        <!--</div>-->
-
-                        <div class="form-group">
-
-                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                            </button>
-
+                        <div class="col-md-4">
+                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                         </div>
-                    </form>
-
-
-
+                    </div>
                 </div>
-
-
-
-
             </div>
-
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group">
                         <button type="button" class="btn btn-default"><i class="fa fa-file-excel-o"></i> Xuất danh sách
                           </button>
-
                         <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Xóa
                           </button>
-
                         <button type="button" class="btn btn-default"><i class="fa fa-rotate-left"></i>
                           </button>
-
                     </div>
-
-
-
-
                     <div class="pull-right m-b-10">
                         <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
                         <div class="btn-group">
@@ -124,26 +55,20 @@
                           </button>
                             <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
                           </button>
-
                         </div>
                     </div>
-
-
                     <div class="clearfix"></div>
                 </div>
                 <div class="panel-body">
-
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-
                                     <th style="width: 50px;padding: 10px 11px !important;">
                                         <div class="checkbox ">
                                             <input type="checkbox" value="3" id="checkbox1">
                                             <label for="checkbox1" class="m-r-0"></label>
                                         </div>
-
                                     </th>
                                     <th>Ngày yêu cầu</th>
                                     <th>Ngày duyệt</th>
@@ -192,11 +117,8 @@
                                     </td>
                                     <td class="v-align-middle">
                                         <span class="label label-default">EUR</span>
-
-
                                     </td>
                                     <td class="v-align-middle">
-
                                     </td>
                                     <td class="v-align-middle">
                                         26500
@@ -205,14 +127,12 @@
                                         425
                                     </td>
                                     <td class="v-align-middle">
-
                                     </td>
                                     <td class="v-align-middle">
                                         <span class="label label-default">Chưa duyệt</span>
                                         <!--<span class="label label-success">Duyệt</span>-->
                                     </td>
                                     <td class="v-align-middle">
-
                                         <div class="dropdown pull-right">
                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fa fa-cog"></i>
@@ -220,8 +140,6 @@
                                             <ul class="dropdown-menu profile-dropdown" role="menu">
                                                 <li><a href="#" data-toggle="modal" data-target="#modalKinhDoanhTyGia"><i class="fa fa-edit"></i> Sửa</a>
                                                 </li>
-
-
                                                 <li class="bg-master-lighter">
                                                     <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
                                                         <span class="pull-left">Xóa</span>
@@ -230,12 +148,8 @@
                                                 </li>
                                             </ul>
                                         </div>
-
-
-
                                     </td>
                                 </tr>
-
                                 <tr>
                                     <td class="v-align-middle">
                                         <div class="checkbox ">
@@ -266,11 +180,8 @@
                                     </td>
                                     <td class="v-align-middle">
                                         <span class="label label-default">EUR</span>
-
-
                                     </td>
                                     <td class="v-align-middle">
-
                                     </td>
                                     <td class="v-align-middle">
                                         26500
@@ -279,13 +190,11 @@
                                         425
                                     </td>
                                     <td class="v-align-middle">
-
                                     </td>
                                     <td class="v-align-middle">
                                         <span class="label label-success">Duyệt</span>
                                     </td>
                                     <td class="v-align-middle">
-
                                         <div class="dropdown pull-right">
                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fa fa-cog"></i>
@@ -293,8 +202,6 @@
                                             <ul class="dropdown-menu profile-dropdown" role="menu">
                                                 <li><a href="#" data-toggle="modal" data-target="#modalKinhDoanhTyGia"><i class="fa fa-edit"></i> Sửa</a>
                                                 </li>
-
-
                                                 <li class="bg-master-lighter">
                                                     <a href="#" data-toggle="modal" data-target="#modalXoa" class="clearfix">
                                                         <span class="pull-left">Xóa</span>
@@ -303,30 +210,15 @@
                                                 </li>
                                             </ul>
                                         </div>
-
-
-
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
-
-
                         {{>pagination}}
-
-
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
-
     </div>
-
 </div>
-
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
