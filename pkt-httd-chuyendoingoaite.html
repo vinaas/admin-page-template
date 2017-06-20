@@ -784,191 +784,365 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="row m-b-15">
-                                <div class="col-md-4 name m-t-5"> Loại chuyển đổi ngoại tệ : </div>
-                                <div class="col-md-8 value">
-                                    <div class="radio radio-primary">
-                                        <input type="radio" value="yes" name="cdnt" id="cdnt-ocb">
-                                        <label for="cdnt-ocb">Chuyển đổi ngoại tệ chi trả</label>
-                                        <input type="radio" checked="checked" value="no" name="cdnt" id="cdnt-congty">
-                                        <label for="cdnt-congty">Chuyển đổi hoa hồng trực tiếp</label>
+            <div class="panel panel-default ">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active">
+                        <a href="#tabNgoaite" data-toggle="tab" role="tab">Chuyển đổi ngoại tệ chi trả</a>
+                    </li>
+                    <li>
+                        <a href="#tabHoahong" data-toggle="tab" role="tab">Chuyển đổi hoa hồng trực tiếp</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabNgoaite">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                       
+                                        <div class="row  m-b-15">
+                                            <div class="col-md-4 name m-t-5"> Loại tiền (CCY/VND) : </div>
+                                            <div class="col-md-8 value">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Loại tiền</label>
+                                                            <input type="text " value="USD" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Tổng cộng</label>
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Tỷ giá bán</label>
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " value="EUR" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " value="CAD" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-4 text-right">
+                                                <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row  m-b-15">
-                                <div class="col-md-4 name m-t-5"> Loại tiền (CCY/VND) : </div>
-                                <div class="col-md-8 value">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label>Loại tiền</label>
-                                                <input type="text " value="USD" class="form-control" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label>Tổng cộng</label>
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label>Tỷ giá bán</label>
-                                                <input type="text " class="form-control">
+                                    <div class="col-sm-12">
+                                        <hr>
+                                        <h5>Danh sách</h5>
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="clearfix">
+                                                    <div class="pull-right m-b-10">
+                                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Ngày </th>
+                                                                <th>Tên đối tác</th>
+                                                                <th>ID đối tác</th>
+                                                                <th>LT thanh toán</th>
+                                                                <th>LT chi</th>
+                                                                <th>Số tiền </th>
+                                                                <th>Tỷ giá chuyển đổi</th>
+                                                                <th>TT chuyển đổi</th>
+                                                                <th>Tỷ giá bán</th>
+                                                                <th>TT bán</th>
+                                                                <th>Chênh lệch</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="v-align-middle ">
+                                                                    12/03/2017
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    ABC
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="v-align-middle ">
+                                                                    12/04/2017
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    XYZ
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <nav aria-label="Page navigation" class="text-center">
+                                                      <ul class="pagination">
+                                                        <li>
+                                                          <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                                                          </a>
+                                                        </li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li>
+                                                          <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                                                          </a>
+                                                        </li>
+                                                      </ul>
+                                                    </nav>                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " value="EUR" class="form-control" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " value="CAD" class="form-control" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text " class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-4 text-right">
-                                    <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <hr>
-                            <h5>Danh sách</h5>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <div class="clearfix">
-                                        <div class="pull-right m-b-10">
-                                            <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                                                <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="tab-pane " id="tabHoahong">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row  m-b-15">
+                                            <div class="col-md-4 name m-t-5"> Loại tiền (CCY/VND) : </div>
+                                            <div class="col-md-8 value">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Loại tiền</label>
+                                                            <input type="text " value="USD" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Tổng cộng</label>
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Tỷ giá chuyển đổi</label>
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " value="EUR" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " value="CAD" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <input type="text " class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-4 text-right">
+                                                <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-edit"></i> Thực hiện</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>Ngày </th>
-                                                    <th>Tên đối tác</th>
-                                                    <th>ID đối tác</th>
-                                                    <th>LT thanh toán</th>
-                                                    <th>LT chi</th>
-                                                    <th>Số tiền </th>
-                                                    <th>Tỷ giá chuyển đổi</th>
-                                                    <th>TT chuyển đổi</th>
-                                                    <th>Tỷ giá bán</th>
-                                                    <th>TT bán</th>
-                                                    <th>Chênh lệch</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="v-align-middle ">
-                                                        12/03/2017
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        ABC
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="v-align-middle ">
-                                                        12/04/2017
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        XYZ
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <nav aria-label="Page navigation" class="text-center">
-                                          <ul class="pagination">
-                                            <li>
-                                              <a href="#" aria-label="Previous">
-                                                <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
-                                              </a>
-                                            </li>
-                                            <li><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li>
-                                              <a href="#" aria-label="Next">
-                                                <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
-                                              </a>
-                                            </li>
-                                          </ul>
-                                        </nav>                                    </div>
+                                    <div class="col-sm-12">
+                                        <hr>
+                                        <h5>Danh sách</h5>
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="clearfix">
+                                                    <div class="pull-right m-b-10">
+                                                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Ngày </th>
+                                                                <th>Tên đối tác</th>
+                                                                <th>ID đối tác</th>
+                                                                <th>LT thanh toán</th>
+                                                                <th>LT giao dịch</th>
+                                                                <th>Số tiền ngoại tệ </th>
+                                                                <th>Tỷ giá chuyển đổi</th>
+                                                                <th>Thành tiền</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="v-align-middle ">
+                                                                    12/03/2017
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    ABC
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="v-align-middle ">
+                                                                    12/04/2017
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                    XYZ
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                <td class="v-align-middle">
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <nav aria-label="Page navigation" class="text-center">
+                                                      <ul class="pagination">
+                                                        <li>
+                                                          <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                                                          </a>
+                                                        </li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li>
+                                                          <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                                                          </a>
+                                                        </li>
+                                                      </ul>
+                                                    </nav>                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -977,6 +1151,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -2920,7 +3095,6 @@
                           class="pg-close fs-14"></i>
                       </button>
                       <h5>Chi tiết <span class="semi-bold">Chi trả ngoại tệ</span></h5>
-                      <p>Các lưu ý cho nhân viên khi tạo mới cảnh báo</p>
                   </div>
                   <div class="modal-body">
                       <form role="form">
@@ -2981,6 +3155,12 @@
                                       <div class="col-md-8 value"><b class="text-primary">60,000,000</b>
                                       </div>
                                   </div>
+                                    <div class="row m-b-15">
+                                      <div class="col-md-4 name"> Phí xử lý giao dịch : </div>
+                                      <div class="col-md-8 value"><b></b>
+                                      </div>
+                                  </div>
+      
                               </div>
                           </div>
                           <div class="row">
@@ -3160,7 +3340,6 @@
                           class="pg-close fs-14"></i>
                       </button>
                       <h5>Chi tiết <span class="semi-bold">Chi trả ngoại tệ</span></h5>
-                      <p>Các lưu ý cho nhân viên khi tạo mới cảnh báo</p>
                   </div>
                   <div class="modal-body">
                       <form role="form">
@@ -3201,12 +3380,7 @@
                                       <div class="col-md-8 value"><b>Tiền mặt </b>
                                       </div>
                                   </div>
-                                  <div class="row m-b-15">
-                                      <div class="col-md-4 name"> Ngân hàng : </div>
-                                      <div class="col-md-8 value"><b>ACB</b>
-                                      </div>
-                                  </div>
-                                  <div class="row m-b-15">
+                                   <div class="row m-b-15">
                                       <div class="col-md-4 name"> Số tiền : </div>
                                       <div class="col-md-8 value"><b>3000</b>
                                       </div>
