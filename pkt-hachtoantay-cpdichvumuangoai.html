@@ -2929,7 +2929,7 @@
                                       <div class="col-md-8 value"><b class="text-primary">60,000,000</b>
                                       </div>
                                   </div>
-                                    <div class="row m-b-15">
+                                  <div class="row m-b-15">
                                       <div class="col-md-4 name"> Phí xử lý giao dịch : </div>
                                       <div class="col-md-8 value"><b></b>
                                       </div>
@@ -3154,7 +3154,7 @@
                                       <div class="col-md-8 value"><b>Tiền mặt </b>
                                       </div>
                                   </div>
-                                   <div class="row m-b-15">
+                                  <div class="row m-b-15">
                                       <div class="col-md-4 name"> Số tiền : </div>
                                       <div class="col-md-8 value"><b>3000</b>
                                       </div>
@@ -3881,56 +3881,119 @@
                   <div class="modal-body">
                       <div class="panel-body">
                           <div class="row">
-                            <table class="table table-hover">
-                      <thead>
-                          <tr>
-                              <th> Ngày</th>
-                              <th> Tên công ty</th>
-                              <th> Địa chỉ</th>
-                              <th> Mã số thuế</th>
-                              <th> Loại tiền</th>
-                              <th> Số tài khoản</th>
-                              <th> Ngân hàng</th>
-                              <th> Thuế suất thuế GTGT(%) </th>
-                              <th> Chi tiết </th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td class="v-align-middle">12/03/2017</td>
-                              <td class="v-align-middle">ABC</td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle">
-                                  <a href="" class="text-primary" data-toggle="modal" data-target="#pkt-chiTietHoSo">Xem</a>
-                              </td>
-                              
-                          </tr>
-                          <tr>
-                              <td class="v-align-middle">13/03/2017</td>
-                              <td class="v-align-middle">CDE</td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle"></td>
-                              <td class="v-align-middle">
-                                  <a href="" class="text-primary" data-toggle="modal" data-target="#chiTietHoSo">Xem</a>
-                              </td>
-                              
-                          </tr>
-                      </tbody>
-                  </table>
+                              <form role="form" class="desModalForm">
+                                  <h6 class="text-uppercase form-title">Thông tin công ty</h6>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="row m-b-15">
+                                              <div class="col-md-4 name m-t-5"> Tên công ty : </div>
+                                              <div class="col-md-8 value">
+                                                  <input type="" class="form-control" name="" value="">
+                                              </div>
+                                          </div>
+                                      </div>
+      
+                                  </div>
+      
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="row m-b-15">
+                                              <div class="col-md-4 name m-t-5"> Địa chỉ : </div>
+                                              <div class="col-md-8 value">
+                                                  <input type="" class="form-control" name="" value="">
+                                              </div>
+                                          </div>
+                                      </div>
+      
+                                  </div>
+      
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="row m-b-15">
+                                              <div class="col-md-4 name m-t-5"> Mã số thuế : </div>
+                                              <div class="col-md-8 value">
+                                                  <input type="" class="form-control" name="" value="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="row m-b-15">
+                                              <div class="col-md-4 name m-t-5">Thuế suất thuế GTGT(%) : </div>
+                                              <div class="col-md-8 value">
+                                                  <input type="" class="form-control" name="" value="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
                           </div>
-                          <div class="col-sm-12 m-t-10 sm-m-t-10 text-right">
-                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
+      
+                          <div class="row">
+                              <form role="form" class="desModalForm">
+                                  <h6 class="text-uppercase form-title">Thông tin tài khoản ngân hàng</h6>
+                              </form>
+                              <table class="table table-hover">
+                                  <thead>
+                                      <tr>
+                                          <th>STT</th>
+                                          <th> Loại tiền</th>
+                                          <th> Số tài khoản</th>
+                                          <th> Ngân hàng</th>
+      
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="v-align-middle">1</td>
+                                          <td class="v-align-middle">
+                                              <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                          <option value="1">AUD</option>
+                                                          <option value="2">CAN</option>
+                                                          <option value="3">EUR</option>
+                                                  </select>
+                                          </td>
+                                          <td class="v-align-middle">
+                                              <input type="" class="form-control" name="" value="123">
+                                          </td>
+                                          <td class="v-align-middle">
+                                              <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                          <option value="1">Ngân hàng 1</option>
+                                                          <option value="2">Ngân hàng 2</option>
+                                                          <option value="3">Ngân hàng 3</option>
+                                               </select>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class="v-align-middle">2</td>
+                                          <td class="v-align-middle">
+                                              <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                          <option value="2">CAN</option>
+                                                          <option value="3">EUR</option>
+                                                  </select>
+                                          </td>
+                                          <td class="v-align-middle">
+                                              <input type="" name="" class="form-control" value="234">
+                                          </td>
+                                          <td class="v-align-middle">
+                                              <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                                          <option value="1">Ngân hàng 2</option>
+                                                          <option value="2">Ngân hàng 1</option>
+                                                          <option value="3">Ngân hàng 3</option>
+                                               </select>
+                                          </td>
+      
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <div class="row text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                              <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#"><i class="fa fa-save"></i> Lưu</button>
                           </div>
                       </div>
+      
                   </div>
               </div>
           </div>
