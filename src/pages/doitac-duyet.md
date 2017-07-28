@@ -6,7 +6,7 @@
     "layout": "doitac-duyet.html",
     "permalink" : false,
     
-    "activeLink" : "doitac"
+    "activeLink" : "doitac-danhsach"
 }
 ---
 

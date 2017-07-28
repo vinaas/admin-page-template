@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-hanmuc.html",
     "permalink" : false,
-    "activeLink" : "doitac"
+    "activeLink" : "doitac-hanmuc"
 }
 ---
 
