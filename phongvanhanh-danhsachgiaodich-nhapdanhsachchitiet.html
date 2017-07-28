@@ -79,36 +79,36 @@
                             <span class=" arrow"></span>
                         </a>
                         <ul class="sub-menu">
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="doitac-taomoidoitac.html">Tạo mới đối tác</a>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="doitac.html">Danh sách đối tác</a>
                             </li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="doitac-duyet.html">Duyệt tạo mới đối tác</a>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="doitac-duyet-dieuchinh.html">Duyệt điều chỉnh đối tác</a>
                             </li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="doitac-hanmuc-taomoi.html">Tạo mới hạn mức</a>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="doitac-hanmuc.html">Danh sách hạn mức</a>
                             </li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="doitac-hanmuc-duyet.html">Duyệt danh sách hạn mức</a>
-                            </li>
-                            <li class="">
+                            </li> -->
+                            <!-- <li class="">
                                 <a href="doitac-hoahong-taomoi.html">Tạo mới hoa hồng</a>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="doitac-danhsach-hoahong.html">Danh sách Hoa hồng</a>
                             </li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="doitac-taomoi-danhsachduyet.html">Duyệt tạo mới hoa hồng</a>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="doitac-hoahong-duyet-dieuchinh.html">Duyệt điều chỉnh hoa hồng</a>
                             </li>
@@ -16433,7 +16433,174 @@
           </div>
           <!-- /.modal-dialog -->
       </div>
-      <!-- END MODAL STICK UP  -->    </div>
+      <!-- END MODAL STICK UP  -->
+      
+      <div class="modal fade stick-up" id="createHanMuc" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                              class="pg-close fs-14"></i>
+                          </button>
+                      <h5>Tạo mới <span class="semi-bold">Hạn mức</span></h5>
+                      <p>Các lưu ý cho nhân viên khi tạo mới hạn mức</p>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+      
+                          <h6 class=" m-t-20">Ngày : <b>30/04/2017</b></h6>
+      
+                          <h6 class="bold text-uppercase m-t-20">Thông tin đối tác</h6>
+      
+                          <div class="form-group form-group-attached">
+                              <label>Tên đối tác</label>
+                              <span class="help"> </span>
+      
+                              <select class="full-width " data-init-plugin="select2">
+                                      <option value="AK" disabled selected>Chọn đối tác</option>
+                                      <option value="AK">Nguyễn Văn B</option>
+                                      <option value="HI">Nguyễn Văn A</option>
+      
+      
+                                  </select>
+      
+      
+                          </div>
+      
+                          <div class="form-group  form-group-attached">
+                              <label>ID đối tác</label>
+      
+                              <div class="input-group date">
+                                  <input type="text" disabled class="form-control input-black" placeholder="" value="152">
+                              </div>
+                          </div>
+      
+                          <h6 class="bold text-uppercase m-t-20">Thời gian</h6>
+      
+                          <div class="form-group-attached">
+                              <div class="row">
+      
+                                  <div class="col-sm-6">
+      
+      
+                                      <div class="form-group form-group-default input-group col-sm-10">
+                                          <label>Ngày hiệu lực</label>
+                                          <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component">
+                                          <span class="input-group-addon">
+                                                  <i class="fa fa-calendar"></i>
+                                              </span>
+                                      </div>
+      
+      
+                                  </div>
+      
+                                  <div class="col-sm-6">
+      
+      
+                                      <div class="form-group form-group-default input-group col-sm-10">
+                                          <label>Ngày kết thúc</label>
+                                          <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
+                                          <span class="input-group-addon">
+                                                  <i class="fa fa-calendar"></i>
+                                              </span>
+                                      </div>
+      
+      
+                                  </div>
+                              </div>
+      
+                          </div>
+      
+      
+                          <h6 class="bold text-uppercase m-t-20">Hạn mức tín dụng</h6>
+      
+      
+                          <div class="form-group-attached">
+                          
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="checkbox check-primary">
+                                          <input type="checkbox" checked="checked" value="" name="optionyes" id="usd">
+                                          <label for="usd">USD</label>
+                                          <input type="checkbox" checked="checked" value="" name="optionyes" id="vnd">
+                                          <label for="vnd">VND</label>
+                          
+                                          <input type="checkbox" value="" name="optionyes" id="eur">
+                                          <label for="eur">EUR</label>
+                          
+                                          <input type="checkbox" value="" name="optionyes" id="gpt">
+                                          <label for="gpt">GBP</label>
+                          
+                                          <input type="checkbox" value="" name="optionyes" id="jpy">
+                                          <label for="jpy">JPY</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-8">
+                                      <table class="table table-hover table-small" id="">
+                                          <thead>
+                                              <tr>
+                                                  <th style="width:20%">Loại tiền</th>
+                                                  <th style="width:30%">Phí xử lý</th>
+                                                  <th style="width:30%">Hạn mức</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                          
+                                                  <td class="v-align-middle bold">USD</td>
+                                                  <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                                  <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                          
+                          
+                                              </tr>
+                          
+                          
+                                              <tr>
+                                                  <td class="v-align-middle bold">VND</td>
+                                                  <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                                                  <td class="v-align-middle"> <input type="text" class=" form-control"></td>
+                          
+                          
+                          
+                                              </tr>
+                          
+                          
+                                          </tbody>
+                                      </table>
+                          
+                                  </div>
+                          
+                          
+                              </div>
+                          
+                              <!--<button class="btn btn-tag   btn-tag-light btn-tag-rounded m-t-10" type="button" data-toggle="modal" data-target="#addMoneyType">Thêm mới</button>-->
+                          </div>
+      
+                      </form>
+      
+      
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <!--<div class="p-t-20 clearfix p-l-10 p-r-10">
+                                  <div class="pull-left">
+                                      <p class="bold font-montserrat text-uppercase">TOTAL</p>
+                                  </div>
+                                  <div class="pull-right">
+                                      <p class="bold font-montserrat text-uppercase">$20.00</p>
+                                  </div>
+                              </div>-->
+                          </div>
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal">Đóng</button>
+                              <button type="button" class="btn btn-primary  m-t-5">Lưu & yêu cầu duyệt</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>    </div>
     <!-- END PAGE CONTENT WRAPPER -->
   </div>
   <!-- END PAGE CONTAINER -->
