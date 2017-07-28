@@ -50,12 +50,17 @@
     </div>
     <div class="bar-inner">
         <ul>
-            <li class="{{#ifEqual path.name 'doitac-danhsach'}} active {{/ifEqual}}">
+            <li class="{{#ifEqual path.name 'doitac-taomoidoitac'}} active {{/ifEqual}}">
+                <a href="doitac-taomoidoitac.html">
+                    <span class="">Tạo mới đối tác </span>
+                </a>
+            </li>
+            <li class="{{#ifEqual path.name 'doitac'}} active {{/ifEqual}}">
                 <a href="doitac.html">
                     <span class="">Danh sách đối tác </span>
                 </a>
             </li>
-            <li class="{{#ifEqual path.name 'doitac-danhsach-duyet'}} active {{/ifEqual}}">
+            <li class="{{#ifEqual path.name 'doitac-duyet'}} active {{/ifEqual}}">
                 <a href="doitac-duyet.html">
                     <span class="">Duyệt tạo mới đối tác</span>
                 </a>
@@ -72,12 +77,17 @@
     </div>
     <div class="bar-inner">
         <ul>
+            <li class="{{#ifEqual path.name 'doitac-hoahong-taomoi'}} active {{/ifEqual}}">
+                <a href="doitac-hoahong-taomoi.html">
+                    <span class="">Tạo mới hoa hồng </span>
+                </a>
+            </li>
             <li class="{{#ifEqual path.name 'doitac-danhsach-hoahong'}} active {{/ifEqual}}">
                 <a href="doitac-danhsach-hoahong.html">
                     <span class="">Danh sách hoa hồng </span>
                 </a>
             </li>
-            <li class="{{#ifEqual path.name 'doitac-danhsach-hoahong-duyet'}} active {{/ifEqual}}">
+            <li class="{{#ifEqual path.name 'doitac-taomoi-danhsachduyet'}} active {{/ifEqual}}">
                 <a href="doitac-taomoi-danhsachduyet.html">
                     <span class="">Duyệt danh sách hoa hồng</span>
                 </a>
@@ -94,6 +104,11 @@
     </div>
     <div class="bar-inner">
         <ul>
+            <li class="{{#ifEqual path.name 'doitac-hanmuc-taomoi'}} active {{/ifEqual}}">
+                <a href="doitac-hanmuc-taomoi.html">
+                    <span class="">Tạo mới hạn mức </span>
+                </a>
+            </li>
             <li class="{{#ifEqual path.name 'doitac-hanmuc'}} active {{/ifEqual}}">
                 <a href="doitac-hanmuc.html">
                     <span class="">Danh sách hạn mức </span>

@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "doitac-hoahong-taomoi.html",
     "permalink" : false,
-    "activeLink" : "doitac"
+    "activeLink" : "doitac-danhsach-hoahong"
 }
 ---
 
